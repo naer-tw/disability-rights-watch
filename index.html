@@ -1571,55 +1571,113 @@ footer .credit {
       <span class="meta">206 CO 段落 + 63 倡議 + 27 LOI · 5 種類型</span>
     </div>
 
-    <form class="filter-bar" onsubmit="event.preventDefault();">
+    <form class="filter-bar" id="hero-filter-bar" onsubmit="applyHeroFilters(event); return false;">
       <label>議題
-        <select>
-          <option value="">全部 (16 PI)</option>
-          <option>軸一 · CO 兌現追蹤(PI-01~04)</option>
-          <option>軸二 · 行動方案 / NHRC / 預算(PI-05~07)</option>
-          <option>軸三 · 12 年指標時序(PI-08~11)</option>
-          <option>軸四 · 框架爭議旗艦(PI-12~16)</option>
-          <option>PI-12 §24 教育權單向解讀</option>
-          <option>PI-14 校園霸凌(本週焦點)</option>
-          <option>PI-16 醫療化爭議</option>
+        <select id="hero-pi">
+          <option value="">全部 16 PI</option>
+          <optgroup label="軸一 CO 兌現追蹤">
+            <option value="PI-01">PI-01 兩屆審查總體對照</option>
+            <option value="PI-02">PI-02 重大未兌現 CO 條目盤點</option>
+            <option value="PI-03">PI-03 第三次審查(2027)籌備</option>
+            <option value="PI-04">PI-04 6 國 CRPD 施行法對照</option>
+          </optgroup>
+          <optgroup label="軸二 行動方案 / NHRC / 預算">
+            <option value="PI-05">PI-05 身障權利行動方案</option>
+            <option value="PI-06">PI-06 NHRC CRPD 監督報告</option>
+            <option value="PI-07">PI-07 身障預算配置(4 部會)</option>
+          </optgroup>
+          <optgroup label="軸三 12 年指標時序">
+            <option value="PI-08">PI-08 身障人口結構</option>
+            <option value="PI-09">PI-09 §27 就業率落差</option>
+            <option value="PI-10">PI-10 特教學生人數 / 安置型態</option>
+            <option value="PI-11">PI-11 家庭照顧者負荷</option>
+          </optgroup>
+          <optgroup label="軸四 框架爭議(紅線旗艦)">
+            <option value="PI-12">PI-12 §24 教育權單向解讀</option>
+            <option value="PI-13">PI-13 特教學校存續</option>
+            <option value="PI-14">PI-14 身障兒少校園霸凌</option>
+            <option value="PI-15">PI-15 §12 法律能力</option>
+            <option value="PI-16">PI-16 身障診斷醫療化</option>
+          </optgroup>
         </select>
       </label>
       <label>屆別
-        <select>
-          <option>全部</option>
-          <option>第一次 (2017)</option>
-          <option>第二次 (2022)</option>
-          <option>第三次 (2027 籌備)</option>
+        <select id="hero-round">
+          <option value="">全部</option>
+          <option value="第一次">第一次 (2017)</option>
+          <option value="第二次">第二次 (2022)</option>
+          <option value="第三次">第三次 (2027 籌備)</option>
         </select>
       </label>
-      <label>行動者
-        <select>
-          <option>全部 (9 倡議者)</option>
-          <option>CRPD 國際審查委員會</option>
-          <option>人約盟(22 團體)</option>
-          <option>智障者家長總會</option>
-          <option>多障家長協會</option>
-          <option>國家人權委員會 NHRC</option>
-          <option>衛福部 / 教育部 / 勞動部 / 司法院</option>
-          <option>AABE 國教行動聯盟</option>
+      <label>行動者(24)
+        <select id="hero-actor">
+          <option value="">全部 24 倡議者</option>
+          <optgroup label="umbrella / 聯盟">
+            <option>人權公約施行監督聯盟(22 團體)</option>
+            <option>中華民國身心障礙聯盟(殘聯)</option>
+          </optgroup>
+          <optgroup label="障別專屬 NGO">
+            <option>中華民國智障者家長總會(智總)</option>
+            <option>中華民國視障聯盟</option>
+            <option>中華民國聾人協會</option>
+            <option>中華民國自閉症總會</option>
+            <option>中華民國康復之友聯盟</option>
+            <option>中華民國脊髓損傷者聯合會</option>
+            <option>中華民國腦性麻痺協會</option>
+            <option>中華民國多障家長協會</option>
+            <option>罕見疾病基金會</option>
+            <option>台灣唐氏症關愛者協會</option>
+            <option>台灣障礙女性平權連線</option>
+            <option>社團法人台灣自閉兒社會福利基金會</option>
+          </optgroup>
+          <optgroup label="政府 / 國際">
+            <option>國家人權委員會(NHRC)</option>
+            <option>CRPD 國際審查委員會</option>
+            <option>衛生福利部社會及家庭署</option>
+          </optgroup>
+          <optgroup label="學界 / 平台">
+            <option>國內特教學界(中間派)</option>
+            <option>國內法學界(混合派)</option>
+            <option>醫療化批評學派(國際)</option>
+            <option>不足診斷批評派</option>
+            <option>神經多樣性派</option>
+            <option>國教行動聯盟(AABE)</option>
+          </optgroup>
         </select>
       </label>
       <label>類型
-        <select>
-          <option>全部</option>
-          <option>結論性意見 CO (206)</option>
-          <option>倡議立場 (63)</option>
-          <option>LOI 議題清單 (27)</option>
-          <option>政府承諾 (10)</option>
-          <option>實施動作 (10)</option>
-          <option>結果評估 (18)</option>
-          <option>修法 (16)</option>
+        <select id="hero-type">
+          <option value="">全部</option>
+          <option value="第一次 CO">結論性意見 第一次(90)</option>
+          <option value="第二次 CO">結論性意見 第二次(116)</option>
+          <option value="倡議立場">倡議立場(84)</option>
+          <option value="LOI 議題清單">LOI 議題清單(27)</option>
+          <option value="政府承諾">政府承諾(11)</option>
+          <option value="結果評估">結果評估(18)</option>
+          <option value="修法歷程">修法歷程(15)</option>
+          <option value="法律">法律(8)</option>
+          <option value="原始 PDF 文件">原始 PDF 文件(12)</option>
         </select>
       </label>
       <button type="submit" class="btn-primary" style="padding: 8px 18px; font-size: 13.5px;">
-        套用篩選
+        套用篩選 →
       </button>
     </form>
+
+    <script>
+    function applyHeroFilters(e) {
+      e.preventDefault();
+      const pi = document.getElementById('hero-pi').value;
+      const round = document.getElementById('hero-round').value;
+      const actor = document.getElementById('hero-actor').value;
+      const type = document.getElementById('hero-type').value;
+      const params = new URLSearchParams();
+      // 將篩選條件組合為搜尋詞,跳到 search.html 套用
+      const terms = [pi, round, actor, type].filter(Boolean).join(' ');
+      if (terms) params.set('q', terms);
+      location.href = 'search.html' + (params.toString() ? '?' + params.toString() : '');
+    }
+    </script>
 
   </div>
 </section>
@@ -1640,79 +1698,95 @@ footer .credit {
 
     <div class="docs-grid">
 
-      <!-- 篩選 sidebar -->
-      <aside class="docs-sidebar" aria-label="篩選條件">
+      <!-- 篩選 sidebar(全部 input 已接通 JS 動態篩選) -->
+      <aside class="docs-sidebar" id="docs-filter-sidebar" aria-label="篩選條件">
         <div class="docs-sidebar-header">
           <span>篩選條件</span>
-          <button class="clear" type="button" onclick="this.closest('.docs-sidebar').querySelectorAll('input').forEach(i=>{if(i.type==='checkbox')i.checked=false;else i.value=''})">清除</button>
+          <button class="clear" type="button" onclick="clearDocsFilters()">清除</button>
         </div>
 
         <h4>屆別</h4>
-        <label class="filter-row"><input type="checkbox" checked> 第一次 (2017)</label>
-        <label class="filter-row"><input type="checkbox" checked> 第二次 (2022)</label>
-        <label class="filter-row"><input type="checkbox"> 第三次 (2027 籌備中)</label>
+        <label class="filter-row"><input type="checkbox" class="f-round" data-round="2017" checked> 第一次 (2017)</label>
+        <label class="filter-row"><input type="checkbox" class="f-round" data-round="2022" checked> 第二次 (2022)</label>
+        <label class="filter-row"><input type="checkbox" class="f-round" data-round="2027"> 第三次 (2027 籌備中)</label>
 
         <h4>文件類型</h4>
-        <label class="filter-row"><input type="checkbox" checked><span class="swatch" style="background:#1F3D6B"></span>國家報告 (NR)<span class="count">2</span></label>
-        <label class="filter-row"><input type="checkbox" checked><span class="swatch" style="background:#2D7059"></span>結論性意見 (CO)<span class="count">2</span></label>
-        <label class="filter-row"><input type="checkbox" checked><span class="swatch" style="background:#4B2480"></span>民間影子報告 / 平行回復<span class="count">3</span></label>
-        <label class="filter-row"><input type="checkbox"><span class="swatch" style="background:#EF4444"></span>議題清單 (LOI)<span class="count">2</span></label>
-        <label class="filter-row"><input type="checkbox"><span class="swatch" style="background:#475569"></span>政府後續回應<span class="count">3</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-type" data-type="state-report" checked><span class="swatch" style="background:#1F3D6B"></span>國家報告 (NR)<span class="count">2</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-type" data-type="co" checked><span class="swatch" style="background:#2D7059"></span>結論性意見 (CO)<span class="count">2</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-type" data-type="shadow" checked><span class="swatch" style="background:#4B2480"></span>民間影子報告 / 平行回復<span class="count">3</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-type" data-type="loi" checked><span class="swatch" style="background:#EF4444"></span>議題清單 (LOI)<span class="count">1</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-type" data-type="gov-response" checked><span class="swatch" style="background:#475569"></span>政府後續回應<span class="count">3</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-type" data-type="state-attachment" checked><span class="swatch" style="background:#1F3D6B;opacity:0.6"></span>國家報告附件<span class="count">1</span></label>
 
         <h4>軸別分類</h4>
         <div class="filter-tag-row">
-          <span class="filter-tag">軸一 CO 兌現</span>
-          <span class="filter-tag">軸二 NAP/NHRC/預算</span>
-          <span class="filter-tag">軸三 12 年指標</span>
-          <span class="filter-tag active">軸四 框架爭議</span>
+          <span class="filter-tag f-axis active" data-axis="all">全部</span>
+          <span class="filter-tag f-axis" data-axis="1">軸一</span>
+          <span class="filter-tag f-axis" data-axis="2">軸二</span>
+          <span class="filter-tag f-axis" data-axis="3">軸三</span>
+          <span class="filter-tag f-axis" data-axis="4">軸四(紅線)</span>
         </div>
 
-        <h4>提出單位</h4>
-        <select class="filter-select">
-          <option value="">所有單位</option>
-          <option value="aabe">國教盟 (AABE) ⭐</option>
-          <option value="cw" selected>人約盟(22 團體共同)</option>
-          <option value="da">中華民國身心障礙聯盟(殘聯)</option>
-          <option value="pact">智障者家長總會</option>
-          <option value="multi">多障家長協會</option>
-          <option value="autism">自閉症總會</option>
-          <option value="nhrc">國家人權委員會 NHRC</option>
-          <option value="gov">政府機關</option>
+        <h4>提出單位(22 NGO + 政府)</h4>
+        <select class="filter-select" id="f-org">
+          <option value="">所有單位 (12 文件)</option>
+          <optgroup label="政府 / 國際">
+            <option value="行政院">行政院 / 衛福部社家署</option>
+            <option value="CRPD 國際審查委員會">CRPD 國際審查委員會</option>
+            <option value="國家人權委員會">國家人權委員會 (NHRC)</option>
+          </optgroup>
+          <optgroup label="主要聯盟">
+            <option value="人權公約施行監督聯盟">人約盟 (22 團體 共同)</option>
+            <option value="中華民國身心障礙聯盟">中華民國身心障礙聯盟 (殘聯)</option>
+          </optgroup>
+          <optgroup label="障別專屬 NGO">
+            <option value="智障者家長總會">中華民國智障者家長總會</option>
+            <option value="視障聯盟">中華民國視障聯盟</option>
+            <option value="聾人協會">中華民國聾人協會</option>
+            <option value="自閉症總會">中華民國自閉症總會</option>
+            <option value="康復之友聯盟">中華民國康復之友聯盟</option>
+            <option value="脊髓損傷者聯合會">中華民國脊髓損傷者聯合會</option>
+            <option value="腦性麻痺協會">中華民國腦性麻痺協會</option>
+            <option value="多障家長協會">中華民國多障家長協會</option>
+            <option value="罕見疾病基金會">罕見疾病基金會</option>
+            <option value="唐氏症關愛者協會">台灣唐氏症關愛者協會</option>
+            <option value="障礙女性平權連線">台灣障礙女性平權連線</option>
+            <option value="自閉兒社會福利基金會">自閉兒社會福利基金會</option>
+          </optgroup>
         </select>
         <p style="font-size: 11px; color: var(--text-muted); margin-top: 6px; line-height: 1.4;">
-          可看出該團體立場在歷屆 CO 的採納情形(立場光譜 -100 ~ +100)
+          下拉選單擇一即可篩選,或於上方 <a href="search.html">全平台搜尋</a> 跨類型查詢。
         </p>
 
         <h4>CRPD 條文</h4>
-        <input type="text" class="filter-input" placeholder="例如:第 24 條(教育)">
+        <input type="text" class="filter-input" id="f-article" placeholder="例如:24 / 27 / 12">
 
-        <h4>採納狀態</h4>
-        <label class="filter-row"><input type="checkbox"><span class="swatch" style="background:var(--success)"></span>已採納</label>
-        <label class="filter-row"><input type="checkbox"><span class="swatch" style="background:#C68822"></span>部分採納</label>
-        <label class="filter-row"><input type="checkbox" checked><span class="swatch" style="background:var(--warning)"></span>未採納 / 駁回</label>
+        <h4>採納狀態(透過<a href="trace/">反向追溯</a>查)</h4>
+        <p style="font-size: 11.5px; color: var(--text-muted); line-height: 1.6">採納率 / 駁回情形 之檢核請至 <a href="actors/">倡議者責任頁</a> 或 <a href="unheard.html">未被聽見的聲音</a>。</p>
       </aside>
 
       <!-- 文件清單 -->
-      <div>
+      <div id="docs-list-container">
         <div class="docs-toolbar">
-          <span class="count-info">顯示 <b>12</b> 筆 / 共 12 筆 · 全部已 OCR(240 萬字)</span>
+          <span class="count-info">顯示 <b id="docs-visible-count">12</b> 筆 / 共 <b>12</b> 筆 · 全部已 OCR(240 萬字)</span>
           <div style="display: flex; gap: var(--space-2); align-items: center;">
             <div class="view-tabs" role="tablist">
-              <button class="view-tab active" role="tab">列表</button>
-              <button class="view-tab" role="tab">時間軸</button>
-              <button class="view-tab" role="tab">關係圖</button>
+              <button class="view-tab active" role="tab" aria-selected="true">列表</button>
+              <button class="view-tab" role="tab" onclick="alert('時間軸視圖規劃中,可先看 issues/PI-XX-dossier.html 之內嵌時間軸 SVG');return false">時間軸</button>
+              <button class="view-tab" role="tab" onclick="alert('關係圖視圖規劃中,可先看 trace/ 之反向追溯');return false">關係圖</button>
             </div>
-            <select class="filter-select" style="width: auto; min-width: 130px; font-size: 12.5px;">
-              <option>排序:屆別</option>
-              <option>發表日期 ↓</option>
-              <option>採納率</option>
+            <select class="filter-select" id="docs-sort" style="width: auto; min-width: 130px; font-size: 12.5px;" onchange="applyDocsFilters()">
+              <option value="round-desc">排序:屆別 ↓</option>
+              <option value="round-asc">屆別 ↑</option>
+              <option value="type">類型</option>
+              <option value="org">提出單位</option>
             </select>
           </div>
         </div>
 
         <div class="doc-list">
 
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/CRPD_2th_CORs_TC.pdf" target="_blank" rel="noopener" class="doc-card featured-doc">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/CRPD_2th_CORs_TC.pdf" target="_blank" rel="noopener" data-round="2022" data-type="co" data-org="CRPD 國際審查委員會" data-axis="1,2,3,4" data-articles="all" class="doc-card featured-doc">
             <span class="doc-stripe" style="background:var(--cycle-crpd)"></span>
             <div class="doc-body">
               <div class="doc-pills">
@@ -1731,7 +1805,7 @@ footer .credit {
             </div>
           </a>
 
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/220630_CRPD-議題清單回覆_人約盟總協調_22團體共同提交_中文.pdf" target="_blank" rel="noopener" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/220630_CRPD-議題清單回覆_人約盟總協調_22團體共同提交_中文.pdf" target="_blank" rel="noopener" data-round="2022" data-type="shadow" data-org="人權公約施行監督聯盟" data-axis="4" data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#4B2480"></span>
             <div class="doc-body">
               <div class="doc-pills">
@@ -1749,7 +1823,7 @@ footer .credit {
             </div>
           </a>
 
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/CRPD_2th_LOIs_PR_NHRC_TC.pdf" target="_blank" rel="noopener" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/CRPD_2th_LOIs_PR_NHRC_TC.pdf" target="_blank" rel="noopener" data-round="2022" data-type="shadow" data-org="國家人權委員會" data-axis="2" data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#4B2480"></span>
             <div class="doc-body">
               <div class="doc-pills">
@@ -1766,7 +1840,7 @@ footer .credit {
             </div>
           </a>
 
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約（CRPD）第二次國家報告國際審查會-問題清單及政府機關回應.pdf" target="_blank" rel="noopener" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約（CRPD）第二次國家報告國際審查會-問題清單及政府機關回應.pdf" target="_blank" rel="noopener" data-round="2022" data-type="gov-response" data-org="行政院" data-axis="1,2,3,4" data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#475569"></span>
             <div class="doc-body">
               <div class="doc-pills">
@@ -1783,7 +1857,7 @@ footer .credit {
             </div>
           </a>
 
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約第二次國家報告條約專要文件.pdf" target="_blank" rel="noopener" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約第二次國家報告條約專要文件.pdf" target="_blank" rel="noopener" data-round="2022" data-type="state-report" data-org="行政院" data-axis="1,2,3,4" data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#1F3D6B"></span>
             <div class="doc-body">
               <div class="doc-pills">
@@ -1800,7 +1874,7 @@ footer .credit {
             </div>
           </a>
 
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約CRPD第二次國家報告問題清單-中譯版.pdf" target="_blank" rel="noopener" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約CRPD第二次國家報告問題清單-中譯版.pdf" target="_blank" rel="noopener" data-round="2022" data-type="loi" data-org="CRPD 國際審查委員會" data-axis="1" data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#EF4444"></span>
             <div class="doc-body">
               <div class="doc-pills">
@@ -1817,7 +1891,7 @@ footer .credit {
             </div>
           </a>
 
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-CORs_CH.pdf" target="_blank" rel="noopener" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-CORs_CH.pdf" target="_blank" rel="noopener" data-round="2017" data-type="co" data-org="CRPD 國際審查委員會" data-axis="1,2,3,4" data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:var(--cycle-crpd)"></span>
             <div class="doc-body">
               <div class="doc-pills">
@@ -1835,7 +1909,7 @@ footer .credit {
             </div>
           </a>
 
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-State-Report-Parallel-Report_CH.pdf" target="_blank" rel="noopener" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-State-Report-Parallel-Report_CH.pdf" target="_blank" rel="noopener" data-round="2017" data-type="shadow" data-org="人權公約施行監督聯盟" data-axis="4" data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#4B2480"></span>
             <div class="doc-body">
               <div class="doc-pills">
@@ -1852,7 +1926,7 @@ footer .credit {
             </div>
           </a>
 
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-State-Report_CH.pdf" target="_blank" rel="noopener" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-State-Report_CH.pdf" target="_blank" rel="noopener" data-round="2017" data-type="state-report" data-org="行政院" data-axis="1" data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#1F3D6B"></span>
             <div class="doc-body">
               <div class="doc-pills">
@@ -1868,7 +1942,7 @@ footer .credit {
             </div>
           </a>
 
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-Replies-to-LOIs_Bilingual.pdf" target="_blank" rel="noopener" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-Replies-to-LOIs_Bilingual.pdf" target="_blank" rel="noopener" data-round="2017" data-type="gov-response" data-org="行政院" data-axis="1" data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#475569"></span>
             <div class="doc-body">
               <div class="doc-pills">
@@ -1884,7 +1958,7 @@ footer .credit {
             </div>
           </a>
 
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2020/01/身心障礙者權利公約初次國家報告國際審查結論性意見回應表.pdf" target="_blank" rel="noopener" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2020/01/身心障礙者權利公約初次國家報告國際審查結論性意見回應表.pdf" target="_blank" rel="noopener" data-round="2017" data-type="gov-response" data-org="行政院" data-axis="1,2" data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#475569"></span>
             <div class="doc-body">
               <div class="doc-pills">
@@ -1901,7 +1975,7 @@ footer .credit {
             </div>
           </a>
 
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約第二次國家報告條約專要文件附件.pdf" target="_blank" rel="noopener" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約第二次國家報告條約專要文件附件.pdf" target="_blank" rel="noopener" data-round="2022" data-type="state-attachment" data-org="行政院" data-axis="1,2,3" data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#1F3D6B"></span>
             <div class="doc-body">
               <div class="doc-pills">
@@ -1926,6 +2000,77 @@ footer .credit {
       </div>
     </div>
   </div>
+
+  <script>
+  // ============ Docs sidebar 即時篩選 ============
+  function applyDocsFilters() {
+    const allowedRounds = Array.from(document.querySelectorAll('.f-round:checked')).map(c => c.dataset.round);
+    const allowedTypes = Array.from(document.querySelectorAll('.f-type:checked')).map(c => c.dataset.type);
+    const activeAxis = document.querySelector('.f-axis.active')?.dataset.axis || 'all';
+    const orgFilter = document.getElementById('f-org')?.value || '';
+    const articleFilter = (document.getElementById('f-article')?.value || '').trim();
+
+    const cards = document.querySelectorAll('#docs-list-container .doc-card');
+    let visible = 0;
+    cards.forEach(card => {
+      const r = card.dataset.round || '';
+      const t = card.dataset.type || '';
+      const o = card.dataset.org || '';
+      const a = card.dataset.axis || 'all';
+
+      let show = true;
+      if (allowedRounds.length > 0 && !allowedRounds.includes(r)) show = false;
+      if (allowedTypes.length > 0 && !allowedTypes.includes(t)) show = false;
+      if (activeAxis !== 'all' && !a.split(',').includes(activeAxis) && a !== 'all') show = false;
+      if (orgFilter && !o.includes(orgFilter)) show = false;
+      // article filter:檢查文件 title / excerpt 文字
+      if (articleFilter) {
+        const cardText = card.textContent.toLowerCase();
+        if (!cardText.includes(articleFilter.toLowerCase())) show = false;
+      }
+
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    const counter = document.getElementById('docs-visible-count');
+    if (counter) counter.textContent = visible;
+
+    // sort
+    const sort = document.getElementById('docs-sort')?.value || 'round-desc';
+    const list = document.querySelector('#docs-list-container .doc-list');
+    if (list) {
+      const arr = Array.from(list.querySelectorAll('.doc-card'));
+      arr.sort((x, y) => {
+        if (sort === 'round-desc') return (y.dataset.round || '').localeCompare(x.dataset.round || '');
+        if (sort === 'round-asc') return (x.dataset.round || '').localeCompare(y.dataset.round || '');
+        if (sort === 'type') return (x.dataset.type || '').localeCompare(y.dataset.type || '');
+        if (sort === 'org') return (x.dataset.org || '').localeCompare(y.dataset.org || '');
+        return 0;
+      });
+      arr.forEach(el => list.appendChild(el));
+    }
+  }
+
+  function clearDocsFilters() {
+    document.querySelectorAll('.f-round').forEach(c => c.checked = ['2017','2022'].includes(c.dataset.round));
+    document.querySelectorAll('.f-type').forEach(c => c.checked = true);
+    document.querySelectorAll('.f-axis').forEach(t => t.classList.toggle('active', t.dataset.axis === 'all'));
+    if (document.getElementById('f-org')) document.getElementById('f-org').value = '';
+    if (document.getElementById('f-article')) document.getElementById('f-article').value = '';
+    applyDocsFilters();
+  }
+
+  document.querySelectorAll('.f-round, .f-type').forEach(cb => cb.addEventListener('change', applyDocsFilters));
+  document.querySelectorAll('.f-axis').forEach(t => t.addEventListener('click', e => {
+    document.querySelectorAll('.f-axis').forEach(x => x.classList.remove('active'));
+    e.target.classList.add('active');
+    applyDocsFilters();
+  }));
+  if (document.getElementById('f-org')) document.getElementById('f-org').addEventListener('change', applyDocsFilters);
+  if (document.getElementById('f-article')) document.getElementById('f-article').addEventListener('input', applyDocsFilters);
+  applyDocsFilters();
+  </script>
 </section>
 
 <!-- ━━━━━━━━━━━━━ Topic index ━━━━━━━━━━━━━ -->
