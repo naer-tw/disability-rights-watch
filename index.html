@@ -1,0 +1,2260 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>身心障礙者權利監督平台 — Disability Rights Watch Taiwan</title>
+<meta name="description" content="國教行動聯盟(AABE)身心障礙者權利監督平台。整合 CRPD 兩屆國家報告、結論性意見、民間影子報告與政策因果鏈追蹤。聚焦神經多樣性兒少校園與醫療化爭議。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Disability Rights Watch Taiwan",
+  "alternateName": ["身心障礙者權利監督平台", "CRPD 監督平台", "AABE"],
+  "url": "https://naer-tw.github.io/disability-rights-watch/",
+  "description": "整合 CRPD 兩屆國家報告、結論性意見、民間影子報告之身心障礙者權利監督平台。聚焦神經多樣性兒少校園處遇與醫療化爭議。",
+  "areaServed": {"@type": "Country", "name": "Taiwan"},
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}
+</script>
+<style>
+:root {
+  /* ============================================================
+     FINAL 配色定案 — 報導者 × NYT × ProPublica 報刊政策派
+     ============================================================
+     設計原則:
+     1. 紙感背景偏中性微暖(避免太黃顯老派)
+     2. brand 朱紅 = 警示/CTA(政策監督性質)
+     3. AABE 沉金 = 機構識別(與 brand 語意分離)
+     4. 文字略軟於純黑(NYT 長閱讀標準)
+     5. 飽和度全面降一階,密度由排版而非顏色承擔
+     ============================================================ */
+
+  /* 紙感背景 */
+  --bg: #FAFAF7;             /* 微暖中性紙白 */
+  --bg-alt: #F1EFEA;         /* 段落分區灰白 */
+  --bg-deep: #1A4D3A;        /* CRPD 機構深森林綠(原兒少權:#0E2238 深藍) */
+  --bg-deeper: #133224;      /* 最深層(sidebar/footer 漸層) */
+
+  /* 文字 */
+  --text: #1F1F1F;           /* 略軟於純黑(NYT 標準) */
+  --text-muted: #5C5C5C;
+  --text-meta: #8A8A8A;
+
+  /* 機構森林綠 — CRPD 平台識別 */
+  --institutional: #1A4D3A;
+  --institutional-light: #4A8268;
+
+  /* Brand:政策警示朱紅 */
+  --brand: #B5371F;          /* 燒磚紅(ProPublica/Economist 級) */
+  --brand-dark: #8C2A18;
+  --brand-soft: #F4E1DC;
+
+  /* 狀態色 */
+  --warning: #A03032;
+  --success: #2D5F3E;
+
+  /* AABE 識別專用色(與 brand 警示紅明確分離) */
+  --aabe-gold: #8B6F50;      /* 深沉金 — AABE 機構標識用 */
+
+  /* 公約識別輔色:CRPD 森林綠 */
+  --cycle-crpd: #2D7059;
+
+  /* 輔助 */
+  --warning-soft: #F5EAD7;
+  --border: #DDD8CD;
+  --hairline: #E8E3D6;
+
+  --serif: "Noto Serif TC", "Source Han Serif TC", Georgia, serif;
+  --sans: "Noto Sans TC", "PingFang TC", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  --sans-en: "Inter", "Noto Sans TC", -apple-system, sans-serif;
+  --mono: "JetBrains Mono", "SF Mono", Menlo, monospace;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 64px;
+  --space-8: 96px;
+
+  --max-w: 1200px;
+  --content-w: 760px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--brand); color: #fff; }
+
+a { color: var(--institutional); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; transition: color .15s; }
+a:hover { color: var(--brand); }
+
+button { font-family: inherit; cursor: pointer; }
+
+/* ─── Skip link ────────────────────────────── */
+.skip {
+  position: absolute; left: -999px; top: -999px;
+  background: var(--bg-deep); color: #fff; padding: 8px 16px;
+  border-radius: 4px; z-index: 1000; text-decoration: none;
+}
+.skip:focus { left: 12px; top: 12px; }
+
+/* ─── Masthead(機構級頂部)──────────────────── */
+.masthead {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  position: sticky; top: 0; z-index: 50;
+  backdrop-filter: blur(8px);
+  background: rgba(250,250,247,0.94);
+}
+.masthead-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-4);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--space-4);
+}
+.logo {
+  display: flex; align-items: center; gap: var(--space-3);
+  text-decoration: none; color: var(--text);
+}
+.logo .icon {
+  width: 36px; height: 36px;
+  background: var(--bg-deep); color: #fff;
+  display: grid; place-items: center; border-radius: 6px;
+}
+.logo h1 {
+  font-family: var(--serif);
+  font-size: 17px; font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+.logo p {
+  font-size: 11px; color: var(--text-muted);
+  font-family: var(--sans-en); font-weight: 500;
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.produced-by {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-left: var(--space-3);
+  padding-left: var(--space-3);
+  border-left: 1px solid var(--border);
+}
+.aabe-mark {
+  font-family: var(--sans-en);
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  background: var(--aabe-gold);
+  color: #fff;
+  padding: 5px 9px;
+  border-radius: 4px;
+  line-height: 1;
+}
+.produced-text {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.3;
+  font-weight: 500;
+}
+.produced-text small {
+  font-family: var(--sans-en);
+  font-size: 9.5px;
+  color: var(--text-meta);
+  letter-spacing: 0.02em;
+}
+@media (max-width: 768px) {
+  .produced-by { display: none; }
+}
+.search-bar {
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
+}
+.search-bar input {
+  width: 100%;
+  padding: 8px 14px 8px 36px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: var(--sans);
+  font-size: 14px;
+  background: var(--bg-alt);
+  transition: border-color .15s, background .15s;
+}
+.search-bar input:focus {
+  outline: 2px solid var(--brand);
+  outline-offset: -1px;
+  background: #fff;
+}
+.search-bar svg {
+  position: absolute; left: 12px; top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted); pointer-events: none;
+}
+.lang-switch {
+  display: flex; gap: var(--space-2); font-size: 13px;
+  font-family: var(--sans-en); font-weight: 500;
+}
+.lang-switch a { padding: 4px 8px; text-decoration: none; color: var(--text-muted); border-radius: 3px; }
+.lang-switch a.active { background: var(--text); color: #fff; }
+
+/* ─── Role selector(我是誰)─────────────────── */
+.role-selector {
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--hairline);
+  padding: var(--space-3) var(--space-4);
+}
+.role-selector-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex; align-items: center; gap: var(--space-3);
+  flex-wrap: wrap;
+}
+.role-label {
+  font-size: 13px; color: var(--text-muted);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+.role-buttons {
+  display: flex; gap: var(--space-2);
+  flex-wrap: wrap;
+}
+.role-btn {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--text);
+  transition: all .15s;
+  font-family: inherit;
+}
+.role-btn:hover { background: var(--bg-deep); color: #fff; border-color: var(--bg-deep); }
+.role-btn.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+.role-dismiss {
+  margin-left: auto;
+  font-size: 12px; color: var(--text-muted);
+  background: transparent; border: 0;
+  padding: 4px 8px;
+  text-decoration: underline;
+}
+
+/* ─── Hero(NYT 報導風)────────────────────── */
+.hero {
+  padding: var(--space-7) var(--space-4) var(--space-6);
+  border-bottom: 1px solid var(--hairline);
+}
+.hero-inner {
+  max-width: var(--content-w);
+  margin: 0 auto;
+}
+.kicker {
+  font-family: var(--sans-en);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: var(--space-3);
+}
+.kicker::before {
+  content: ''; display: inline-block;
+  width: 32px; height: 2px; background: var(--brand);
+  vertical-align: middle; margin-right: var(--space-2);
+}
+.hero h2 {
+  font-family: var(--serif);
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-4);
+  color: var(--bg-deep);
+}
+.hero .lead {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: var(--space-5);
+}
+.hero .lead strong { color: var(--bg-deep); }
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin: var(--space-5) 0;
+  padding: var(--space-4);
+  background: var(--bg-alt);
+  border-left: 3px solid var(--brand);
+}
+.hero-stat .num {
+  font-family: var(--sans-en);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--warning);
+  display: block;
+  line-height: 1;
+}
+.hero-stat .lab {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-top: var(--space-2);
+}
+.hero-cta {
+  display: flex; gap: var(--space-3); flex-wrap: wrap;
+  margin-top: var(--space-5);
+}
+.btn-primary {
+  background: var(--bg-deep);
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 15px;
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  transition: background .15s;
+}
+.btn-primary:hover { background: var(--brand); color: #fff; }
+.btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.btn-ghost:hover { border-color: var(--text); color: var(--text); }
+
+/* ─── Workbench(g0v 工作台)────────────────── */
+.workbench {
+  background: var(--bg-alt);
+  padding: var(--space-7) var(--space-4);
+  border-bottom: 1px solid var(--hairline);
+}
+.workbench-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.section-header {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border);
+}
+.section-header h2 {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--bg-deep);
+}
+.section-header .meta {
+  font-size: 13px; color: var(--text-muted);
+  font-family: var(--sans-en);
+}
+
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+.quick-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: var(--space-4);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  transition: all .15s;
+  position: relative;
+}
+.quick-card:hover {
+  border-color: var(--brand);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(26,77,58,0.08);
+}
+.quick-card .q-tag {
+  font-family: var(--sans-en);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+.quick-card h3 {
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--bg-deep);
+}
+.quick-card p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+.quick-card .arrow {
+  margin-top: auto;
+  font-size: 13px;
+  color: var(--brand);
+  font-weight: 500;
+}
+
+/* 篩選列 */
+.filter-bar {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: var(--space-4);
+  display: flex; gap: var(--space-3); align-items: center; flex-wrap: wrap;
+}
+.filter-bar label {
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex; flex-direction: column; gap: 4px;
+}
+.filter-bar select {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--text);
+  min-width: 120px;
+}
+
+/* ─── Topic index ─────────────────────── */
+.topic-index {
+  padding: var(--space-7) var(--space-4);
+  background: var(--bg);
+}
+.topic-index-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+.topic-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: var(--space-5);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  transition: all .2s;
+}
+.topic-card:hover {
+  border-color: var(--bg-deep);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+.topic-card .t-icon {
+  width: 40px; height: 40px;
+  background: var(--bg-alt);
+  border-radius: 8px;
+  display: grid; place-items: center;
+  color: var(--bg-deep);
+  margin-bottom: var(--space-2);
+}
+.topic-card h3 {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--bg-deep);
+}
+.topic-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+.topic-card .stats {
+  font-family: var(--sans-en);
+  font-size: 12px;
+  color: var(--brand);
+  font-weight: 500;
+  margin-top: var(--space-2);
+}
+
+/* ─── Insider lock + login modal ───────── */
+.insider-header { color: var(--brand) !important; }
+.nav-item.insider-only .lock-icon { opacity: 0.85; color: rgba(255,255,255,0.6); transition: all .15s; }
+body.is-insider .nav-item.insider-only .lock-icon { display: none; }
+body.is-insider .nav-item.insider-only::after {
+  content: '✓';
+  margin-left: auto;
+  color: #6FCF97;
+  font-weight: 700;
+  font-size: 13px;
+}
+.insider-only-section { position: relative; }
+body:not(.is-insider) .insider-only-section {
+  filter: blur(2px) grayscale(0.5);
+  opacity: 0.6;
+  pointer-events: none;
+  user-select: none;
+}
+body:not(.is-insider) .insider-only-section::before {
+  content: '🔒 限 AABE 自家人 · 點上方「自家人」登入解鎖';
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(26,77,58,0.85);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  filter: none;
+  pointer-events: auto;
+  z-index: 5;
+}
+
+.insider-banner {
+  background: linear-gradient(90deg, var(--bg-deep) 0%, #2D6049 100%);
+  color: #fff;
+  padding: var(--space-3) var(--space-4);
+  border-radius: 6px;
+  display: flex; align-items: center; gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  font-size: 13.5px;
+}
+.insider-banner svg { color: var(--brand); flex-shrink: 0; }
+.insider-banner strong { color: #fff; }
+.insider-banner .b-tag {
+  font-family: var(--sans-en);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background: var(--brand);
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+/* Login modal */
+.login-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: var(--space-3);
+}
+.login-backdrop {
+  position: absolute; inset: 0;
+  background: rgba(26,77,58,0.65);
+  backdrop-filter: blur(6px);
+}
+.login-box {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  padding: var(--space-5);
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.login-head {
+  display: flex; gap: var(--space-3); align-items: center;
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--hairline);
+}
+.login-head svg { color: var(--brand); }
+.login-head h3 {
+  font-family: var(--serif);
+  font-size: 19px;
+  color: var(--bg-deep);
+  font-weight: 700;
+}
+.login-head p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+#login-form label {
+  display: flex; flex-direction: column;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: var(--space-3);
+  gap: 4px;
+  font-weight: 500;
+}
+#login-form input {
+  font-family: var(--sans);
+  font-size: 14px;
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg-alt);
+}
+#login-form input:focus {
+  outline: 2px solid var(--brand);
+  outline-offset: -1px;
+  background: #fff;
+}
+.login-actions {
+  display: flex; gap: var(--space-2); justify-content: flex-end;
+  margin-top: var(--space-4);
+}
+.login-note {
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--hairline);
+  font-size: 12px;
+  color: var(--text);
+  line-height: 1.6;
+}
+.login-note strong { color: var(--bg-deep); }
+
+/* ─── App shell + Side nav ─────────────── */
+.app-shell {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  align-items: start;
+  gap: 0;
+}
+.side-nav {
+  position: sticky;
+  top: 110px;
+  background: var(--bg-deep);
+  color: rgba(255,255,255,0.92);
+  padding: var(--space-4) var(--space-3);
+  align-self: start;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+.side-nav h5 {
+  font-family: var(--sans-en);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin: var(--space-4) var(--space-2) var(--space-2);
+}
+.side-nav h5:first-child { margin-top: 0; }
+.nav-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  margin-bottom: 2px;
+  transition: all .15s;
+}
+.nav-item:hover { background: rgba(255,255,255,0.08); color: #fff; }
+.nav-item.active { background: rgba(255,255,255,0.10); color: #fff; }
+.nav-item.featured {
+  background: linear-gradient(90deg, var(--brand) 0%, var(--brand-dark) 100%);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(181,55,31,0.32);
+}
+.nav-item.featured:hover { background: linear-gradient(90deg, var(--brand-dark) 0%, var(--brand) 100%); }
+.nav-item svg { flex-shrink: 0; opacity: 0.8; }
+.nav-item.featured svg, .nav-item.active svg { opacity: 1; }
+
+.nav-cycle {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.85);
+}
+.nav-cycle.current { color: #fff; font-weight: 600; }
+.cycle-pill {
+  font-size: 10.5px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-family: var(--sans-en);
+  letter-spacing: 0.04em;
+}
+.cycle-pill.done { background: rgba(255,255,255,0.95); color: var(--bg-deep); }
+.cycle-pill.tracking { background: rgba(102,155,188,0.4); color: #fff; }
+.cycle-pill.prep { background: var(--brand); color: #fff; }
+
+.month-stats {
+  margin-top: var(--space-4);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 6px;
+  padding: var(--space-3);
+}
+.month-stats .lbl {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  font-family: var(--sans-en);
+}
+.month-stats .num {
+  font-family: var(--sans-en);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--brand);
+  margin-top: 4px;
+  line-height: 1;
+}
+.month-stats .num small {
+  font-size: 13px;
+  color: rgba(255,255,255,0.85);
+  font-weight: 400;
+  margin-left: 6px;
+}
+.month-stats .src {
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.65);
+  margin-top: 6px;
+}
+
+@media (max-width: 1100px) {
+  .app-shell { grid-template-columns: 1fr; }
+  .side-nav {
+    position: static;
+    max-height: none;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .side-nav h5:first-child { margin-top: 0; }
+}
+
+/* ─── Newsroom ledger ribbon ────────── */
+.ledger-ribbon {
+  background: var(--bg-deep);
+  color: rgba(255,255,255,0.92);
+  font-family: var(--sans-en);
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 8px var(--space-4);
+  overflow: hidden;
+}
+.ledger-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex; gap: var(--space-5); align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ledger-item { display: flex; gap: var(--space-2); align-items: baseline; }
+.ledger-item .lk { color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.08em; font-size: 10.5px; }
+.ledger-item .lv { color: #fff; font-weight: 600; font-size: 13.5px; }
+.ledger-item .lv.warn { color: var(--brand); }
+.ledger-pulse {
+  display: inline-block; width: 6px; height: 6px;
+  background: var(--brand); border-radius: 50%;
+  margin-right: 6px; vertical-align: middle;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* ─── Query chain demo ────────────────── */
+.chain-demo {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--bg-deep);
+  border-radius: 6px;
+  padding: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+.chain-demo-header {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap; gap: var(--space-2);
+}
+.chain-demo h3 {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--bg-deep);
+  font-weight: 700;
+}
+.chain-demo .demo-tag {
+  font-family: var(--sans-en);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand);
+  background: var(--warning-soft);
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+.chain-flow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) auto;
+  gap: 4px;
+  align-items: stretch;
+  margin-top: var(--space-3);
+}
+.chain-step {
+  position: relative;
+  background: var(--bg-alt);
+  padding: 12px 14px 12px 18px;
+  text-decoration: none;
+  color: var(--text);
+  border-radius: 4px;
+  display: flex; flex-direction: column; gap: 4px;
+  transition: all .15s;
+  font-size: 12px;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%, 10px 50%);
+}
+.chain-step:first-child { clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%); }
+.chain-step:hover { background: var(--bg-deep); color: #fff; }
+.chain-step .cs-num {
+  font-family: var(--sans-en);
+  font-size: 10px; font-weight: 700;
+  color: var(--brand); letter-spacing: 0.1em;
+}
+.chain-step:hover .cs-num { color: #fff; }
+.chain-step .cs-title { font-weight: 600; font-size: 12.5px; line-height: 1.3; }
+.chain-step .cs-meta { font-size: 11px; color: var(--text-muted); font-family: var(--sans-en); }
+.chain-step:hover .cs-meta { color: rgba(255,255,255,0.7); }
+.chain-result {
+  background: var(--brand);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 4px;
+  display: flex; flex-direction: column; gap: 4px;
+  font-size: 12px;
+  text-decoration: none;
+  align-self: stretch;
+  justify-content: center;
+}
+.chain-result:hover { background: var(--brand-dark); color: #fff; }
+.chain-result .cr-label { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.8; }
+.chain-result .cr-title { font-family: var(--serif); font-weight: 700; font-size: 14px; }
+
+@media (max-width: 768px) {
+  .chain-flow { grid-template-columns: 1fr; }
+  .chain-step { clip-path: none !important; }
+}
+
+/* ─── Topic featured ─────────────────── */
+.topic-card.featured {
+  grid-column: span 2;
+  background: linear-gradient(135deg, var(--bg-deep) 0%, var(--bg-deeper) 100%);
+  color: #fff;
+  border-color: var(--bg-deep);
+}
+.topic-card.featured h3 { color: #fff; font-size: 22px; }
+.topic-card.featured p { color: rgba(255,255,255,0.78); font-size: 14.5px; }
+.topic-card.featured .stats { color: var(--brand); font-weight: 600; }
+.topic-card.featured .t-icon { background: rgba(255,255,255,0.1); color: var(--brand); }
+.topic-card.featured:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(26,77,58,0.25); }
+@media (max-width: 768px) {
+  .topic-card.featured { grid-column: span 1; }
+  .topic-card.featured h3 { font-size: 18px; }
+}
+
+/* ─── Documents library(可按提出單位篩選)─── */
+.docs-section {
+  padding: var(--space-7) var(--space-4);
+  background: var(--bg);
+  border-top: 1px solid var(--hairline);
+}
+.docs-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.docs-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: var(--space-5);
+  margin-top: var(--space-4);
+}
+.docs-sidebar {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: var(--space-4);
+  align-self: start;
+  position: sticky;
+  top: 84px;
+  font-size: 13px;
+}
+.docs-sidebar h4 {
+  font-family: var(--sans-en);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: var(--space-3) 0 var(--space-2);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--hairline);
+}
+.docs-sidebar h4:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+.docs-sidebar-header {
+  display: flex; justify-content: space-between; align-items: center;
+  font-weight: 600; color: var(--bg-deep);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--hairline);
+}
+.docs-sidebar-header .clear {
+  font-size: 11px; color: var(--text-muted);
+  background: transparent; border: 0; cursor: pointer;
+  text-decoration: underline;
+}
+.filter-row {
+  display: flex; align-items: center; gap: 8px;
+  padding: 4px 0;
+  cursor: pointer;
+  font-size: 13px;
+}
+.filter-row input[type=checkbox] { accent-color: var(--brand); }
+.filter-row .count { margin-left: auto; color: var(--text-muted); font-size: 11px; font-family: var(--sans-en); }
+.filter-row .swatch { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.filter-tag-row { display: flex; flex-wrap: wrap; gap: 4px; }
+.filter-tag {
+  padding: 3px 8px;
+  font-size: 11.5px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .15s;
+}
+.filter-tag:hover { background: var(--bg-deep); color: #fff; border-color: var(--bg-deep); }
+.filter-tag.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+.filter-select, .filter-input {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-size: 12.5px;
+  font-family: var(--sans);
+  background: #fff;
+  color: var(--text);
+}
+
+.docs-toolbar {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  font-size: 13px;
+}
+.docs-toolbar .count-info b { color: var(--bg-deep); font-family: var(--sans-en); }
+.view-tabs { display: flex; background: var(--bg-alt); border-radius: 4px; padding: 2px; }
+.view-tab {
+  background: transparent; border: 0;
+  font-size: 12px; padding: 5px 10px;
+  border-radius: 3px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.view-tab.active { background: #fff; color: var(--text); box-shadow: 0 1px 2px rgba(0,0,0,0.08); }
+
+.doc-list { display: flex; flex-direction: column; gap: var(--space-3); }
+.doc-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: var(--space-4);
+  display: flex; gap: var(--space-3);
+  text-decoration: none;
+  color: var(--text);
+  transition: all .15s;
+}
+.doc-card:hover {
+  border-color: var(--brand);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.doc-card.featured-doc { box-shadow: 0 0 0 2px rgba(232,115,74,0.25); }
+.doc-stripe {
+  width: 4px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: var(--bg-deep);
+}
+.doc-body { flex: 1; min-width: 0; }
+.doc-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 6px; }
+.pill {
+  font-family: var(--sans-en);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 2px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+/* 文件類型 pill — 國際機構克制配色 */
+.pill-cycle { background: #1F3D6B; color: #fff; }       /* 國家報告:深藍 */
+.pill-co { background: #2D7059; color: #fff; }          /* 結論性意見:深森林綠 */
+.pill-nap { background: #C68822; color: #fff; }         /* NAP:深芥黃 */
+.pill-shadow { background: #4B2480; color: #fff; }      /* 影子報告:深紫 */
+.pill-aabe { background: var(--aabe-gold); color: #fff; }   /* AABE:深沉金 */
+.pill-meta { background: var(--bg-alt); color: var(--text-muted); }
+.pill-warn { background: var(--warning-soft); color: #6B3416; }
+
+.doc-card h3 {
+  font-family: var(--serif);
+  font-size: 16.5px;
+  font-weight: 700;
+  color: var(--bg-deep);
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+.doc-issuer {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.doc-issuer .ngo-tag {
+  color: var(--brand);
+  font-weight: 600;
+}
+.doc-excerpt {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.55;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.doc-stats {
+  display: flex; gap: var(--space-3);
+  flex-wrap: wrap;
+  font-size: 11.5px;
+  color: var(--text-muted);
+  font-family: var(--sans-en);
+}
+.doc-stats .adoption-good { color: var(--success); font-weight: 600; }
+.doc-stats .adoption-mid { color: #F59E0B; font-weight: 600; }
+.doc-stats .adoption-bad { color: var(--warning); font-weight: 600; }
+
+@media (max-width: 900px) {
+  .docs-grid { grid-template-columns: 1fr; }
+  .docs-sidebar { position: static; }
+}
+
+/* ─── Recent timeline ────────────────── */
+.recent {
+  padding: var(--space-7) var(--space-4);
+  background: var(--bg-alt);
+  border-top: 1px solid var(--hairline);
+}
+.recent-inner {
+  max-width: var(--content-w);
+  margin: 0 auto;
+}
+.timeline-list {
+  list-style: none;
+  display: flex; flex-direction: column;
+  border-left: 2px solid var(--border);
+  padding-left: var(--space-4);
+}
+.timeline-list li {
+  position: relative;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.timeline-list li::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--space-4) - 7px);
+  top: 22px;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--brand);
+  border: 3px solid var(--bg-alt);
+}
+.timeline-list .tier-3::before { background: var(--warning); width: 16px; height: 16px; left: calc(-1 * var(--space-4) - 9px); }
+.timeline-list .tier-2::before { background: var(--brand); }
+.timeline-list .tier-1::before { background: var(--text-meta); width: 8px; height: 8px; left: calc(-1 * var(--space-4) - 5px); top: 24px; }
+.timeline-list .date {
+  font-family: var(--sans-en);
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.timeline-list .title {
+  font-size: 15px;
+  margin-top: 2px;
+  color: var(--text);
+}
+.timeline-list a {
+  text-decoration: none; color: var(--text);
+}
+.timeline-list a:hover .title { color: var(--brand); }
+
+/* ─── Contact section ──────────────────── */
+.contact-section {
+  padding: var(--space-7) var(--space-4);
+  background: var(--bg);
+  border-top: 1px solid var(--hairline);
+}
+.contact-inner { max-width: var(--max-w); margin: 0 auto; }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+.contact-block {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: var(--space-4);
+}
+.contact-block h3 {
+  font-family: var(--serif);
+  font-size: 16px;
+  color: var(--bg-deep);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.contact-block p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: var(--space-3);
+}
+.contact-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13.5px;
+  color: var(--bg-deep);
+  font-weight: 600;
+  text-decoration: none;
+}
+.contact-link:hover { color: var(--brand); }
+.contact-aabe {
+  background: linear-gradient(135deg, var(--bg-deep) 0%, var(--bg-deeper) 100%);
+  border-color: var(--bg-deep);
+  color: #fff;
+  grid-column: span 2;
+}
+.contact-aabe h3 { color: #fff; }
+.contact-aabe p { color: rgba(255,255,255,0.78); }
+.contact-aabe .contact-link { color: var(--brand); }
+.contact-aabe .contact-link:hover { color: #fff; }
+@media (max-width: 600px) {
+  .contact-aabe { grid-column: span 1; }
+}
+
+/* ─── Footer ────────────────────── */
+footer.site-footer {
+  background: var(--bg-deep);
+  color: rgba(255,255,255,0.85);
+  padding: var(--space-7) var(--space-4) var(--space-5);
+  font-size: 13.5px;
+}
+.footer-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--space-5);
+}
+footer h4 {
+  font-family: var(--serif);
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: var(--space-3);
+  font-weight: 600;
+}
+footer a { color: rgba(255,255,255,0.75); text-decoration: none; display: block; padding: 3px 0; font-size: 13px; }
+footer a:hover { color: #fff; text-decoration: underline; }
+footer .credit {
+  margin-top: var(--space-5); padding-top: var(--space-4);
+  border-top: 1px solid rgba(255,255,255,0.15);
+  font-size: 12px; color: rgba(255,255,255,0.55);
+  font-family: var(--sans-en);
+  max-width: var(--max-w); margin-left: auto; margin-right: auto;
+}
+
+/* ─── Responsive ──────────────────── */
+@media (max-width: 768px) {
+  .masthead-inner {
+    grid-template-columns: 1fr auto;
+    gap: var(--space-3);
+  }
+  .search-bar { display: none; }
+  .role-selector-inner { flex-direction: column; align-items: flex-start; }
+  .hero { padding: var(--space-5) var(--space-3) var(--space-4); }
+  .hero h2 { font-size: 26px; }
+  .hero-stats { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">跳到主要內容</a>
+
+<!-- ━━━━━━━━━━━━━ Masthead ━━━━━━━━━━━━━ -->
+<header class="masthead" role="banner">
+  <div class="masthead-inner">
+    <a href="/" class="logo">
+      <span class="icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </span>
+      <div>
+        <h1>身心障礙者權利監督平台</h1>
+        <p>Disability Rights Watch Taiwan</p>
+      </div>
+      <span class="produced-by" aria-label="由國教行動聯盟製作">
+        <span class="aabe-mark">AABE</span>
+        <span class="produced-text">國教行動聯盟<br><small>National Alliance of Action for Basic Education</small></span>
+      </span>
+    </a>
+
+    <div class="search-bar">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" placeholder="搜尋議題、CRPD 條文、修法、倡議者..." aria-label="搜尋"
+             onkeydown="if(event.key==='Enter') location.href='search.html?q='+encodeURIComponent(this.value);">
+    </div>
+
+    <div class="lang-switch" aria-label="語言切換">
+      <a href="#" class="active">ZH</a>
+      <a href="reports/Alternative_Report_v0.4_professional_en.html">EN</a>
+    </div>
+  </div>
+</header>
+
+<!-- ━━━━━━━━━━━━━ Newsroom ledger ribbon ━━━━━━━━━━━━━ -->
+<div class="ledger-ribbon" role="status" aria-label="平台即時數據">
+  <div class="ledger-inner">
+    <div class="ledger-item">
+      <span class="ledger-pulse" aria-hidden="true"></span>
+      <span class="lk">距第三次審查</span>
+      <span class="lv warn">~14 個月</span>
+    </div>
+    <div class="ledger-item">
+      <span class="lk">CRPD 兩屆審查</span>
+      <span class="lv">2017 / 2022 完</span>
+    </div>
+    <div class="ledger-item">
+      <span class="lk">PI 議題</span>
+      <span class="lv">16</span>
+    </div>
+    <div class="ledger-item">
+      <span class="lk">CO 段落</span>
+      <span class="lv">206</span>
+    </div>
+    <div class="ledger-item">
+      <span class="lk">修法</span>
+      <span class="lv">16</span>
+    </div>
+    <div class="ledger-item">
+      <span class="lk">倡議立場</span>
+      <span class="lv">63</span>
+    </div>
+    <div class="ledger-item">
+      <span class="lk">最後更新</span>
+      <span class="lv">2026-05-03</span>
+    </div>
+  </div>
+</div>
+
+<!-- ━━━━━━━━━━━━━ 我是誰 ━━━━━━━━━━━━━ -->
+<section class="role-selector" aria-label="使用者類型">
+  <div class="role-selector-inner">
+    <span class="role-label">身分:</span>
+    <div class="role-buttons">
+      <button class="role-btn" data-role="aabe" id="btn-insider">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:5px;vertical-align:-2px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        AABE 自家人
+        <span style="font-size:10.5px;opacity:0.7;margin-left:4px;font-family:var(--sans-en)">需登入</span>
+      </button>
+      <button class="role-btn active" data-role="public" id="btn-public">一般訪客</button>
+    </div>
+    <span id="insider-status" style="display:none;font-size:12px;color:var(--success);margin-left:auto;display:none;">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px"><polyline points="20 6 9 17 4 12"/></svg>
+      已登入 AABE 內部 · <a href="#" id="logout-link" style="color:var(--text-muted);font-size:11.5px">登出</a>
+    </span>
+    <button class="role-dismiss" onclick="document.querySelector('.role-selector').style.display='none'; localStorage.setItem('role-dismissed', '1');">不再顯示</button>
+  </div>
+</section>
+
+<!-- 自家人登入 modal -->
+<div id="login-modal" class="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-title" style="display:none">
+  <div class="login-backdrop" onclick="document.getElementById('login-modal').style.display='none'"></div>
+  <div class="login-box">
+    <div class="login-head">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      <div>
+        <h3 id="login-title">AABE 自家人登入</h3>
+        <p>內部工作區 · 需帳號密碼</p>
+      </div>
+    </div>
+    <form id="login-form" onsubmit="return tryLogin(event)">
+      <label>帳號
+        <input type="text" id="login-user" autocomplete="username" required placeholder="例如:aabe">
+      </label>
+      <label>密碼
+        <input type="password" id="login-pass" autocomplete="current-password" required>
+      </label>
+      <p id="login-err" style="color:var(--warning);font-size:12.5px;display:none;margin-top:4px">帳號或密碼錯誤</p>
+      <div class="login-actions">
+        <button type="button" class="btn-ghost" onclick="document.getElementById('login-modal').style.display='none'">取消</button>
+        <button type="submit" class="btn-primary">登入</button>
+      </div>
+    </form>
+    <p class="login-note">
+      <strong>說明</strong>:本平台公開內容(議題地圖 / 政策軌跡 / 影子報告 / 法規索引等)無須登入即可瀏覽。<br>
+      <strong>內部工作區</strong>(倡議追蹤矩陣 / 影子報告產生器 / 內部工作底稿)限 AABE 內部成員。<br>
+      <span style="color:var(--text-muted);font-size:11px">此為前端軟性閘門,真機密資料請勿放此平台。</span>
+    </p>
+  </div>
+</div>
+
+<div class="app-shell">
+
+<!-- ━━━━━━━━━━━━━ Side navigation ━━━━━━━━━━━━━ -->
+<aside class="side-nav" aria-label="主要導航">
+
+  <h5>
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align:-1px;margin-right:3px"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+    公開內容 · 任何人皆可瀏覽
+  </h5>
+  <a href="#main" class="nav-item active">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    首頁總覽
+  </a>
+  <a href="#documents" class="nav-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+    文件資料庫
+  </a>
+  <a href="#issues" class="nav-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+    16 PI 議題追蹤
+  </a>
+  <a href="actors/" class="nav-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+    倡議者責任(9)
+  </a>
+  <a href="trace/" class="nav-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/><path d="M5 5l-2-2M19 5l2-2M5 19l-2 2M19 19l2 2"/></svg>
+    反向追溯(18)
+  </a>
+  <a href="#laws" class="nav-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21V9l-7 12h7zm6 0V9l7 12h-7zm-3-3V3"/></svg>
+    法規索引(8 / 16)
+  </a>
+  <a href="reports/" class="nav-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+    影子報告(籌備中)
+  </a>
+  <a href="#contact" class="nav-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    聯絡我們
+  </a>
+
+  <h5 class="insider-header">
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align:-1px;margin-right:3px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+    內部工作區 · 限 AABE 自家人
+  </h5>
+  <a href="matrix.html" class="nav-item featured insider-only" data-locked="1" onclick="return checkInsider(event)">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+    倡議追蹤矩陣
+    <svg class="lock-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="margin-left:auto"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+  </a>
+  <a href="generator.html" class="nav-item insider-only" data-locked="1" onclick="return checkInsider(event)">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 9 8.5 12 2"/></svg>
+    影子報告產生器
+    <svg class="lock-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="margin-left:auto"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+  </a>
+  <a href="drafts/" class="nav-item insider-only" data-locked="1" onclick="return checkInsider(event)">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+    倡議工作底稿
+    <svg class="lock-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="margin-left:auto"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+  </a>
+  <a href="self-audit.html?internal=1" class="nav-item insider-only" data-locked="1" onclick="return checkInsider(event)">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    自我問責(內部底稿)
+    <svg class="lock-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="margin-left:auto"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+  </a>
+
+  <h5>CRPD 審查屆別</h5>
+  <div class="nav-cycle"><span>第一次 (2017)</span><span class="cycle-pill done">已完成</span></div>
+  <div class="nav-cycle"><span>第二次 (2022)</span><span class="cycle-pill done">已完成</span></div>
+  <div class="nav-cycle current"><span>第三次 (2027 預定)</span><span class="cycle-pill prep">籌備中</span></div>
+
+  <div class="month-stats">
+    <div class="lbl">因果鏈完整度</div>
+    <div class="num">10<small>/16 PI 達 100/100</small></div>
+    <div class="src">含軸四 5 旗艦全綠</div>
+  </div>
+</aside>
+
+<main id="main">
+
+<!-- ━━━━━━━━━━━━━ 公開 / 內部區別說明 ━━━━━━━━━━━━━ -->
+<div style="max-width: var(--content-w); margin: var(--space-4) auto 0; padding: 0 var(--space-4);">
+  <div class="insider-banner">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+    <div>
+      <span class="b-tag">公開內容</span>議題地圖 / 政策軌跡 / 法規 / NAP / 影子報告(已發佈)/ 文件資料庫 — 任何人皆可瀏覽。<br>
+      <span class="b-tag" style="background:#669BBC">AABE 內部</span>倡議追蹤矩陣 / 影子報告產生器 / 倡議工作底稿 / 內部自審 — <strong>需登入</strong>(右上方「自家人」)。
+    </div>
+  </div>
+</div>
+
+<!-- ━━━━━━━━━━━━━ HERO 報導 ━━━━━━━━━━━━━ -->
+<article class="hero">
+  <div class="hero-inner">
+    <p class="kicker">本週焦點 · 2026 年 5 月 3 日 · §16 + §24 + §25</p>
+
+    <h2>學校把神經多樣性兒少戒護到醫院 — 校園缺支持、醫療化過度、家長雙面失守</h2>
+
+    <p class="lead">
+      2022 CRPD CO 第 95 段 (g) 直接點名:臺灣學校「經常對身心障礙兒童採取訓斥、要求父母在課堂上陪同、強制離班，甚至
+      <strong>聯繫警察或消防將學生戒護到醫院</strong>」。同時兒少 ADHD 處方率 10 年大幅上升、自閉症診斷率倍增 —
+      神經多樣性兒少在學校缺乏理解性支持時被
+      <strong>標籤化 → 強制隔離 → 醫療化</strong>三步惡性循環。國際學界三派論戰持續(醫療化批評派 / 不足診斷補救派 / 神經多樣性派)。
+      AABE 立場:支持早期識別 + 適當校園支持 + 神經多樣性權利尊重，反對診斷工具化以削弱家長教養權。
+    </p>
+
+    <div class="hero-stats" role="group" aria-label="關鍵數字">
+      <div class="hero-stat">
+        <span class="num">§95(g)</span>
+        <span class="lab">CO 直接點名「戒護到醫院」之強制措施</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num">3 派</span>
+        <span class="lab">醫療化批評 / 不足診斷補救 / 神經多樣性</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num">2 件</span>
+        <span class="lab">記錄為非預期後果(融合配套滯後 / 醫療化)</span>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="issues/PI-14-dossier.html" class="btn-primary">
+        深入閱讀:校園霸凌與融合下支持不足
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="issues/PI-16-dossier.html" class="btn-ghost">→ 醫療化爭議 PI-16</a>
+      <a href="#workbench" class="btn-ghost">↓ 跳過敘事,進工作台</a>
+    </div>
+  </div>
+</article>
+
+<!-- ━━━━━━━━━━━━━ Workbench ━━━━━━━━━━━━━ -->
+<section class="workbench" id="workbench">
+  <div class="workbench-inner">
+
+    <div class="section-header">
+      <h2>快速問答</h2>
+      <span class="meta">常用查詢路徑 · 4 個入口</span>
+    </div>
+
+    <div class="quick-grid">
+      <a href="issues/PI-14-dossier.html" class="quick-card">
+        <span class="q-tag">Question</span>
+        <h3>校園強制措施改了什麼?</h3>
+        <p>CO §95(g) 點名後 — 教育部 2024 培訓 vs 校安通報資料未公開</p>
+        <span class="arrow">查看時間軸 →</span>
+      </a>
+
+      <a href="trace/" class="quick-card">
+        <span class="q-tag">Trace</span>
+        <h3>從非預期後果反向追溯</h3>
+        <p>5 個非預期後果 → 倡議者責任鏈 — 不公審原則呈現</p>
+        <span class="arrow">追溯責任 →</span>
+      </a>
+
+      <a href="actors/" class="quick-card">
+        <span class="q-tag">Database</span>
+        <h3>9 倡議者責任頁</h3>
+        <p>每個 NGO 累計立場 / 採納率 / 相關非預期 — 含 NHRC 30 段平行回復</p>
+        <span class="arrow">瀏覽倡議者 →</span>
+      </a>
+
+      <a href="#issues" class="quick-card">
+        <span class="q-tag">Search</span>
+        <h3>16 PI 議題追蹤</h3>
+        <p>10/16 PI 達因果鏈 100/100 · 含時間軸 + 立場光譜 + 修法歷程</p>
+        <span class="arrow">瀏覽議題 →</span>
+      </a>
+    </div>
+
+    <!-- 查詢鏈 demo:本平台核心差異點 -->
+    <div class="chain-demo">
+      <div class="chain-demo-header">
+        <h3>本平台能回答的核心問題:倡議 → 國際 → 政府 → 實施 → 結果(可反向追溯)</h3>
+        <span class="demo-tag">CAUSAL CHAIN</span>
+      </div>
+      <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.6; margin-bottom: var(--space-3);">
+        以 PI-12 §24 教育權爭議為例 — 點任一節點即可深入,終點可反向追溯責任。本平台獨有架構,完整度 100/100。
+      </p>
+      <div class="chain-flow">
+        <a href="actors/人權公約施行監督聯盟_22_團體.html" class="chain-step">
+          <span class="cs-num">01 · 倡議</span>
+          <span class="cs-title">22 NGO 主張全面融合</span>
+          <span class="cs-meta">2022-06 / 立場座標 -85</span>
+        </a>
+        <a href="issues/PI-12-dossier.html#co" class="chain-step">
+          <span class="cs-num">02 · CO 採納</span>
+          <span class="cs-title">CO §96(b) 全面採納</span>
+          <span class="cs-meta">2022-08-06</span>
+        </a>
+        <a href="issues/PI-12-dossier.html#commitment" class="chain-step">
+          <span class="cs-num">03 · 政府承諾</span>
+          <span class="cs-title">教育部 LOI 回應</span>
+          <span class="cs-meta">2022-12 / 部分採納</span>
+        </a>
+        <a href="issues/PI-12-dossier.html#implementation" class="chain-step">
+          <span class="cs-num">04 · 實施</span>
+          <span class="cs-title">特教法 2023 修法(折衷)</span>
+          <span class="cs-meta">2023-06-21</span>
+        </a>
+        <a href="issues/PI-12-dossier.html#outcome" class="chain-step">
+          <span class="cs-num">05 · 結果</span>
+          <span class="cs-title">家長申訴增加 (非預期)</span>
+          <span class="cs-meta">2024-12 / 不公審</span>
+        </a>
+        <a href="trace/" class="chain-result">
+          <span class="cr-label">↺ Reverse</span>
+          <span class="cr-title">反向追溯責任鏈</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="section-header">
+      <h2>篩選資料庫</h2>
+      <span class="meta">206 CO 段落 + 63 倡議 + 27 LOI · 5 種類型</span>
+    </div>
+
+    <form class="filter-bar" onsubmit="event.preventDefault();">
+      <label>議題
+        <select>
+          <option value="">全部 (16 PI)</option>
+          <option>軸一 · CO 兌現追蹤(PI-01~04)</option>
+          <option>軸二 · 行動方案 / NHRC / 預算(PI-05~07)</option>
+          <option>軸三 · 12 年指標時序(PI-08~11)</option>
+          <option>軸四 · 框架爭議旗艦(PI-12~16)</option>
+          <option>PI-12 §24 教育權單向解讀</option>
+          <option>PI-14 校園霸凌(本週焦點)</option>
+          <option>PI-16 醫療化爭議</option>
+        </select>
+      </label>
+      <label>屆別
+        <select>
+          <option>全部</option>
+          <option>第一次 (2017)</option>
+          <option>第二次 (2022)</option>
+          <option>第三次 (2027 籌備)</option>
+        </select>
+      </label>
+      <label>行動者
+        <select>
+          <option>全部 (9 倡議者)</option>
+          <option>CRPD 國際審查委員會</option>
+          <option>人約盟(22 團體)</option>
+          <option>智障者家長總會</option>
+          <option>多障家長協會</option>
+          <option>國家人權委員會 NHRC</option>
+          <option>衛福部 / 教育部 / 勞動部 / 司法院</option>
+          <option>AABE 國教行動聯盟</option>
+        </select>
+      </label>
+      <label>類型
+        <select>
+          <option>全部</option>
+          <option>結論性意見 CO (206)</option>
+          <option>倡議立場 (63)</option>
+          <option>LOI 議題清單 (27)</option>
+          <option>政府承諾 (10)</option>
+          <option>實施動作 (10)</option>
+          <option>結果評估 (18)</option>
+          <option>修法 (16)</option>
+        </select>
+      </label>
+      <button type="submit" class="btn-primary" style="padding: 8px 18px; font-size: 13.5px;">
+        套用篩選
+      </button>
+    </form>
+
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━ Documents library(按提出單位篩選)━━━━━━━━━━━━━ -->
+<section class="docs-section" id="documents" aria-label="文件資料庫">
+  <div class="docs-inner">
+
+    <div class="section-header">
+      <h2>文件資料庫</h2>
+      <span class="meta">兩屆國家報告 / 結論性意見 / 民間影子報告 / 政府後續回應 · 共 <b>12</b> 份(240 萬字 OCR 入庫)</span>
+    </div>
+
+    <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: var(--space-4); max-width: 760px;">
+      可按 <strong style="color: var(--brand)">提出單位</strong>(殘聯 / 智總 / 自閉症總會 / 人約盟 22 團體 / NHRC 等)、屆別、條文、議題交叉篩選 — 看出每個民間團體的倡議與政府採納關係。<br>
+      <strong>本平台獨有</strong>:每份文件已 OCR 入 SQLite,建立倡議 → CO → 承諾 → 實施 → 結果之因果鏈索引。
+    </p>
+
+    <div class="docs-grid">
+
+      <!-- 篩選 sidebar -->
+      <aside class="docs-sidebar" aria-label="篩選條件">
+        <div class="docs-sidebar-header">
+          <span>篩選條件</span>
+          <button class="clear" type="button" onclick="this.closest('.docs-sidebar').querySelectorAll('input').forEach(i=>{if(i.type==='checkbox')i.checked=false;else i.value=''})">清除</button>
+        </div>
+
+        <h4>屆別</h4>
+        <label class="filter-row"><input type="checkbox" checked> 第一次 (2017)</label>
+        <label class="filter-row"><input type="checkbox" checked> 第二次 (2022)</label>
+        <label class="filter-row"><input type="checkbox"> 第三次 (2027 籌備中)</label>
+
+        <h4>文件類型</h4>
+        <label class="filter-row"><input type="checkbox" checked><span class="swatch" style="background:#1F3D6B"></span>國家報告 (NR)<span class="count">2</span></label>
+        <label class="filter-row"><input type="checkbox" checked><span class="swatch" style="background:#2D7059"></span>結論性意見 (CO)<span class="count">2</span></label>
+        <label class="filter-row"><input type="checkbox" checked><span class="swatch" style="background:#4B2480"></span>民間影子報告 / 平行回復<span class="count">3</span></label>
+        <label class="filter-row"><input type="checkbox"><span class="swatch" style="background:#EF4444"></span>議題清單 (LOI)<span class="count">2</span></label>
+        <label class="filter-row"><input type="checkbox"><span class="swatch" style="background:#475569"></span>政府後續回應<span class="count">3</span></label>
+
+        <h4>軸別分類</h4>
+        <div class="filter-tag-row">
+          <span class="filter-tag">軸一 CO 兌現</span>
+          <span class="filter-tag">軸二 NAP/NHRC/預算</span>
+          <span class="filter-tag">軸三 12 年指標</span>
+          <span class="filter-tag active">軸四 框架爭議</span>
+        </div>
+
+        <h4>提出單位</h4>
+        <select class="filter-select">
+          <option value="">所有單位</option>
+          <option value="aabe">國教盟 (AABE) ⭐</option>
+          <option value="cw" selected>人約盟(22 團體共同)</option>
+          <option value="da">中華民國身心障礙聯盟(殘聯)</option>
+          <option value="pact">智障者家長總會</option>
+          <option value="multi">多障家長協會</option>
+          <option value="autism">自閉症總會</option>
+          <option value="nhrc">國家人權委員會 NHRC</option>
+          <option value="gov">政府機關</option>
+        </select>
+        <p style="font-size: 11px; color: var(--text-muted); margin-top: 6px; line-height: 1.4;">
+          可看出該團體立場在歷屆 CO 的採納情形(立場光譜 -100 ~ +100)
+        </p>
+
+        <h4>CRPD 條文</h4>
+        <input type="text" class="filter-input" placeholder="例如:第 24 條(教育)">
+
+        <h4>採納狀態</h4>
+        <label class="filter-row"><input type="checkbox"><span class="swatch" style="background:var(--success)"></span>已採納</label>
+        <label class="filter-row"><input type="checkbox"><span class="swatch" style="background:#C68822"></span>部分採納</label>
+        <label class="filter-row"><input type="checkbox" checked><span class="swatch" style="background:var(--warning)"></span>未採納 / 駁回</label>
+      </aside>
+
+      <!-- 文件清單 -->
+      <div>
+        <div class="docs-toolbar">
+          <span class="count-info">顯示 <b>12</b> 筆 / 共 12 筆 · 全部已 OCR(240 萬字)</span>
+          <div style="display: flex; gap: var(--space-2); align-items: center;">
+            <div class="view-tabs" role="tablist">
+              <button class="view-tab active" role="tab">列表</button>
+              <button class="view-tab" role="tab">時間軸</button>
+              <button class="view-tab" role="tab">關係圖</button>
+            </div>
+            <select class="filter-select" style="width: auto; min-width: 130px; font-size: 12.5px;">
+              <option>排序:屆別</option>
+              <option>發表日期 ↓</option>
+              <option>採納率</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="doc-list">
+
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/CRPD_2th_CORs_TC.pdf" target="_blank" rel="noopener" class="doc-card featured-doc">
+            <span class="doc-stripe" style="background:var(--cycle-crpd)"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-co">第二次 CO</span>
+                <span class="pill pill-meta">2022-08-06</span>
+                <span class="pill pill-meta">中文定稿</span>
+              </div>
+              <h3>2022 CRPD 第二次審查結論性意見(108 段)</h3>
+              <div class="doc-issuer">五位國際審查委員(Diane Kingston OBE 召集)</div>
+              <p class="doc-excerpt">2022 第二次 CRPD 審查 108 段結論性意見。本平台 OCR 已段落化:§95(g) 點名「學校把學生戒護到醫院」、§96(b) 採納 22 NGO 全面融合、§63(a) GC1 全廢除替代決策、§102(b) 庇護工場 phase-out。</p>
+              <div class="doc-stats">
+                <span>108 段建議</span>
+                <span>OCR 29,442 字</span>
+                <span class="adoption-bad">兌現率約 30-40%</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/220630_CRPD-議題清單回覆_人約盟總協調_22團體共同提交_中文.pdf" target="_blank" rel="noopener" class="doc-card">
+            <span class="doc-stripe" style="background:#4B2480"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-shadow">22 NGO 共同提交</span>
+                <span class="pill pill-meta">2022-06-30</span>
+              </div>
+              <h3>2022 CRPD 議題清單回覆(人約盟總協調 22 團體)</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">人權公約施行監督聯盟</span> · 22 個身障與人權團體共同連署</div>
+              <p class="doc-excerpt">22 團體聯合主張:全面融合教育(GC4)、phase-out 庇護工場、全面廢除監護宣告(GC1)、社區式支持服務取代機構照顧。CO §96(b) §102(b) §63(a) 全採納。</p>
+              <div class="doc-stats">
+                <span>OCR 47,525 字</span>
+                <span class="adoption-good">立場座標 -85(強落實)</span>
+                <span class="adoption-good">採納率高</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/CRPD_2th_LOIs_PR_NHRC_TC.pdf" target="_blank" rel="noopener" class="doc-card">
+            <span class="doc-stripe" style="background:#4B2480"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-shadow">NHRC 平行回復</span>
+                <span class="pill pill-meta">2022-06</span>
+              </div>
+              <h3>NHRC 對 CRPD 第二次 LOI 之平行回復</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">國家人權委員會(NHRC)</span></div>
+              <p class="doc-excerpt">NHRC 獨立監督立場:醫療模式仍主導、合理調整未入法、障礙主流化機制不足、性平綱領身障條目薄弱。已段落化 30 條 NHRC 立場入因果鏈。</p>
+              <div class="doc-stats">
+                <span>OCR 32,647 字</span>
+                <span>30 條立場入庫</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約（CRPD）第二次國家報告國際審查會-問題清單及政府機關回應.pdf" target="_blank" rel="noopener" class="doc-card">
+            <span class="doc-stripe" style="background:#475569"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-meta">政府後續</span>
+                <span class="pill pill-meta">2022-12</span>
+              </div>
+              <h3>CRPD 第二次審查問題清單及政府機關回應(中英定稿)</h3>
+              <div class="doc-issuer">提出:行政院各部會 · 衛福部社家署彙編</div>
+              <p class="doc-excerpt">政府對 27 個議題清單問題之正式回應。教育部對 §96(b) 採折衷立場、勞動部對 §102(b) 庇護工場 phase-out 採保留、司法院對 §63(a) 全廢除監護宣告採漸進改革。</p>
+              <div class="doc-stats">
+                <span>OCR 586,489 字</span>
+                <span class="adoption-mid">部分採納為主</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約第二次國家報告條約專要文件.pdf" target="_blank" rel="noopener" class="doc-card">
+            <span class="doc-stripe" style="background:#1F3D6B"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-cycle">第二次 NR</span>
+                <span class="pill pill-meta">2020-12</span>
+              </div>
+              <h3>CRPD 第二次國家報告(條約專要文件)</h3>
+              <div class="doc-issuer">提出:行政院 · 衛福部社家署彙編</div>
+              <p class="doc-excerpt">2020 年 12 月提交之第二次國家報告。涵蓋第一次 CO 兌現情形、無障礙建築、就業、教育、長照、自立生活等。</p>
+              <div class="doc-stats">
+                <span>OCR 100,884 字</span>
+                <span>+ 附件 150,100 字</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約CRPD第二次國家報告問題清單-中譯版.pdf" target="_blank" rel="noopener" class="doc-card">
+            <span class="doc-stripe" style="background:#EF4444"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-meta">LOI 問題清單</span>
+                <span class="pill pill-meta">2022-03</span>
+              </div>
+              <h3>2022 CRPD 第二次審查問題清單(中譯版)</h3>
+              <div class="doc-issuer">提出:CRPD 國際審查委員會</div>
+              <p class="doc-excerpt">國際審查委員提出 27 個議題清單問題,涵蓋 §1~§33 全條款。本平台已自動段落化入 loi_question 表並對應 PI。</p>
+              <div class="doc-stats">
+                <span>27 議題問題</span>
+                <span>OCR 10,172 字</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-CORs_CH.pdf" target="_blank" rel="noopener" class="doc-card">
+            <span class="doc-stripe" style="background:var(--cycle-crpd)"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-co">第一次 CO</span>
+                <span class="pill pill-meta">2017-11-03</span>
+              </div>
+              <h3>2017 CRPD 第一次審查結論性意見</h3>
+              <div class="doc-issuer">五位國際審查委員(Diane Kingston OBE 召集)</div>
+              <p class="doc-excerpt">CRPD 施行法後首次國際審查。已段落化 90 段入庫,涵蓋 §4 一般義務 / §9 無障礙 / §12 法律能力 / §19 自立生活 / §24 教育 / §27 就業 等核心條文。</p>
+              <div class="doc-stats">
+                <span>OCR 13,519 字</span>
+                <span>90 段段落化</span>
+                <span class="adoption-mid">部分兌現</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-State-Report-Parallel-Report_CH.pdf" target="_blank" rel="noopener" class="doc-card">
+            <span class="doc-stripe" style="background:#4B2480"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-shadow">人約盟平行報告</span>
+                <span class="pill pill-meta">2017-08</span>
+              </div>
+              <h3>2017 CRPD 平行報告(人約盟)</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">人權公約施行監督聯盟</span></div>
+              <p class="doc-excerpt">第一次審查民間平行報告。系統盤點 §1~§33 之國內施行落差,主張全面落實 GC4(融合教育)。</p>
+              <div class="doc-stats">
+                <span>OCR 88,224 字</span>
+                <span class="adoption-good">立場座標 -80</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-State-Report_CH.pdf" target="_blank" rel="noopener" class="doc-card">
+            <span class="doc-stripe" style="background:#1F3D6B"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-cycle">第一次 NR</span>
+                <span class="pill pill-meta">2016-12</span>
+              </div>
+              <h3>CRPD 初次國家報告</h3>
+              <div class="doc-issuer">提出:行政院 · 衛福部社家署彙編</div>
+              <p class="doc-excerpt">2016 年 12 月提交之初次國家報告。CRPD 施行法 (2014) 後首份國家報告。</p>
+              <div class="doc-stats">
+                <span>OCR 112,489 字</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-Replies-to-LOIs_Bilingual.pdf" target="_blank" rel="noopener" class="doc-card">
+            <span class="doc-stripe" style="background:#475569"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-meta">2017 LOI 回覆</span>
+                <span class="pill pill-meta">中英對照</span>
+              </div>
+              <h3>2017 CRPD 第一次審查問題清單暨政府回覆</h3>
+              <div class="doc-issuer">提出:CRPD 國際審查委員會 + 行政院各部會</div>
+              <p class="doc-excerpt">第一次審查議題清單與政府回應之中英對照。</p>
+              <div class="doc-stats">
+                <span>OCR 513,768 字</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2020/01/身心障礙者權利公約初次國家報告國際審查結論性意見回應表.pdf" target="_blank" rel="noopener" class="doc-card">
+            <span class="doc-stripe" style="background:#475569"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-meta">2017 後續回應表</span>
+                <span class="pill pill-meta">2020-01</span>
+              </div>
+              <h3>CRPD 初次國家報告國際審查結論性意見回應表</h3>
+              <div class="doc-issuer">提出:行政院各部會</div>
+              <p class="doc-excerpt">2020 年 1 月公布之政府對第一次 CO 之兌現情形回應表。可作為改進事項追蹤之主要來源。</p>
+              <div class="doc-stats">
+                <span>OCR 694,950 字</span>
+                <span class="adoption-mid">兌現率約 30-40%</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約第二次國家報告條約專要文件附件.pdf" target="_blank" rel="noopener" class="doc-card">
+            <span class="doc-stripe" style="background:#1F3D6B"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-cycle">第二次 NR 附件</span>
+                <span class="pill pill-meta">2020-12</span>
+              </div>
+              <h3>CRPD 第二次國家報告(附件)</h3>
+              <div class="doc-issuer">提出:行政院各部會</div>
+              <p class="doc-excerpt">第二次國家報告之附件文件,含各部會詳細政策資料、統計、預算配置。</p>
+              <div class="doc-stats">
+                <span>OCR 150,100 字</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <p style="margin-top: var(--space-5); font-size: 13.5px; color: var(--text-muted); text-align: center; padding: var(--space-3); background: var(--bg-alt); border-radius: 4px;">
+          <strong>仍缺</strong>:殘聯 / 智總 / 自閉症總會 / 視聯盟 / 聾協會等個別 NGO 影子報告(各 NGO 網站分散),21/22 NGO 仍待批次爬取補入。<br>
+          <span style="color: var(--brand);">→ 線索提供:</span> 透過<a href="#contact">聯絡我們</a>提供未公開影子報告 PDF 連結
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━ Topic index ━━━━━━━━━━━━━ -->
+<section class="topic-index" id="issues" aria-label="主題索引">
+  <div class="topic-index-inner">
+    <div class="section-header">
+      <h2>主題索引</h2>
+      <span class="meta">完整資料庫 · 8 大入口</span>
+    </div>
+
+    <div class="topic-grid">
+      <a href="issues/" class="topic-card featured">
+        <span class="t-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+        </span>
+        <h3>16 PI 議題地圖 · 4 軸框架</h3>
+        <p>軸一 CO 兌現追蹤 / 軸二 NAP 與 NHRC / 軸三 12 年指標 / 軸四 框架爭議旗艦(教育權 / 特教學校 / 校園霸凌 / 法律能力 / 醫療化)。每張卡片含因果鏈時間軸、立場光譜雙軸圖、修法歷程。</p>
+        <span class="stats">16 PI · 10/16 達 100/100 · 軸四 5 旗艦全綠</span>
+      </a>
+
+      <a href="issues/PI-12-dossier.html" class="topic-card">
+        <span class="t-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </span>
+        <h3>議題追蹤頁(因果鏈)</h3>
+        <p>每 PI 含 9 區塊:時間軸 SVG / 立場光譜 / 倡議卡片 / 政府承諾 / 結果評估 / 修法歷程 / 法條對應 / 引用來源 PDF。</p>
+        <span class="stats">16 DOSSIERS · 9 SECTIONS EACH</span>
+      </a>
+
+      <a href="actors/" class="topic-card">
+        <span class="t-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </span>
+        <h3>倡議者責任頁</h3>
+        <p>9 倡議者(人約盟 22 團體 / 殘聯 / 智總 / 多障家長 / 自閉症 / NHRC / AABE 等)累計立場、採納率、相關非預期後果。<strong>不公審原則</strong>。</p>
+        <span class="stats">9 ACTORS · ACCOUNTABILITY MATRIX</span>
+      </a>
+
+      <a href="trace/" class="topic-card">
+        <span class="t-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 14l4-4 4 4 5-5"/><circle cx="7" cy="14" r="2"/><circle cx="11" cy="10" r="2"/></svg>
+        </span>
+        <h3>反向追溯查詢</h3>
+        <p>從非預期後果反推責任鏈。給定一個結果(如「家長申訴增加」),自動回溯實施 → 承諾 → CO → 倡議者。</p>
+        <span class="stats">18 OUTCOMES · 5 UNINTENDED FLAGS</span>
+      </a>
+
+      <a href="#documents" class="topic-card">
+        <span class="t-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </span>
+        <h3>法規索引</h3>
+        <p>8 部主要法律(身權法 / CRPD 施行法 / 特教法 2023 修 / 精神衛生法 2022 修 / 民法監護宣告 / 刑法 §87 / 就服法 / 平等法草案)× 16 修法歷程 × 11 法條對應。</p>
+        <span class="stats">8 LAWS · 16 AMENDMENTS · 11 MAPPINGS</span>
+      </a>
+
+      <a href="reports/" class="topic-card">
+        <span class="t-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </span>
+        <h3>影子報告(籌備中)</h3>
+        <p>2027 第三次審查影子報告。5 audience 版本(專業 / 媒體 / 立法院 / 社群 / 身障當事人)籌備中。</p>
+        <span class="stats">v0.1 SKELETON · TARGETING 2027</span>
+      </a>
+
+      <a href="https://covenantswatch.org.tw/2017-initial-review-on-crpd/" target="_blank" rel="noopener" class="topic-card">
+        <span class="t-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+        </span>
+        <h3>未被聽見的聲音</h3>
+        <p>多元保留派(智總 / 多障家長 / 重度智能障礙家屬)立場與其在 CO 中之被駁回情形。多元並進視角。</p>
+        <span class="stats">UNHEARD VOICES · DIFF</span>
+      </a>
+
+      <a href="for-disabled/" class="topic-card" style="border-color: var(--cycle-crpd);">
+        <span class="t-icon" style="background: var(--cycle-crpd); color: #fff;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+        </span>
+        <h3>身障當事人入口(籌備中)</h3>
+        <p>給身障當事人:好讀版、易讀圖示、無障礙資訊、申訴管道、緊急求助。設計需身障當事人顧問小組覆核。</p>
+        <span class="stats">FOR PWD · A11Y FIRST</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━ Recent timeline ━━━━━━━━━━━━━ -->
+<section class="recent" aria-label="最近動態">
+  <div class="recent-inner">
+    <div class="section-header">
+      <h2>最近 30 天動態</h2>
+      <span class="meta">事件級別 ★★★ ★★ ★</span>
+    </div>
+
+    <ul class="timeline-list">
+      <li class="tier-3">
+        <a href="issues/PI-12-dossier.html">
+          <div class="date">2026-05-03</div>
+          <div class="title">CRPD 監督平台 v1.0 上線 · 因果鏈追蹤系統 + 議題追蹤頁(10/16 PI 達 100/100)</div>
+        </a>
+      </li>
+      <li class="tier-2">
+        <a href="actors/">
+          <div class="date">2026-05-01</div>
+          <div class="title">9 倡議者責任頁 + 反向追溯查詢頁建置完成 · NHRC 30 段平行回復入庫</div>
+        </a>
+      </li>
+      <li class="tier-2">
+        <a href="issues/PI-14-dossier.html">
+          <div class="date">2026-04-30</div>
+          <div class="title">PI-14 校園霸凌因果鏈完成 · CO §95(g) 點名「戒護到醫院」之強制措施</div>
+        </a>
+      </li>
+      <li class="tier-3">
+        <a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=H0080027" target="_blank" rel="noopener">
+          <div class="date">2023-06-21</div>
+          <div class="title">特教法大修 · 朝融合方向但保留特教學校 · 22 NGO phase-out 主張未被全採</div>
+        </a>
+      </li>
+      <li class="tier-3">
+        <a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0020030" target="_blank" rel="noopener">
+          <div class="date">2022-12-14</div>
+          <div class="title">精神衛生法全文修法 · §25 限制通訊條款仍受 CO §91-92 關切</div>
+        </a>
+      </li>
+      <li class="tier-3">
+        <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/CRPD_2th_CORs_TC.pdf" target="_blank" rel="noopener">
+          <div class="date">2022-08-06</div>
+          <div class="title">CRPD 第二次審查結論性意見發布 · 108 段 / Diane Kingston OBE 主席</div>
+        </a>
+      </li>
+    </ul>
+
+    <p style="margin-top: var(--space-4); font-size: 13.5px; color: var(--text-muted); text-align: center;">
+      <a href="issues/" style="color: var(--brand); font-weight: 500;">→ 查看完整 16 PI 議題追蹤頁</a>
+    </p>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━ Contact Us ━━━━━━━━━━━━━ -->
+<section class="contact-section" id="contact" aria-label="聯絡我們">
+  <div class="contact-inner">
+    <div class="section-header">
+      <h2>聯絡我們</h2>
+      <span class="meta">國教行動聯盟 · National Alliance of Action for Basic Education</span>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-block">
+        <h3>媒體聯繫</h3>
+        <p>記者採訪、評論邀稿、新聞稿索取</p>
+        <a href="mailto:weall888@gmail.com?subject=[媒體]" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          weall888@gmail.com
+        </a>
+      </div>
+
+      <div class="contact-block">
+        <h3>政策合作 / 連署</h3>
+        <p>NGO 連署民間影子報告 · 政策研究合作 · 公聽會出席</p>
+        <a href="mailto:weall888@gmail.com?subject=[政策合作]" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          weall888@gmail.com
+        </a>
+      </div>
+
+      <div class="contact-block">
+        <h3>議題回報 / 案例提供</h3>
+        <p>提供身障議題、案例、資料線索(含未公開影子報告);一律去識別化處理</p>
+        <a href="mailto:weall888@gmail.com?subject=[議題回報]" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          weall888@gmail.com
+        </a>
+      </div>
+
+      <div class="contact-block contact-aabe">
+        <span class="aabe-mark" style="font-size:18px;padding:7px 11px">AABE</span>
+        <h3 style="margin-top:var(--space-3)">關於國教行動聯盟</h3>
+        <p>由教育界、家長、學者組成的民間倡議組織。聚焦兒少權利、教育政策、神經多樣性兒少校園處遇、身障家長監護權保障,以證據為本進行 CRPD 政策監督。</p>
+        <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;margin-top:var(--space-2)">
+          <a href="https://naer-tw.github.io/policy/" target="_blank" rel="noopener" class="contact-link">→ AABE 政策站</a>
+          <a href="https://github.com/naer-tw/disability-rights-watch" target="_blank" rel="noopener" class="contact-link">→ GitHub Repo</a>
+          <a href="https://naer-tw.github.io/child-rights-watch/" target="_blank" rel="noopener" class="contact-link">→ 兒少權監督平台(姐妹)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+</div><!-- /app-shell -->
+
+<!-- ━━━━━━━━━━━━━ Footer ━━━━━━━━━━━━━ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:var(--space-3)">
+        <span class="aabe-mark" style="background:var(--aabe-gold);font-size:14px;padding:6px 10px">AABE</span>
+        <div>
+          <h4 style="margin-bottom:0;font-size:14.5px">國教行動聯盟</h4>
+          <span style="font-size:10.5px;color:rgba(255,255,255,0.6);font-family:var(--sans-en);letter-spacing:0.04em">National Alliance of Action for Basic Education</span>
+        </div>
+      </div>
+      <p style="font-size: 12.5px; color: rgba(255,255,255,0.7); line-height: 1.6;">
+        本平台由國教行動聯盟製作維護。整合 CRPD 兩屆國家報告、結論性意見、民間影子報告、政府後續回應、修法歷程與政策因果鏈追蹤之知識圖譜。
+      </p>
+      <p style="font-size: 12px; color: rgba(255,255,255,0.55); margin-top: var(--space-2)">
+        AABE 為民間組織(非社團法人)
+      </p>
+    </div>
+
+    <div>
+      <h4>核心資料</h4>
+      <a href="issues/">16 PI 議題追蹤</a>
+      <a href="actors/">9 倡議者責任頁</a>
+      <a href="trace/">反向追溯查詢</a>
+      <a href="#documents">文件資料庫(12 份)</a>
+      <a href="reports/">影子報告(籌備中)</a>
+    </div>
+
+    <div>
+      <h4>透明度</h4>
+      <a href="docs/CAUSAL_CHAIN_DESIGN.html">因果鏈設計理念</a>
+      <a href="docs/GAP_ANALYSIS.html">資料差距盤點</a>
+      <a href="https://covenantswatch.org.tw/un-core-human-rights-treaties/crpd/" target="_blank" rel="noopener">人約盟 CRPD 文件中心</a>
+      <a href="for-disabled/">身障當事人入口</a>
+    </div>
+
+    <div>
+      <h4>關於</h4>
+      <a href="https://github.com/naer-tw/disability-rights-watch" target="_blank" rel="noopener">GitHub Repo</a>
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>
+      <a href="llms.txt">LLM Crawler 政策</a>
+      <a href="mailto:weall888@gmail.com">聯絡 AABE</a>
+    </div>
+  </div>
+
+  <div class="credit">
+    最後更新:2026-05-03 · 平台版本:v2.0 · self_qa 36/36 通過 · 因果鏈系統 10/16 PI 達 100/100
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   AABE 自家人軟性閘門
+   - 此為前端 client-side 軟閘門,僅用於:
+     (a) 區別公開 vs 內部介面
+     (b) 防止無關人士誤觸內部工作頁
+   - 真正機密資料(個人資料、未公開倡議底稿)不應放本平台
+   - 密碼修改:把下面 INSIDER_PASS 改成你要的字串
+   ============================================================ */
+const INSIDER_USER = "aabe";
+const INSIDER_PASS = "aabe-internal-2026";  // ← 請改成你要的密碼後 commit
+
+(function() {
+  // 角色選擇器
+  const dismissed = localStorage.getItem('role-dismissed');
+  if (dismissed) document.querySelector('.role-selector').style.display = 'none';
+
+  // 自家人狀態回填
+  if (localStorage.getItem('aabe-insider') === 'yes') {
+    setInsiderUI(true);
+  }
+
+  // 點「AABE 自家人」開登入 modal
+  document.getElementById('btn-insider').addEventListener('click', () => {
+    if (localStorage.getItem('aabe-insider') === 'yes') {
+      // 已登入則不重開 modal
+      return;
+    }
+    document.getElementById('login-modal').style.display = 'grid';
+    setTimeout(() => document.getElementById('login-user').focus(), 50);
+  });
+
+  // 點「一般訪客」切回公開模式
+  document.getElementById('btn-public').addEventListener('click', () => {
+    document.getElementById('btn-public').classList.add('active');
+    document.getElementById('btn-insider').classList.remove('active');
+  });
+
+  // 登出
+  document.getElementById('logout-link').addEventListener('click', (e) => {
+    e.preventDefault();
+    localStorage.removeItem('aabe-insider');
+    setInsiderUI(false);
+  });
+})();
+
+function tryLogin(e) {
+  e.preventDefault();
+  const u = document.getElementById('login-user').value.trim();
+  const p = document.getElementById('login-pass').value;
+  if (u === INSIDER_USER && p === INSIDER_PASS) {
+    localStorage.setItem('aabe-insider', 'yes');
+    document.getElementById('login-modal').style.display = 'none';
+    document.getElementById('login-err').style.display = 'none';
+    document.getElementById('login-form').reset();
+    setInsiderUI(true);
+  } else {
+    document.getElementById('login-err').style.display = 'block';
+  }
+  return false;
+}
+
+function setInsiderUI(isInsider) {
+  if (isInsider) {
+    document.body.classList.add('is-insider');
+    document.getElementById('btn-insider').classList.add('active');
+    document.getElementById('btn-public').classList.remove('active');
+    const status = document.getElementById('insider-status');
+    if (status) status.style.display = 'inline-flex';
+  } else {
+    document.body.classList.remove('is-insider');
+    document.getElementById('btn-insider').classList.remove('active');
+    document.getElementById('btn-public').classList.add('active');
+    const status = document.getElementById('insider-status');
+    if (status) status.style.display = 'none';
+  }
+}
+
+// 點內部連結時的閘門檢查
+function checkInsider(e) {
+  if (localStorage.getItem('aabe-insider') === 'yes') return true;
+  e.preventDefault();
+  document.getElementById('login-modal').style.display = 'grid';
+  setTimeout(() => document.getElementById('login-user').focus(), 50);
+  return false;
+}
+</script>
+
+</body>
+</html>

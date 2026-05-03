@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>倡議追蹤矩陣 — CRPD 監督平台 (AABE 內部)</title>
+<meta name="description" content="9 倡議者 × 16 PI 立場矩陣 — AABE 內部工作底稿">
+<meta name="robots" content="noindex,nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAFAF7; --bg-alt: #F1EFEA; --bg-deep: #1A4D3A; --bg-deeper: #133224;
+  --text: #1F1F1F; --text-muted: #5C5C5C; --text-meta: #8A8A8A;
+  --brand: #B5371F; --brand-dark: #8C2A18; --brand-soft: #F4E1DC;
+  --aabe-gold: #8B6F50; --cycle-crpd: #2D7059;
+  --border: #DDD8CD; --hairline: #E8E3D6;
+  --serif: "Noto Serif TC", Georgia, serif;
+  --sans: "Noto Sans TC", -apple-system, sans-serif;
+  --sans-en: "Inter", "Noto Sans TC", sans-serif;
+  --max-w: 1400px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--sans); font-size: 16px; line-height: 1.6; color: var(--text); background: var(--bg); }
+a { color: var(--bg-deep); text-decoration: underline; }
+a:hover { color: var(--brand); }
+
+.skip { position: absolute; left: -999px; top: -999px; }
+.skip:focus { left: 12px; top: 12px; background: var(--bg-deep); color: #fff; padding: 8px 16px; border-radius: 4px; z-index: 1000; text-decoration: none; }
+
+.insider-banner-top { background: linear-gradient(90deg, var(--brand) 0%, var(--brand-dark) 100%); color: #fff; padding: 8px 16px; text-align: center; font-size: 13px; font-weight: 600; letter-spacing: 0.05em; }
+.insider-banner-top a { color: #FFE9A8; text-decoration: underline; }
+
+.masthead { border-bottom: 1px solid var(--border); background: rgba(250,250,247,0.94); position: sticky; top: 30px; z-index: 50; backdrop-filter: blur(8px); }
+.masthead-inner { max-width: var(--max-w); margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; gap: 24px; }
+.logo { display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--text); }
+.logo .icon { width: 36px; height: 36px; background: var(--bg-deep); color: #fff; display: grid; place-items: center; border-radius: 6px; }
+.logo h1 { font-family: var(--serif); font-size: 17px; font-weight: 700; line-height: 1.2; }
+.logo p { font-size: 11px; color: var(--text-muted); font-family: var(--sans-en); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+.aabe-mark { font-family: var(--sans-en); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; background: var(--aabe-gold); color: #fff; padding: 5px 9px; border-radius: 4px; line-height: 1; margin-left: 16px; padding-left: 9px; border-left: 1px solid var(--border); }
+.insider-tag { font-family: var(--sans-en); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; background: var(--brand); color: #fff; padding: 4px 8px; border-radius: 3px; margin-left: 8px; }
+
+nav.crumb { background: var(--bg-alt); border-bottom: 1px solid var(--hairline); padding: 12px 24px; font-size: 13px; }
+.crumb-inner { max-width: var(--max-w); margin: 0 auto; }
+.crumb a { color: var(--text-muted); text-decoration: none; }
+
+main { max-width: var(--max-w); margin: 0 auto; padding: 32px 24px; }
+.kicker { font-family: var(--sans-en); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); margin-bottom: 8px; }
+h1.title { font-family: var(--serif); font-size: clamp(28px, 4vw, 36px); font-weight: 900; color: var(--bg-deep); margin-bottom: 16px; }
+.lead { font-size: 16px; color: var(--text); margin-bottom: 32px; line-height: 1.7; max-width: 800px; }
+
+footer { border-top: 1px solid var(--border); background: var(--bg-deep); color: rgba(255,255,255,0.7); padding: 24px; margin-top: 64px; text-align: center; font-size: 13px; }
+footer a { color: rgba(255,255,255,0.85); }
+
+.matrix-wrap { overflow-x: auto; background: #fff; border: 1px solid var(--border); border-radius: 8px; }
+table.matrix { border-collapse: collapse; min-width: 100%; font-size: 12px; }
+table.matrix th { background: var(--bg-deep); color: #fff; padding: 12px 8px; text-align: left; font-weight: 600; position: sticky; top: 0; white-space: nowrap; }
+table.matrix th.pi-th { writing-mode: vertical-rl; transform: rotate(180deg); padding: 12px 6px; min-width: 28px; height: 100px; vertical-align: bottom; cursor: help; font-family: var(--sans-en); }
+table.matrix th.actor-th { position: sticky; left: 0; z-index: 2; background: var(--bg-deep); min-width: 200px; max-width: 240px; }
+table.matrix td { padding: 8px; text-align: center; border-top: 1px solid var(--hairline); border-left: 1px solid var(--hairline); }
+table.matrix td.actor-cell { text-align: left; padding: 10px 12px; background: var(--bg-alt); position: sticky; left: 0; font-size: 13px; font-weight: 500; max-width: 240px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cell-marker { display: inline-block; width: 24px; height: 24px; border-radius: 4px; line-height: 24px; font-family: var(--sans-en); font-size: 11px; font-weight: 700; color: #fff; }
+.cell-marker.s-strong-a { background: #1F3D6B; }
+.cell-marker.s-mid-a { background: #6B8DBE; color: #fff; }
+.cell-marker.s-neutral { background: var(--text-muted); }
+.cell-marker.s-mid-b { background: #E89752; }
+.cell-marker.s-strong-b { background: #B5371F; }
+.cell-marker.adopted::after { content: ''; display: block; width: 4px; height: 4px; background: var(--cycle-crpd); border-radius: 50%; position: relative; left: 18px; top: -16px; }
+.cell-marker.rejected::after { content: ''; display: block; width: 4px; height: 4px; background: var(--brand); border-radius: 50%; position: relative; left: 18px; top: -16px; }
+.legend { display: flex; gap: 24px; flex-wrap: wrap; padding: 16px 0; font-size: 13px; color: var(--text-muted); }
+.legend-item { display: flex; align-items: center; gap: 6px; }
+
+</style>
+</head>
+<body>
+<a href="#main" class="skip">跳到主要內容</a>
+<div class="insider-banner-top">
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="vertical-align:-2px;margin-right:4px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+  AABE 內部工作區 · 此頁不對外公開索引(noindex/nofollow) · <a href="./">回首頁</a>
+</div>
+
+<header class="masthead" role="banner">
+  <div class="masthead-inner">
+    <a href="../" class="logo">
+      <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+      <div><h1>身心障礙者權利監督平台</h1><p>Disability Rights Watch Taiwan</p></div>
+    </a>
+    <span class="aabe-mark">AABE</span>
+    <span class="insider-tag">INSIDER</span>
+    <nav style="margin-left:auto;display:flex;gap:16px;font-size:14px;flex-wrap:wrap"><a href="./" style="color:var(--text-muted);text-decoration:none">回首頁</a><a href="./matrix.html" style="color:var(--text-muted);text-decoration:none">矩陣</a><a href="./generator.html" style="color:var(--text-muted);text-decoration:none">產生器</a><a href="./compare.html" style="color:var(--text-muted);text-decoration:none">比對</a><a href="./self-audit.html?internal=1" style="color:var(--text-muted);text-decoration:none">自審</a></nav>
+  </div>
+</header>
+
+<nav class="crumb"><div class="crumb-inner"><a href="./">首頁</a> · <span style="color:var(--brand);font-weight:600">內部工作區</span> · <span style="color:var(--text)">倡議追蹤矩陣</span></div></nav>
+
+<main id="main">
+
+  <p class="kicker">內部工作底稿</p>
+  <h1 class="title">倡議追蹤矩陣 · 15 倡議者 × 16 PI</h1>
+  <p class="lead">儀表盤呈現:每位倡議者於每個 PI 議題之立場座標(-100 ~ +100)+ 該立場被 CO 採納情形(綠點 = 已採納 / 紅點 = 駁回)。供 AABE 內部規劃影子報告連署、辨識立場分布之用。</p>
+
+  <div class="legend">
+    <div class="legend-item"><span class="cell-marker s-strong-a"></span>強左 (-80~-100)</div>
+    <div class="legend-item"><span class="cell-marker s-mid-a"></span>偏左 (-30~-79)</div>
+    <div class="legend-item"><span class="cell-marker s-neutral"></span>中性 (-29~+29)</div>
+    <div class="legend-item"><span class="cell-marker s-mid-b"></span>偏右 (+30~+79)</div>
+    <div class="legend-item"><span class="cell-marker s-strong-b"></span>強右 (+80~+100)</div>
+    <div class="legend-item"><strong style="color:var(--cycle-crpd)">●</strong>已採納</div>
+    <div class="legend-item"><strong style="color:var(--brand)">●</strong>駁回</div>
+  </div>
+
+  <div class="matrix-wrap">
+    <table class="matrix" role="table">
+      <thead>
+        <tr>
+          <th class="actor-th">倡議者 \ PI</th>
+<th class="pi-th" title="第一次（2017）+ 第二次（2022）審查總體對照">PI-01</th><th class="pi-th" title="12 年來重大未兌現 CO 條目盤點">PI-02</th><th class="pi-th" title="第三次審查（2027 預定）籌備與民間影子報告動員">PI-03</th><th class="pi-th" title="6 國 CRPD 施行法對照 + 雙面 Steelman">PI-04</th><th class="pi-th" title="身障權利行動方案 / 政策白皮書追蹤">PI-05</th><th class="pi-th" title="NHRC 對 CRPD 之監督報告">PI-06</th><th class="pi-th" title="身障預算配置（4 部會）">PI-07</th><th class="pi-th" title="身障人口結構（總人數、障別、年齡）">PI-08</th><th class="pi-th" title="身障就業率 vs 一般就業率落差">PI-09</th><th class="pi-th" title="特殊教育學生人數 / 安置型態">PI-10</th><th class="pi-th" title="身障家庭照顧者經濟與心理負荷">PI-11</th><th class="pi-th" title="CRPD §24 教育權單向解讀爭議">PI-12</th><th class="pi-th" title="特教學校存續與家長選擇權國際比較">PI-13</th><th class="pi-th" title="身障兒少校園霸凌與融合下支持不足">PI-14</th><th class="pi-th" title="CRPD §12 法律能力與家長監護權平衡">PI-15</th><th class="pi-th" title="身障診斷工具化與兒少醫療化爭議">PI-16</th><th style="background:var(--cycle-crpd)">小計</th></tr></thead><tbody><tr><td class="actor-cell" title="國家人權委員會（NHRC）">國家人權委員會（NHRC）</td><td><span class="cell-marker s-neutral" title="國家人權委員會（NHRC） @ PI-01: 立場 +0 (nhrc_independent_review) · 未評採納">+0</span></td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-neutral" title="國家人權委員會（NHRC） @ PI-05: 立場 +0 (nhrc_independent_review) · 未評採納">+0</span></td><td><span class="cell-marker s-neutral" title="國家人權委員會（NHRC） @ PI-06: 立場 +0 (nhrc_independent_review) · 未評採納">+0</span></td><td><span class="cell-marker s-neutral" title="國家人權委員會（NHRC） @ PI-07: 立場 +0 (nhrc_independent_review) · 未評採納">+0</span></td><td><span class="cell-marker s-neutral" title="國家人權委員會（NHRC） @ PI-08: 立場 +0 (nhrc_independent_review) · 未評採納">+0</span></td><td><span class="cell-marker s-neutral" title="國家人權委員會（NHRC） @ PI-09: 立場 +0 (nhrc_independent_review) · 未評採納">+0</span></td><td><span class="cell-marker s-neutral" title="國家人權委員會（NHRC） @ PI-10: 立場 +0 (nhrc_independent_review) · 未評採納">+0</span></td><td><span class="cell-marker s-neutral" title="國家人權委員會（NHRC） @ PI-11: 立場 +0 (nhrc_independent_review) · 未評採納">+0</span></td><td><span class="cell-marker s-neutral" title="國家人權委員會（NHRC） @ PI-12: 立場 +0 (nhrc_independent_review) · 未評採納">+0</span></td><td><span class="cell-marker s-neutral" title="國家人權委員會（NHRC） @ PI-13: 立場 +0 (nhrc_independent_review) · 未評採納">+0</span></td><td><span class="cell-marker s-neutral" title="國家人權委員會（NHRC） @ PI-14: 立場 +0 (nhrc_independent_review) · 未評採納">+0</span></td><td><span class="cell-marker s-neutral" title="國家人權委員會（NHRC） @ PI-15: 立場 +0 (nhrc_independent_review) · 未評採納">+0</span></td><td><span class="cell-marker s-neutral" title="國家人權委員會（NHRC） @ PI-16: 立場 +0 (nhrc_independent_review) · 未評採納">+0</span></td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">13</td></tr><tr><td class="actor-cell" title="國教行動聯盟（AABE）">國教行動聯盟（AABE）</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-mid-b" title="國教行動聯盟（AABE） @ PI-03: 立場 +30 (third_review_prep) · 未評採納">+30</span></td><td><span class="cell-marker s-mid-b" title="國教行動聯盟（AABE） @ PI-04: 立場 +30 (international_comparison) · 未評採納">+30</span></td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-neutral" title="國教行動聯盟（AABE） @ PI-09: 立場 +0 (balanced_employment) · 未評採納">+0</span></td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-mid-b" title="國教行動聯盟（AABE） @ PI-12: 立場 +30 (quality_inclusion_with_choice) · 未評採納">+30</span></td><td><span class="cell-marker s-mid-b" title="國教行動聯盟（AABE） @ PI-13: 立場 +30 (preserve_with_quality) · 未評採納">+30</span></td><td><span class="cell-marker s-neutral" title="國教行動聯盟（AABE） @ PI-14: 立場 +0 (balanced_safety) · 未評採納">+0</span></td><td><span class="cell-marker s-mid-b" title="國教行動聯盟（AABE） @ PI-15: 立場 +30 (mixed_with_parental_protection) · 未評採納">+30</span></td><td><span class="cell-marker s-neutral" title="國教行動聯盟（AABE） @ PI-16: 立場 +20 (balanced_diagnosis) · 未評採納">+20</span></td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">8</td></tr><tr><td class="actor-cell" title="人權公約施行監督聯盟（22 團體）">人權公約施行監督聯盟（22 團體）</td><td><span class="cell-marker s-mid-a adopted" title="人權公約施行監督聯盟（22 團體） @ PI-01: 立場 -50 (comprehensive_implementation) · partially_adopted">-50</span></td><td><span class="cell-marker s-mid-a adopted" title="人權公約施行監督聯盟（22 團體） @ PI-02: 立場 -50 (track_unfulfilled) · fully_adopted">-50</span></td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-mid-a adopted" title="人權公約施行監督聯盟（22 團體） @ PI-05: 立場 -30 (comprehensive_strategy) · fully_adopted">-30</span></td><td style="color:var(--border)">·</td><td><span class="cell-marker s-strong-a adopted" title="人權公約施行監督聯盟（22 團體） @ PI-07: 立場 -80 (shift_to_community) · fully_adopted">-80</span></td><td style="color:var(--border)">·</td><td><span class="cell-marker s-mid-a adopted" title="人權公約施行監督聯盟（22 團體） @ PI-09: 立場 -75 (phase_out_shelter) · fully_adopted">-75</span></td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-strong-a adopted" title="人權公約施行監督聯盟（22 團體） @ PI-13: 立場 -85 (phase_out_special_schools) · fully_adopted">-85</span></td><td><span class="cell-marker s-mid-a adopted" title="人權公約施行監督聯盟（22 團體） @ PI-14: 立場 -50 (school_response_critical) · fully_adopted">-50</span></td><td><span class="cell-marker s-strong-a adopted" title="人權公約施行監督聯盟（22 團體） @ PI-15: 立場 -90 (abolish_substitute_decision) · fully_adopted">-90</span></td><td style="color:var(--border)">·</td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">8</td></tr><tr><td class="actor-cell" title="中華民國智障者家長總會（智總）">中華民國智障者家長總會（智總）</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-mid-b rejected" title="中華民國智障者家長總會（智總） @ PI-09: 立場 +60 (shelter_workshop_preserve) · rejected">+60</span></td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-mid-b rejected" title="中華民國智障者家長總會（智總） @ PI-12: 立場 +60 (multi_track_preserve) · rejected">+60</span></td><td><span class="cell-marker s-mid-b rejected" title="中華民國智障者家長總會（智總） @ PI-13: 立場 +75 (preserve_special_schools) · rejected">+75</span></td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">3</td></tr><tr><td class="actor-cell" title="中華民國多障家長協會">中華民國多障家長協會</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-mid-b adopted" title="中華民國多障家長協會 @ PI-11: 立場 +60 (family_support_first) · partially_adopted">+60</span></td><td><span class="cell-marker s-mid-b rejected" title="中華民國多障家長協會 @ PI-12: 立場 +70 (multi_track_preserve) · rejected">+70</span></td><td><span class="cell-marker s-mid-b rejected" title="中華民國多障家長協會 @ PI-13: 立場 +70 (multi_track_preserve) · rejected">+70</span></td><td style="color:var(--border)">·</td><td><span class="cell-marker s-mid-b rejected" title="中華民國多障家長協會 @ PI-15: 立場 +75 (preserve_guardianship) · rejected">+75</span></td><td style="color:var(--border)">·</td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">4</td></tr><tr><td class="actor-cell" title="醫療化批評學派（國際）">醫療化批評學派（國際）</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-strong-a" title="醫療化批評學派（國際） @ PI-16: 立場 -80 (medicalization_critic) · noted_only">-80</span></td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">1</td></tr><tr><td class="actor-cell" title="衛生福利部社會及家庭署">衛生福利部社會及家庭署</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-mid-b" title="衛生福利部社會及家庭署 @ PI-08: 立場 +30 (icf_statistics) · 未評採納">+30</span></td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">1</td></tr><tr><td class="actor-cell" title="神經多樣性派">神經多樣性派</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-neutral adopted" title="神經多樣性派 @ PI-16: 立場 +0 (neurodiversity) · partially_adopted">+0</span></td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">1</td></tr><tr><td class="actor-cell" title="國內特教學界（中間派）">國內特教學界（中間派）</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-neutral adopted" title="國內特教學界（中間派） @ PI-12: 立場 +0 (quality_inclusion) · partially_adopted">+0</span></td><td><span class="cell-marker s-neutral adopted" title="國內特教學界（中間派） @ PI-13: 立場 +0 (quality_inclusion) · partially_adopted">+0</span></td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">2</td></tr><tr><td class="actor-cell" title="國內法學界（混合派）">國內法學界（混合派）</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-neutral adopted" title="國內法學界（混合派） @ PI-15: 立場 +0 (mixed_model) · partially_adopted">+0</span></td><td style="color:var(--border)">·</td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">1</td></tr><tr><td class="actor-cell" title="人權公約施行監督聯盟（22 團體共同提交）">人權公約施行監督聯盟（22 團體共同…</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-strong-a adopted" title="人權公約施行監督聯盟（22 團體共同提交） @ PI-12: 立場 -85 (strong_inclusion) · fully_adopted,fully_adopted">-85</span></td><td><span class="cell-marker s-strong-a adopted" title="人權公約施行監督聯盟（22 團體共同提交） @ PI-13: 立場 -85 (strong_inclusion) · fully_adopted,fully_adopted">-85</span></td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">2</td></tr><tr><td class="actor-cell" title="人權公約施行監督聯盟">人權公約施行監督聯盟</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-strong-a" title="人權公約施行監督聯盟 @ PI-12: 立場 -80 (strong_inclusion) · 未評採納">-80</span></td><td><span class="cell-marker s-strong-a" title="人權公約施行監督聯盟 @ PI-13: 立場 -80 (strong_inclusion) · 未評採納">-80</span></td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">2</td></tr><tr><td class="actor-cell" title="中華民國身心障礙聯盟（殘聯）">中華民國身心障礙聯盟（殘聯）</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-mid-a adopted" title="中華民國身心障礙聯盟（殘聯） @ PI-09: 立場 -50 (support_employment_first) · partially_adopted">-50</span></td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">1</td></tr><tr><td class="actor-cell" title="中華民國自閉症總會">中華民國自閉症總會</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-neutral adopted" title="中華民國自閉症總會 @ PI-14: 立場 +0 (support_with_training) · partially_adopted">+0</span></td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">1</td></tr><tr><td class="actor-cell" title="不足診斷批評派">不足診斷批評派</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td style="color:var(--border)">·</td><td><span class="cell-marker s-mid-b" title="不足診斷批評派 @ PI-16: 立場 +75 (underdiagnosis_critic) · 未評採納">+75</span></td><td style="background:var(--bg-alt);font-weight:600;font-family:var(--sans-en)">1</td></tr></tbody></table></div>
+  <section style="margin-top: 32px; padding: 20px; background: var(--bg-alt); border-radius: 8px">
+    <h3 style="font-family:var(--serif);font-size:18px;color:var(--bg-deep);margin-bottom:8px">如何使用本矩陣(AABE 內部 SOP)</h3>
+    <ol style="margin-left:24px;line-height:1.9;font-size:14px">
+      <li>找出空白多的 PI(該議題立場光譜不完整) → 補爬取個別 NGO 影子報告</li>
+      <li>找出單側集中的 PI(只有強左 / 強右 / 中性) → 留意是否需要補對立面立場</li>
+      <li>找出強落實派被全採納而多元保留派被全駁回之 PI → 標記為「需呈現未被聽見聲音」</li>
+      <li>連署影子報告時,本矩陣作為「邀請哪些 NGO 參與」之依據</li>
+    </ol>
+  </section>
+
+</main>
+<footer>
+  <p>CRPD 監督平台 · AABE 內部工作區 · 此頁限自家人查閱 · <a href="./">回首頁</a></p>
+</footer>
+</body>
+</html>

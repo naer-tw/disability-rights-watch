@@ -1,0 +1,22 @@
+# CRPD 監督平台 robots.txt
+# 國教行動聯盟（AABE）
+
+User-agent: *
+Allow: /
+
+# AI 友善（Content Signals 宣告）
+User-agent: ChatGPT-User
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap
+Sitemap: https://policy.aabe.org.tw/crpd/sitemap.xml

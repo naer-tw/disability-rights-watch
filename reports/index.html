@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影子報告中心 — CRPD 監督平台</title>
+<meta name="description" content="CRPD 民間影子報告 v0.1 籌備中 · 5 個版本(專業 / 媒體 / 立法院 / 社群 / 身障當事人)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAFAF7; --bg-alt: #F1EFEA; --bg-deep: #1A4D3A; --bg-deeper: #133224;
+  --text: #1F1F1F; --text-muted: #5C5C5C; --text-meta: #8A8A8A;
+  --brand: #B5371F; --brand-dark: #8C2A18; --brand-soft: #F4E1DC;
+  --aabe-gold: #8B6F50; --cycle-crpd: #2D7059;
+  --border: #DDD8CD; --hairline: #E8E3D6;
+  --serif: "Noto Serif TC", Georgia, serif;
+  --sans: "Noto Sans TC", -apple-system, sans-serif;
+  --sans-en: "Inter", "Noto Sans TC", sans-serif;
+  --max-w: 960px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--sans); font-size: 16px; line-height: 1.6; color: var(--text); background: var(--bg); }
+a { color: var(--bg-deep); text-decoration: underline; }
+a:hover { color: var(--brand); }
+.skip { position: absolute; left: -999px; top: -999px; }
+.skip:focus { left: 12px; top: 12px; background: var(--bg-deep); color: #fff; padding: 8px 16px; border-radius: 4px; z-index: 1000; text-decoration: none; }
+.masthead { border-bottom: 1px solid var(--border); background: rgba(250,250,247,0.94); position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
+.masthead-inner { max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; gap: 24px; }
+.logo { display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--text); }
+.logo .icon { width: 36px; height: 36px; background: var(--bg-deep); color: #fff; display: grid; place-items: center; border-radius: 6px; }
+.logo h1 { font-family: var(--serif); font-size: 17px; font-weight: 700; line-height: 1.2; }
+.logo p { font-size: 11px; color: var(--text-muted); font-family: var(--sans-en); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+.aabe-mark { font-family: var(--sans-en); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; background: var(--aabe-gold); color: #fff; padding: 5px 9px; border-radius: 4px; line-height: 1; margin-left: 16px; padding-left: 9px; border-left: 1px solid var(--border); }
+nav.crumb { background: var(--bg-alt); border-bottom: 1px solid var(--hairline); padding: 12px 24px; font-size: 13px; }
+.crumb-inner { max-width: var(--max-w); margin: 0 auto; }
+nav.crumb a { color: var(--text-muted); text-decoration: none; }
+main { max-width: var(--max-w); margin: 0 auto; padding: 32px 24px; }
+.banner-wip { background: linear-gradient(135deg, #FFF3CD 0%, #FFE9A8 100%); border-left: 5px solid #FFC107; padding: 20px 24px; border-radius: 6px; margin-bottom: 32px; }
+.banner-wip strong { color: #5C4500; font-size: 15px; }
+.banner-wip p { font-size: 14px; color: #7A5C00; margin-top: 8px; }
+.audience-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 24px; }
+.audience-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 24px; text-decoration: none; color: var(--text); transition: all .15s; display: flex; flex-direction: column; gap: 12px; }
+.audience-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,77,58,0.08); border-color: var(--cycle-crpd); }
+.audience-card .a-icon { width: 44px; height: 44px; background: var(--bg-alt); border-radius: 8px; display: grid; place-items: center; color: var(--bg-deep); }
+.audience-card h3 { font-family: var(--serif); font-size: 18px; font-weight: 700; color: var(--bg-deep); }
+.audience-card p { font-size: 13.5px; color: var(--text-muted); line-height: 1.6; }
+.audience-card .a-meta { font-family: var(--sans-en); font-size: 11.5px; color: var(--cycle-crpd); margin-top: auto; padding-top: 12px; border-top: 1px solid var(--hairline); font-weight: 500; }
+section.report-section { margin: 32px 0; }
+section.report-section h2 { font-family: var(--serif); font-size: 22px; font-weight: 700; color: var(--bg-deep); border-bottom: 2px solid var(--bg-deep); padding-bottom: 8px; margin-bottom: 16px; }
+.kicker { font-family: var(--sans-en); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); margin-bottom: 8px; }
+h1.report-title { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 900; line-height: 1.15; color: var(--bg-deep); margin-bottom: 16px; }
+.report-lead { font-size: 17px; color: var(--text); margin-bottom: 32px; line-height: 1.7; }
+footer { border-top: 1px solid var(--border); background: var(--bg-deep); color: rgba(255,255,255,0.7); padding: 24px; margin-top: 64px; text-align: center; font-size: 13px; }
+footer a { color: rgba(255,255,255,0.85); }
+</style>
+</head>
+<body>
+<a href="#main" class="skip">跳到主要內容</a>
+
+<header class="masthead" role="banner">
+  <div class="masthead-inner">
+    <a href="../" class="logo">
+      <span class="icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </span>
+      <div>
+        <h1>身心障礙者權利監督平台</h1>
+        <p>Disability Rights Watch Taiwan</p>
+      </div>
+    </a>
+    <span class="aabe-mark">AABE</span>
+    <nav style="margin-left:auto;display:flex;gap:16px;font-size:14px;">
+      <a href="../" style="color:var(--text-muted);text-decoration:none">回首頁</a>
+      <a href="../issues/" style="color:var(--text-muted);text-decoration:none">議題</a>
+      <a href="../search.html" style="color:var(--text-muted);text-decoration:none">搜尋</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumb" aria-label="麵包屑導航">
+  <div class="crumb-inner"><a href="../">首頁</a> · <span style="color:var(--text)">影子報告</span></div>
+</nav>
+
+<main id="main">
+
+  <p class="kicker">影子報告 v0.1 · 籌備中</p>
+  <h1 class="report-title">2027 第三次 CRPD 審查 民間影子報告</h1>
+  <p class="report-lead">本平台籌備之民間影子報告,聚焦軸四 5 旗艦議題:§24 教育權、特教學校存續、校園霸凌、§12 法律能力、診斷醫療化爭議。將以 5 個版本同步出版,並依採訪對象 / 場域客製語言層級。</p>
+
+  <div class="banner-wip">
+    <strong>v0.1 籌備中 · 預計 2027 第三次審查前正式提交</strong>
+    <p>本影子報告仍在資料整合與外部審查階段。文件結構已就位,但內容需:(1) 軸四 PI 三方覆核(主編 + DPO + 法律顧問)、(2) 身障當事人顧問小組覆核、(3) 殘聯 / 智總 / 多障家長等 NGO 連署或對話。<a href="../feedback.html">回饋意見</a> 對 v0.2 版很重要。</p>
+  </div>
+
+  <section class="report-section">
+    <h2>5 個版本(對應不同受眾)</h2>
+    <p style="color:var(--text-muted);margin-bottom:16px">同一份核心內容,依語言層級客製為 5 種版本。皆以 v0.1 骨架釋出,正式版以該年第三次審查時程為準。</p>
+    <div class="audience-grid">
+
+      <a href="v0.1-professional.html" class="audience-card">
+        <span class="a-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+        <h3>專業版</h3>
+        <p><strong>對象:</strong>審查委員、政府、NGO 法律顧問<br><strong>篇幅:</strong>完整(78+ 頁)<br><strong>特徵:</strong>法理 + 統計 + CO 段落號 + 國際對照</p>
+        <span class="a-meta">→ 開啟 v0.1 骨架</span>
+      </a>
+
+      <a href="v0.1-media.html" class="audience-card">
+        <span class="a-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"/></svg></span>
+        <h3>媒體版</h3>
+        <p><strong>對象:</strong>記者、評論員、公眾<br><strong>篇幅:</strong>800-1200 字<br><strong>特徵:</strong>先講結論、核心 3 個數字、3 項建議</p>
+        <span class="a-meta">→ 開啟 v0.1 骨架</span>
+      </a>
+
+      <a href="v0.1-legislative.html" class="audience-card">
+        <span class="a-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1zM2 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1zM7 21h10M12 3v18M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></span>
+        <h3>立法院版</h3>
+        <p><strong>對象:</strong>立委辦公室、質詢撰稿<br><strong>篇幅:</strong>條列式 5-10 頁<br><strong>特徵:</strong>機關缺失 + 修法建議 + 質詢題草稿</p>
+        <span class="a-meta">→ 開啟 v0.1 骨架</span>
+      </a>
+
+      <a href="v0.1-social.html" class="audience-card">
+        <span class="a-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+        <h3>社群版</h3>
+        <p><strong>對象:</strong>IG / FB / Threads / X<br><strong>篇幅:</strong>140 字 + 圖卡 + 30 秒短影音腳本<br><strong>特徵:</strong>鉤子 + 視覺 CTA</p>
+        <span class="a-meta">→ 開啟 v0.1 骨架</span>
+      </a>
+
+      <a href="v0.1-pwd.html" class="audience-card">
+        <span class="a-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="2"/><path d="M12 7v6M9 13h6l3 7M6 11l3 2"/></svg></span>
+        <h3>身障當事人版</h3>
+        <p><strong>對象:</strong>身障當事人、家屬<br><strong>篇幅:</strong>好讀版 200 字以內<br><strong>特徵:</strong>白話、圖示、求助專線、易讀版替代</p>
+        <span class="a-meta">→ 開啟 v0.1 骨架</span>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="report-section">
+    <h2>核心方法論</h2>
+    <p style="font-size:15px;color:var(--text);line-height:1.7">本影子報告依本平台<strong>因果鏈追蹤系統</strong>產出,每一項主張須具備:</p>
+    <ul style="margin-left:24px;font-size:15px;color:var(--text);line-height:1.8;margin-top:8px">
+      <li>原始倡議來源(<a href="../actors/">9 倡議者責任頁</a>)</li>
+      <li>對應 CRPD CO 段落(<a href="../search.html?q=CO">206 段已 OCR 入庫</a>)</li>
+      <li>政府承諾與實施動作(10 + 10 筆已建)</li>
+      <li>結果評估含非預期後果(<a href="../trace/">18 outcome / 5 非預期</a>)</li>
+      <li>修法歷程連結(<a href="../laws/">8 法 16 修法</a>)</li>
+    </ul>
+    <p style="margin-top:16px;font-size:14px;color:var(--text-muted)">每一段落附 <a href="../trace/">反向追溯</a> 連結,讀者可從結論回推到倡議者。<strong>不公審原則</strong> 全程適用。</p>
+  </section>
+
+</main>
+<footer>
+  <p>CRPD 監督平台 · 國教行動聯盟(AABE) · <a href="../">回首頁</a></p>
+</footer>
+</body>
+</html>

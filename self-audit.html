@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AABE 自我問責 — CRPD 監督平台 (AABE 內部)</title>
+<meta name="description" content="AABE 內部 — 倡議立場 +3 年回溯評估 / 4 人簽名強制(含 dissenter)">
+<meta name="robots" content="noindex,nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAFAF7; --bg-alt: #F1EFEA; --bg-deep: #1A4D3A; --bg-deeper: #133224;
+  --text: #1F1F1F; --text-muted: #5C5C5C; --text-meta: #8A8A8A;
+  --brand: #B5371F; --brand-dark: #8C2A18; --brand-soft: #F4E1DC;
+  --aabe-gold: #8B6F50; --cycle-crpd: #2D7059;
+  --border: #DDD8CD; --hairline: #E8E3D6;
+  --serif: "Noto Serif TC", Georgia, serif;
+  --sans: "Noto Sans TC", -apple-system, sans-serif;
+  --sans-en: "Inter", "Noto Sans TC", sans-serif;
+  --max-w: 1400px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--sans); font-size: 16px; line-height: 1.6; color: var(--text); background: var(--bg); }
+a { color: var(--bg-deep); text-decoration: underline; }
+a:hover { color: var(--brand); }
+
+.skip { position: absolute; left: -999px; top: -999px; }
+.skip:focus { left: 12px; top: 12px; background: var(--bg-deep); color: #fff; padding: 8px 16px; border-radius: 4px; z-index: 1000; text-decoration: none; }
+
+.insider-banner-top { background: linear-gradient(90deg, var(--brand) 0%, var(--brand-dark) 100%); color: #fff; padding: 8px 16px; text-align: center; font-size: 13px; font-weight: 600; letter-spacing: 0.05em; }
+.insider-banner-top a { color: #FFE9A8; text-decoration: underline; }
+
+.masthead { border-bottom: 1px solid var(--border); background: rgba(250,250,247,0.94); position: sticky; top: 30px; z-index: 50; backdrop-filter: blur(8px); }
+.masthead-inner { max-width: var(--max-w); margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; gap: 24px; }
+.logo { display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--text); }
+.logo .icon { width: 36px; height: 36px; background: var(--bg-deep); color: #fff; display: grid; place-items: center; border-radius: 6px; }
+.logo h1 { font-family: var(--serif); font-size: 17px; font-weight: 700; line-height: 1.2; }
+.logo p { font-size: 11px; color: var(--text-muted); font-family: var(--sans-en); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+.aabe-mark { font-family: var(--sans-en); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; background: var(--aabe-gold); color: #fff; padding: 5px 9px; border-radius: 4px; line-height: 1; margin-left: 16px; padding-left: 9px; border-left: 1px solid var(--border); }
+.insider-tag { font-family: var(--sans-en); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; background: var(--brand); color: #fff; padding: 4px 8px; border-radius: 3px; margin-left: 8px; }
+
+nav.crumb { background: var(--bg-alt); border-bottom: 1px solid var(--hairline); padding: 12px 24px; font-size: 13px; }
+.crumb-inner { max-width: var(--max-w); margin: 0 auto; }
+.crumb a { color: var(--text-muted); text-decoration: none; }
+
+main { max-width: var(--max-w); margin: 0 auto; padding: 32px 24px; }
+.kicker { font-family: var(--sans-en); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); margin-bottom: 8px; }
+h1.title { font-family: var(--serif); font-size: clamp(28px, 4vw, 36px); font-weight: 900; color: var(--bg-deep); margin-bottom: 16px; }
+.lead { font-size: 16px; color: var(--text); margin-bottom: 32px; line-height: 1.7; max-width: 800px; }
+
+footer { border-top: 1px solid var(--border); background: var(--bg-deep); color: rgba(255,255,255,0.7); padding: 24px; margin-top: 64px; text-align: center; font-size: 13px; }
+footer a { color: rgba(255,255,255,0.85); }
+
+.audit-card { background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--cycle-crpd); padding: 20px 24px; border-radius: 0 6px 6px 0; margin-bottom: 16px; }
+.audit-card h3 { font-family: var(--serif); font-size: 17px; color: var(--bg-deep); margin-bottom: 8px; }
+.audit-card p { font-size: 14px; line-height: 1.7; color: var(--text); }
+.audit-card .check-row { display: flex; gap: 16px; margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--border); flex-wrap: wrap; font-size: 13px; }
+.audit-card label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+.audit-card.warn { border-left-color: var(--brand); }
+
+</style>
+</head>
+<body>
+<a href="#main" class="skip">跳到主要內容</a>
+<div class="insider-banner-top">
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="vertical-align:-2px;margin-right:4px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+  AABE 內部工作區 · 此頁不對外公開索引(noindex/nofollow) · <a href="./">回首頁</a>
+</div>
+
+<header class="masthead" role="banner">
+  <div class="masthead-inner">
+    <a href="../" class="logo">
+      <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+      <div><h1>身心障礙者權利監督平台</h1><p>Disability Rights Watch Taiwan</p></div>
+    </a>
+    <span class="aabe-mark">AABE</span>
+    <span class="insider-tag">INSIDER</span>
+    <nav style="margin-left:auto;display:flex;gap:16px;font-size:14px;flex-wrap:wrap"><a href="./" style="color:var(--text-muted);text-decoration:none">回首頁</a><a href="./matrix.html" style="color:var(--text-muted);text-decoration:none">矩陣</a><a href="./generator.html" style="color:var(--text-muted);text-decoration:none">產生器</a><a href="./compare.html" style="color:var(--text-muted);text-decoration:none">比對</a><a href="./self-audit.html?internal=1" style="color:var(--text-muted);text-decoration:none">自審</a></nav>
+  </div>
+</header>
+
+<nav class="crumb"><div class="crumb-inner"><a href="./">首頁</a> · <span style="color:var(--brand);font-weight:600">內部工作區</span> · <span style="color:var(--text)">自我問責</span></div></nav>
+
+<main id="main">
+
+  <p class="kicker">內部底稿</p>
+  <h1 class="title">AABE 自我問責 · +3 年回溯評估</h1>
+  <p class="lead">本平台主張「不公審」原則,對其他倡議者要求責任追溯;同樣標準也適用於 AABE 自身。每筆 AABE 倡議須於 +3 年後接受回溯評估,4 人簽名(主編、DPO、法律顧問、外部 dissenter),如有 dissenter 簽名必填。</p>
+
+  <article class="audit-card">
+    <h3>2026-05 平台立場:候選 4+5 整合 — 神經多樣性兒少校園 + 醫療化</h3>
+    <p>當期立場:支持早期識別 + 適當校園支持 + 神經多樣性權利尊重,反對診斷工具化以削弱家長教養權。</p>
+    <p style="margin-top:8px;color:var(--text-muted);font-size:13px"><strong>+3 年回溯預定</strong>:2029-05</p>
+    <div class="check-row">
+      <label><input type="checkbox"> 主編簽名</label>
+      <label><input type="checkbox"> DPO 簽名</label>
+      <label><input type="checkbox"> 法律顧問簽名</label>
+      <label><input type="checkbox"> Dissenter 意見已備</label>
+    </div>
+  </article>
+
+  <article class="audit-card">
+    <h3>2026-05 軸四 5 旗艦 PI 立場(待覆核)</h3>
+    <p>PI-12 §24 採「品質融合 + 家長選擇權」立場座標 +30 / PI-13 特教學校保留 +30 / PI-14 多元支持 / PI-15 §12 混合派 +30 / PI-16 平衡診斷 +20</p>
+    <p style="margin-top:8px;color:var(--text-muted);font-size:13px"><strong>對外發布前須覆核</strong>:外部審查 SOP(governance/external_review_sop.md)</p>
+    <div class="check-row">
+      <label><input type="checkbox"> 主編簽名</label>
+      <label><input type="checkbox"> DPO 簽名</label>
+      <label><input type="checkbox"> 法律顧問簽名</label>
+      <label><input type="checkbox"> 身障當事人顧問小組簽名</label>
+    </div>
+  </article>
+
+  <article class="audit-card warn">
+    <h3>未完成項目(BLOCKING)</h3>
+    <p style="font-weight:600;color:var(--brand)">以下項目未完成前,軸四 5 PI 不得對外發布(BETA 標記不解):</p>
+    <ol style="margin-left:24px;line-height:1.9;font-size:14px;margin-top:8px">
+      <li>主編、DPO、法律顧問三方任命</li>
+      <li>身障當事人顧問小組組成(8 人含主辦聯盟代表)</li>
+      <li>身障女性聯盟 / 智總 / 多障家長協會等之軸四 PI 對話紀錄</li>
+      <li>21/22 NGO 個別影子報告補爬取</li>
+      <li>cold read 第二輪外部審查</li>
+    </ol>
+  </article>
+
+  <section style="margin-top:32px;padding:20px;background:var(--bg-alt);border-radius:8px">
+    <h3 style="font-family:var(--serif);font-size:18px;color:var(--bg-deep);margin-bottom:12px">本表使用 SOP</h3>
+    <ol style="margin-left:24px;line-height:1.9;font-size:14px">
+      <li>每筆 AABE 立場入庫時,自動排程 +3 年回溯評估提醒</li>
+      <li>到期時主編召集 4 人會議,逐筆檢視當期立場與當前實際結果</li>
+      <li>若 outcome 標記為「非預期後果」,自動觸發本表 dissenter 必填</li>
+      <li>4 人簽名 PDF 留存於 internal/self_audit/YYYY-MM/</li>
+      <li>對外公布之自我問責摘要由主編另行撰寫</li>
+    </ol>
+  </section>
+
+</main>
+<footer>
+  <p>CRPD 監督平台 · AABE 內部工作區 · 此頁限自家人查閱 · <a href="./">回首頁</a></p>
+</footer>
+</body>
+</html>

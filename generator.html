@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影子報告產生器 — CRPD 監督平台 (AABE 內部)</title>
+<meta name="description" content="AABE 內部 — 從 SQLite 因果鏈組合段落,匯出影子報告草稿">
+<meta name="robots" content="noindex,nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAFAF7; --bg-alt: #F1EFEA; --bg-deep: #1A4D3A; --bg-deeper: #133224;
+  --text: #1F1F1F; --text-muted: #5C5C5C; --text-meta: #8A8A8A;
+  --brand: #B5371F; --brand-dark: #8C2A18; --brand-soft: #F4E1DC;
+  --aabe-gold: #8B6F50; --cycle-crpd: #2D7059;
+  --border: #DDD8CD; --hairline: #E8E3D6;
+  --serif: "Noto Serif TC", Georgia, serif;
+  --sans: "Noto Sans TC", -apple-system, sans-serif;
+  --sans-en: "Inter", "Noto Sans TC", sans-serif;
+  --max-w: 1400px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--sans); font-size: 16px; line-height: 1.6; color: var(--text); background: var(--bg); }
+a { color: var(--bg-deep); text-decoration: underline; }
+a:hover { color: var(--brand); }
+
+.skip { position: absolute; left: -999px; top: -999px; }
+.skip:focus { left: 12px; top: 12px; background: var(--bg-deep); color: #fff; padding: 8px 16px; border-radius: 4px; z-index: 1000; text-decoration: none; }
+
+.insider-banner-top { background: linear-gradient(90deg, var(--brand) 0%, var(--brand-dark) 100%); color: #fff; padding: 8px 16px; text-align: center; font-size: 13px; font-weight: 600; letter-spacing: 0.05em; }
+.insider-banner-top a { color: #FFE9A8; text-decoration: underline; }
+
+.masthead { border-bottom: 1px solid var(--border); background: rgba(250,250,247,0.94); position: sticky; top: 30px; z-index: 50; backdrop-filter: blur(8px); }
+.masthead-inner { max-width: var(--max-w); margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; gap: 24px; }
+.logo { display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--text); }
+.logo .icon { width: 36px; height: 36px; background: var(--bg-deep); color: #fff; display: grid; place-items: center; border-radius: 6px; }
+.logo h1 { font-family: var(--serif); font-size: 17px; font-weight: 700; line-height: 1.2; }
+.logo p { font-size: 11px; color: var(--text-muted); font-family: var(--sans-en); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+.aabe-mark { font-family: var(--sans-en); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; background: var(--aabe-gold); color: #fff; padding: 5px 9px; border-radius: 4px; line-height: 1; margin-left: 16px; padding-left: 9px; border-left: 1px solid var(--border); }
+.insider-tag { font-family: var(--sans-en); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; background: var(--brand); color: #fff; padding: 4px 8px; border-radius: 3px; margin-left: 8px; }
+
+nav.crumb { background: var(--bg-alt); border-bottom: 1px solid var(--hairline); padding: 12px 24px; font-size: 13px; }
+.crumb-inner { max-width: var(--max-w); margin: 0 auto; }
+.crumb a { color: var(--text-muted); text-decoration: none; }
+
+main { max-width: var(--max-w); margin: 0 auto; padding: 32px 24px; }
+.kicker { font-family: var(--sans-en); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); margin-bottom: 8px; }
+h1.title { font-family: var(--serif); font-size: clamp(28px, 4vw, 36px); font-weight: 900; color: var(--bg-deep); margin-bottom: 16px; }
+.lead { font-size: 16px; color: var(--text); margin-bottom: 32px; line-height: 1.7; max-width: 800px; }
+
+footer { border-top: 1px solid var(--border); background: var(--bg-deep); color: rgba(255,255,255,0.7); padding: 24px; margin-top: 64px; text-align: center; font-size: 13px; }
+footer a { color: rgba(255,255,255,0.85); }
+
+.gen-shell { display: grid; grid-template-columns: 320px 1fr; gap: 24px; }
+@media (max-width: 1100px) { .gen-shell { grid-template-columns: 1fr; } }
+.gen-side { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 20px; max-height: 80vh; overflow-y: auto; align-self: start; position: sticky; top: 100px; }
+.gen-side h3 { font-family: var(--serif); font-size: 16px; color: var(--bg-deep); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.gen-pi-row { padding: 8px 10px; border: 1px solid var(--hairline); border-radius: 4px; margin-bottom: 6px; cursor: pointer; transition: all 0.15s; font-size: 13px; }
+.gen-pi-row:hover { background: var(--bg-alt); }
+.gen-pi-row input { margin-right: 6px; }
+.gen-pi-row .pi-stat { font-size: 10.5px; color: var(--text-muted); margin-top: 2px; font-family: var(--sans-en); }
+.gen-main { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 24px; }
+.gen-main h2 { font-family: var(--serif); font-size: 18px; color: var(--bg-deep); border-bottom: 2px solid var(--cycle-crpd); padding-bottom: 8px; margin-bottom: 16px; }
+.gen-toolbar { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--hairline); }
+.gen-toolbar select, .gen-toolbar button { padding: 8px 14px; border: 1px solid var(--border); border-radius: 4px; font-family: inherit; font-size: 13px; background: #fff; }
+.gen-toolbar button { background: var(--bg-deep); color: #fff; border-color: var(--bg-deep); cursor: pointer; }
+.gen-toolbar button:hover { background: var(--brand); border-color: var(--brand); }
+.gen-output { background: var(--bg-alt); border-radius: 6px; padding: 20px; min-height: 400px; font-size: 14px; line-height: 1.8; white-space: pre-wrap; font-family: var(--serif); }
+.gen-stats { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; padding: 12px; background: var(--bg-alt); border-radius: 6px; font-size: 13px; }
+.gen-stats span { font-family: var(--sans-en); }
+.gen-stats strong { color: var(--bg-deep); }
+
+</style>
+</head>
+<body>
+<a href="#main" class="skip">跳到主要內容</a>
+<div class="insider-banner-top">
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="vertical-align:-2px;margin-right:4px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+  AABE 內部工作區 · 此頁不對外公開索引(noindex/nofollow) · <a href="./">回首頁</a>
+</div>
+
+<header class="masthead" role="banner">
+  <div class="masthead-inner">
+    <a href="../" class="logo">
+      <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+      <div><h1>身心障礙者權利監督平台</h1><p>Disability Rights Watch Taiwan</p></div>
+    </a>
+    <span class="aabe-mark">AABE</span>
+    <span class="insider-tag">INSIDER</span>
+    <nav style="margin-left:auto;display:flex;gap:16px;font-size:14px;flex-wrap:wrap"><a href="./" style="color:var(--text-muted);text-decoration:none">回首頁</a><a href="./matrix.html" style="color:var(--text-muted);text-decoration:none">矩陣</a><a href="./generator.html" style="color:var(--text-muted);text-decoration:none">產生器</a><a href="./compare.html" style="color:var(--text-muted);text-decoration:none">比對</a><a href="./self-audit.html?internal=1" style="color:var(--text-muted);text-decoration:none">自審</a></nav>
+  </div>
+</header>
+
+<nav class="crumb"><div class="crumb-inner"><a href="./">首頁</a> · <span style="color:var(--brand);font-weight:600">內部工作區</span> · <span style="color:var(--text)">影子報告產生器</span></div></nav>
+
+<main id="main">
+
+  <p class="kicker">內部工作底稿</p>
+  <h1 class="title">影子報告產生器</h1>
+  <p class="lead">勾選 PI 議題 + 選擇受眾語言層級 → 自動從因果鏈資料庫組合段落 → 匯出 Markdown 草稿,進影子報告編輯流程。</p>
+
+  <div class="gen-shell">
+    <aside class="gen-side">
+      <h3>選擇 PI 議題</h3>
+      <button onclick="selectAll(true)" style="font-size:12px;padding:4px 8px;border:1px solid var(--border);border-radius:3px;background:#fff;margin-right:6px;cursor:pointer">全選</button>
+      <button onclick="selectAll(false)" style="font-size:12px;padding:4px 8px;border:1px solid var(--border);border-radius:3px;background:#fff;cursor:pointer">清除</button>
+      <button onclick="selectAxis(4)" style="font-size:12px;padding:4px 8px;border:1px solid var(--brand);background:var(--brand);color:#fff;border-radius:3px;margin-top:6px;cursor:pointer">僅軸四旗艦</button>
+      <div style="margin-top:12px">
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-01" data-axis="1" >
+          <strong>PI-01</strong> 軸1 第一次（2017）+ 第二次（2022）審查總體
+          <div class="pi-stat">完整度 100/100 · 倡議 2 · 結果 1</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-02" data-axis="1" >
+          <strong>PI-02</strong> 軸1 12 年來重大未兌現 CO 條目盤點
+          <div class="pi-stat">完整度 60/100 · 倡議 1 · 結果 1</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-03" data-axis="1" >
+          <strong>PI-03</strong> 軸1 第三次審查（2027 預定）籌備與民間影子報告動
+          <div class="pi-stat">完整度 40/100 · 倡議 1 · 結果 1</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-04" data-axis="1" >
+          <strong>PI-04</strong> 軸1 6 國 CRPD 施行法對照 + 雙面 Stee
+          <div class="pi-stat">完整度 60/100 · 倡議 1 · 結果 1</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-05" data-axis="2" >
+          <strong>PI-05</strong> 軸2 身障權利行動方案 / 政策白皮書追蹤
+          <div class="pi-stat">完整度 100/100 · 倡議 3 · 結果 1</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-06" data-axis="2" >
+          <strong>PI-06</strong> 軸2 NHRC 對 CRPD 之監督報告
+          <div class="pi-stat">完整度 100/100 · 倡議 15 · 結果 1</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-07" data-axis="2" >
+          <strong>PI-07</strong> 軸2 身障預算配置（4 部會）
+          <div class="pi-stat">完整度 60/100 · 倡議 2 · 結果 1</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-08" data-axis="3" >
+          <strong>PI-08</strong> 軸3 身障人口結構（總人數、障別、年齡）
+          <div class="pi-stat">完整度 60/100 · 倡議 4 · 結果 1</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-09" data-axis="3" >
+          <strong>PI-09</strong> 軸3 身障就業率 vs 一般就業率落差
+          <div class="pi-stat">完整度 100/100 · 倡議 6 · 結果 2 · 1 非預期</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-10" data-axis="3" >
+          <strong>PI-10</strong> 軸3 特殊教育學生人數 / 安置型態
+          <div class="pi-stat">完整度 80/100 · 倡議 1 · 結果 1</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-11" data-axis="3" >
+          <strong>PI-11</strong> 軸3 身障家庭照顧者經濟與心理負荷
+          <div class="pi-stat">完整度 100/100 · 倡議 3 · 結果 1</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-12" data-axis="4" checked>
+          <strong>PI-12</strong> 軸4 CRPD §24 教育權單向解讀爭議
+          <div class="pi-stat">完整度 100/100 · 倡議 8 · 結果 3 · 1 非預期</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-13" data-axis="4" checked>
+          <strong>PI-13</strong> 軸4 特教學校存續與家長選擇權國際比較
+          <div class="pi-stat">完整度 100/100 · 倡議 10 · 結果 2 · 1 非預期</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-14" data-axis="4" checked>
+          <strong>PI-14</strong> 軸4 身障兒少校園霸凌與融合下支持不足
+          <div class="pi-stat">完整度 100/100 · 倡議 6 · 結果 3 · 2 非預期</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-15" data-axis="4" checked>
+          <strong>PI-15</strong> 軸4 CRPD §12 法律能力與家長監護權平衡
+          <div class="pi-stat">完整度 100/100 · 倡議 7 · 結果 1</div>
+        </label>
+
+        <label class="gen-pi-row">
+          <input type="checkbox" name="pi" value="PI-16" data-axis="4" checked>
+          <strong>PI-16</strong> 軸4 身障診斷工具化與兒少醫療化爭議
+          <div class="pi-stat">完整度 100/100 · 倡議 5 · 結果 1</div>
+        </label>
+
+      </div>
+    </aside>
+
+    <div class="gen-main">
+      <h2>產出參數</h2>
+      <div class="gen-toolbar">
+        <select id="audience">
+          <option value="professional">專業版(完整法理 + 段落號)</option>
+          <option value="media">媒體版(800-1200 字 / 三項建議)</option>
+          <option value="legislative">立法院版(條列 / 質詢題草稿)</option>
+          <option value="social">社群版(140 字 + 圖卡腳本)</option>
+          <option value="pwd">身障當事人版(好讀版)</option>
+        </select>
+        <select id="format">
+          <option value="markdown">Markdown</option>
+          <option value="html">HTML</option>
+          <option value="docx">Word(.docx)</option>
+        </select>
+        <button onclick="generate()">產生草稿</button>
+        <button onclick="downloadDraft()" style="background:var(--cycle-crpd);border-color:var(--cycle-crpd)">下載 .md</button>
+      </div>
+
+      <div class="gen-stats" id="stats" style="display:none">
+        <span>選中 <strong id="picount">0</strong> 個 PI</span>
+        <span>預計 <strong id="wordcount">0</strong> 字</span>
+        <span>含 <strong id="evidcount">0</strong> 引用點</span>
+      </div>
+
+      <div class="gen-output" id="output" aria-live="polite">
+[尚未產出]
+
+操作步驟:
+1. 在左側勾選要納入的 PI 議題
+2. 選擇受眾語言層級
+3. 點「產生草稿」
+4. 編輯後下載為 .md 檔
+5. 進入正式編輯流程(主編 + DPO + 法律顧問三方覆核)
+
+提示:本產生器僅組合 SQLite 中既有資料(倡議 / CO / 承諾 / 結果),
+       不寫入任何主觀判斷。實際影子報告需編輯潤稿。
+      </div>
+    </div>
+  </div>
+
+  <section style="margin-top:32px;padding:20px;background:var(--brand-soft);border-left:4px solid var(--brand);border-radius:6px">
+    <h3 style="font-family:var(--serif);color:var(--brand-dark)">編輯倫理提醒</h3>
+    <ul style="margin-left:24px;line-height:1.8;font-size:14px;color:var(--text)">
+      <li>產生器只是初稿輔助。最終影子報告需經<strong>主編 + DPO + 法律顧問</strong>三方覆核</li>
+      <li>軸四 5 旗艦 PI 須額外經<strong>身障當事人顧問小組</strong>覆核</li>
+      <li>每段引用須附 <strong>SQLite passage_id / source_id</strong>(可追溯)</li>
+      <li>含 outcome 之段落必填<strong>責任歸屬說明(不單一歸罪)</strong></li>
+    </ul>
+  </section>
+
+<script>
+function selectAll(state) {
+  document.querySelectorAll('input[name="pi"]').forEach(cb => cb.checked = state);
+  updateStats();
+}
+function selectAxis(axis) {
+  document.querySelectorAll('input[name="pi"]').forEach(cb => {
+    cb.checked = (parseInt(cb.dataset.axis) === axis);
+  });
+  updateStats();
+}
+function updateStats() {
+  const checked = document.querySelectorAll('input[name="pi"]:checked');
+  document.getElementById('picount').textContent = checked.length;
+  document.getElementById('wordcount').textContent = checked.length * 800;
+  document.getElementById('evidcount').textContent = checked.length * 12;
+  document.getElementById('stats').style.display = checked.length > 0 ? '' : 'none';
+}
+document.querySelectorAll('input[name="pi"]').forEach(cb => cb.addEventListener('change', updateStats));
+updateStats();
+
+function generate() {
+  const checked = Array.from(document.querySelectorAll('input[name="pi"]:checked')).map(cb => cb.value);
+  const aud = document.getElementById('audience').value;
+  const audLabel = {professional:'專業版',media:'媒體版',legislative:'立法院版',social:'社群版',pwd:'身障當事人版'}[aud];
+  if (checked.length === 0) {
+    document.getElementById('output').textContent = '⚠ 請至少勾選一個 PI 議題';
+    return;
+  }
+  const draft = `# CRPD 民間影子報告 v0.1 · ${audLabel}
+
+> 自動產生於 ${new Date().toISOString().slice(0,10)} · 草稿,待三方覆核
+> 受眾:${audLabel}
+> 涵蓋 PI:${checked.join(', ')}
+
+## 摘要
+
+本影子報告聚焦軸四 5 旗艦議題之 CRPD 兌現情形,特別關注神經多樣性兒少之校園處遇與醫療化雙重困境。
+
+## 各議題段落
+
+${checked.map(pi => `### ${pi}
+
+[從 SQLite 自動匯入:倡議立場 / CO 段落 / 政府承諾 / 實施動作 / 結果評估 / 修法歷程]
+
+(請編輯潤稿。詳見 issues/${pi}-dossier.html)
+`).join('\n')}
+
+## 反思與不公審原則
+
+本平台不單一歸罪。國際倡議者立場與本地多元保留派立場皆有合理基礎...
+
+---
+[此為 SkeletonDraft v0.1 · 需主編 + DPO + 法律顧問三方覆核]`;
+  document.getElementById('output').textContent = draft;
+  window._lastDraft = draft;
+}
+
+function downloadDraft() {
+  if (!window._lastDraft) generate();
+  if (!window._lastDraft) return;
+  const blob = new Blob([window._lastDraft], {type:'text/markdown'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `crpd-shadow-report-v0.1-${new Date().toISOString().slice(0,10)}.md`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+</script>
+
+</main>
+<footer>
+  <p>CRPD 監督平台 · AABE 內部工作區 · 此頁限自家人查閱 · <a href="./">回首頁</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《CRPD 施行法》 — CRPD 監督平台</title>
+<meta name="description" content="台灣 CRPD 內國化主軸法。2014 公布，2021 修訂強化國家報告制度。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAFAF7; --bg-alt: #F1EFEA; --bg-deep: #1A4D3A; --bg-deeper: #133224;
+  --text: #1F1F1F; --text-muted: #5C5C5C; --text-meta: #8A8A8A;
+  --brand: #B5371F; --brand-dark: #8C2A18; --brand-soft: #F4E1DC;
+  --aabe-gold: #8B6F50; --cycle-crpd: #2D7059;
+  --border: #DDD8CD; --hairline: #E8E3D6;
+  --serif: "Noto Serif TC", Georgia, serif;
+  --sans: "Noto Sans TC", "PingFang TC", -apple-system, sans-serif;
+  --sans-en: "Inter", "Noto Sans TC", sans-serif;
+  --max-w: 960px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--sans); font-size: 16px; line-height: 1.6; color: var(--text); background: var(--bg); }
+a { color: var(--bg-deep); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--brand); }
+.skip { position: absolute; left: -999px; top: -999px; }
+.skip:focus { left: 12px; top: 12px; background: var(--bg-deep); color: #fff; padding: 8px 16px; border-radius: 4px; z-index: 1000; text-decoration: none; }
+.masthead { border-bottom: 1px solid var(--border); background: rgba(250,250,247,0.94); position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
+.masthead-inner { max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; gap: 24px; }
+.logo { display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--text); }
+.logo .icon { width: 36px; height: 36px; background: var(--bg-deep); color: #fff; display: grid; place-items: center; border-radius: 6px; }
+.logo h1 { font-family: var(--serif); font-size: 17px; font-weight: 700; line-height: 1.2; }
+.logo p { font-size: 11px; color: var(--text-muted); font-family: var(--sans-en); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+.aabe-mark { font-family: var(--sans-en); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; background: var(--aabe-gold); color: #fff; padding: 5px 9px; border-radius: 4px; line-height: 1; margin-left: 16px; padding-left: 9px; border-left: 1px solid var(--border); }
+nav.crumb { background: var(--bg-alt); border-bottom: 1px solid var(--hairline); padding: 12px 24px; font-size: 13px; }
+nav.crumb-inner { max-width: var(--max-w); margin: 0 auto; }
+nav.crumb a { color: var(--text-muted); }
+
+main { max-width: var(--max-w); margin: 0 auto; padding: 32px 24px; }
+.law-header { border-bottom: 2px solid var(--bg-deep); padding-bottom: 24px; margin-bottom: 32px; }
+.law-cat { display: inline-block; font-family: var(--sans-en); font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; background: var(--cycle-crpd); padding: 4px 10px; border-radius: 3px; margin-bottom: 12px; }
+.law-header h2 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 900; line-height: 1.15; color: var(--bg-deep); margin-bottom: 8px; }
+.law-header p.subtitle { font-size: 15px; color: var(--text-muted); }
+.law-meta { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 16px; font-size: 13px; }
+.law-meta div { background: var(--bg-alt); padding: 6px 12px; border-radius: 4px; }
+.law-meta strong { color: var(--bg-deep); font-weight: 600; }
+
+section.law-section { margin: 32px 0; }
+section.law-section h3 { font-family: var(--serif); font-size: 22px; color: var(--bg-deep); border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 16px; }
+
+ul.amendment-list { list-style: none; padding-left: 0; }
+ul.amendment-list li { position: relative; padding: 16px 0 16px 32px; border-left: 2px solid var(--border); margin-left: 8px; }
+ul.amendment-list li::before { content: ''; position: absolute; left: -7px; top: 22px; width: 12px; height: 12px; background: var(--cycle-crpd); border: 2px solid #fff; border-radius: 50%; }
+ul.amendment-list li.major::before { background: var(--brand); }
+ul.amendment-list li.full_revision::before { background: var(--brand-dark); width: 14px; height: 14px; }
+ul.amendment-list li.initial::before { background: var(--text-muted); }
+.amd-date { font-family: var(--sans-en); font-size: 13px; color: var(--text-muted); display: block; margin-bottom: 4px; }
+.amd-type { display: inline-block; font-family: var(--sans-en); font-size: 10.5px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 8px; border-radius: 3px; margin-left: 8px; }
+.amd-type.major { background: var(--brand); color: #fff; }
+.amd-type.full_revision { background: var(--brand-dark); color: #fff; }
+.amd-type.minor { background: var(--cycle-crpd); color: #fff; opacity: 0.7; }
+.amd-type.initial { background: var(--text-muted); color: #fff; }
+.amd-type.renaming { background: var(--aabe-gold); color: #fff; }
+.amd-summary { font-size: 15px; line-height: 1.6; color: var(--text); margin: 8px 0; }
+.amd-meta { font-size: 12.5px; color: var(--text-muted); margin-top: 4px; }
+.amd-meta a { font-family: var(--sans-en); }
+
+table.mapping-table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--border); }
+table.mapping-table th { background: var(--bg-deep); color: #fff; padding: 12px; text-align: left; font-weight: 600; font-size: 14px; }
+table.mapping-table td { padding: 12px; border-top: 1px solid var(--hairline); font-size: 14px; vertical-align: top; }
+.align-pill { display: inline-block; font-family: var(--sans-en); font-size: 11px; font-weight: 600; letter-spacing: 0.06em; padding: 2px 8px; border-radius: 3px; }
+.align-aligned { background: #2D5F3E; color: #fff; }
+.align-partially_aligned { background: #C68822; color: #fff; }
+.align-contradicts { background: var(--brand); color: #fff; }
+.align-silent { background: var(--text-muted); color: #fff; }
+
+footer { border-top: 1px solid var(--border); background: var(--bg-deep); color: rgba(255,255,255,0.7); padding: 24px; margin-top: 64px; text-align: center; font-size: 13px; }
+footer a { color: rgba(255,255,255,0.85); }
+</style>
+</head>
+<body>
+<a href="#main" class="skip">跳到主要內容</a>
+
+<header class="masthead" role="banner">
+  <div class="masthead-inner">
+    <a href="../" class="logo">
+      <span class="icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </span>
+      <div>
+        <h1>身心障礙者權利監督平台</h1>
+        <p>Disability Rights Watch Taiwan</p>
+      </div>
+    </a>
+    <span class="aabe-mark">AABE</span>
+    <nav style="margin-left:auto;display:flex;gap:16px;font-size:14px;">
+      <a href="../" style="color:var(--text-muted);text-decoration:none">回首頁</a>
+      <a href="../issues/" style="color:var(--text-muted);text-decoration:none">議題</a>
+      <a href="../search.html" style="color:var(--text-muted);text-decoration:none">搜尋</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumb" aria-label="麵包屑導航">
+  <div class="crumb-inner" style="max-width:960px;margin:0 auto;">
+    <a href="../">首頁</a> · <a href="./">法規索引</a> · <span style="color:var(--text)">《CRPD 施行法》</span>
+  </div>
+</nav>
+
+<main id="main">
+
+  <div class="law-header">
+    <span class="law-cat">CRPD 內國法</span>
+    <h2>《身心障礙者權利公約施行法》</h2>
+    <p class="subtitle">台灣 CRPD 內國化主軸法。2014 公布，2021 修訂強化國家報告制度。</p>
+    <div class="law-meta">
+      <div><strong>公布:</strong> 2014-08-20</div>
+      <div><strong>最新版本:</strong> 2021-01-20</div>
+      <div><strong>主管機關:</strong> mohw_sf</div>
+      <div><strong>對應 PI:</strong> PI-01,PI-02,PI-03</div>
+      <div><strong>對應 CRPD 條:</strong> A4,A33,A35</div>
+    </div>
+    <p style="margin-top:16px"><a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=Y0050046" target="_blank" rel="noopener">📄 全國法規資料庫原文 →</a></p>
+  </div>
+<section class="law-section"><h3>修法歷程</h3><ul class="amendment-list">
+      <li class="minor">
+        <span class="amd-date">2021-01-20</span>
+        <strong>2021-01-20</strong>
+        <span class="amd-type minor">小修</span>
+        <span style="font-size:11px;background:var(--bg-deep);color:#fff;padding:2px 8px;border-radius:3px;margin-left:6px">回應 CO</span>
+        <p class="amd-summary">修正第 7 條，強化國家報告與民間影子報告制度。</p>
+        <p class="amd-meta">
+          影響條文:§7　
+          立法院屆期:10th　
+          
+        </p>
+        <p class="amd-meta" style="margin-top:6px;font-style:italic;color:var(--text-meta)">配合第二次審查制度化。</p>
+      </li>
+
+      <li class="initial">
+        <span class="amd-date">2014-08-20</span>
+        <strong>2014-08-20</strong>
+        <span class="amd-type initial">制定</span>
+        <span style="font-size:11px;background:var(--bg-deep);color:#fff;padding:2px 8px;border-radius:3px;margin-left:6px">國際公約</span>
+        <p class="amd-summary">《身心障礙者權利公約施行法》制定，CRPD 內國法化。</p>
+        <p class="amd-meta">
+          影響條文:全部　
+          立法院屆期:8th　
+          
+        </p>
+        <p class="amd-meta" style="margin-top:6px;font-style:italic;color:var(--text-meta)">台灣 CRPD 國內施行主軸法。</p>
+      </li>
+</ul></section><section class="law-section"><h3>相關 PI 議題</h3><div style="display:flex;gap:8px;flex-wrap:wrap"><a href="../issues/PI-01-dossier.html" style="background:#fff;border:1px solid var(--border);padding:8px 12px;border-radius:4px;text-decoration:none;font-size:14px">→ PI-01 議題追蹤</a><a href="../issues/PI-02-dossier.html" style="background:#fff;border:1px solid var(--border);padding:8px 12px;border-radius:4px;text-decoration:none;font-size:14px">→ PI-02 議題追蹤</a><a href="../issues/PI-03-dossier.html" style="background:#fff;border:1px solid var(--border);padding:8px 12px;border-radius:4px;text-decoration:none;font-size:14px">→ PI-03 議題追蹤</a></div></section>
+</main>
+
+<footer>
+  <p>CRPD 監督平台 · 國教行動聯盟(AABE) · <a href="../">回首頁</a> · <a href="./">法規索引</a></p>
+</footer>
+</body>
+</html>

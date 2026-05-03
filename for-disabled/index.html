@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>身障當事人入口 — CRPD 監督平台</title>
+<meta name="description" content="給身心障礙當事人的好讀版資訊：你的權利、求助管道、易讀資源、緊急協助專線。">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAFAF7; --bg-alt: #F1EFEA; --bg-deep: #1A4D3A; --bg-deeper: #133224;
+  --text: #1F1F1F; --text-muted: #5C5C5C; --text-meta: #8A8A8A;
+  --brand: #B5371F; --brand-dark: #8C2A18; --brand-soft: #F4E1DC;
+  --aabe-gold: #8B6F50; --cycle-crpd: #2D7059;
+  --border: #DDD8CD; --hairline: #E8E3D6;
+  --serif: "Noto Serif TC", Georgia, serif;
+  --sans: "Noto Sans TC", -apple-system, sans-serif;
+  --max-w: 760px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* 好讀版基礎:大字、行距大、字距寬 */
+body {
+  font-family: var(--sans);
+  font-size: 19px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a { color: var(--bg-deep); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+a:hover, a:focus-visible { color: var(--brand); outline: 3px solid var(--brand-soft); outline-offset: 2px; border-radius: 2px; }
+
+/* 易讀版高對比模式 toggle */
+body.easy-read {
+  font-size: 22px;
+  line-height: 2.2;
+  letter-spacing: 0.06em;
+  background: #fff;
+}
+body.easy-read main { background: #fff; }
+body.easy-read .card { border-width: 3px; }
+
+.skip { position: absolute; left: -999px; top: -999px; }
+.skip:focus { left: 12px; top: 12px; background: var(--bg-deep); color: #fff; padding: 12px 20px; border-radius: 4px; z-index: 1000; text-decoration: none; font-size: 17px; }
+
+.masthead { border-bottom: 2px solid var(--border); background: rgba(250,250,247,0.94); position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); padding: 16px; }
+.masthead-inner { max-width: var(--max-w); margin: 0 auto; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text); }
+.logo .icon { width: 40px; height: 40px; background: var(--bg-deep); color: #fff; display: grid; place-items: center; border-radius: 6px; }
+.logo h1 { font-family: var(--serif); font-size: 18px; font-weight: 700; line-height: 1.2; letter-spacing: 0.02em; }
+.aabe-mark { font-family: "Inter", sans-serif; font-weight: 800; font-size: 14px; letter-spacing: 0.08em; background: var(--aabe-gold); color: #fff; padding: 6px 10px; border-radius: 4px; line-height: 1; }
+
+.toolbar { display: flex; gap: 12px; margin-left: auto; flex-wrap: wrap; }
+.toolbar button { background: #fff; border: 2px solid var(--border); padding: 10px 16px; border-radius: 6px; font-family: inherit; font-size: 16px; cursor: pointer; transition: all 0.15s; min-height: 44px; }
+.toolbar button:hover, .toolbar button:focus-visible { background: var(--bg-deep); color: #fff; border-color: var(--bg-deep); outline: 3px solid var(--brand-soft); outline-offset: 2px; }
+.toolbar button.active { background: var(--bg-deep); color: #fff; border-color: var(--bg-deep); }
+
+main { max-width: var(--max-w); margin: 0 auto; padding: 32px 20px; }
+
+.hero {
+  background: linear-gradient(135deg, var(--cycle-crpd) 0%, var(--bg-deep) 100%);
+  color: #fff;
+  padding: 32px 28px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+.hero .greet { font-family: var(--serif); font-size: 28px; font-weight: 900; line-height: 1.3; margin-bottom: 16px; }
+.hero p { font-size: 18px; line-height: 2; opacity: 0.95; }
+.hero p strong { color: #FFE9A8; }
+
+/* 緊急求助 banner */
+.emergency-banner {
+  background: var(--brand);
+  color: #fff;
+  padding: 20px 24px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.emergency-banner svg { flex-shrink: 0; width: 36px; height: 36px; }
+.emergency-banner div { flex: 1; min-width: 200px; }
+.emergency-banner strong { font-size: 19px; display: block; margin-bottom: 6px; }
+.emergency-banner p { font-size: 17px; line-height: 1.7; }
+.emergency-banner a { color: #fff; font-weight: 700; }
+
+/* 卡片組 */
+section h2 {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--bg-deep);
+  margin: 32px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--cycle-crpd);
+  letter-spacing: 0.03em;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.card .ico {
+  width: 56px;
+  height: 56px;
+  background: var(--bg-alt);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--bg-deep);
+  flex-shrink: 0;
+}
+.card .body { flex: 1; min-width: 0; }
+.card h3 {
+  font-family: var(--serif);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--bg-deep);
+  margin-bottom: 10px;
+  letter-spacing: 0.03em;
+}
+.card p {
+  font-size: 17px;
+  line-height: 2;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.card a.action {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 20px;
+  background: var(--bg-deep);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  min-height: 44px;
+  letter-spacing: 0.04em;
+}
+.card a.action:hover, .card a.action:focus-visible { background: var(--brand); outline: 3px solid var(--brand-soft); outline-offset: 2px; }
+
+.phone-num {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  background: var(--brand);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 19px;
+}
+
+/* 緊急離開按鈕(浮動) */
+.quick-exit {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--brand);
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0 4px 16px rgba(181,55,31,0.4);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.quick-exit:hover, .quick-exit:focus-visible { background: var(--brand-dark); transform: scale(1.05); }
+
+footer { background: var(--bg-deep); color: rgba(255,255,255,0.85); padding: 32px 20px; margin-top: 64px; text-align: center; font-size: 16px; line-height: 1.8; }
+footer a { color: #fff; }
+footer .easy-read-note { background: rgba(255,255,255,0.1); padding: 16px; border-radius: 8px; margin-top: 16px; font-size: 14px; }
+
+@media (max-width: 600px) {
+  body { font-size: 17px; }
+  .hero .greet { font-size: 24px; }
+  .card { flex-direction: column; padding: 20px; }
+  .card .ico { margin-bottom: 4px; }
+}
+</style>
+</head>
+<body>
+<a href="#main" class="skip">跳到主要內容</a>
+
+<header class="masthead" role="banner">
+  <div class="masthead-inner">
+    <a href="../" class="logo">
+      <span class="icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </span>
+      <div>
+        <h1>身障當事人入口</h1>
+        <small style="font-size:12px;color:var(--text-muted);font-family:Inter,sans-serif">FOR PEOPLE WITH DISABILITIES</small>
+      </div>
+    </a>
+    <span class="aabe-mark">AABE</span>
+    <div class="toolbar">
+      <button id="btn-easy-read" type="button" aria-pressed="false" onclick="toggleEasyRead()">易讀模式</button>
+      <a href="../" style="text-decoration:none;display:inline-flex;align-items:center;color:var(--text-muted);padding:10px 16px;border:2px solid var(--border);border-radius:6px;min-height:44px">回首頁</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="hero">
+  <h2 class="greet">你好，這個頁面是給你的</h2>
+  <p>不管你是<strong>身心障礙當事人</strong>、家屬、朋友，或正在協助身障者的人 —<br>
+  這裡有<strong>清楚的資訊</strong>、<strong>求助管道</strong>、和<strong>緊急協助專線</strong>。</p>
+  <p style="margin-top:16px">所有文字都用<strong>大字、淺白語言</strong>。如需<strong>更大字體</strong>，請按右上角<strong>「易讀模式」</strong>。</p>
+</div>
+
+<div class="emergency-banner" role="alert">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg>
+  <div>
+    <strong>如果你現在很危險</strong>
+    <p>請打 <span class="phone-num">110</span> 報警 或 <span class="phone-num">119</span> 救護車<br>
+    心情很壞、想結束生命:打 <span class="phone-num">1925</span> 安心專線(免費 24 小時)</p>
+  </div>
+</div>
+
+<section>
+  <h2>常用求助管道</h2>
+
+  <div class="card">
+    <span class="ico" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+    <div class="body">
+      <h3>身心障礙福利諮詢</h3>
+      <p>有福利、補助、輔具、長照問題，可以打:</p>
+      <p><span class="phone-num">1957</span> 福利諮詢專線(24 小時，免費)</p>
+      <p style="font-size:15px;color:var(--text-muted)">由衛生福利部提供。會說國、台、客、英語。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="ico" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+    <div class="body">
+      <h3>就業諮詢</h3>
+      <p>找工作有困難、被歧視、想了解定額進用:</p>
+      <p><span class="phone-num">0800-507272</span> 身心障礙者就業諮詢專線</p>
+      <p style="font-size:15px;color:var(--text-muted)">由勞動部勞動力發展署提供。週一至五 8:30-17:30。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="ico" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+    <div class="body">
+      <h3>心理諮詢 / 心情很壞</h3>
+      <p>覺得壓力很大、想找人說話、或想結束生命:</p>
+      <p><span class="phone-num">1925</span> 安心專線(24 小時免費)</p>
+      <p><span class="phone-num">1980</span> 張老師專線</p>
+      <p style="font-size:15px;color:var(--text-muted)">所有專線都保密。你可以匿名。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="ico" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+    <div class="body">
+      <h3>校園問題(學生用)</h3>
+      <p>在學校被欺負、老師對你不好、或被強制離開教室:</p>
+      <p><span class="phone-num">1953</span> 教育部反霸凌專線</p>
+      <p><span class="phone-num">113</span> 保護專線(被打、被傷害)</p>
+      <p style="font-size:15px;color:var(--text-muted)">CRPD 第二次審查 §95(g) 已點名:學校不可以隨便聯繫警察或消防把學生戒護到醫院。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="ico" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+    <div class="body">
+      <h3>被歧視 / 法律問題</h3>
+      <p>找工作、看病、上學、買東西被拒絕，因為你的障礙:</p>
+      <p><span class="phone-num">412-8678</span> 法律扶助基金會(市話直撥)</p>
+      <p>或寫 email 給<a href="mailto:weall888@gmail.com?subject=[身障歧視]">國教行動聯盟</a>，我們會把你的故事(去識別化)整理進影子報告。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>你有哪些權利?(易懂版)</h2>
+
+  <div class="card">
+    <span class="ico" aria-hidden="true" style="background:#FFE9A8;color:#7A5C00"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+    <div class="body">
+      <h3>1. 受教育的權利(CRPD 第 24 條)</h3>
+      <p>你有權利上一般學校。學校要幫你準備合適的支持(像是:電梯、放大鏡、手語、教材)。</p>
+      <p style="font-size:15px;color:var(--text-muted)">如果學校做不到，可以打 <span class="phone-num">1953</span> 反霸凌專線、或寫信給教育部。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="ico" aria-hidden="true" style="background:#FFE9A8;color:#7A5C00"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+    <div class="body">
+      <h3>2. 表達意見的權利</h3>
+      <p>關於你的事情(治療、上什麼學校、住哪裡)，<strong>你的意見最重要</strong>。</p>
+      <p>就算別人(家人、老師、醫生)幫你決定，他們應該先問你怎麼想。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="ico" aria-hidden="true" style="background:#FFE9A8;color:#7A5C00"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6m0 0l4 2"/></svg></span>
+    <div class="body">
+      <h3>3. 自己決定的權利(CRPD 第 12 條)</h3>
+      <p>你有權自己管理:錢、住哪、跟誰住、看什麼醫生。</p>
+      <p style="font-size:15px;color:var(--text-muted)">如果你需要協助做決定，可以請信任的人「支持你做決定」(這叫「支持式決策」)，但<strong>決定權還是你的</strong>。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="ico" aria-hidden="true" style="background:#FFE9A8;color:#7A5C00"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+    <div class="body">
+      <h3>4. 找工作的權利(CRPD 第 27 條)</h3>
+      <p>雇主<strong>不可以</strong>因為你的障礙不雇用你。<br>
+      雇主應該幫你準備合適的工作環境。</p>
+      <p style="font-size:15px;color:var(--text-muted)">如果被歧視，打 <span class="phone-num">0800-507272</span>。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>了解更多</h2>
+
+  <div class="card">
+    <span class="ico" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></span>
+    <div class="body">
+      <h3>什麼是 CRPD?</h3>
+      <p>CRPD 是<strong>聯合國身心障礙者權利公約</strong>。</p>
+      <p>2014 年台灣立法把它變成國內法律。所有政府部門都要遵守。</p>
+      <p>每幾年，有國際委員會來檢查台灣做得好不好。<br>
+      最近一次:2022 年。下次:2027 年。</p>
+      <a href="../about.html" class="action">了解平台介紹</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="ico" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+    <div class="body">
+      <h3>提供你的故事 / 意見</h3>
+      <p>你的真實經驗對我們很重要。<br>
+      我們會把它(<strong>去掉名字、學校、地址</strong>)整理進<strong>民間影子報告</strong>，2027 年提交給國際委員會。</p>
+      <a href="../feedback.html" class="action">寫信告訴我們</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="ico" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg></span>
+    <div class="body">
+      <h3>看 16 個議題地圖</h3>
+      <p>我們追蹤 16 個身障權利議題:教育、就業、醫療、無障礙、社區生活...</p>
+      <p style="font-size:15px;color:var(--text-muted)">每個議題有時間軸、誰主張什麼、政府做了什麼。</p>
+      <a href="../map.html" class="action">看議題地圖</a>
+    </div>
+  </div>
+</section>
+
+<section style="margin-top:48px;padding:24px;background:var(--bg-alt);border-radius:12px">
+  <h2 style="border-bottom:none;margin-bottom:12px">本頁正在改進</h2>
+  <p style="font-size:17px;line-height:1.9">這個入口頁是<strong>第一版</strong>，還在改進。</p>
+  <p style="font-size:17px;line-height:1.9">我們需要<strong>身障當事人顧問小組</strong>幫忙改寫，讓文字更符合不同障別需求(視障/聽障/心智障礙/心理社會障礙/多重障礙都有不同需求)。</p>
+  <p style="font-size:17px;line-height:1.9">如果你願意當顧問，請寫信:<a href="mailto:weall888@gmail.com?subject=[身障顧問]"><strong>weall888@gmail.com</strong></a></p>
+</section>
+
+</main>
+
+<a href="https://www.google.com" class="quick-exit" aria-label="緊急離開（跳到 Google）">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+  快速離開
+</a>
+
+<footer>
+  <p><strong>身障當事人入口</strong> · 國教行動聯盟(AABE) · CRPD 監督平台</p>
+  <p>有事情要說嗎?寫信給 <a href="mailto:weall888@gmail.com">weall888@gmail.com</a></p>
+  <div class="easy-read-note">
+    本頁採易讀版設計原則:大字、行距大、淺白語言。<br>
+    若需更多無障礙協助(螢幕報讀、放大、語音輸入)，可向身心障礙福利專線 <strong>1957</strong> 諮詢輔具資源。
+  </div>
+</footer>
+
+<script>
+function toggleEasyRead() {
+  const isOn = document.body.classList.toggle('easy-read');
+  const btn = document.getElementById('btn-easy-read');
+  btn.classList.toggle('active', isOn);
+  btn.setAttribute('aria-pressed', isOn);
+  btn.textContent = isOn ? '關閉易讀' : '易讀模式';
+  localStorage.setItem('crpd-easy-read', isOn ? '1' : '0');
+}
+
+if (localStorage.getItem('crpd-easy-read') === '1') {
+  toggleEasyRead();
+}
+</script>
+</body>
+</html>

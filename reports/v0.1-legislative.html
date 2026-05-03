@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影子報告 v0.1 · 立法院版 — CRPD 監督平台</title>
+<meta name="description" content="CRPD 民間影子報告 立法院版 v0.1 — 立委辦公室、質詢撰稿 · 機關缺失 + 修法建議 + 質詢題草稿">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAFAF7; --bg-alt: #F1EFEA; --bg-deep: #1A4D3A; --bg-deeper: #133224;
+  --text: #1F1F1F; --text-muted: #5C5C5C; --text-meta: #8A8A8A;
+  --brand: #B5371F; --brand-dark: #8C2A18; --brand-soft: #F4E1DC;
+  --aabe-gold: #8B6F50; --cycle-crpd: #2D7059;
+  --border: #DDD8CD; --hairline: #E8E3D6;
+  --serif: "Noto Serif TC", Georgia, serif;
+  --sans: "Noto Sans TC", -apple-system, sans-serif;
+  --sans-en: "Inter", "Noto Sans TC", sans-serif;
+  --max-w: 960px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--sans); font-size: 16px; line-height: 1.6; color: var(--text); background: var(--bg); }
+a { color: var(--bg-deep); text-decoration: underline; }
+a:hover { color: var(--brand); }
+.skip { position: absolute; left: -999px; top: -999px; }
+.skip:focus { left: 12px; top: 12px; background: var(--bg-deep); color: #fff; padding: 8px 16px; border-radius: 4px; z-index: 1000; text-decoration: none; }
+.masthead { border-bottom: 1px solid var(--border); background: rgba(250,250,247,0.94); position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
+.masthead-inner { max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; gap: 24px; }
+.logo { display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--text); }
+.logo .icon { width: 36px; height: 36px; background: var(--bg-deep); color: #fff; display: grid; place-items: center; border-radius: 6px; }
+.logo h1 { font-family: var(--serif); font-size: 17px; font-weight: 700; line-height: 1.2; }
+.logo p { font-size: 11px; color: var(--text-muted); font-family: var(--sans-en); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+.aabe-mark { font-family: var(--sans-en); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; background: var(--aabe-gold); color: #fff; padding: 5px 9px; border-radius: 4px; line-height: 1; margin-left: 16px; padding-left: 9px; border-left: 1px solid var(--border); }
+nav.crumb { background: var(--bg-alt); border-bottom: 1px solid var(--hairline); padding: 12px 24px; font-size: 13px; }
+.crumb-inner { max-width: var(--max-w); margin: 0 auto; }
+nav.crumb a { color: var(--text-muted); text-decoration: none; }
+main { max-width: var(--max-w); margin: 0 auto; padding: 32px 24px; }
+.banner-wip { background: linear-gradient(135deg, #FFF3CD 0%, #FFE9A8 100%); border-left: 5px solid #FFC107; padding: 20px 24px; border-radius: 6px; margin-bottom: 32px; }
+.banner-wip strong { color: #5C4500; font-size: 15px; }
+.banner-wip p { font-size: 14px; color: #7A5C00; margin-top: 8px; }
+.audience-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 24px; }
+.audience-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 24px; text-decoration: none; color: var(--text); transition: all .15s; display: flex; flex-direction: column; gap: 12px; }
+.audience-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,77,58,0.08); border-color: var(--cycle-crpd); }
+.audience-card .a-icon { width: 44px; height: 44px; background: var(--bg-alt); border-radius: 8px; display: grid; place-items: center; color: var(--bg-deep); }
+.audience-card h3 { font-family: var(--serif); font-size: 18px; font-weight: 700; color: var(--bg-deep); }
+.audience-card p { font-size: 13.5px; color: var(--text-muted); line-height: 1.6; }
+.audience-card .a-meta { font-family: var(--sans-en); font-size: 11.5px; color: var(--cycle-crpd); margin-top: auto; padding-top: 12px; border-top: 1px solid var(--hairline); font-weight: 500; }
+section.report-section { margin: 32px 0; }
+section.report-section h2 { font-family: var(--serif); font-size: 22px; font-weight: 700; color: var(--bg-deep); border-bottom: 2px solid var(--bg-deep); padding-bottom: 8px; margin-bottom: 16px; }
+.kicker { font-family: var(--sans-en); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); margin-bottom: 8px; }
+h1.report-title { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 900; line-height: 1.15; color: var(--bg-deep); margin-bottom: 16px; }
+.report-lead { font-size: 17px; color: var(--text); margin-bottom: 32px; line-height: 1.7; }
+footer { border-top: 1px solid var(--border); background: var(--bg-deep); color: rgba(255,255,255,0.7); padding: 24px; margin-top: 64px; text-align: center; font-size: 13px; }
+footer a { color: rgba(255,255,255,0.85); }
+</style>
+</head>
+<body>
+<a href="#main" class="skip">跳到主要內容</a>
+
+<header class="masthead" role="banner">
+  <div class="masthead-inner">
+    <a href="../" class="logo">
+      <span class="icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </span>
+      <div>
+        <h1>身心障礙者權利監督平台</h1>
+        <p>Disability Rights Watch Taiwan</p>
+      </div>
+    </a>
+    <span class="aabe-mark">AABE</span>
+    <nav style="margin-left:auto;display:flex;gap:16px;font-size:14px;">
+      <a href="../" style="color:var(--text-muted);text-decoration:none">回首頁</a>
+      <a href="../issues/" style="color:var(--text-muted);text-decoration:none">議題</a>
+      <a href="../search.html" style="color:var(--text-muted);text-decoration:none">搜尋</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="crumb" aria-label="麵包屑導航">
+  <div class="crumb-inner"><a href="../">首頁</a> · <a href="./">影子報告</a> · <span style="color:var(--text)">立法院版</span></div>
+</nav>
+
+<main id="main">
+
+  <p class="kicker">影子報告 v0.1 · 立法院版</p>
+  <h1 class="report-title">CRPD 第三次審查 民間影子報告</h1>
+  <p class="report-lead"><strong>對象:</strong> 立委辦公室、質詢撰稿　|　<strong>篇幅:</strong>條列式 5-10 頁　|　<strong>特徵:</strong>機關缺失 + 修法建議 + 質詢題草稿</p>
+
+  <div class="banner-wip">
+    <strong>本檔為 v0.1 骨架 · 內容待 NGO 連署 + 三方覆核後出版</strong>
+    <p>下方各議題段落顯示因果鏈整合自動匯入之內容範本。實際版本需:(1) 主編 + DPO + 法律顧問三方覆核、(2) 殘聯 / 智總 / 多障家長 / 自閉症總會等 NGO 對話、(3) 身障當事人顧問小組覆核。</p>
+  </div>
+
+  <section class="report-section">
+    <h2>軸四 5 旗艦議題</h2>
+
+    <article style="background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand);padding:20px;border-radius:0 6px 6px 0;margin-bottom:16px">
+      <h3 style="font-family:var(--serif);font-size:18px;color:var(--bg-deep);margin-bottom:8px">
+        <span style="font-family:var(--sans-en);font-size:12px;color:var(--brand);font-weight:600;letter-spacing:0.06em">PI-12</span>　CRPD §24 教育權單向解讀爭議
+      </h3>
+      <p style="color:var(--text-muted);font-size:14px;line-height:1.7">
+        本段內容將自動從 SQLite 因果鏈整合產出(立法院版語言層級)。
+        詳見:<a href="../issues/PI-12-dossier.html">議題追蹤頁(因果鏈完整度 100/100)</a>。
+      </p>
+    </article>
+
+    <article style="background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand);padding:20px;border-radius:0 6px 6px 0;margin-bottom:16px">
+      <h3 style="font-family:var(--serif);font-size:18px;color:var(--bg-deep);margin-bottom:8px">
+        <span style="font-family:var(--sans-en);font-size:12px;color:var(--brand);font-weight:600;letter-spacing:0.06em">PI-13</span>　特教學校存續與家長選擇權國際比較
+      </h3>
+      <p style="color:var(--text-muted);font-size:14px;line-height:1.7">
+        本段內容將自動從 SQLite 因果鏈整合產出(立法院版語言層級)。
+        詳見:<a href="../issues/PI-13-dossier.html">議題追蹤頁(因果鏈完整度 100/100)</a>。
+      </p>
+    </article>
+
+    <article style="background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand);padding:20px;border-radius:0 6px 6px 0;margin-bottom:16px">
+      <h3 style="font-family:var(--serif);font-size:18px;color:var(--bg-deep);margin-bottom:8px">
+        <span style="font-family:var(--sans-en);font-size:12px;color:var(--brand);font-weight:600;letter-spacing:0.06em">PI-14</span>　身障兒少校園霸凌與融合下支持不足
+      </h3>
+      <p style="color:var(--text-muted);font-size:14px;line-height:1.7">
+        本段內容將自動從 SQLite 因果鏈整合產出(立法院版語言層級)。
+        詳見:<a href="../issues/PI-14-dossier.html">議題追蹤頁(因果鏈完整度 100/100)</a>。
+      </p>
+    </article>
+
+    <article style="background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand);padding:20px;border-radius:0 6px 6px 0;margin-bottom:16px">
+      <h3 style="font-family:var(--serif);font-size:18px;color:var(--bg-deep);margin-bottom:8px">
+        <span style="font-family:var(--sans-en);font-size:12px;color:var(--brand);font-weight:600;letter-spacing:0.06em">PI-15</span>　CRPD §12 法律能力與家長監護權平衡
+      </h3>
+      <p style="color:var(--text-muted);font-size:14px;line-height:1.7">
+        本段內容將自動從 SQLite 因果鏈整合產出(立法院版語言層級)。
+        詳見:<a href="../issues/PI-15-dossier.html">議題追蹤頁(因果鏈完整度 100/100)</a>。
+      </p>
+    </article>
+
+    <article style="background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand);padding:20px;border-radius:0 6px 6px 0;margin-bottom:16px">
+      <h3 style="font-family:var(--serif);font-size:18px;color:var(--bg-deep);margin-bottom:8px">
+        <span style="font-family:var(--sans-en);font-size:12px;color:var(--brand);font-weight:600;letter-spacing:0.06em">PI-16</span>　身障診斷工具化與兒少醫療化爭議
+      </h3>
+      <p style="color:var(--text-muted);font-size:14px;line-height:1.7">
+        本段內容將自動從 SQLite 因果鏈整合產出(立法院版語言層級)。
+        詳見:<a href="../issues/PI-16-dossier.html">議題追蹤頁(因果鏈完整度 100/100)</a>。
+      </p>
+    </article>
+
+  </section>
+
+  <section class="report-section">
+    <h2>反思與不公審原則</h2>
+    <p style="font-size:15px;line-height:1.7">本平台不單一歸罪。國際倡議者立場與本地多元保留派立場皆有合理基礎。在政策實施過程中出現之非預期後果,責任歸屬通常涉及:</p>
+    <ol style="margin-left:24px;font-size:15px;line-height:1.8;margin-top:8px">
+      <li>倡議者初衷之正當性</li>
+      <li>政府實施品質配套</li>
+      <li>跨部會協調與預算配置</li>
+      <li>社會結構性條件</li>
+    </ol>
+    <p style="margin-top:16px;font-size:14px;color:var(--text-muted)">
+      請參考 <a href="../actors/">倡議者責任頁</a> 之每筆 outcome <strong>責任歸屬說明</strong>。
+    </p>
+  </section>
+
+  <section class="report-section">
+    <h2>引用資料</h2>
+    <ul style="margin-left:24px;font-size:14px;line-height:1.8">
+      <li><a href="../laws/">8 部主要法律 + 16 修法歷程</a></li>
+      <li><a href="../search.html?q=CO">206 段 CO 全量入庫</a>(2017 + 2022)</li>
+      <li>63 倡議立場(含 NHRC 30 段平行回復)</li>
+      <li>10 政府承諾 + 10 實施動作</li>
+      <li>18 結果評估(含 5 非預期後果)</li>
+      <li>27 LOI 議題清單問題</li>
+      <li>12 份原始 PDF 文件(共 240 萬字 OCR)</li>
+    </ul>
+  </section>
+
+</main>
+<footer>
+  <p>CRPD 監督平台 · 國教行動聯盟(AABE) · <a href="../">回首頁</a></p>
+</footer>
+</body>
+</html>

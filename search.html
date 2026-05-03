@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全平台搜尋 — CRPD 監督平台</title>
+<meta name="description" content="搜尋 391 筆 CRPD 平台資料:議題卡 / CO 段落 / 倡議立場 / 政府承諾 / 修法 / 結果評估 / LOI / 文件 / 倡議者">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAFAF7; --bg-alt: #F1EFEA; --bg-deep: #1A4D3A; --bg-deeper: #133224;
+  --text: #1F1F1F; --text-muted: #5C5C5C; --text-meta: #8A8A8A;
+  --brand: #B5371F; --brand-dark: #8C2A18; --brand-soft: #F4E1DC;
+  --aabe-gold: #8B6F50; --cycle-crpd: #2D7059;
+  --border: #DDD8CD; --hairline: #E8E3D6;
+  --serif: "Noto Serif TC", "Source Han Serif TC", Georgia, serif;
+  --sans: "Noto Sans TC", "PingFang TC", -apple-system, sans-serif;
+  --sans-en: "Inter", "Noto Sans TC", -apple-system, sans-serif;
+  --max-w: 1200px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--sans); font-size: 16px; line-height: 1.6; color: var(--text); background: var(--bg); }
+a { color: var(--bg-deep); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--brand); }
+.skip { position: absolute; left: -999px; top: -999px; }
+.skip:focus { left: 12px; top: 12px; background: var(--bg-deep); color: #fff; padding: 8px 16px; border-radius: 4px; z-index: 1000; text-decoration: none; }
+
+.masthead { border-bottom: 1px solid var(--border); background: rgba(250,250,247,0.94); position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
+.masthead-inner { max-width: var(--max-w); margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; gap: 24px; }
+.logo { display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--text); }
+.logo .icon { width: 36px; height: 36px; background: var(--bg-deep); color: #fff; display: grid; place-items: center; border-radius: 6px; }
+.logo h1 { font-family: var(--serif); font-size: 17px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.2; }
+.logo p { font-size: 11px; color: var(--text-muted); font-family: var(--sans-en); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+.aabe-mark { font-family: var(--sans-en); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; background: var(--aabe-gold); color: #fff; padding: 5px 9px; border-radius: 4px; line-height: 1; margin-left: 16px; padding-left: 9px; border-left: 1px solid var(--border); }
+
+.search-hero { background: var(--bg-alt); border-bottom: 1px solid var(--hairline); padding: 48px 24px; }
+.search-hero-inner { max-width: 760px; margin: 0 auto; }
+.search-kicker { font-family: var(--sans-en); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); margin-bottom: 16px; }
+.search-hero h2 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 900; line-height: 1.15; color: var(--bg-deep); margin-bottom: 16px; }
+.search-hero .lead { font-size: 16px; color: var(--text-muted); margin-bottom: 24px; }
+
+.search-box { position: relative; }
+.search-box input { width: 100%; padding: 16px 16px 16px 52px; font-size: 18px; border: 2px solid var(--border); border-radius: 8px; background: #fff; font-family: var(--sans); }
+.search-box input:focus { outline: 2px solid var(--brand); outline-offset: -1px; border-color: var(--brand); }
+.search-box svg { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
+
+.filter-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+.filter-pill { padding: 6px 14px; background: #fff; border: 1px solid var(--border); border-radius: 999px; font-size: 13px; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+.filter-pill:hover { background: var(--bg-deep); color: #fff; border-color: var(--bg-deep); }
+.filter-pill.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+.filter-pill .count { font-family: var(--sans-en); font-size: 11px; opacity: 0.7; margin-left: 4px; }
+
+.results-section { max-width: var(--max-w); margin: 0 auto; padding: 32px 24px; }
+.results-meta { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 16px; border-bottom: 1px solid var(--border); margin-bottom: 24px; flex-wrap: wrap; gap: 8px; }
+.results-meta h3 { font-family: var(--serif); font-size: 20px; color: var(--bg-deep); }
+.results-count { font-family: var(--sans-en); font-size: 13px; color: var(--text-muted); }
+
+.results-list { display: flex; flex-direction: column; gap: 16px; }
+.result-card { display: block; padding: 16px 20px; background: #fff; border: 1px solid var(--border); border-radius: 6px; text-decoration: none; color: var(--text); transition: all 0.15s; position: relative; }
+.result-card:hover { border-color: var(--brand); box-shadow: 0 4px 16px rgba(26,77,58,0.08); transform: translateY(-1px); }
+.result-card .r-type { display: inline-block; font-family: var(--sans-en); font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #fff; background: var(--cycle-crpd); padding: 2px 8px; border-radius: 3px; margin-bottom: 8px; }
+.result-card .r-type.t-ci { background: var(--cycle-crpd); }
+.result-card .r-type.t-pi { background: var(--brand); }
+.result-card .r-type.t-ad { background: #6B5B95; }
+.result-card .r-type.t-co { background: var(--cycle-crpd); }
+.result-card .r-type.t-cm { background: #D97706; }
+.result-card .r-type.t-oa { background: #C4452D; }
+.result-card .r-type.t-la { background: var(--bg-deep); }
+.result-card .r-type.t-am { background: var(--bg-deep); opacity: 0.7; }
+.result-card .r-type.t-loi { background: #4B2480; }
+.result-card .r-type.t-pdf { background: #475569; }
+.result-card .r-type.t-act { background: var(--aabe-gold); }
+.result-card h4 { font-family: var(--serif); font-size: 17px; font-weight: 700; line-height: 1.4; color: var(--bg-deep); margin-bottom: 4px; }
+.result-card .r-subtitle { font-size: 12.5px; color: var(--text-muted); margin-bottom: 8px; font-family: var(--sans-en); }
+.result-card .r-body { font-size: 14px; color: var(--text); line-height: 1.6; }
+.result-card mark { background: var(--brand-soft); color: var(--brand-dark); padding: 0 2px; border-radius: 2px; }
+
+.empty-state { text-align: center; padding: 64px 24px; color: var(--text-muted); }
+.empty-state svg { color: var(--border); margin-bottom: 16px; }
+.empty-state p { font-size: 15px; }
+
+footer { border-top: 1px solid var(--border); background: var(--bg-deep); color: rgba(255,255,255,0.7); padding: 24px; margin-top: 64px; text-align: center; font-size: 13px; }
+footer a { color: rgba(255,255,255,0.85); }
+</style>
+</head>
+<body>
+<a href="#main" class="skip">跳到主要內容</a>
+
+<header class="masthead" role="banner">
+  <div class="masthead-inner">
+    <a href="./" class="logo">
+      <span class="icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </span>
+      <div>
+        <h1>身心障礙者權利監督平台</h1>
+        <p>Disability Rights Watch Taiwan</p>
+      </div>
+    </a>
+    <span class="aabe-mark">AABE</span>
+    <nav style="margin-left:auto;display:flex;gap:16px;font-size:14px;">
+      <a href="./" style="color:var(--text-muted);text-decoration:none">回首頁</a>
+      <a href="./issues/" style="color:var(--text-muted);text-decoration:none">議題</a>
+      <a href="./actors/" style="color:var(--text-muted);text-decoration:none">倡議者</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="search-hero">
+  <div class="search-hero-inner">
+    <p class="search-kicker">全平台搜尋</p>
+    <h2>從 391 筆資料中,找你要的證據</h2>
+    <p class="lead">議題卡 16 / CO 段落 206 / 倡議立場 63 / LOI 議題 27 / 結果評估 18 / 修法 15 / 倡議者 15 / 政府承諾 11 / PDF 文件 12 / 法律 8</p>
+
+    <div class="search-box">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="q" placeholder="例如:融合教育 / 監護宣告 / 人約盟 / 神經多樣性 / §95(g)" autocomplete="off" autofocus>
+    </div>
+
+    <div class="filter-pills" id="type-filters">
+      <button class="filter-pill active" data-type="">全部 <span class="count">391</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="results-section" id="main">
+  <div class="results-meta">
+    <h3>搜尋結果</h3>
+    <span class="results-count" id="count">輸入關鍵字以開始搜尋</span>
+  </div>
+  <div class="results-list" id="results"></div>
+</section>
+
+</main>
+
+<footer>
+  <p>CRPD 監督平台 · 國教行動聯盟(AABE) · 最後更新:2026-05-04 · <a href="./">回首頁</a></p>
+</footer>
+
+<script>
+let DATA = null;
+let currentType = "";
+
+// 類型對應 CSS class
+const typeClass = {
+  "PI 議題": "t-pi", "第一次 CO": "t-co", "第二次 CO": "t-co",
+  "倡議立場": "t-ad", "政府承諾": "t-cm", "結果評估": "t-oa",
+  "法律": "t-la", "修法歷程": "t-am", "LOI 議題清單": "t-loi",
+  "原始 PDF 文件": "t-pdf", "倡議者責任": "t-act"
+};
+
+// Fetch index
+fetch('./search-index.json').then(r => r.json()).then(d => {
+  DATA = d;
+  // 建類型 filter pills
+  const filters = document.getElementById('type-filters');
+  const types = {};
+  d.docs.forEach(doc => { types[doc.type] = (types[doc.type] || 0) + 1; });
+  Object.entries(types).sort((a,b) => b[1]-a[1]).forEach(([t, c]) => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-pill';
+    btn.dataset.type = t;
+    btn.innerHTML = `${t} <span class="count">${c}</span>`;
+    btn.onclick = () => { setType(t === currentType ? '' : t); };
+    filters.appendChild(btn);
+  });
+  // 自動執行 URL ?q= 參數
+  const params = new URLSearchParams(location.search);
+  const q = params.get('q');
+  if (q) { document.getElementById('q').value = q; doSearch(); }
+});
+
+document.getElementById('q').addEventListener('input', doSearch);
+
+function setType(t) {
+  currentType = t;
+  document.querySelectorAll('.filter-pill').forEach(b => {
+    b.classList.toggle('active', b.dataset.type === t);
+  });
+  if (!t) document.querySelector('.filter-pill[data-type=""]').classList.add('active');
+  doSearch();
+}
+
+function escapeHTML(s) { return (s || '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[m]); }
+
+function highlight(text, query) {
+  if (!query || !text) return escapeHTML(text || '');
+  const re = new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+  return escapeHTML(text).replace(re, '<mark>$1</mark>');
+}
+
+function doSearch() {
+  if (!DATA) return;
+  const q = document.getElementById('q').value.trim().toLowerCase();
+  let filtered = DATA.docs;
+  if (currentType) filtered = filtered.filter(d => d.type === currentType);
+  if (q) {
+    filtered = filtered.filter(d => {
+      const haystack = ((d.title || '') + ' ' + (d.subtitle || '') + ' ' + (d.body || '') + ' ' + (d.tags || []).join(' ')).toLowerCase();
+      return haystack.includes(q);
+    });
+    filtered.sort((a,b) => {
+      const aT = (a.title || '').toLowerCase().includes(q) ? 1 : 0;
+      const bT = (b.title || '').toLowerCase().includes(q) ? 1 : 0;
+      return bT - aT;
+    });
+  }
+  const list = document.getElementById('results');
+  const count = document.getElementById('count');
+
+  if (!q && !currentType) {
+    list.innerHTML = '';
+    count.textContent = `共 ${DATA.total} 筆 · 輸入關鍵字以開始搜尋`;
+    return;
+  }
+  if (filtered.length === 0) {
+    list.innerHTML = '<div class="empty-state"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><p>找不到「' + escapeHTML(q) + '」相關結果</p></div>';
+    count.textContent = '0 筆';
+    return;
+  }
+
+  count.textContent = `${filtered.length} 筆${currentType ? ` · ${currentType}` : ''}${q ? ` · 關鍵字「${escapeHTML(q)}」` : ''}`;
+
+  list.innerHTML = filtered.slice(0, 100).map(d => {
+    const cls = typeClass[d.type] || 't-ci';
+    return `<a class="result-card" href="${escapeHTML(d.url)}">
+      <span class="r-type ${cls}">${escapeHTML(d.type)}</span>
+      <h4>${highlight(d.title, q)}</h4>
+      <div class="r-subtitle">${highlight(d.subtitle, q)}</div>
+      <div class="r-body">${highlight((d.body || '').slice(0, 200) + ((d.body || '').length > 200 ? '…' : ''), q)}</div>
+    </a>`;
+  }).join('');
+
+  if (filtered.length > 100) {
+    list.innerHTML += '<p style="text-align:center;color:var(--text-muted);padding:16px;font-size:13px">顯示前 100 筆 · 共 ' + filtered.length + ' 筆 · 請輸入更精確關鍵字</p>';
+  }
+}
+</script>
+</body>
+</html>

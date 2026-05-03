@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>未被聽見的聲音 — CRPD 監督平台</title>
+<meta name="description" content="多元保留派 / 家長團體 / 中間派之主張,在 CRPD CO 中被駁回或部分採納者。本平台呈現多元並進視角,不單一歸罪。">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FAFAF7; --bg-alt: #F1EFEA; --bg-deep: #1A4D3A; --bg-deeper: #133224;
+  --text: #1F1F1F; --text-muted: #5C5C5C; --text-meta: #8A8A8A;
+  --brand: #B5371F; --brand-dark: #8C2A18; --brand-soft: #F4E1DC;
+  --aabe-gold: #8B6F50; --cycle-crpd: #2D7059;
+  --border: #DDD8CD; --hairline: #E8E3D6;
+  --serif: "Noto Serif TC", Georgia, serif;
+  --sans: "Noto Sans TC", -apple-system, sans-serif;
+  --sans-en: "Inter", "Noto Sans TC", sans-serif;
+  --max-w: 960px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--sans); font-size: 16px; line-height: 1.6; color: var(--text); background: var(--bg); }
+a { color: var(--bg-deep); }
+a:hover { color: var(--brand); }
+.skip { position: absolute; left: -999px; top: -999px; }
+.skip:focus { left: 12px; top: 12px; background: var(--bg-deep); color: #fff; padding: 8px 16px; border-radius: 4px; z-index: 1000; text-decoration: none; }
+
+.masthead { border-bottom: 1px solid var(--border); background: rgba(250,250,247,0.94); position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
+.masthead-inner { max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; gap: 24px; }
+.logo { display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--text); }
+.logo .icon { width: 36px; height: 36px; background: var(--bg-deep); color: #fff; display: grid; place-items: center; border-radius: 6px; }
+.logo h1 { font-family: var(--serif); font-size: 17px; font-weight: 700; line-height: 1.2; }
+.logo p { font-size: 11px; color: var(--text-muted); font-family: var(--sans-en); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+.aabe-mark { font-family: var(--sans-en); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; background: var(--aabe-gold); color: #fff; padding: 5px 9px; border-radius: 4px; line-height: 1; margin-left: 16px; padding-left: 9px; border-left: 1px solid var(--border); }
+nav.crumb { background: var(--bg-alt); border-bottom: 1px solid var(--hairline); padding: 12px 24px; font-size: 13px; }
+.crumb-inner { max-width: var(--max-w); margin: 0 auto; }
+.crumb a { color: var(--text-muted); text-decoration: none; }
+
+main { max-width: var(--max-w); margin: 0 auto; padding: 32px 24px; }
+.kicker { font-family: var(--sans-en); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); margin-bottom: 8px; }
+h1.title { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 900; color: var(--bg-deep); margin-bottom: 16px; }
+.lead { font-size: 17px; color: var(--text); margin-bottom: 32px; line-height: 1.7; }
+.lead strong { color: var(--bg-deep); }
+
+.principle-box { background: var(--brand-soft); border-left: 4px solid var(--brand); padding: 20px 24px; border-radius: 6px; margin-bottom: 32px; }
+.principle-box strong { color: var(--brand-dark); }
+
+.unheard-card { background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--brand); border-radius: 0 6px 6px 0; padding: 20px 24px; margin-bottom: 16px; }
+.unheard-card.partial { border-left-color: #C68822; }
+.unheard-card.noted { border-left-color: var(--text-muted); }
+.unheard-card .u-status { display: inline-block; font-family: var(--sans-en); font-size: 11px; font-weight: 600; letter-spacing: 0.06em; padding: 3px 9px; border-radius: 3px; margin-bottom: 10px; color: #fff; }
+.unheard-card .u-status.rejected { background: var(--brand); }
+.unheard-card .u-status.partial { background: #C68822; }
+.unheard-card .u-status.noted { background: var(--text-muted); }
+.unheard-card h3 { font-family: var(--serif); font-size: 17px; font-weight: 700; color: var(--bg-deep); margin-bottom: 6px; }
+.unheard-card .u-meta { font-size: 12.5px; color: var(--text-muted); font-family: var(--sans-en); margin-bottom: 12px; }
+.unheard-card .u-position { font-size: 14.5px; line-height: 1.7; color: var(--text); margin-bottom: 12px; }
+.unheard-card .u-evidence { background: var(--bg-alt); padding: 10px 14px; border-radius: 4px; font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-top: 8px; }
+.unheard-card .u-evidence strong { color: var(--bg-deep); }
+
+.contrast-block { margin: 16px 0 8px; padding-top: 12px; border-top: 1px dashed var(--border); }
+.contrast-block .c-label { font-size: 11.5px; color: var(--cycle-crpd); font-weight: 600; letter-spacing: 0.06em; font-family: var(--sans-en); text-transform: uppercase; margin-bottom: 6px; }
+.contrast-block .c-actor { font-size: 13px; color: var(--text); margin-bottom: 4px; }
+.contrast-block .c-actor strong { color: var(--cycle-crpd); }
+
+footer { border-top: 1px solid var(--border); background: var(--bg-deep); color: rgba(255,255,255,0.7); padding: 24px; margin-top: 64px; text-align: center; font-size: 13px; }
+footer a { color: rgba(255,255,255,0.85); }
+</style>
+</head>
+<body>
+<a href="#main" class="skip">跳到主要內容</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="./" class="logo">
+      <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+      <div><h1>身心障礙者權利監督平台</h1><p>Disability Rights Watch Taiwan</p></div>
+    </a>
+    <span class="aabe-mark">AABE</span>
+    <nav style="margin-left:auto;display:flex;gap:16px;font-size:14px"><a href="./" style="color:var(--text-muted);text-decoration:none">回首頁</a><a href="./issues/" style="color:var(--text-muted);text-decoration:none">議題</a><a href="./search.html" style="color:var(--text-muted);text-decoration:none">搜尋</a></nav>
+  </div>
+</header>
+
+<nav class="crumb"><div class="crumb-inner"><a href="./">首頁</a> · <span style="color:var(--text)">未被聽見的聲音</span></div></nav>
+
+<main id="main">
+
+<p class="kicker">未被聽見的聲音</p>
+<h1 class="title">多元保留派 / 家長團體之被駁回主張</h1>
+<p class="lead">CRPD 結論性意見並非完美無漏。本頁呈現於 CO 中<strong>被駁回(rejected)、部分採納(partially adopted)、僅備查(noted only)、或沉默</strong>之倡議立場 — 多以本土家長團體、心智障礙者家屬、學界中間派立場為主。本頁不主張這些立場必然正確,但提供完整光譜供公共討論。</p>
+
+<div class="principle-box">
+  <p><strong>不公審 + 不獨斷原則</strong></p>
+  <p style="margin-top:8px;font-size:14.5px">CO 之國際委員會立場具備法理權威,但「未被採納」不等於「無理」,「被採納」也不等於「絕對正確」。本平台呈現未被聽見的聲音,目的:</p>
+  <ol style="margin-left:24px;font-size:14.5px;line-height:1.8;margin-top:8px">
+    <li>避免單軌化政策實施造成非預期後果(<a href="./trace/">→ 反向追溯 18 結果評估 / 5 非預期</a>)</li>
+    <li>尊重身障當事人 / 家屬 / 重度障礙群體之多元真實</li>
+    <li>促進跨派對話而非陣營化</li>
+  </ol>
+</div>
+
+<section style="margin: 32px 0">
+  <h2 style="font-family:var(--serif);font-size:22px;color:var(--bg-deep);border-bottom:2px solid var(--brand);padding-bottom:8px;margin-bottom:16px">被駁回 / 部分採納 / 沉默之倡議立場</h2>
+
+  <article class="unheard-card noted">
+    <span class="u-status noted">僅備查</span>
+    <h3>醫療化批評學派（國際）</h3>
+    <div class="u-meta">2022-06 · 立場座標 -80 · medicalization_critic · 議題 PI-16 · A1,A25</div>
+    <p class="u-position">（學界）Allan Frances（DSM-IV 主編）、Sami Timimi、Peter Conrad 等：DSM-5 標準擴張使盛行率上升，兒少 ADHD 處方藥用藥率上升須警覺。</p>
+    <div class="u-evidence">
+      <strong>判斷依據:</strong>CO §70 提及神經多樣性處遇，但未明確採納醫療化批評派立場
+      <br><strong>對應 CO 段落:</strong>第2次 §70 — 國際審查委員會關切，目前針對神經多樣性、心理社會障礙和心智障礙者於司法系統中之處遇仍存在不足。涉及自閉症兒童、ADHD 兒童於少年司法系統中應有專家評估與專門支持、教育與處遇。
+    </div>
+    <div class="contrast-block"><div class="c-label">↔ 同議題之被採納立場(對照)</div><div class="c-actor"><strong>神經多樣性派</strong>(立場 +0)— （學界）Judy Singer、Steve Silberman 等：不應病理化神經差異，支持應與身分認同並行，反對『治癒』模式。</div></div>
+    <p style="margin-top:12px;font-size:13px"><a href="./issues/PI-16-dossier.html" style="color:var(--cycle-crpd)">→ 完整議題追蹤(因果鏈)</a></p>
+  </article>
+
+  <article class="unheard-card partial">
+    <span class="u-status partial">部分採納</span>
+    <h3>國內特教學界（中間派）</h3>
+    <div class="u-meta">2022-06 · 立場座標 +0 · quality_inclusion · 議題 PI-12,PI-13 · A24</div>
+    <p class="u-position">（學界中間派立場）主張：融合為主流方向，但須先確保普通班品質充足。過渡期間保留多元安置選項。重點在 IEP 落實與通用學習設計，而非學校類別。</p>
+    <div class="u-evidence">
+      <strong>判斷依據:</strong>CO §96(c) 教師培訓與通用學習設計呼應品質派主張之品質提升核心；但 §96(b) 單軌化未採納多元安置主張。
+      <br><strong>對應 CO 段落:</strong>第2次 §96 — 國際審查委員會建議國家：(a) 促進融合教育，確保所有學習者在同一系統內充分參與，以符合 §24 第 4 號一般性意見。(b) 將促進融合性教育的責任從特殊教育轉移到普通教育。(c) 提高普通教育教師、特殊教育教師之融合能力，將培訓重點從身…
+    </div>
+    
+    <p style="margin-top:12px;font-size:13px"><a href="./issues/PI-12-dossier.html" style="color:var(--cycle-crpd)">→ 完整議題追蹤(因果鏈)</a></p>
+  </article>
+
+  <article class="unheard-card partial">
+    <span class="u-status partial">部分採納</span>
+    <h3>中華民國身心障礙聯盟（殘聯）</h3>
+    <div class="u-meta">2022-06 · 立場座標 -50 · support_employment_first · 議題 PI-09 · A27</div>
+    <p class="u-position">（公開立場）殘聯主張：擴大支持就業預算、改善定額進用稽核機制、提升職業重建效能。對庇護工場立場：肯認部分身障者需要保護性環境，但應強化轉銜機制。</p>
+    <div class="u-evidence">
+      <strong>判斷依據:</strong>CO §102(a)(c)(d)(e) 採納殘聯關於支持就業 / 反歧視 / 救濟 / 職業重建之主張，但 §102(b) 之全面 phase-out 較殘聯立場激進。
+      <br><strong>對應 CO 段落:</strong>第2次 §102 — 國際審查委員會建議國家：(a) 制定策略以提高身心障礙者，包括心理社會障礙者和心智障礙者的勞動力參與率。(b) 為目前在庇護工場工作的每位身心障礙者制定行動計畫，以支持其能在勞動市場獲得工作。**制定逐步淘汰庇護工場的策略**。(c) 立法…
+    </div>
+    <div class="contrast-block"><div class="c-label">↔ 同議題之被採納立場(對照)</div><div class="c-actor"><strong>人權公約施行監督聯盟（22 團體）</strong>(立場 -75)— （2022 議題清單回覆）22 團體共同主張：庇護工場為剝削性體系，應制定逐步淘汰策略，將身障者轉入開放勞動市場。立法禁止雇主基於身障歧視，含拒絕合理調整。</div><div class="c-actor"><strong>中華民國身心障礙聯盟（殘聯）</strong>(立場 -50)— （公開立場）殘聯主張：擴大支持就業預算、改善定額進用稽核機制、提升職業重建效能。對庇護工場立場：肯認部分身障者需要保護性環境，但應強化轉銜機制。</div></div>
+    <p style="margin-top:12px;font-size:13px"><a href="./issues/PI-09-dossier.html" style="color:var(--cycle-crpd)">→ 完整議題追蹤(因果鏈)</a></p>
+  </article>
+
+  <article class="unheard-card partial">
+    <span class="u-status partial">部分採納</span>
+    <h3>國內法學界（混合派）</h3>
+    <div class="u-meta">2022-06 · 立場座標 +0 · mixed_model · 議題 PI-15 · A12</div>
+    <p class="u-position">（學界混合派）參考愛爾蘭 Assisted Decision-Making (Capacity) Act 2015、英國 Mental Capacity Act 2005 + DOLS：預設支持式決策，例外保留替代決策（嚴格程序、限制適用、定期審查）。</p>
+    <div class="u-evidence">
+      <strong>判斷依據:</strong>CO §63(b) 採納混合派之 GC1 培訓主張，但 §63(a) 之單向取代未採混合派立場。
+      <br><strong>對應 CO 段落:</strong>第2次 §63 — 國際審查委員會建議國家：(a) **建立強而有力的系統，使支持性決策取代目前的監護制度**；(b) 改善司法從業人員的培訓，以克服『最佳利益』原則的應用，並以 CRPD 第 1 號一般性意見（2014）中所提到『尊重個人意願與偏好』取代之；…
+    </div>
+    <div class="contrast-block"><div class="c-label">↔ 同議題之被採納立場(對照)</div><div class="c-actor"><strong>人權公約施行監督聯盟（22 團體）</strong>(立場 -90)— （2022）22 團體主張：依 GC1 全面廢除替代性決策（含監護宣告、輔助宣告），建立完整支持式決策系統。</div><div class="c-actor"><strong>國內法學界（混合派）</strong>(立場 +0)— （學界混合派）參考愛爾蘭 Assisted Decision-Making (Capacity) Act 2015、英國 Mental Capacity Act 2005 + DOLS：預設支持式決策，例外保留替代決策（嚴格程序、限制適用、定期審查）。</div></div>
+    <p style="margin-top:12px;font-size:13px"><a href="./issues/PI-15-dossier.html" style="color:var(--cycle-crpd)">→ 完整議題追蹤(因果鏈)</a></p>
+  </article>
+
+  <article class="unheard-card partial">
+    <span class="u-status partial">部分採納</span>
+    <h3>中華民國自閉症總會</h3>
+    <div class="u-meta">2022-06 · 立場座標 +0 · support_with_training · 議題 PI-14 · A7,A24</div>
+    <p class="u-position">（公開立場）自閉症總會主張：融合教育是方向，但學校教師對自閉症兒少之了解與專業支持嚴重不足。應大幅強化教師專業培訓與校內結構化支持。</p>
+    <div class="u-evidence">
+      <strong>判斷依據:</strong>CO §95(g) 觸及自閉症總會關切之教師專業不足，但未具體採納培訓主張
+      <br><strong>對應 CO 段落:</strong>第2次 §95(g) — （CO §95(g)）學校經常對身心障礙兒童採取，例如訓斥、要求父母或主要照顧者在課堂上、或與父母一起在家上學或停課等措施。學校也經常實施強制離開原班級上課和人身脅迫，或聯繫警察或消防部門，將此類學生戒護到醫院。
+    </div>
+    <div class="contrast-block"><div class="c-label">↔ 同議題之被採納立場(對照)</div><div class="c-actor"><strong>人權公約施行監督聯盟（22 團體）</strong>(立場 -50)— （2022）22 團體關切：學校對身心障礙兒童常採取訓斥、強制離班、聯繫警消等措施，違反 §16（免於暴力）與 §7（兒童最佳利益）。應建立反歧視與合理調整制度。</div><div class="c-actor"><strong>中華民國自閉症總會</strong>(立場 +0)— （公開立場）自閉症總會主張：融合教育是方向，但學校教師對自閉症兒少之了解與專業支持嚴重不足。應大幅強化教師專業培訓與校內結構化支持。</div></div>
+    <p style="margin-top:12px;font-size:13px"><a href="./issues/PI-14-dossier.html" style="color:var(--cycle-crpd)">→ 完整議題追蹤(因果鏈)</a></p>
+  </article>
+
+  <article class="unheard-card partial">
+    <span class="u-status partial">部分採納</span>
+    <h3>神經多樣性派</h3>
+    <div class="u-meta">2022-06 · 立場座標 +0 · neurodiversity · 議題 PI-16 · A1,A2</div>
+    <p class="u-position">（學界）Judy Singer、Steve Silberman 等：不應病理化神經差異，支持應與身分認同並行，反對『治癒』模式。</p>
+    <div class="u-evidence">
+      <strong>判斷依據:</strong>CO §70 採用『神經多樣性』詞彙，呼應神經多樣性派
+      <br><strong>對應 CO 段落:</strong>第2次 §70 — 國際審查委員會關切，目前針對神經多樣性、心理社會障礙和心智障礙者於司法系統中之處遇仍存在不足。涉及自閉症兒童、ADHD 兒童於少年司法系統中應有專家評估與專門支持、教育與處遇。
+    </div>
+    <div class="contrast-block"><div class="c-label">↔ 同議題之被採納立場(對照)</div><div class="c-actor"><strong>神經多樣性派</strong>(立場 +0)— （學界）Judy Singer、Steve Silberman 等：不應病理化神經差異，支持應與身分認同並行，反對『治癒』模式。</div></div>
+    <p style="margin-top:12px;font-size:13px"><a href="./issues/PI-16-dossier.html" style="color:var(--cycle-crpd)">→ 完整議題追蹤(因果鏈)</a></p>
+  </article>
+
+  <article class="unheard-card partial">
+    <span class="u-status partial">部分採納</span>
+    <h3>人權公約施行監督聯盟（22 團體）</h3>
+    <div class="u-meta">2022-06 · 立場座標 -50 · comprehensive_implementation · 議題 PI-01 · A4</div>
+    <p class="u-position">（2022 平行報告）22 團體主張：政府在 CRPD 全面實施方面進度不足，特別是 §12 / §19 / §24 等核心條款未根本改革。</p>
+    <div class="u-evidence">
+      <strong>判斷依據:</strong>CO 2022 採納部分 22 團體實施落差關切
+      <br><strong>對應 CO 段落:</strong>第2次 §108 — （2022 第二次審查）國際審查委員會發布 108 段結論性意見，肯定政府部分進展（如《身心障礙者權益保障法》2021 草案），但對 CRPD 條款實施完整度、各部會協調機制、DPO 實質參與表達持續關切。
+    </div>
+    <div class="contrast-block"><div class="c-label">↔ 同議題之被採納立場(對照)</div><div class="c-actor"><strong>人權公約施行監督聯盟（22 團體）</strong>(立場 -50)— （2022 平行報告）22 團體主張：政府在 CRPD 全面實施方面進度不足，特別是 §12 / §19 / §24 等核心條款未根本改革。</div></div>
+    <p style="margin-top:12px;font-size:13px"><a href="./issues/PI-01-dossier.html" style="color:var(--cycle-crpd)">→ 完整議題追蹤(因果鏈)</a></p>
+  </article>
+
+  <article class="unheard-card partial">
+    <span class="u-status partial">部分採納</span>
+    <h3>中華民國多障家長協會</h3>
+    <div class="u-meta">2022-06 · 立場座標 +60 · family_support_first · 議題 PI-11 · A19,A23</div>
+    <p class="u-position">（公開立場）多障家長協會主張：政府單向推動去機構化忽略家庭照顧者實際負荷。應強化喘息、個人助理員、家照支持服務。</p>
+    <div class="u-evidence">
+      <strong>判斷依據:</strong>CO §94(b) 採納家庭環境養育主張
+      <br><strong>對應 CO 段落:</strong>第2次 §93-94 — （CO §93-94）國際審查委員會關切：身心障礙兒童家外安置率高、父母拋棄照顧率高。建議提供父母支持，讓兒童儘可能在家庭環境中被養育。
+    </div>
+    <div class="contrast-block"><div class="c-label">↔ 同議題之被採納立場(對照)</div><div class="c-actor"><strong>中華民國多障家長協會</strong>(立場 +60)— （公開立場）多障家長協會主張：政府單向推動去機構化忽略家庭照顧者實際負荷。應強化喘息、個人助理員、家照支持服務。</div></div>
+    <p style="margin-top:12px;font-size:13px"><a href="./issues/PI-11-dossier.html" style="color:var(--cycle-crpd)">→ 完整議題追蹤(因果鏈)</a></p>
+  </article>
+
+  <article class="unheard-card ">
+    <span class="u-status rejected">駁回</span>
+    <h3>中華民國智障者家長總會（智總）</h3>
+    <div class="u-meta">2017-08 · 立場座標 +60 · multi_track_preserve · 議題 PI-12,PI-13 · A24</div>
+    <p class="u-position">（公開立場）智總主張：重度智能障礙學生在普通班缺乏專業支持，特教學校 / 特教班於部分學生有不可替代之專業環境。應強化品質而非廢除。</p>
+    <div class="u-evidence">
+      <strong>判斷依據:</strong>CO §96(a) 主張單向融合方向，未採納智總『重度智能障礙需特教學校』之主張。
+      <br><strong>對應 CO 段落:</strong>第2次 §96 — 國際審查委員會建議國家：(a) 促進融合教育，確保所有學習者在同一系統內充分參與，以符合 §24 第 4 號一般性意見。(b) 將促進融合性教育的責任從特殊教育轉移到普通教育。(c) 提高普通教育教師、特殊教育教師之融合能力，將培訓重點從身…
+    </div>
+    
+    <p style="margin-top:12px;font-size:13px"><a href="./issues/PI-12-dossier.html" style="color:var(--cycle-crpd)">→ 完整議題追蹤(因果鏈)</a></p>
+  </article>
+
+  <article class="unheard-card ">
+    <span class="u-status rejected">駁回</span>
+    <h3>中華民國多障家長協會</h3>
+    <div class="u-meta">2022-06 · 立場座標 +70 · multi_track_preserve · 議題 PI-12,PI-13 · A24</div>
+    <p class="u-position">（公開立場）多障家長協會主張：多重障礙學生需要高度結構化、跨專業團隊支持之環境，特殊教育學校為必要選項。家長教育選擇權應受保障。</p>
+    <div class="u-evidence">
+      <strong>判斷依據:</strong>CO §96(b)『將促進融合性教育的責任從特殊教育轉移到普通教育』未採納多障家長之多元安置主張。
+      <br><strong>對應 CO 段落:</strong>第2次 §96 — 國際審查委員會建議國家：(a) 促進融合教育，確保所有學習者在同一系統內充分參與，以符合 §24 第 4 號一般性意見。(b) 將促進融合性教育的責任從特殊教育轉移到普通教育。(c) 提高普通教育教師、特殊教育教師之融合能力，將培訓重點從身…
+    </div>
+    
+    <p style="margin-top:12px;font-size:13px"><a href="./issues/PI-12-dossier.html" style="color:var(--cycle-crpd)">→ 完整議題追蹤(因果鏈)</a></p>
+  </article>
+
+  <article class="unheard-card ">
+    <span class="u-status rejected">駁回</span>
+    <h3>中華民國智障者家長總會（智總）</h3>
+    <div class="u-meta">2022-06 · 立場座標 +60 · shelter_workshop_preserve · 議題 PI-09 · A27</div>
+    <p class="u-position">（公開立場）智總主張：對於重度智能障礙者，庇護工場提供穩定就業環境與社會參與機會，全面廢除可能使部分當事人失去工作。應改善而非廢除。</p>
+    <div class="u-evidence">
+      <strong>判斷依據:</strong>CO §102(b) 採淘汰立場，未採納智總『改善而非廢除』之主張。
+      <br><strong>對應 CO 段落:</strong>第2次 §102 — 國際審查委員會建議國家：(a) 制定策略以提高身心障礙者，包括心理社會障礙者和心智障礙者的勞動力參與率。(b) 為目前在庇護工場工作的每位身心障礙者制定行動計畫，以支持其能在勞動市場獲得工作。**制定逐步淘汰庇護工場的策略**。(c) 立法…
+    </div>
+    <div class="contrast-block"><div class="c-label">↔ 同議題之被採納立場(對照)</div><div class="c-actor"><strong>人權公約施行監督聯盟（22 團體）</strong>(立場 -75)— （2022 議題清單回覆）22 團體共同主張：庇護工場為剝削性體系，應制定逐步淘汰策略，將身障者轉入開放勞動市場。立法禁止雇主基於身障歧視，含拒絕合理調整。</div><div class="c-actor"><strong>中華民國身心障礙聯盟（殘聯）</strong>(立場 -50)— （公開立場）殘聯主張：擴大支持就業預算、改善定額進用稽核機制、提升職業重建效能。對庇護工場立場：肯認部分身障者需要保護性環境，但應強化轉銜機制。</div></div>
+    <p style="margin-top:12px;font-size:13px"><a href="./issues/PI-09-dossier.html" style="color:var(--cycle-crpd)">→ 完整議題追蹤(因果鏈)</a></p>
+  </article>
+
+  <article class="unheard-card ">
+    <span class="u-status rejected">駁回</span>
+    <h3>中華民國多障家長協會</h3>
+    <div class="u-meta">2022-06 · 立場座標 +75 · preserve_guardianship · 議題 PI-15 · A12</div>
+    <p class="u-position">（公開立場）多障家長協會主張：重度多重障礙、智能障礙、失智長者於部分情境難以表達真實意願，全面廢除監護宣告恐使弱勢者陷入財產 / 人身保護真空。應改革而非廢除。</p>
+    <div class="u-evidence">
+      <strong>判斷依據:</strong>CO §63(a) 採取替代立場，未採納多障家長『改革而非廢除』之主張。
+      <br><strong>對應 CO 段落:</strong>第2次 §63 — 國際審查委員會建議國家：(a) **建立強而有力的系統，使支持性決策取代目前的監護制度**；(b) 改善司法從業人員的培訓，以克服『最佳利益』原則的應用，並以 CRPD 第 1 號一般性意見（2014）中所提到『尊重個人意願與偏好』取代之；…
+    </div>
+    <div class="contrast-block"><div class="c-label">↔ 同議題之被採納立場(對照)</div><div class="c-actor"><strong>人權公約施行監督聯盟（22 團體）</strong>(立場 -90)— （2022）22 團體主張：依 GC1 全面廢除替代性決策（含監護宣告、輔助宣告），建立完整支持式決策系統。</div><div class="c-actor"><strong>國內法學界（混合派）</strong>(立場 +0)— （學界混合派）參考愛爾蘭 Assisted Decision-Making (Capacity) Act 2015、英國 Mental Capacity Act 2005 + DOLS：預設支持式決策，例外保留替代決策（嚴格程序、限制適用、定期審查）。</div></div>
+    <p style="margin-top:12px;font-size:13px"><a href="./issues/PI-15-dossier.html" style="color:var(--cycle-crpd)">→ 完整議題追蹤(因果鏈)</a></p>
+  </article>
+
+  <article class="unheard-card ">
+    <span class="u-status rejected">駁回</span>
+    <h3>中華民國智障者家長總會（智總）</h3>
+    <div class="u-meta">2022-06 · 立場座標 +75 · preserve_special_schools · 議題 PI-13 · A24</div>
+    <p class="u-position">（公開立場）智總主張：重度智能障礙學生在特教學校獲得跨專業團隊（語言治療、職能治療、物理治療、特殊心理服務）整合支持，普通班難以替代。應保留並提升特教學校品質。</p>
+    <div class="u-evidence">
+      <strong>判斷依據:</strong>CO §96(b) 採取與智總保留主張相反之單軌化
+      <br><strong>對應 CO 段落:</strong>第2次 §96(b) — （CO §96(b)）將促進融合性教育的責任從特殊教育轉移到普通教育。
+    </div>
+    <div class="contrast-block"><div class="c-label">↔ 同議題之被採納立場(對照)</div><div class="c-actor"><strong>人權公約施行監督聯盟（22 團體共同提交）</strong>(立場 -85)— （2022 議題清單回覆）人約盟協調 22 個身障與人權團體共同提交，主張：政府融合教育推進緩慢、特教仍以隔離為主、應全面落實 GC4。</div><div class="c-actor"><strong>人權公約施行監督聯盟（22 團體共同提交）</strong>(立場 -85)— （2022 議題清單回覆）人約盟協調 22 個身障與人權團體共同提交，主張：政府融合教育推進緩慢、特教仍以隔離為主、應全面落實 GC4。</div><div class="c-actor"><strong>國內特教學界（中間派）</strong>(立場 +0)— （學界中間派立場）主張：融合為主流方向，但須先確保普通班品質充足。過渡期間保留多元安置選項。重點在 IEP 落實與通用學習設計，而非學校類別。</div></div>
+    <p style="margin-top:12px;font-size:13px"><a href="./issues/PI-13-dossier.html" style="color:var(--cycle-crpd)">→ 完整議題追蹤(因果鏈)</a></p>
+  </article>
+
+</section>
+
+<section style="margin: 48px 0; padding: 24px; background: var(--bg-alt); border-radius: 8px">
+  <h3 style="font-family:var(--serif);font-size:20px;color:var(--bg-deep);margin-bottom:12px">如果你是被駁回派</h3>
+  <p style="font-size:14.5px;line-height:1.7">如本平台對您的立場分類有誤、或您有未呈現之主張、或您希望就現有 outcome 提出補充意見,歡迎透過 <a href="./feedback.html"><strong>回饋管道</strong></a> 提供。</p>
+  <p style="margin-top:12px;font-size:14.5px;line-height:1.7">本平台預計於 2027 第三次審查前,將累積之多元立場整合到影子報告 v0.2,作為 NGO 連署版本。</p>
+</section>
+
+</main>
+
+<footer><p>CRPD 監督平台 · 國教行動聯盟(AABE) · <a href="./">回首頁</a> · <a href="./trace/">反向追溯</a></p></footer>
+
+</body>
+</html>
