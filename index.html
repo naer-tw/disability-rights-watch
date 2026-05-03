@@ -1330,12 +1330,12 @@ footer .credit {
         <p>內部工作區 · 需帳號密碼</p>
       </div>
     </div>
-    <form id="login-form" onsubmit="return tryLogin(event)">
+    <form id="login-form" method="post" action="#login" onsubmit="return tryLogin(event)">
       <label>帳號
-        <input type="text" id="login-user" autocomplete="username" required placeholder="例如:aabe">
+        <input type="text" id="login-user" name="username" autocomplete="username" required placeholder="AABE">
       </label>
       <label>密碼
-        <input type="password" id="login-pass" autocomplete="current-password" required>
+        <input type="password" id="login-pass" name="password" autocomplete="current-password" required placeholder="1234">
       </label>
       <p id="login-err" style="color:var(--warning);font-size:12.5px;display:none;margin-top:4px">帳號或密碼錯誤</p>
       <div class="login-actions">
@@ -1346,6 +1346,7 @@ footer .credit {
     <p class="login-note">
       <strong>說明</strong>:本平台公開內容(議題地圖 / 政策軌跡 / 影子報告 / 法規索引等)無須登入即可瀏覽。<br>
       <strong>內部工作區</strong>(倡議追蹤矩陣 / 影子報告產生器 / 內部工作底稿)限 AABE 內部成員。<br>
+      <span style="color:var(--cycle-crpd);font-size:11.5px;font-weight:600">帳號 AABE / 密碼 1234(可請瀏覽器儲存,下次自動填入)</span><br>
       <span style="color:var(--text-muted);font-size:11px">此為前端軟性閘門,真機密資料請勿放此平台。</span>
     </p>
   </div>
@@ -2177,8 +2178,8 @@ footer .credit {
    - 真正機密資料(個人資料、未公開倡議底稿)不應放本平台
    - 密碼修改:把下面 INSIDER_PASS 改成你要的字串
    ============================================================ */
-const INSIDER_USER = "aabe";
-const INSIDER_PASS = "aabe-internal-2026";  // ← 請改成你要的密碼後 commit
+const INSIDER_USER = "AABE";
+const INSIDER_PASS = "1234";  // 軟閘門 / 不放真機密資料
 
 (function() {
   // 角色選擇器
@@ -2214,16 +2215,30 @@ const INSIDER_PASS = "aabe-internal-2026";  // ← 請改成你要的密碼後 c
   });
 })();
 
-function tryLogin(e) {
+async function tryLogin(e) {
   e.preventDefault();
   const u = document.getElementById('login-user').value.trim();
   const p = document.getElementById('login-pass').value;
-  if (u === INSIDER_USER && p === INSIDER_PASS) {
+  // 大小寫不敏感比對(方便瀏覽器自動填入 / 使用者輸入彈性)
+  if (u.toUpperCase() === INSIDER_USER.toUpperCase() && p === INSIDER_PASS) {
     localStorage.setItem('aabe-insider', 'yes');
+
+    // 主動觸發瀏覽器儲存密碼提示(Credential Management API)
+    if (window.PasswordCredential) {
+      try {
+        const cred = new PasswordCredential({
+          id: u,
+          password: p,
+          name: 'AABE 自家人(CRPD 監督平台)',
+        });
+        await navigator.credentials.store(cred);
+      } catch (err) { /* 部分瀏覽器(Safari/Firefox)未實作 — 改用表單推斷 */ }
+    }
+
     document.getElementById('login-modal').style.display = 'none';
     document.getElementById('login-err').style.display = 'none';
-    document.getElementById('login-form').reset();
     setInsiderUI(true);
+    // 不 reset 表單,讓瀏覽器透過自動填入啟發式判斷成功登入而提示儲存
   } else {
     document.getElementById('login-err').style.display = 'block';
   }
