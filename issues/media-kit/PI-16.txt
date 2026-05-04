@@ -1,0 +1,72 @@
+身障診斷工具化與兒少醫療化爭議 — 媒體版懶人包
+============================================================
+議題編號:PI-16    軸別:軸4司法/政治參與
+因果鏈完整度:100/100
+資料來源:CRPD 監督平台 / 國教行動聯盟
+平台網址:https://naer-tw.github.io/disability-rights-watch/issues/PI-16-dossier.html
+授權:CC BY 4.0(可商用,需註明出處)
+
+【30 秒導讀】
+身障診斷工具化與兒少醫療化爭議是 CRPD 在台施行 12 年(2014-2026)的 16 項優先議題之一,屬「軸4·司法/政治參與」。
+本平台追蹤從倡議發起 → 國際委員會採納 → 政府承諾 → 實施情形 → 實際結果的因果鏈,
+並依據「不公審原則」呈現所有立場(含對立面),不偏袒任何單一倡議路線。
+
+【關鍵數字】
+· 倡議者投入:8 位團體 / 個人
+· 政府承諾:1 件
+· 結果評估:1 件
+· 修法觸發:1 件
+· 因果鏈完整度:100/100
+
+【倡議立場光譜】(不公審原則 — 全光譜呈現)
+  underdiagnosis_critic:1 位
+  anti_compulsory_treatment:1 位
+  neurodiversity_with_support:1 位
+  nhrc_independent_review:1 位
+  balanced_diagnosis:1 位
+  early_intervention:1 位
+  neurodiversity:1 位
+  medicalization_critic:1 位
+
+【主要倡議者(依序)】
+  · 不足診斷批評派 — underdiagnosis_critic
+      「（學界）Tony Attwood、Lorna Wing：過去診斷標準偏向男性、白人男孩，女性 / 成人 / 弱勢族群診斷不足。早期識別有助長期適應。」
+  · 中華民國康復之友聯盟 — anti_compulsory_treatment
+      「(康復之友公開立場)反對精神醫療之高度保護主義取向 / 強制治療為主。支持 CO §27-28 對自願住院 99% 表象提出質疑之立場。」
+  · 中華民國自閉症總會 — neurodiversity_with_support
+      「(自閉症總會公開立場)支持神經多樣性權利尊重 + 早期療育介入。反對自閉症被工具化或污名化,亦反對拒絕專業支持。」
+  · 國家人權委員會（NHRC） — nhrc_independent_review
+      「（NHRC 對 LOI 第 22 題）中文回應： 一、NHRC 認為與身心障礙者就醫需求最為密切的診所，尚未能全面符合無障礙 要求。衛生福利部雖以「西醫基層總額…」
+  · 國教行動聯盟（AABE） — balanced_diagnosis
+      「（AABE）支持早期識別 + 適當支持 + 處方率時序透明。關注診斷標準變更對盛行率之影響、家長監護權保護、神經多樣性社群自我認同尊重。反對診斷工具化以削弱家長…」
+  · 社團法人台灣自閉兒社會福利基金會 — early_intervention
+      「(自閉兒社福基金會公開立場)強調自閉症早期介入之重要性。支持神經多樣性概念但堅持專業診斷與療育服務不可缺。」
+  · 神經多樣性派 — neurodiversity
+      「（學界）Judy Singer、Steve Silberman 等：不應病理化神經差異，支持應與身分認同並行，反對『治癒』模式。」
+  · 醫療化批評學派（國際） — medicalization_critic
+      「（學界）Allan Frances（DSM-IV 主編）、Sami Timimi、Peter Conrad 等：DSM-5 標準擴張使盛行率上升，兒少 ADHD…」
+
+【政府承諾】
+  · （LOI 回應）衛福部承諾：強化心智障礙者司法支持、改善精神醫療機構處遇。對 ADHD / 自閉症兒少診斷率與用藥率資料公開採保留立場（隱私考量）。 〔partially_committed〕
+
+【結果評估】(含責任歸屬說明 — 不公審原則)
+  · ADHD / 自閉症兒少診斷率資料公開仍不足。國際對照（法國低診斷率、美國高診斷率）關注須政府回應。
+      責任歸屬:本平台支持診斷率資料公開（去識別化），以利公共討論診斷標準變更影響。
+
+【修法歷程】
+  · 2022-12-14 LAW-MENTAL-HEALTH — 2022 全文修法。但 §25（限制通訊）等規定仍受 CRPD CO 關切（§91-92）。
+      驅動因素:co_response
+
+
+【聯絡 / 取得更多資料】
+平台主辦:國教行動聯盟(AABE)
+平台連結:https://naer-tw.github.io/disability-rights-watch/issues/PI-16-dossier.html
+全文搜尋:https://naer-tw.github.io/disability-rights-watch/search.html
+RSS 訂閱:https://naer-tw.github.io/disability-rights-watch/feed.xml
+
+【引用方式】
+APA:國教行動聯盟(2026)。身障診斷工具化與兒少醫療化爭議。CRPD 監督平台。
+     取自 https://naer-tw.github.io/disability-rights-watch/issues/PI-16-dossier.html
+
+授權聲明:本平台所有資料以 CC BY 4.0 授權釋出,媒體可自由引用,
+       請註明來源「國教行動聯盟 CRPD 監督平台」。

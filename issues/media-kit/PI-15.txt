@@ -1,0 +1,76 @@
+CRPD §12 法律能力與家長監護權平衡 — 媒體版懶人包
+============================================================
+議題編號:PI-15    軸別:軸4司法/政治參與
+因果鏈完整度:100/100
+資料來源:CRPD 監督平台 / 國教行動聯盟
+平台網址:https://naer-tw.github.io/disability-rights-watch/issues/PI-15-dossier.html
+授權:CC BY 4.0(可商用,需註明出處)
+
+【30 秒導讀】
+CRPD §12 法律能力與家長監護權平衡是 CRPD 在台施行 12 年(2014-2026)的 16 項優先議題之一,屬「軸4·司法/政治參與」。
+本平台追蹤從倡議發起 → 國際委員會採納 → 政府承諾 → 實施情形 → 實際結果的因果鏈,
+並依據「不公審原則」呈現所有立場(含對立面),不偏袒任何單一倡議路線。
+
+【關鍵數字】
+· 倡議者投入:11 位團體 / 個人
+· 政府承諾:1 件
+· 結果評估:1 件
+· 修法觸發:3 件
+· 因果鏈完整度:100/100
+
+【倡議立場光譜】(不公審原則 — 全光譜呈現)
+  nhrc_independent_review:3 位
+  preserve_guardianship:2 位
+  preserve_parental_role:1 位
+  community_mental_health:1 位
+  anti_compulsory_treatment:1 位
+  abolish_substitute_decision:1 位
+  mixed_model:1 位
+  mixed_with_parental_protection:1 位
+
+【主要倡議者(依序)】
+  · 中華民國多障家長協會 — preserve_guardianship
+      「（公開立場）多障家長協會主張：重度多重障礙、智能障礙、失智長者於部分情境難以表達真實意願，全面廢除監護宣告恐使弱勢者陷入財產 / 人身保護真空。應改革而非廢除。」
+  · 中華民國多障家長協會 — preserve_parental_role
+      「(多障家長協會公開立場)強調家長對重度多重障礙未成年子女之監護角色不可被全面廢除。GC1 全廢除替代決策路徑於極重度多障情境不適用。」
+  · 中華民國康復之友聯盟 — community_mental_health
+      「(康復之友公開立場)主張精神衛生改革應投資社區式支持服務(會所模式 / clubhouse)、自立生活、就業重建,而非繼續以強制住院為主。」
+  · 中華民國康復之友聯盟 — anti_compulsory_treatment
+      「(康復之友公開立場)反對精神醫療之高度保護主義取向 / 強制治療為主。支持 CO §27-28 對自願住院 99% 表象提出質疑之立場。」
+  · 中華民國智障者家長總會（智總） — preserve_guardianship
+      「(智總公開立場)主張保留監護宣告制度。重度智能障礙者於部分情境難表達真實意願,全面廢除恐使弱勢者陷入財產 / 人身保護真空。應改革程序保障而非廢除。」
+  · 人權公約施行監督聯盟（22 團體） — abolish_substitute_decision
+      「（2022）22 團體主張：依 GC1 全面廢除替代性決策（含監護宣告、輔助宣告），建立完整支持式決策系統。」
+  · 國內法學界（混合派） — mixed_model
+      「（學界混合派）參考愛爾蘭 Assisted Decision-Making (Capacity) Act 2015、英國 Mental Capacity Act…」
+  · 國家人權委員會（NHRC） — nhrc_independent_review
+      「（NHRC 對 LOI 第 9 題）中文回應： 一、依據《CRPD》第 12 條及《CRPD》第 1 號一般性意見，國家必須為身心障 礙者提供各種正式及非正式之…」
+
+【政府承諾】
+  · （第二次審查問題清單回應）司法院 + 衛福部承諾：(1) 推動支持式決策試辦計畫 (2) 改善司法人員 CRPD 培訓 (3) 修正精神衛生法 (4) 對全面廢除監護宣告採保留立場，採漸進改革路徑。 〔partially_committed〕
+
+【結果評估】(含責任歸屬說明 — 不公審原則)
+  · 支持式決策試辦規模仍小（試辦個案數 < 100），未達制度化規模。監護宣告改革進度遲緩。
+      責任歸屬:改革遲緩主因：制度配套需求高（法律 + 人力 + 預算）。本平台支持加速制度化，同時關切過渡期之保護真空風險。
+
+【修法歷程】
+  · 1990-12-07 LAW-MENTAL-HEALTH — 《精神衛生法》制定。
+      驅動因素:social_event
+  · 2007-07-04 LAW-MENTAL-HEALTH — 大幅修法，建立強制住院審查會制度。
+      驅動因素:social_event
+  · 2022-12-14 LAW-MENTAL-HEALTH — 2022 全文修法。但 §25（限制通訊）等規定仍受 CRPD CO 關切（§91-92）。
+      驅動因素:co_response
+
+
+【聯絡 / 取得更多資料】
+平台主辦:國教行動聯盟(AABE)
+平台連結:https://naer-tw.github.io/disability-rights-watch/issues/PI-15-dossier.html
+全文搜尋:https://naer-tw.github.io/disability-rights-watch/search.html
+RSS 訂閱:https://naer-tw.github.io/disability-rights-watch/feed.xml
+
+【引用方式】
+APA:國教行動聯盟(2026)。CRPD §12 法律能力與家長監護權平衡。CRPD 監督平台。
+     取自 https://naer-tw.github.io/disability-rights-watch/issues/PI-15-dossier.html
+
+授權聲明:本平台所有資料以 CC BY 4.0 授權釋出,媒體可自由引用,
+       請註明來源「國教行動聯盟 CRPD 監督平台」。

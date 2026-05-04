@@ -1,0 +1,63 @@
+身障人口結構（總人數、障別、年齡） — 媒體版懶人包
+============================================================
+議題編號:PI-08    軸別:軸3融合教育/就業
+因果鏈完整度:60/100
+資料來源:CRPD 監督平台 / 國教行動聯盟
+平台網址:https://naer-tw.github.io/disability-rights-watch/issues/PI-08-dossier.html
+授權:CC BY 4.0(可商用,需註明出處)
+
+【30 秒導讀】
+身障人口結構（總人數、障別、年齡）是 CRPD 在台施行 12 年(2014-2026)的 16 項優先議題之一,屬「軸3·融合教育/就業」。
+本平台追蹤從倡議發起 → 國際委員會採納 → 政府承諾 → 實施情形 → 實際結果的因果鏈,
+並依據「不公審原則」呈現所有立場(含對立面),不偏袒任何單一倡議路線。
+
+【關鍵數字】
+· 倡議者投入:8 位團體 / 個人
+· 政府承諾:0 件
+· 結果評估:1 件
+· 修法觸發:0 件
+· 因果鏈完整度:60/100
+
+【倡議立場光譜】(不公審原則 — 全光譜呈現)
+  nhrc_independent_review:3 位
+  sign_language_rights:1 位
+  wheelchair_accessibility:1 位
+  physical_accessibility:1 位
+  comprehensive_a11y:1 位
+  icf_statistics:1 位
+
+【主要倡議者(依序)】
+  · 中華民國聾人協會 — sign_language_rights
+      「(聾人協會公開立場)主張政府機關 / 醫療 / 司法 / 緊急通訊系統全面提供手語翻譯。台灣手語應制定為國家語言。」
+  · 中華民國脊髓損傷者聯合會 — wheelchair_accessibility
+      「(脊損聯合會公開立場)主張全面無障礙環境 / 大眾運輸 / 公共建築物。脊損自立生活需要環境支持配合,單獨醫療復健不夠。」
+  · 中華民國腦性麻痺協會 — physical_accessibility
+      「(腦麻協會公開立場)主張公共建築 / 交通 / 教育場所 / 醫療 之物理無障礙全面落實。輔具補助制度應擴大覆蓋。」
+  · 中華民國視障聯盟 — comprehensive_a11y
+      「(視聯盟公開立場)主張全面落實無障礙建築 / 無障礙網路 / 數位科技可及性。CO §90(a)(d) 採納其電子無障礙主張。」
+  · 國家人權委員會（NHRC） — nhrc_independent_review
+      「（NHRC 對 LOI 第 6 題）中文回應： 一、無障礙法規命令及行政措施分散於不同機關主管，亦缺乏明訂具體目標及規 劃期程之全面性計畫，致中央政府機關及地方…」
+  · 國家人權委員會（NHRC） — nhrc_independent_review
+      「（NHRC 對 LOI 第 17 題）中文回應： 一、目前在《身心障礙者輔具費用補助辦法》中，係以補助輔具為主，未提供維 修費用之補助。經查，目前僅 1 直轄市…」
+  · 國家人權委員會（NHRC） — nhrc_independent_review
+      「（NHRC 對 LOI 第 28 題）中文回應： 一、NHRC 將參考聯合國人權事務高級專員辦事處制定之《CRPD》人權指標， 與行政院共同研議我國身心障礙人權…」
+  · 衛生福利部社會及家庭署 — icf_statistics
+      「（政府）衛福部統計處發布身心障礙者人數年度資料，採 ICF 8 大類分類。」
+
+【結果評估】(含責任歸屬說明 — 不公審原則)
+  · 2024 年身障人口約 120 萬人，佔總人口 5%+。高齡身障比例上升。
+      責任歸屬:統計指標朝 ICF 改革進行中，交叉指標仍待強化。
+
+
+【聯絡 / 取得更多資料】
+平台主辦:國教行動聯盟(AABE)
+平台連結:https://naer-tw.github.io/disability-rights-watch/issues/PI-08-dossier.html
+全文搜尋:https://naer-tw.github.io/disability-rights-watch/search.html
+RSS 訂閱:https://naer-tw.github.io/disability-rights-watch/feed.xml
+
+【引用方式】
+APA:國教行動聯盟(2026)。身障人口結構（總人數、障別、年齡）。CRPD 監督平台。
+     取自 https://naer-tw.github.io/disability-rights-watch/issues/PI-08-dossier.html
+
+授權聲明:本平台所有資料以 CC BY 4.0 授權釋出,媒體可自由引用,
+       請註明來源「國教行動聯盟 CRPD 監督平台」。

@@ -1,0 +1,16 @@
+{
+  "pi_total": 16,
+  "actor_total": 24,
+  "co_passage_total": 206,
+  "advocacy_total": 84,
+  "commitment_total": 11,
+  "legislation_total": 15,
+  "litigation_total": 0,
+  "source_total": 128,
+  "outcome_total": 18,
+  "avg_chain_completeness": 85.0,
+  "chain_above_80": 11,
+  "sfaa_bulletin_total": 90,
+  "search_total": 545,
+  "generated_at": "2026-05-04T23:38:40+08:00"
+}
