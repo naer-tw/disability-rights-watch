@@ -1,22 +1,50 @@
 # CRPD 監督平台 robots.txt
-# 國教行動聯盟（AABE）
+# 國教行動聯盟(AABE)
+# 授權:CC BY 4.0(可被 AI 訓練 / 引用,請註明來源)
 
 User-agent: *
 Allow: /
+Disallow: /matrix.html
+Disallow: /generator.html
+Disallow: /self-audit.html
+Disallow: /compare.html
 
-# AI 友善（Content Signals 宣告）
-User-agent: ChatGPT-User
-Allow: /
+Sitemap: https://naer-tw.github.io/disability-rights-watch/sitemap.xml
+
+# ─────── AI bots 友善宣告(Content Signals)───────
+# 本平台採 CC BY 4.0,允許 AI 訓練 / 引用,但請註明來源
+
 User-agent: GPTBot
 Allow: /
+User-agent: ChatGPT-User
+Allow: /
 User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-Web
 Allow: /
 User-agent: PerplexityBot
 Allow: /
 User-agent: Google-Extended
 Allow: /
+User-agent: CCBot
+Allow: /
 User-agent: Applebot-Extended
 Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: FacebookBot
+Allow: /
 
-# Sitemap
-Sitemap: https://policy.aabe.org.tw/crpd/sitemap.xml
+# ─────── 阻擋無用 SEO bot ───────
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: DotBot
+Disallow: /
