@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【宣導海報】消除歧視性文字主視覺海報∣花系列篇 — CRPD 監督平台</title>
+<meta name="description" content="【宣導海報】消除歧視性文字主視覺海報∣花系列篇">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #FAFAF7; --bg-alt: #F1EFEA; --bg-deep: #1A4D3A; --text: #1F1F1F; --text-muted: #5C5C5C; --brand: #B5371F; --aabe-gold: #8B6F50; --cycle-crpd: #2D7059; --border: #DDD8CD; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Noto Sans TC", -apple-system, sans-serif; font-size: 16px; line-height: 1.7; color: var(--text); background: var(--bg); }
+a { color: var(--bg-deep); text-decoration: underline; text-underline-offset: 2px; }
+a:hover { color: var(--brand); }
+.masthead { border-bottom: 1px solid var(--border); background: rgba(250,250,247,0.94); padding: 16px 24px; position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
+.masthead-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.logo { display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--text); }
+.logo .icon { width: 36px; height: 36px; background: var(--bg-deep); color: #fff; display: grid; place-items: center; border-radius: 6px; }
+.logo h1 { font-family: "Noto Serif TC", serif; font-size: 17px; font-weight: 700; }
+.aabe-mark { font-family: Inter, sans-serif; font-weight: 800; font-size: 14px; background: var(--aabe-gold); color: #fff; padding: 5px 9px; border-radius: 4px; }
+nav.crumb { background: var(--bg-alt); border-bottom: 1px solid var(--border); padding: 12px 24px; font-size: 13px; }
+.crumb-inner { max-width: 1100px; margin: 0 auto; }
+.crumb a { color: var(--text-muted); text-decoration: none; }
+main { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+.kicker { font-family: Inter, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); margin-bottom: 8px; }
+h1.title { font-family: "Noto Serif TC", serif; font-size: clamp(28px, 4vw, 36px); font-weight: 900; color: var(--bg-deep); margin-bottom: 16px; }
+.lead { font-size: 15px; color: var(--text-muted); margin-bottom: 32px; }
+.cat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.cat-card { background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--cycle-crpd); padding: 18px 22px; border-radius: 0 6px 6px 0; text-decoration: none; color: var(--text); transition: all .15s; }
+.cat-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(26,77,58,0.08); border-left-color: var(--brand); }
+.cat-card .c-letter { font-family: Inter, sans-serif; font-size: 12px; font-weight: 600; color: var(--cycle-crpd); letter-spacing: 0.1em; }
+.cat-card h3 { font-family: "Noto Serif TC", serif; font-size: 17px; color: var(--bg-deep); margin: 4px 0 8px; }
+.cat-card .c-count { font-family: Inter, sans-serif; font-size: 13px; color: var(--text-muted); }
+
+.bulletin-list { display: flex; flex-direction: column; gap: 8px; }
+.bulletin-item { background: #fff; border: 1px solid var(--border); padding: 12px 18px; border-radius: 4px; text-decoration: none; color: var(--text); transition: all .12s; }
+.bulletin-item:hover { border-color: var(--brand); transform: translateX(3px); }
+.bulletin-item .b-meta { font-family: Inter, sans-serif; font-size: 11.5px; color: var(--text-muted); margin-bottom: 4px; }
+.bulletin-item h4 { font-family: "Noto Serif TC", serif; font-size: 15px; color: var(--bg-deep); font-weight: 600; line-height: 1.4; }
+
+article.bulletin-detail { background: #fff; border: 1px solid var(--border); padding: 32px 36px; border-radius: 6px; }
+article.bulletin-detail h1 { font-family: "Noto Serif TC", serif; font-size: 26px; color: var(--bg-deep); margin-bottom: 16px; line-height: 1.3; }
+article.bulletin-detail h2, article.bulletin-detail h3 { font-family: "Noto Serif TC", serif; color: var(--bg-deep); margin-top: 24px; margin-bottom: 8px; }
+article.bulletin-detail h2 { font-size: 20px; border-bottom: 2px solid var(--bg-deep); padding-bottom: 6px; }
+article.bulletin-detail h3 { font-size: 17px; }
+article.bulletin-detail p { margin: 12px 0; line-height: 1.8; }
+article.bulletin-detail ul { margin-left: 24px; }
+article.bulletin-detail li { margin: 6px 0; }
+article.bulletin-detail blockquote { background: var(--bg-alt); border-left: 4px solid var(--cycle-crpd); padding: 12px 18px; margin: 16px 0; font-size: 14px; color: var(--text-muted); }
+
+.attachment-box { background: var(--bg-alt); border-left: 4px solid var(--aabe-gold); padding: 16px 20px; border-radius: 0 4px 4px 0; margin: 24px 0; }
+.attachment-box h3 { font-family: "Noto Serif TC", serif; font-size: 16px; color: var(--bg-deep); margin-bottom: 8px; }
+.attachment-box ul { list-style: none; margin: 0; }
+.attachment-box li { padding: 4px 0; }
+
+footer { border-top: 1px solid var(--border); background: var(--bg-deep); color: rgba(255,255,255,0.7); padding: 24px; margin-top: 64px; text-align: center; font-size: 13px; }
+footer a { color: rgba(255,255,255,0.85); }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="../../" class="logo">
+      <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+      <div><h1>身心障礙者權利監督平台</h1></div>
+    </a>
+    <span class="aabe-mark">AABE</span>
+    <nav style="margin-left:auto;display:flex;gap:16px;font-size:14px"><a href="../../" style="color:var(--text-muted);text-decoration:none">回首頁</a><a href="../../search.html" style="color:var(--text-muted);text-decoration:none">搜尋</a></nav>
+  </div>
+</header>
+
+<nav class="crumb"><div class="crumb-inner"><a href="../../">首頁</a> · <a href="../">衛福部 CRPD 鏡像</a> · <a href="./">學習資源</a> · <span style="color:var(--text)">#2015</span></div></nav>
+
+<main>
+
+<article class="bulletin-detail">
+<h1>【宣導海報】消除歧視性文字主視覺海報∣花系列篇</h1>
+<p style="color:var(--text-muted);font-size:13px">
+  分類:學習資源 (c=G) ·
+  Bulletin ID:2015 ·
+  <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&amp;p=b_2&amp;c=G&amp;bulletinId=2015" target="_blank" rel="noopener">原始官網頁面 →</a>
+</p>
+<div class="attachment-box"><h3>附件 PDF / 文件</h3><ul><li>📄 <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=4314&amp;code=2B27292823232C212C22222224242A27" target="_blank" rel="noopener">消除歧視性文字主視覺設計理念∣花系列篇 (衛生福利部社會及家庭署｜110年撰).pdf</a></li><li>📄 <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=4315&amp;code=858680868A848E8A8F858D838D8F8D87" target="_blank" rel="noopener">歧視性文字，往往透過日常蔓延 (衛生福利部社會及家庭署｜110年製).jpg</a></li><li>📄 <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=4316&amp;code=9A969591919E9695939A91979B91989D" target="_blank" rel="noopener">歧視言論讓平權路上障礙重重 (衛生福利部社會及家庭署｜110年製).jpg</a></li><li>📄 <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=4317&amp;code=D2D0DCDCDBDFDAD7D5D7DED3D6D1D0DE" target="_blank" rel="noopener">想改善現況，必須站在同一陣線 (衛生福利部社會及家庭署｜110年製).jpg</a></li><li>📄 <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=4318&amp;code=3E3A383F3330363B39323E363639353F" target="_blank" rel="noopener">從同理開始，才能消弭歧視實現平等 (衛生福利部社會及家庭署｜110年製).jpg</a></li></ul></div>
+<div style="border-top:1px solid var(--border);margin-top:24px;padding-top:24px">
+<p><strong>主視覺海報設計理念</strong></p>
+
+<p>希望透過角色的神態、動作與氣氛，並結合花草植物各代表不同的意象，來詮釋四張主視覺標語想傳達的理念，四張主視覺各自闡述不同的心境及進程，期望透過戲劇光影帶動觀者的情緒、運用富有設計感的插畫讓人印象深刻，藉此延長觀者停留在海報上的時間，進而閱讀海報所宣導的議題。</p>
+
+<p><strong>主視覺1：不一定要出於惡意才會造成傷害</strong></p>
+
+<p>標語：<a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=4315&amp;code=858680868A848E8A8F858D838D8F8D87" target="_blank" rel="noopener"><strong>歧視性文字，往往透過日常蔓延</strong></a>（點選即可下載海報）</p>
+
+<p>內文：歧視性用語深入日常，甚至可能連傷害到對方都沒意識到</p>
+
+<p>設計理念：將說出歧視性用語的說者安排至畫面上方處，兩人面對陽光愜意談天。另外將聽者安排於植物遮掩下的陰暗處，雨滴及陰影暗示著聽者受傷的情緒，透過光線讓說者與聽者形成強烈對比。</p>
+
+<p><strong>主視覺2：瞭解歧視的本質</strong></p>
+
+<p>標語：<a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=4316&amp;code=9A969591919E9695939A91979B91989D" target="_blank" rel="noopener"><strong>歧視言論讓平權路上障礙重重</strong></a> （點選即可下載海報）</p>
+
+<p>內文：歧視性言論會加深人們的偏見，並讓困境更難被改變。</p>
+
+<p>設計理念：道路象徵社會的進步，將歧視言論比喻為藤蔓，藤蔓綁住後方的人手腳難以前行。</p>
+
+<p>紫色曼陀羅(左):象徵恐怖、九葉桔梗(中)象徵悲傷、薊(右)象徵嚴格、厭世。</p>
+
+<p><strong>主視覺3：想改善現況，必須站在同一陣線</strong></p>
+
+<p>標語：<a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=4317&amp;code=D2D0DCDCDBDFDAD7D5D7DED3D6D1D0DE" target="_blank" rel="noopener"><strong>想改善現況，必須站在同一陣線</strong></a>（點選即可下載海報）</p>
+
+<p>內文：釋出善意並相互理解，才有機會建起對話橋梁。</p>
+
+<p>設計理念：強調「看不見對方的善意」，刻意讓畫面中的兩人背對彼此，並於中間用植物隔開，因看不見彼此的內心，故臉上充滿試探的情緒。</p>
+
+<p><strong>主視覺4：積極落實平等</strong></p>
+
+<p>標語：<a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=4318&amp;code=3E3A383F3330363B39323E363639353F" target="_blank" rel="noopener"><strong>從同理開始，才能消弭歧視實現平等</strong></a>（點選即可下載海報）</p>
+
+<p>內文：溝通的流動，從設身處地感受對方開始。</p>
+
+<p>設計理念：此海報上的花語主要為同理、關懷、智慧，兩位角色都握著手中那束花，弱化特定一方先釋出善意的動作，構圖採用曲線較多及向上發展的線條增加活潑感及動態，讓整體充滿正向與積極的感覺。</p>
+
+<p><strong>【著作權資訊】</strong></p>
+
+<p>發行機關：衛生福利部社會及家庭署</p>
+
+<p>承辦單位：民視文化事業股份有限公司</p>
+
+<p>製作日期：2021年3月</p>
+
+<p>著作財產權單位：衛生福利部社會及家庭署</p>
+
+<p><strong>【著作權管理資訊】</strong></p>
+
+<p>著作財產權單位保留對本主視覺依法所享有之所有著作權利。於<strong>非營利用途下，歡迎自行下載使用</strong>（注意：<strong>禁止改作</strong>、<strong>並請標示資料來源及本網頁連結</strong>）。</p>
+
+<p>若需重製（如大量印刷）或改作（僅可拉等比例不同大小的圖樣，裡面的圖片不可編輯、更動），請來信申請授權。</p>
+
+<p>本案承辦人：余小姐，（02）2653-1987，信箱：sfaa0722@sfaa.gov.tw</p>
+
+<p>【姓名標示-非商業性-禁止改作 3.0 台灣 (CC BY-NC-ND 3.0 TW)】授權，詳細授權細節如下連結所示：<https://creativecommons.org/licenses/by-nc-nd/3.0/tw/></p>
+
+<p><strong>【主視覺替代文字(提供視覺障礙者報讀使用)】</strong></p>
+
+<p><strong>主視覺1：歧視性文字，往往透過日常蔓延</strong></p>
+
+<p>替代文字：這張圖以綠色為主，中間有一位輪椅使用者，背後有紅色及紫色的花，花的後面有大型樹葉從底部到頂端，在樹上最高點有一對男女互相談笑著，下方大標題寫著：「歧視性文字，往往透過日常蔓延」，標題下方文字為：「歧視性用語深入日常，甚至可能連傷害到對方都沒意識到」。</p>
+
+<p><strong>主視覺2：歧視言論讓平權路上障礙重重</strong></p>
+
+<p>替代文字：這張圖以藍、紫色為主，後方有紫色曼陀羅、九葉桔梗、薊，以及中間有一條藤蔓形成的路，畫面右方有兩位男性嘻笑談論，後方有一位女性滑著手機不理會他人，中間有一位肢體障礙者，他的後面有兩位女性左右擺頭，上方的人物皆被藤蔓纏住，下方大標題寫著：「歧視性言論，讓平權路上障礙重重」，標題下方寫著：「歧視性言論會加深人們的偏見，並讓困境更難改變。 」。</p>
+
+<p><strong>主視覺3：想改善現況，必須站在同一陣線</strong></p>
+
+<p>替代文字：這張圖以暗綠色為主，圖片中有一位肢體障礙的男性拿著一盆有點亮的花，往後方女性看去，並希望將手上的花給予她，但兩人中間有一根木頭阻隔彼此，讓雙方互相猜疑不敢往前一步進行交流，下方標題大字寫著：「想改善現況，必須站在同一陣線」，標題下方小字寫著：「釋出善意避相互理解，才有機會建起對話橋梁」。</p>
+
+<p><strong>主視覺4：從同理開始，才能消弭歧視實現平等</strong></p>
+
+<p>替代文字：這張圖以亮粉色、紫色為主，圖片中有二位女性身穿粉色洋裝，一位為聽覺障礙，兩人握著手，手捧著紫色的花，周圍圍繞著紫色的花，上方標題大字寫：「從同理開始，才能消弭歧視實現平等」，下方下字寫著： 「溝通的流動，從設身處地感受對方開始。」。</p>
+
+<p>網站編輯紀錄：</p>
+
+<p>110年3月製作完成</p>
+
+<p>114年6月上架於本網</p>
+</div>
+</article>
+
+<div style="margin-top:24px;font-size:13px;color:var(--text-muted)">
+<p>原始來源:衛福部社家署 CRPD 專區。本平台僅做檢索與索引用途,版權歸屬衛福部。</p>
+</div>
+
+</main>
+<footer>
+  <p>本目錄為衛福部社家署 CRPD 官網(crpd.sfaa.gov.tw)之鏡像索引,由 AABE 自動爬取整理。<br>
+     原始來源仍歸屬衛福部社家署所有。 · <a href="../../">回首頁</a></p>
+</footer>
+</body>
+</html>

@@ -1,7 +1,7 @@
 {
  "version": "1.0",
  "generated": "2026-05-03",
- "total": 455,
+ "total": 517,
  "types": [
   "LOI 議題清單",
   "PI 議題",
@@ -5385,6 +5385,688 @@
     "PI-06"
    ],
    "body": "國家人權委員會 CRPD 監督官方專區"
+  },
+  {
+   "id": "src-sfaa-A-2022",
+   "type": "原始 PDF 文件",
+   "title": "【公告】CRPD第三次國家報告專要文件初稿_第2版已公告，請下載運用，謝謝！",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=A&bulletinId=2022",
+   "tags": [
+    "PI-01,PI-05"
+   ],
+   "body": "【公告】CRPD第三次國家報告專要文件初稿_第2版已公告，請下載運用，謝謝！"
+  },
+  {
+   "id": "src-sfaa-A-2087",
+   "type": "原始 PDF 文件",
+   "title": "【公告】更新身心障礙者權利公約(CRPD)第三次國家報告民間團體平行報告及問題清單平行回復提交說明之秘書單位資訊",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=A&bulletinId=2087",
+   "tags": [
+    "PI-01,PI-05"
+   ],
+   "body": "【公告】更新身心障礙者權利公約(CRPD)第三次國家報告民間團體平行報告及問題清單平行回復提交說明之秘書單位資訊"
+  },
+  {
+   "id": "src-sfaa-B-1407",
+   "type": "原始 PDF 文件",
+   "title": "召開「身心障礙者權利公約（CRPD）第二次國家報告 第一輪審查會議」，共7場次",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1407",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「身心障礙者權利公約（CRPD）第二次國家報告 第一輪審查會議」，共7場次"
+  },
+  {
+   "id": "src-sfaa-B-1408",
+   "type": "原始 PDF 文件",
+   "title": "召開「身心障礙者權利公約（CRPD）第二次國家報告第二輪（國內審查第一輪）審查會議」，共11場次",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1408",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「身心障礙者權利公約（CRPD）第二次國家報告第二輪（國內審查第一輪）審查會議」，共11場次"
+  },
+  {
+   "id": "src-sfaa-B-1409",
+   "type": "原始 PDF 文件",
+   "title": "召開「身心障礙者權利公約（CRPD）第二次國家報告第二輪（國內審查第二輪）審查會議」，共3場次",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1409",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「身心障礙者權利公約（CRPD）第二次國家報告第二輪（國內審查第二輪）審查會議」，共3場次"
+  },
+  {
+   "id": "src-sfaa-B-1414",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第3屆第3次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1414",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第3屆第3次會議」"
+  },
+  {
+   "id": "src-sfaa-B-1450",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第3屆第4次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1450",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第3屆第4次會議」"
+  },
+  {
+   "id": "src-sfaa-B-1463",
+   "type": "原始 PDF 文件",
+   "title": "召開「身心障礙者權利公約（CRPD）第二次國家報告發布記者會」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1463",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「身心障礙者權利公約（CRPD）第二次國家報告發布記者會」"
+  },
+  {
+   "id": "src-sfaa-B-1489",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第3屆第5次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1489",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第3屆第5次會議」"
+  },
+  {
+   "id": "src-sfaa-B-1491",
+   "type": "原始 PDF 文件",
+   "title": "召開身心障礙者權利公約法規及行政措施檢視清單修正進度檢討會議(第1次)",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1491",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開身心障礙者權利公約法規及行政措施檢視清單修正進度檢討會議(第1次)"
+  },
+  {
+   "id": "src-sfaa-B-1526",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第3屆第6次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1526",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第3屆第6次會議」"
+  },
+  {
+   "id": "src-sfaa-B-1531",
+   "type": "原始 PDF 文件",
+   "title": "召開身心障礙者權利公約法規及行政措施檢視清單修正進度檢討會議(第2次)",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1531",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開身心障礙者權利公約法規及行政措施檢視清單修正進度檢討會議(第2次)"
+  },
+  {
+   "id": "src-sfaa-B-1697",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第4屆第1次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1697",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第4屆第1次會議」"
+  },
+  {
+   "id": "src-sfaa-B-1698",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第4屆第2次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1698",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第4屆第2次會議」"
+  },
+  {
+   "id": "src-sfaa-B-1699",
+   "type": "原始 PDF 文件",
+   "title": "召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1699",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查會議」"
+  },
+  {
+   "id": "src-sfaa-B-1700",
+   "type": "原始 PDF 文件",
+   "title": "召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查會議結論性意見發布記者會」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1700",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查會議結論性意見發布記者會」"
+  },
+  {
+   "id": "src-sfaa-B-1782",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第4屆第3次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1782",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第4屆第3次會議」"
+  },
+  {
+   "id": "src-sfaa-B-1783",
+   "type": "原始 PDF 文件",
+   "title": "召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查會議結論性意見行動回應表徵詢意見會議」共14場次",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1783",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查會議結論性意見行動回應表徵詢意見會議」共14場次"
+  },
+  {
+   "id": "src-sfaa-B-1784",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第4屆第4次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1784",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第4屆第4次會議」"
+  },
+  {
+   "id": "src-sfaa-B-1799",
+   "type": "原始 PDF 文件",
+   "title": "召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查結論性意見行動回應表第二階段審查會議」，共6場次",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1799",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查結論性意見行動回應表第二階段審查會議」，共6場次"
+  },
+  {
+   "id": "src-sfaa-B-1837",
+   "type": "原始 PDF 文件",
+   "title": "召開「無障礙/可及性議題蒐整會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1837",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「無障礙/可及性議題蒐整會議」"
+  },
+  {
+   "id": "src-sfaa-B-1838",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第4屆第5次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1838",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第4屆第5次會議」"
+  },
+  {
+   "id": "src-sfaa-B-1839",
+   "type": "原始 PDF 文件",
+   "title": "由內政部、衛生福利部、交通部、經濟部召開「無障礙/可及性專案會議」，共4場次",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1839",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "由內政部、衛生福利部、交通部、經濟部召開「無障礙/可及性專案會議」，共4場次"
+  },
+  {
+   "id": "src-sfaa-B-1840",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第4屆第6次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1840",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第4屆第6次會議」"
+  },
+  {
+   "id": "src-sfaa-B-1896",
+   "type": "原始 PDF 文件",
+   "title": "由衛生福利部召開「各機關主管活動場所無障礙/可及性第二次專案會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1896",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "由衛生福利部召開「各機關主管活動場所無障礙/可及性第二次專案會議」"
+  },
+  {
+   "id": "src-sfaa-B-1897",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第5屆第1次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1897",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第5屆第1次會議」"
+  },
+  {
+   "id": "src-sfaa-B-1898",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第5屆第2次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1898",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第5屆第2次會議」"
+  },
+  {
+   "id": "src-sfaa-B-2009",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第5屆第3次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=2009",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第5屆第3次會議」"
+  },
+  {
+   "id": "src-sfaa-B-2010",
+   "type": "原始 PDF 文件",
+   "title": "召開「身心障礙者權利公約（CRPD）第三次國家報告 第一輪審查會議」，共8場次",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=2010",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「身心障礙者權利公約（CRPD）第三次國家報告 第一輪審查會議」，共8場次"
+  },
+  {
+   "id": "src-sfaa-B-2011",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第5屆第4次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=2011",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第5屆第4次會議」"
+  },
+  {
+   "id": "src-sfaa-B-2035",
+   "type": "原始 PDF 文件",
+   "title": "召開「行政院身心障礙者權益推動小組第5屆第5次會議」",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=2035",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「行政院身心障礙者權益推動小組第5屆第5次會議」"
+  },
+  {
+   "id": "src-sfaa-B-2036",
+   "type": "原始 PDF 文件",
+   "title": "召開「身心障礙者權利公約（CRPD）第三次國家報告第二輪審查會議」，共3場次",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=2036",
+   "tags": [
+    "PI-05,PI-06"
+   ],
+   "body": "召開「身心障礙者權利公約（CRPD）第三次國家報告第二輪審查會議」，共3場次"
+  },
+  {
+   "id": "src-sfaa-C-1241",
+   "type": "原始 PDF 文件",
+   "title": "身心障礙者權利公約【易讀版】Easy-Read Version of the CRPD -Traditional Chinese",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=1241",
+   "tags": [
+    "PI-01"
+   ],
+   "body": "身心障礙者權利公約【易讀版】Easy-Read Version of the CRPD -Traditional Chinese"
+  },
+  {
+   "id": "src-sfaa-C-1424",
+   "type": "原始 PDF 文件",
+   "title": "身心障礙者權利公約【中譯本修正草案】",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=1424",
+   "tags": [
+    "PI-01"
+   ],
+   "body": "身心障礙者權利公約【中譯本修正草案】"
+  },
+  {
+   "id": "src-sfaa-C-1451",
+   "type": "原始 PDF 文件",
+   "title": "身心障礙者權利公約【臺灣手語版】",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=1451",
+   "tags": [
+    "PI-01"
+   ],
+   "body": "身心障礙者權利公約【臺灣手語版】"
+  },
+  {
+   "id": "src-sfaa-C-2000",
+   "type": "原始 PDF 文件",
+   "title": "【易讀版】《我的權利，我要參與_身心障礙者權利公約CRPD易讀版》My Rights, My Participation: Easy Read Version of the Convention on the Rights of Persons with Disabilities (Traditional Chinese)",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=2000",
+   "tags": [
+    "PI-01"
+   ],
+   "body": "【易讀版】《我的權利，我要參與_身心障礙者權利公約CRPD易讀版》My Rights, My Participation: Easy Read Version of the Convention on the Rights of Persons with Disabilities (Traditional Chinese)"
+  },
+  {
+   "id": "src-sfaa-C-2069",
+   "type": "原始 PDF 文件",
+   "title": "身心障礙者權利公約教育訓練及宣導計畫（115年1月至118年12月）",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=2069",
+   "tags": [
+    "PI-01"
+   ],
+   "body": "身心障礙者權利公約教育訓練及宣導計畫（115年1月至118年12月）"
+  },
+  {
+   "id": "src-sfaa-C-286",
+   "type": "原始 PDF 文件",
+   "title": "落實身心障礙者權利公約推動計畫",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=286",
+   "tags": [
+    "PI-01"
+   ],
+   "body": "落實身心障礙者權利公約推動計畫"
+  },
+  {
+   "id": "src-sfaa-C-56",
+   "type": "原始 PDF 文件",
+   "title": "身心障礙者權利公約",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=56",
+   "tags": [
+    "PI-01"
+   ],
+   "body": "身心障礙者權利公約"
+  },
+  {
+   "id": "src-sfaa-C-59",
+   "type": "原始 PDF 文件",
+   "title": "Convention on the Rights of Persons with Disabilities",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=59",
+   "tags": [
+    "PI-01"
+   ],
+   "body": "Convention on the Rights of Persons with Disabilities"
+  },
+  {
+   "id": "src-sfaa-C-62",
+   "type": "原始 PDF 文件",
+   "title": "身心障礙者權利公約施行法",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=62",
+   "tags": [
+    "PI-01"
+   ],
+   "body": "身心障礙者權利公約施行法"
+  },
+  {
+   "id": "src-sfaa-D-2047",
+   "type": "原始 PDF 文件",
+   "title": "【公告】身心障礙者權利公約第三次國家報告條約專要文件",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=D&bulletinId=2047",
+   "tags": [
+    "PI-01,PI-02,PI-03"
+   ],
+   "body": "【公告】身心障礙者權利公約第三次國家報告條約專要文件"
+  },
+  {
+   "id": "src-sfaa-D-293",
+   "type": "原始 PDF 文件",
+   "title": "【周知】聯合國身心障礙者權利委員會條約專要文件準則",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=D&bulletinId=293",
+   "tags": [
+    "PI-01,PI-02,PI-03"
+   ],
+   "body": "【周知】聯合國身心障礙者權利委員會條約專要文件準則"
+  },
+  {
+   "id": "src-sfaa-E-1183",
+   "type": "原始 PDF 文件",
+   "title": "109.09.30身心障礙者權利公約法規及行政措施檢視清單辦理進度暨各法規主管機關因應措施通函",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=E&bulletinId=1183",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "109.09.30身心障礙者權利公約法規及行政措施檢視清單辦理進度暨各法規主管機關因應措施通函"
+  },
+  {
+   "id": "src-sfaa-E-1490",
+   "type": "原始 PDF 文件",
+   "title": "110.03.29[會議紀錄]身心障礙者權利公約法規及行政措施檢視清單修正進度檢討會議紀錄",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=E&bulletinId=1490",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "110.03.29[會議紀錄]身心障礙者權利公約法規及行政措施檢視清單修正進度檢討會議紀錄"
+  },
+  {
+   "id": "src-sfaa-E-1605",
+   "type": "原始 PDF 文件",
+   "title": "110.10.26[會議紀錄]身心障礙者權利公約法規及行政措施檢視清單修正進度檢討會議(第2次)紀錄",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=E&bulletinId=1605",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "110.10.26[會議紀錄]身心障礙者權利公約法規及行政措施檢視清單修正進度檢討會議(第2次)紀錄"
+  },
+  {
+   "id": "src-sfaa-E-1910",
+   "type": "原始 PDF 文件",
+   "title": "身心障礙者權利公約法規及行政措施優先檢視清單暨第二階段法規檢視修法進度",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=E&bulletinId=1910",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "身心障礙者權利公約法規及行政措施優先檢視清單暨第二階段法規檢視修法進度"
+  },
+  {
+   "id": "src-sfaa-E-421",
+   "type": "原始 PDF 文件",
+   "title": "107.05.07身心障礙者權利公約法規及行政措施修正原則及範例",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=E&bulletinId=421",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "107.05.07身心障礙者權利公約法規及行政措施修正原則及範例"
+  },
+  {
+   "id": "src-sfaa-F-121",
+   "type": "原始 PDF 文件",
+   "title": "身心障礙者權利公約（CRPD）法規概要",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=F&bulletinId=121",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "身心障礙者權利公約（CRPD）法規概要"
+  },
+  {
+   "id": "src-sfaa-F-142",
+   "type": "原始 PDF 文件",
+   "title": "\"It",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=F&bulletinId=142",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "\"It"
+  },
+  {
+   "id": "src-sfaa-F-1925",
+   "type": "原始 PDF 文件",
+   "title": "【線上學習資源】身心障礙者權利公約（CRPD）第1講至第4講（e等公務園+學習平臺）",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=F&bulletinId=1925",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "【線上學習資源】身心障礙者權利公約（CRPD）第1講至第4講（e等公務園+學習平臺）"
+  },
+  {
+   "id": "src-sfaa-F-1998",
+   "type": "原始 PDF 文件",
+   "title": "【題庫】身心障礙者權利公約（CRPD）教育訓練測驗題組",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=F&bulletinId=1998",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "【題庫】身心障礙者權利公約（CRPD）教育訓練測驗題組"
+  },
+  {
+   "id": "src-sfaa-F-287",
+   "type": "原始 PDF 文件",
+   "title": "種子師資培訓課程─認識身心障礙與歧視",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=F&bulletinId=287",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "種子師資培訓課程─認識身心障礙與歧視"
+  },
+  {
+   "id": "src-sfaa-F-288",
+   "type": "原始 PDF 文件",
+   "title": "種子師資培訓課程─身心障礙者權利公約（CRPD）簡介及條約介紹",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=F&bulletinId=288",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "種子師資培訓課程─身心障礙者權利公約（CRPD）簡介及條約介紹"
+  },
+  {
+   "id": "src-sfaa-F-881",
+   "type": "原始 PDF 文件",
+   "title": "身心障礙者權利公約（CRPD）一般性原則教育訓練",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=F&bulletinId=881",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "身心障礙者權利公約（CRPD）一般性原則教育訓練"
+  },
+  {
+   "id": "src-sfaa-G-1604",
+   "type": "原始 PDF 文件",
+   "title": "【公告】身心障礙者議題報導注意事項",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1604",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【公告】身心障礙者議題報導注意事項"
+  },
+  {
+   "id": "src-sfaa-G-1829",
+   "type": "原始 PDF 文件",
+   "title": "【宣導海報】國際身心障礙者日-智能障礙主題海報",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1829",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【宣導海報】國際身心障礙者日-智能障礙主題海報"
+  },
+  {
+   "id": "src-sfaa-G-1899",
+   "type": "原始 PDF 文件",
+   "title": "【宣導海報】CPRD第2次國家報告 宣導海報",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1899",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【宣導海報】CPRD第2次國家報告 宣導海報"
+  },
+  {
+   "id": "src-sfaa-G-1907",
+   "type": "原始 PDF 文件",
+   "title": "【出版品】各機關研訂合理調整指引之原則",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1907",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【出版品】各機關研訂合理調整指引之原則"
+  },
+  {
+   "id": "src-sfaa-G-1912",
+   "type": "原始 PDF 文件",
+   "title": "【宣導短片】隱性障礙者宣導影片（餐廳篇）",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1912",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【宣導短片】隱性障礙者宣導影片（餐廳篇）"
+  },
+  {
+   "id": "src-sfaa-G-2015",
+   "type": "原始 PDF 文件",
+   "title": "【宣導海報】消除歧視性文字主視覺海報∣花系列篇",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=2015",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【宣導海報】消除歧視性文字主視覺海報∣花系列篇"
+  },
+  {
+   "id": "src-sfaa-G-2016",
+   "type": "原始 PDF 文件",
+   "title": "【宣導海報】身心障礙者權利公約（CRPD）簡介折頁（2025年新版）",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=2016",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【宣導海報】身心障礙者權利公約（CRPD）簡介折頁（2025年新版）"
   },
   {
    "id": "LIT-001",

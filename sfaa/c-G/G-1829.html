@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【宣導海報】國際身心障礙者日-智能障礙主題海報 — CRPD 監督平台</title>
+<meta name="description" content="【宣導海報】國際身心障礙者日-智能障礙主題海報">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #FAFAF7; --bg-alt: #F1EFEA; --bg-deep: #1A4D3A; --text: #1F1F1F; --text-muted: #5C5C5C; --brand: #B5371F; --aabe-gold: #8B6F50; --cycle-crpd: #2D7059; --border: #DDD8CD; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Noto Sans TC", -apple-system, sans-serif; font-size: 16px; line-height: 1.7; color: var(--text); background: var(--bg); }
+a { color: var(--bg-deep); text-decoration: underline; text-underline-offset: 2px; }
+a:hover { color: var(--brand); }
+.masthead { border-bottom: 1px solid var(--border); background: rgba(250,250,247,0.94); padding: 16px 24px; position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
+.masthead-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.logo { display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--text); }
+.logo .icon { width: 36px; height: 36px; background: var(--bg-deep); color: #fff; display: grid; place-items: center; border-radius: 6px; }
+.logo h1 { font-family: "Noto Serif TC", serif; font-size: 17px; font-weight: 700; }
+.aabe-mark { font-family: Inter, sans-serif; font-weight: 800; font-size: 14px; background: var(--aabe-gold); color: #fff; padding: 5px 9px; border-radius: 4px; }
+nav.crumb { background: var(--bg-alt); border-bottom: 1px solid var(--border); padding: 12px 24px; font-size: 13px; }
+.crumb-inner { max-width: 1100px; margin: 0 auto; }
+.crumb a { color: var(--text-muted); text-decoration: none; }
+main { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+.kicker { font-family: Inter, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); margin-bottom: 8px; }
+h1.title { font-family: "Noto Serif TC", serif; font-size: clamp(28px, 4vw, 36px); font-weight: 900; color: var(--bg-deep); margin-bottom: 16px; }
+.lead { font-size: 15px; color: var(--text-muted); margin-bottom: 32px; }
+.cat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.cat-card { background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--cycle-crpd); padding: 18px 22px; border-radius: 0 6px 6px 0; text-decoration: none; color: var(--text); transition: all .15s; }
+.cat-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(26,77,58,0.08); border-left-color: var(--brand); }
+.cat-card .c-letter { font-family: Inter, sans-serif; font-size: 12px; font-weight: 600; color: var(--cycle-crpd); letter-spacing: 0.1em; }
+.cat-card h3 { font-family: "Noto Serif TC", serif; font-size: 17px; color: var(--bg-deep); margin: 4px 0 8px; }
+.cat-card .c-count { font-family: Inter, sans-serif; font-size: 13px; color: var(--text-muted); }
+
+.bulletin-list { display: flex; flex-direction: column; gap: 8px; }
+.bulletin-item { background: #fff; border: 1px solid var(--border); padding: 12px 18px; border-radius: 4px; text-decoration: none; color: var(--text); transition: all .12s; }
+.bulletin-item:hover { border-color: var(--brand); transform: translateX(3px); }
+.bulletin-item .b-meta { font-family: Inter, sans-serif; font-size: 11.5px; color: var(--text-muted); margin-bottom: 4px; }
+.bulletin-item h4 { font-family: "Noto Serif TC", serif; font-size: 15px; color: var(--bg-deep); font-weight: 600; line-height: 1.4; }
+
+article.bulletin-detail { background: #fff; border: 1px solid var(--border); padding: 32px 36px; border-radius: 6px; }
+article.bulletin-detail h1 { font-family: "Noto Serif TC", serif; font-size: 26px; color: var(--bg-deep); margin-bottom: 16px; line-height: 1.3; }
+article.bulletin-detail h2, article.bulletin-detail h3 { font-family: "Noto Serif TC", serif; color: var(--bg-deep); margin-top: 24px; margin-bottom: 8px; }
+article.bulletin-detail h2 { font-size: 20px; border-bottom: 2px solid var(--bg-deep); padding-bottom: 6px; }
+article.bulletin-detail h3 { font-size: 17px; }
+article.bulletin-detail p { margin: 12px 0; line-height: 1.8; }
+article.bulletin-detail ul { margin-left: 24px; }
+article.bulletin-detail li { margin: 6px 0; }
+article.bulletin-detail blockquote { background: var(--bg-alt); border-left: 4px solid var(--cycle-crpd); padding: 12px 18px; margin: 16px 0; font-size: 14px; color: var(--text-muted); }
+
+.attachment-box { background: var(--bg-alt); border-left: 4px solid var(--aabe-gold); padding: 16px 20px; border-radius: 0 4px 4px 0; margin: 24px 0; }
+.attachment-box h3 { font-family: "Noto Serif TC", serif; font-size: 16px; color: var(--bg-deep); margin-bottom: 8px; }
+.attachment-box ul { list-style: none; margin: 0; }
+.attachment-box li { padding: 4px 0; }
+
+footer { border-top: 1px solid var(--border); background: var(--bg-deep); color: rgba(255,255,255,0.7); padding: 24px; margin-top: 64px; text-align: center; font-size: 13px; }
+footer a { color: rgba(255,255,255,0.85); }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="../../" class="logo">
+      <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+      <div><h1>身心障礙者權利監督平台</h1></div>
+    </a>
+    <span class="aabe-mark">AABE</span>
+    <nav style="margin-left:auto;display:flex;gap:16px;font-size:14px"><a href="../../" style="color:var(--text-muted);text-decoration:none">回首頁</a><a href="../../search.html" style="color:var(--text-muted);text-decoration:none">搜尋</a></nav>
+  </div>
+</header>
+
+<nav class="crumb"><div class="crumb-inner"><a href="../../">首頁</a> · <a href="../">衛福部 CRPD 鏡像</a> · <a href="./">學習資源</a> · <span style="color:var(--text)">#1829</span></div></nav>
+
+<main>
+
+<article class="bulletin-detail">
+<h1>【宣導海報】國際身心障礙者日-智能障礙主題海報</h1>
+<p style="color:var(--text-muted);font-size:13px">
+  分類:學習資源 (c=G) ·
+  Bulletin ID:1829 ·
+  <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&amp;p=b_2&amp;c=G&amp;bulletinId=1829" target="_blank" rel="noopener">原始官網頁面 →</a>
+</p>
+<div class="attachment-box"><h3>附件 PDF / 文件</h3><ul><li>📄 <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=3905&amp;code=63656D666167646B6D6D61606D666A62" target="_blank" rel="noopener">如何正確地使用這份宣導海報？國際障礙者日宣導素材使用注意事項(衛生福利部社會及家庭署｜113年撰).pdf</a></li><li>📄 <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=4270&amp;code=39383731383634353A39393A3E303234" target="_blank" rel="noopener">12月3日國際身心障礙者日-智能障礙者主視覺【英文版】｜衛生福利部社會及家庭署(114年製).jpg</a></li><li>📄 <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=3808&amp;code=CDCDC2C0C8C3CCC7CECACDC1C9CDCACA" target="_blank" rel="noopener">12月3日國際身心障礙者日-智能障礙者主視覺｜衛生福利部社會及家庭署(112年製).jpg</a></li><li>📄 <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=3882&amp;code=DFD2D2D4DCD7D0D8DDD6DAD8D7DDD3D1" target="_blank" rel="noopener">12月3日國際身心障礙者日-智能障礙者Banner｜衛生福利部社會及家庭署(112年製) (828 x 315 px).jpg</a></li><li>📄 <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=3883&amp;code=51535B545F575A595155545053565B5F" target="_blank" rel="noopener">12月3日國際身心障礙者日-智能障礙者Banner｜衛生福利部社會及家庭署(112年製) (1070 x 318 px).jpg</a></li><li>📄 <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=3884&amp;code=8D8F8480878A84838A898786888B888B" target="_blank" rel="noopener">12月3日國際身心障礙者日-智能障礙者Banner｜衛生福利部社會及家庭署(112年製) (1920 x 240 px).jpg</a></li><li>📄 <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=downloadFile&amp;type=file&amp;id=3885&amp;code=313A3B393A393E3D343B38383D323A38" target="_blank" rel="noopener">12月3日國際身心障礙者日-智能障礙者Banner｜衛生福利部社會及家庭署(112年製) (1920 x 1080 px).jpg</a></li></ul></div>
+<div style="border-top:1px solid var(--border);margin-top:24px;padding-top:24px">
+<p>#12月3日 #國際身心障礙者日</p>
+
+<p>#有些人可能需要多一些時間，只是我們不知道</p>
+
+<p>在臺灣，超商非常普及</p>
+
+<p>它們點亮了臺灣的夜晚</p>
+
+<p>滿足了人們各式各樣的需求</p>
+
+<p>智能障礙者也跟你我一樣</p>
+
+<p>經常在超商購買東西</p>
+
+<p>有時候智能障礙者會需要多一點時間思考</p>
+
+<p>或是會需要一些支持</p>
+
+<p>請給予多一點時間</p>
+
+<p>讓大家都可以在社區中</p>
+
+<p>自由自在地購物、用餐和進行娛樂</p>
+
+<p>多一點耐心，你我都可以</p>
+
+<p>您的幾秒鐘，可以讓他們更安心</p>
+
+<p>多一份理解，讓每一個人都能擁有美好的一天！</p>
+
+<p>邀請您看見多元、幸福共好</p>
+
+<p>共同創造美好未來</p>
+
+<p>#12月3日國際身心障礙者日</p>
+
+<p>#InternationalDayofPersonswithDisabilities</p>
+
+<p>#隱性障礙 #InvisibleDisabilities</p>
+
+<p>#智能障礙者 #PeopleWithIntellectualDifficulty</p>
+
+<p>#自立生活 #IndependentLiving</p>
+
+<p>【著作權資訊】</p>
+
+<p>發行機關：衛生福利部社會及家庭署</p>
+
+<p>承辦單位：東森電視事業股份有限公司</p>
+
+<p>創作設計：畫話⁺設計事務所| +Ping</p>
+
+<p>特別感謝（依筆畫順序）：中華民國智障者家長總會、社團法人中華民國自閉症總會、財團法人心路社會福利基金會、財團法人育成社會福利基金會給予寶貴貴建議</p>
+
+<p>製作日期：2023年12月</p>
+
+<p>著作財產權單位：衛生福利部社會及家庭署</p>
+
+<p><strong>【著作權管理資訊】</strong></p>
+
+<p>著作財產權人保留對本主視覺依法所享有之所有著作權利。於非營利用途下，歡迎自行下載使用（禁止改作、並請標示資料來源及本網頁連結）。</p>
+
+<p><strong>詳細使用注意事項請先參閱本頁下方的「如何正確地使用這份宣導海報？國際障礙者日宣導素材使用注意事項」PDF檔。</strong></p>
+
+<p>若需重製（如大量印刷）或改作（僅可拉等比例不同大小的圖樣，裡面的圖片不可編輯、更動），請來信申請授權。</p>
+
+<p>本案承辦人：余小姐，（02）2653-1987，信箱：sfaa0722@sfaa.gov.tw</p>
+
+<p>【姓名標示-非商業性-禁止改作 3.0 台灣 (CC BY-NC-ND 3.0 TW)】授權，詳細授權細節如下連結所示：<a href="https://creativecommons.org/licenses/by-nc-nd/3.0/tw/ &quot;前往創用cc授權(另開新視窗" target="_blank" rel="noopener">https://creativecommons.org/licenses/by-nc-nd/3.0/tw/</a>")</p>
+</div>
+</article>
+
+<div style="margin-top:24px;font-size:13px;color:var(--text-muted)">
+<p>原始來源:衛福部社家署 CRPD 專區。本平台僅做檢索與索引用途,版權歸屬衛福部。</p>
+</div>
+
+</main>
+<footer>
+  <p>本目錄為衛福部社家署 CRPD 官網(crpd.sfaa.gov.tw)之鏡像索引,由 AABE 自動爬取整理。<br>
+     原始來源仍歸屬衛福部社家署所有。 · <a href="../../">回首頁</a></p>
+</footer>
+</body>
+</html>
