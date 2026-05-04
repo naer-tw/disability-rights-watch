@@ -1,7 +1,7 @@
 {
  "version": "1.0",
  "generated": "2026-05-03",
- "total": 517,
+ "total": 545,
  "types": [
   "LOI 議題清單",
   "PI 議題",
@@ -6067,6 +6067,314 @@
     "PI-08,PI-12"
    ],
    "body": "【宣導海報】身心障礙者權利公約（CRPD）簡介折頁（2025年新版）"
+  },
+  {
+   "id": "src-sfaa-G-1282",
+   "type": "原始 PDF 文件",
+   "title": "【繪本  臺灣手語版 宣導短片】《希兒與皮帝的神奇之旅》身心障礙者權利公約（CRPD）繪本",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1282",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【繪本  臺灣手語版 宣導短片】《希兒與皮帝的神奇之旅》身心障礙者權利公約（CRPD）繪本"
+  },
+  {
+   "id": "src-sfaa-G-1483",
+   "type": "原始 PDF 文件",
+   "title": "【出版品】認識身心障礙者特質與需求",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1483",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【出版品】認識身心障礙者特質與需求"
+  },
+  {
+   "id": "src-sfaa-G-1492",
+   "type": "原始 PDF 文件",
+   "title": "【轉知】防災無障礙",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1492",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【轉知】防災無障礙"
+  },
+  {
+   "id": "src-sfaa-G-1498",
+   "type": "原始 PDF 文件",
+   "title": "【繪本】《希兒與皮帝的神奇之旅 臺灣手語繪本》結合擴增實境使用說明",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1498",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【繪本】《希兒與皮帝的神奇之旅 臺灣手語繪本》結合擴增實境使用說明"
+  },
+  {
+   "id": "src-sfaa-G-1521",
+   "type": "原始 PDF 文件",
+   "title": "【繪本】《希兒與皮帝的神奇之旅：臺灣手語繪本》身心障礙者權利公約（CRPD）繪本",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1521",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【繪本】《希兒與皮帝的神奇之旅：臺灣手語繪本》身心障礙者權利公約（CRPD）繪本"
+  },
+  {
+   "id": "src-sfaa-G-1624",
+   "type": "原始 PDF 文件",
+   "title": "【繪本】《停電了，別害怕！》身心障礙者權利公約（CRPD）繪本",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1624",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【繪本】《停電了，別害怕！》身心障礙者權利公約（CRPD）繪本"
+  },
+  {
+   "id": "src-sfaa-G-1702",
+   "type": "原始 PDF 文件",
+   "title": "【宣導海報】導盲幼犬宣導海報",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1702",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【宣導海報】導盲幼犬宣導海報"
+  },
+  {
+   "id": "src-sfaa-G-1774",
+   "type": "原始 PDF 文件",
+   "title": "【公告】政府宣導素材應注意之可及性格式",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1774",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【公告】政府宣導素材應注意之可及性格式"
+  },
+  {
+   "id": "src-sfaa-G-1781",
+   "type": "原始 PDF 文件",
+   "title": "【出版品】多元尊重的視角",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1781",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【出版品】多元尊重的視角"
+  },
+  {
+   "id": "src-sfaa-G-1801",
+   "type": "原始 PDF 文件",
+   "title": "【繪本】《每一個都要到》臺灣手語繪本結合擴增實境使用說明",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1801",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【繪本】《每一個都要到》臺灣手語繪本結合擴增實境使用說明"
+  },
+  {
+   "id": "src-sfaa-G-1828",
+   "type": "原始 PDF 文件",
+   "title": "【宣導海報】國際障礙者日-自閉症主題海報",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1828",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【宣導海報】國際障礙者日-自閉症主題海報"
+  },
+  {
+   "id": "src-sfaa-G-1841",
+   "type": "原始 PDF 文件",
+   "title": "【研究報告】「臺灣心智障礙者易讀服務發展與服務模式之研究」成果報告",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1841",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【研究報告】「臺灣心智障礙者易讀服務發展與服務模式之研究」成果報告"
+  },
+  {
+   "id": "src-sfaa-G-1909",
+   "type": "原始 PDF 文件",
+   "title": "【繪本Q&A互動簡報】身心障礙者權利公約（CRPD）繪本Q&A互動簡報",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1909",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【繪本Q&A互動簡報】身心障礙者權利公約（CRPD）繪本Q&A互動簡報"
+  },
+  {
+   "id": "src-sfaa-G-1911",
+   "type": "原始 PDF 文件",
+   "title": "【宣導短片】隱性障礙者宣導影片（公車篇）",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1911",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【宣導短片】隱性障礙者宣導影片（公車篇）"
+  },
+  {
+   "id": "src-sfaa-G-1990",
+   "type": "原始 PDF 文件",
+   "title": "【轉知】易讀版資訊-反詐騙易讀版、同儕支持員職前培訓手冊易讀版電子書 (財團法人伊甸社會福利基金會)",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1990",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【轉知】易讀版資訊-反詐騙易讀版、同儕支持員職前培訓手冊易讀版電子書 (財團法人伊甸社會福利基金會)"
+  },
+  {
+   "id": "src-sfaa-G-2001",
+   "type": "原始 PDF 文件",
+   "title": "【宣導海報】身心障礙者權利公約CRPD-環境無礙共經營，資訊可及齊參與",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=2001",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【宣導海報】身心障礙者權利公約CRPD-環境無礙共經營，資訊可及齊參與"
+  },
+  {
+   "id": "src-sfaa-G-201",
+   "type": "原始 PDF 文件",
+   "title": "【宣導海報】身心障礙者權利公約（CRPD）分眾海報",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=201",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【宣導海報】身心障礙者權利公約（CRPD）分眾海報"
+  },
+  {
+   "id": "src-sfaa-G-2018",
+   "type": "原始 PDF 文件",
+   "title": "身心障礙者權利公約（CRPD）宣導資源包",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=2018",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "身心障礙者權利公約（CRPD）宣導資源包"
+  },
+  {
+   "id": "src-sfaa-G-202",
+   "type": "原始 PDF 文件",
+   "title": "【宣導海報】身心障礙者權利公約（CRPD）簡介折頁 （2017年版）",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=202",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【宣導海報】身心障礙者權利公約（CRPD）簡介折頁 （2017年版）"
+  },
+  {
+   "id": "src-sfaa-G-47",
+   "type": "原始 PDF 文件",
+   "title": "【LOGO標誌】身心障礙者權利公約（CRPD）LOGO",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=47",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【LOGO標誌】身心障礙者權利公約（CRPD）LOGO"
+  },
+  {
+   "id": "src-sfaa-G-742",
+   "type": "原始 PDF 文件",
+   "title": "【繪本 宣導短片】《希兒與皮帝的神奇之旅》繪本短片-身心障礙者權利公約（CRPD）繪本",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=742",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【繪本 宣導短片】《希兒與皮帝的神奇之旅》繪本短片-身心障礙者權利公約（CRPD）繪本"
+  },
+  {
+   "id": "src-sfaa-G-842",
+   "type": "原始 PDF 文件",
+   "title": "【繪本】《每一個都要到 臺灣手語繪本》身心障礙者權利公約（CRPD）繪本",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=842",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【繪本】《每一個都要到 臺灣手語繪本》身心障礙者權利公約（CRPD）繪本"
+  },
+  {
+   "id": "src-sfaa-G-902",
+   "type": "原始 PDF 文件",
+   "title": "【出版品】身心障礙者融合式會議及活動參考指引(2024年10月第三次修訂)",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=902",
+   "tags": [
+    "PI-08,PI-12"
+   ],
+   "body": "【出版品】身心障礙者融合式會議及活動參考指引(2024年10月第三次修訂)"
+  },
+  {
+   "id": "src-sfaa-H-1381",
+   "type": "原始 PDF 文件",
+   "title": "行政院身心障礙者權益推動小組處理涉及違反身心障礙者權利公約申訴案件作業原則",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=H&bulletinId=1381",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "行政院身心障礙者權益推動小組處理涉及違反身心障礙者權利公約申訴案件作業原則"
+  },
+  {
+   "id": "src-sfaa-H-46",
+   "type": "原始 PDF 文件",
+   "title": "行政院身心障礙者權益推動小組設置要點",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=H&bulletinId=46",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "行政院身心障礙者權益推動小組設置要點"
+  },
+  {
+   "id": "src-sfaa-H-941",
+   "type": "原始 PDF 文件",
+   "title": "各單位陳情資訊",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=H&bulletinId=941",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "各單位陳情資訊"
+  },
+  {
+   "id": "src-sfaa-K-1539",
+   "type": "原始 PDF 文件",
+   "title": "臺灣易讀參考指南-讓資訊易讀易懂",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=K&bulletinId=1539",
+   "tags": [
+    "PI-08"
+   ],
+   "body": "臺灣易讀參考指南-讓資訊易讀易懂"
+  },
+  {
+   "id": "src-sfaa-K-1607",
+   "type": "原始 PDF 文件",
+   "title": "國立故宮博物院易讀標誌",
+   "subtitle": "zh-TW",
+   "url": "https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=K&bulletinId=1607",
+   "tags": [
+    "PI-08"
+   ],
+   "body": "國立故宮博物院易讀標誌"
   },
   {
    "id": "LIT-001",
