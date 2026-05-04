@@ -1,0 +1,21 @@
+{
+  "name": "CRPD 監督平台 — Disability Rights Watch Taiwan",
+  "short_name": "CRPD 監督",
+  "description": "身心障礙者權利公約在台施行 12 年(2014-2026)監督平台:議題追蹤 / 倡議者責任 / 不公審原則",
+  "start_url": "/disability-rights-watch/",
+  "scope": "/disability-rights-watch/",
+  "display": "minimal-ui",
+  "orientation": "portrait-primary",
+  "theme_color": "#1A4D3A",
+  "background_color": "#FAFAF7",
+  "icons": [
+    {
+      "src": "/disability-rights-watch/og.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["news", "education", "government", "social"],
+  "lang": "zh-Hant-TW"
+}
