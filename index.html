@@ -1701,35 +1701,42 @@ footer .credit {
       <!-- 篩選 sidebar(全部 input 已接通 JS 動態篩選) -->
       <aside class="docs-sidebar" id="docs-filter-sidebar" aria-label="篩選條件">
         <div class="docs-sidebar-header">
-          <span>篩選條件</span>
-          <button class="clear" type="button" onclick="clearDocsFilters()">清除</button>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:4px"><path d="M9 11H7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-2"/><path d="M9 5a3 3 0 0 1 6 0v2H9V5z"/><path d="M9 14h6M9 18h4"/></svg>篩選條件</span>
+          <button class="clear" type="button" onclick="clearDocsFilters()" title="重置所有篩選">清除</button>
         </div>
 
-        <h4>屆別</h4>
-        <label class="filter-row"><input type="checkbox" class="f-round" data-round="2017" checked> 第一次 (2017)</label>
-        <label class="filter-row"><input type="checkbox" class="f-round" data-round="2022" checked> 第二次 (2022)</label>
-        <label class="filter-row"><input type="checkbox" class="f-round" data-round="2027"> 第三次 (2027 籌備中)</label>
-        <label class="filter-row"><input type="checkbox" class="f-round" data-round="ongoing" checked> NGO 持續性倡議 / 跨屆別</label>
+        <p style="font-size:11.5px;color:var(--text-muted);background:var(--bg-alt);padding:8px 10px;border-radius:4px;line-height:1.5;margin-bottom:8px">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="vertical-align:-2px;margin-right:3px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>勾選 / 選擇下方條件,右側文件清單會<strong style="color:var(--brand)">即時更新</strong>。可組合多項條件交叉篩選。
+        </p>
 
-        <h4>文件類型</h4>
-        <label class="filter-row"><input type="checkbox" class="f-type" data-type="state-report" checked><span class="swatch" style="background:#1F3D6B"></span>國家報告 (NR)<span class="count">2</span></label>
+        <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:4px"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>屆別 <span style="font-weight:400;color:var(--text-muted);font-size:11px">(預設全選)</span></h4>
+        <label class="filter-row"><input type="checkbox" class="f-round" data-round="2017" checked> 第一次審查 (2017)</label>
+        <label class="filter-row"><input type="checkbox" class="f-round" data-round="2022" checked> 第二次審查 (2022)</label>
+        <label class="filter-row"><input type="checkbox" class="f-round" data-round="ongoing" checked> NGO 持續性倡議</label>
+        <label class="filter-row"><input type="checkbox" class="f-round" data-round="2027"> 第三次籌備 (2027)</label>
+
+        <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:4px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>文件類型 <span style="font-weight:400;color:var(--text-muted);font-size:11px">(預設全選)</span></h4>
+        <label class="filter-row"><input type="checkbox" class="f-type" data-type="state-report" checked><span class="swatch" style="background:#1F3D6B"></span>政府國家報告 (NR)<span class="count">2</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-type" data-type="state-attachment" checked><span class="swatch" style="background:#1F3D6B;opacity:0.6"></span>國家報告附件<span class="count">1</span></label>
         <label class="filter-row"><input type="checkbox" class="f-type" data-type="co" checked><span class="swatch" style="background:#2D7059"></span>結論性意見 (CO)<span class="count">2</span></label>
-        <label class="filter-row"><input type="checkbox" class="f-type" data-type="shadow" checked><span class="swatch" style="background:#4B2480"></span>民間影子報告 / 平行回復<span class="count">4</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-type" data-type="shadow" checked><span class="swatch" style="background:#4B2480"></span>民間影子 / 平行報告<span class="count">4</span></label>
         <label class="filter-row"><input type="checkbox" class="f-type" data-type="loi" checked><span class="swatch" style="background:#EF4444"></span>議題清單 (LOI)<span class="count">1</span></label>
         <label class="filter-row"><input type="checkbox" class="f-type" data-type="gov-response" checked><span class="swatch" style="background:#475569"></span>政府後續回應<span class="count">3</span></label>
-        <label class="filter-row"><input type="checkbox" class="f-type" data-type="state-attachment" checked><span class="swatch" style="background:#1F3D6B;opacity:0.6"></span>國家報告附件<span class="count">1</span></label>
-        <label class="filter-row"><input type="checkbox" class="f-type" data-type="ngo-resource" checked><span class="swatch" style="background:#8B6F50"></span>NGO 公開資源<span class="count">26</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-type" data-type="ngo-resource" checked><span class="swatch" style="background:#8B6F50"></span>NGO 公開資源(教材/聲明)<span class="count">25</span></label>
 
-        <h4>軸別分類</h4>
+        <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:4px"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>PI 議題 (16 議題,4 軸)</h4>
+        <p style="font-size:11px;color:var(--text-muted);margin-bottom:6px;line-height:1.5">點任一軸別只顯示該軸相關文件:</p>
         <div class="filter-tag-row">
-          <span class="filter-tag f-axis active" data-axis="all">全部</span>
-          <span class="filter-tag f-axis" data-axis="1">軸一</span>
-          <span class="filter-tag f-axis" data-axis="2">軸二</span>
-          <span class="filter-tag f-axis" data-axis="3">軸三</span>
-          <span class="filter-tag f-axis" data-axis="4">軸四(紅線)</span>
+          <span class="filter-tag f-axis active" data-axis="all" title="全部 4 軸">全部</span>
+          <span class="filter-tag f-axis" data-axis="1" title="軸一 CO 兌現追蹤(PI-01~04)">軸一</span>
+          <span class="filter-tag f-axis" data-axis="2" title="軸二 行動方案/NHRC(PI-05~07)">軸二</span>
+          <span class="filter-tag f-axis" data-axis="3" title="軸三 12 年指標時序(PI-08~11)">軸三</span>
+          <span class="filter-tag f-axis" data-axis="4" title="軸四 框架爭議旗艦/紅線(PI-12~16)">軸四(紅線)</span>
         </div>
+        <p style="font-size:11px;color:var(--text-muted);margin-top:6px;line-height:1.5">→ 進階:<a href="search.html">全平台搜尋</a> 可指定特定 PI 編號</p>
 
-        <h4>提出單位(22 NGO + 政府)</h4>
+        <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:4px"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-7h6v7"/></svg>提出單位</h4>
+        <p style="font-size:11px;color:var(--text-muted);margin-bottom:6px;line-height:1.5">擇一 NGO 看其相關文件:</p>
         <select class="filter-select" id="f-org">
           <option value="">所有單位 (38 文件)</option>
           <optgroup label="政府 / 國際">
@@ -1742,35 +1749,46 @@ footer .credit {
             <option value="中華民國身心障礙聯盟">中華民國身心障礙聯盟 (殘聯)</option>
           </optgroup>
           <optgroup label="障別專屬 NGO">
-            <option value="智障者家長總會">中華民國智障者家長總會</option>
-            <option value="視障聯盟">中華民國視障聯盟</option>
-            <option value="聾人協會">中華民國聾人協會</option>
-            <option value="自閉症總會">中華民國自閉症總會</option>
-            <option value="康復之友聯盟">中華民國康復之友聯盟</option>
-            <option value="脊髓損傷者聯合會">中華民國脊髓損傷者聯合會</option>
-            <option value="腦性麻痺協會">中華民國腦性麻痺協會</option>
-            <option value="多障家長協會">中華民國多障家長協會</option>
+            <option value="智障者家長總會">智障者家長總會</option>
+            <option value="視障聯盟">視障聯盟</option>
+            <option value="聾人協會">聾人協會 (聽障人協會)</option>
+            <option value="自閉症總會">自閉症總會</option>
+            <option value="康復之友聯盟">康復之友聯盟 (精障)</option>
+            <option value="脊髓損傷者聯合會">脊髓損傷者聯合會</option>
+            <option value="腦性麻痺協會">腦性麻痺協會</option>
+            <option value="多障家長協會">多障家長協會</option>
             <option value="罕見疾病基金會">罕見疾病基金會</option>
-            <option value="唐氏症關愛者協會">台灣唐氏症關愛者協會</option>
-            <option value="障礙女性平權連線">台灣障礙女性平權連線</option>
+            <option value="唐氏症關愛者協會">唐氏症關愛者協會</option>
+            <option value="障礙女性平權連線">障礙女性平權連線</option>
             <option value="自閉兒社會福利基金會">自閉兒社會福利基金會</option>
           </optgroup>
         </select>
-        <p style="font-size: 11px; color: var(--text-muted); margin-top: 6px; line-height: 1.4;">
-          下拉選單擇一即可篩選,或於上方 <a href="search.html">全平台搜尋</a> 跨類型查詢。
-        </p>
 
-        <h4>CRPD 條文</h4>
-        <input type="text" class="filter-input" id="f-article" placeholder="例如:24 / 27 / 12">
+        <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="vertical-align:-2px;margin-right:4px"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>文字搜尋(條文 / 案件)</h4>
+        <input type="text" class="filter-input" id="f-article" placeholder="例如:第 24 條 / 教育 / 監護">
 
-        <h4>採納狀態(透過<a href="trace/">反向追溯</a>查)</h4>
-        <p style="font-size: 11.5px; color: var(--text-muted); line-height: 1.6">採納率 / 駁回情形 之檢核請至 <a href="actors/">倡議者責任頁</a> 或 <a href="unheard.html">未被聽見的聲音</a>。</p>
+        <div style="margin-top:16px;padding:12px;background:#fff8ec;border-left:3px solid var(--aabe-gold);border-radius:0 4px 4px 0;font-size:12px;color:var(--text);line-height:1.6">
+          <strong><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="vertical-align:-2px;margin-right:4px"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>看採納情形 / 駁回</strong><br>
+          採納率 / 立場光譜 / 「未被聽見的聲音」非屬於文件層級篩選,請看:
+          <ul style="margin:6px 0 0 16px;font-size:11.5px;line-height:1.7">
+            <li><a href="actors/">倡議者責任頁</a>(每個 NGO 立場 + 採納率)</li>
+            <li><a href="unheard.html">未被聽見的聲音</a>(13 條被駁回立場)</li>
+            <li><a href="trace/">反向追溯</a>(從非預期後果回溯倡議者)</li>
+          </ul>
+        </div>
       </aside>
 
       <!-- 文件清單 -->
       <div id="docs-list-container">
         <div class="docs-toolbar">
-          <span class="count-info">顯示 <b id="docs-visible-count">38</b> 筆 / 共 <b>38</b> 筆 · 12 已 OCR + 26 NGO 公開資源</span>
+          <span class="count-info">
+            <span style="display:inline-flex;align-items:center;gap:8px">
+              <span style="font-size:18px;color:var(--brand);font-weight:700;font-family:Inter,sans-serif" id="docs-visible-count">38</span>
+              <span>/ 38 筆顯示 ·</span>
+              <span style="font-size:12px;color:var(--text-muted)">12 已 OCR + 26 NGO 公開資源</span>
+              <span id="docs-filter-status" style="display:none;font-size:11.5px;background:var(--brand);color:#fff;padding:2px 8px;border-radius:10px;font-weight:600">已篩選</span>
+            </span>
+          </span>
           <div style="display: flex; gap: var(--space-2); align-items: center;">
             <div class="view-tabs" role="tablist">
               <button class="view-tab active" role="tab" aria-selected="true">列表</button>
@@ -2552,7 +2570,20 @@ footer .credit {
     });
 
     const counter = document.getElementById('docs-visible-count');
-    if (counter) counter.textContent = visible;
+    if (counter) {
+      counter.textContent = visible;
+      // 動畫:數字變化時閃一下
+      counter.style.transition = 'transform 0.2s';
+      counter.style.transform = 'scale(1.15)';
+      setTimeout(() => { counter.style.transform = ''; }, 200);
+    }
+    // 顯示「已篩選」徽章
+    const fStatus = document.getElementById('docs-filter-status');
+    if (fStatus) {
+      // 預設 3 round(2017+2022+ongoing,2027 預設未勾)+ 7 type 全勾 + axis=all + 無 org/article
+      const isFiltered = (allowedRounds.length !== 3) || (allowedTypes.length !== 7) || activeAxis !== 'all' || orgFilter || articleFilter;
+      fStatus.style.display = isFiltered ? '' : 'none';
+    }
 
     // sort
     const sort = document.getElementById('docs-sort')?.value || 'round-desc';
