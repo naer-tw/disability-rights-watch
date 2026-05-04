@@ -1,7 +1,7 @@
 {
  "version": "1.0",
  "generated": "2026-05-03",
- "total": 421,
+ "total": 447,
  "types": [
   "LOI 議題清單",
   "PI 議題",
@@ -5098,6 +5098,292 @@
     "PI-01,PI-05,PI-07,PI-08,PI-09,PI-10,PI-11,PI-12,PI-13,PI-14,PI-15,PI-16"
    ],
    "body": "CRPD 第二次國家報告條約專要文件"
+  },
+  {
+   "id": "src-ngo-da-001",
+   "type": "原始 PDF 文件",
+   "title": "殘聯 CRPD 身障人權倡議專區",
+   "subtitle": "zh-TW",
+   "url": "https://www.enable.org.tw/issue/list_topic/51_78",
+   "tags": [
+    "PI-01,PI-05"
+   ],
+   "body": "殘聯 CRPD 身障人權倡議專區"
+  },
+  {
+   "id": "src-ngo-da-002",
+   "type": "原始 PDF 文件",
+   "title": "殘聯 CRPD 教材手冊(2019)— 6 單元雙版本",
+   "subtitle": "zh-TW",
+   "url": "https://www.enable.org.tw/uploads/icon/CRPD/CRPDt1.pdf",
+   "tags": [
+    "PI-01,PI-08"
+   ],
+   "body": "殘聯 CRPD 教材手冊(2019)— 6 單元雙版本"
+  },
+  {
+   "id": "src-ngo-da-003",
+   "type": "原始 PDF 文件",
+   "title": "殘聯倡議:被國家政策遺漏的身心障礙女性處境",
+   "subtitle": "zh-TW",
+   "url": "https://www.enable.org.tw/issue/item_detail/1020",
+   "tags": [
+    "PI-09"
+   ],
+   "body": "殘聯倡議:被國家政策遺漏的身心障礙女性處境"
+  },
+  {
+   "id": "src-ngo-da-004",
+   "type": "原始 PDF 文件",
+   "title": "殘聯連署聲明:支持身權法修正並呼籲全面公民參與",
+   "subtitle": "zh-TW",
+   "url": "https://www.enable.org.tw/news/detailType1/1169",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "殘聯連署聲明:支持身權法修正並呼籲全面公民參與"
+  },
+  {
+   "id": "src-ngo-da-005",
+   "type": "原始 PDF 文件",
+   "title": "殘聯 112 年議題倡議工作報告",
+   "subtitle": "zh-TW",
+   "url": "https://www.enable.org.tw/about/work_report/1032",
+   "tags": [
+    "PI-01,PI-05"
+   ],
+   "body": "殘聯 112 年議題倡議工作報告"
+  },
+  {
+   "id": "src-ngo-da-006",
+   "type": "原始 PDF 文件",
+   "title": "殘聯 CRPD 第二次平行報告(13 團體共同提交,2021-05-06)",
+   "subtitle": "zh-TW",
+   "url": "https://www.enable.org.tw/issue/list_topic/51_78",
+   "tags": [
+    "PI-01,PI-12,PI-15"
+   ],
+   "body": "殘聯 CRPD 第二次平行報告(13 團體共同提交,2021-05-06)"
+  },
+  {
+   "id": "src-ngo-papmh-001",
+   "type": "原始 PDF 文件",
+   "title": "智總 CRPD 易讀版(身障當事人友善)",
+   "subtitle": "zh-TW",
+   "url": "https://www.papmh.org.tw/news/2278",
+   "tags": [
+    "PI-08,PI-15"
+   ],
+   "body": "智總 CRPD 易讀版(身障當事人友善)"
+  },
+  {
+   "id": "src-ngo-papmh-002",
+   "type": "原始 PDF 文件",
+   "title": "智總:台灣成年監護制度之修法歷程",
+   "subtitle": "zh-TW",
+   "url": "https://www.papmh.org.tw/services/709",
+   "tags": [
+    "PI-15"
+   ],
+   "body": "智總:台灣成年監護制度之修法歷程"
+  },
+  {
+   "id": "src-ngo-papmh-003",
+   "type": "原始 PDF 文件",
+   "title": "智總:身心障礙機構服務不應被歷史印象框架",
+   "subtitle": "zh-TW",
+   "url": "https://www.papmh.org.tw/news/1196",
+   "tags": [
+    "PI-07,PI-11"
+   ],
+   "body": "智總:身心障礙機構服務不應被歷史印象框架"
+  },
+  {
+   "id": "src-ngo-papmh-004",
+   "type": "原始 PDF 文件",
+   "title": "智總:監護 / 支持性決策議題專區",
+   "subtitle": "zh-TW",
+   "url": "https://www.papmh.org.tw/taxonomy/term/187",
+   "tags": [
+    "PI-15"
+   ],
+   "body": "智總:監護 / 支持性決策議題專區"
+  },
+  {
+   "id": "src-ngo-papmh-005",
+   "type": "原始 PDF 文件",
+   "title": "智總 CRPD 易讀手冊成果發表會 / 易讀服務展望論壇",
+   "subtitle": "zh-TW",
+   "url": "https://www.papmh.org.tw/news/2274",
+   "tags": [
+    "PI-08"
+   ],
+   "body": "智總 CRPD 易讀手冊成果發表會 / 易讀服務展望論壇"
+  },
+  {
+   "id": "src-ngo-autism-001",
+   "type": "原始 PDF 文件",
+   "title": "自閉症總會:大專校院自閉症學生教育支持服務(2022)",
+   "subtitle": "zh-TW",
+   "url": "https://www.autism.org.tw/uploads/File_20230614_101953.pdf",
+   "tags": [
+    "PI-12"
+   ],
+   "body": "自閉症總會:大專校院自閉症學生教育支持服務(2022)"
+  },
+  {
+   "id": "src-ngo-autism-002",
+   "type": "原始 PDF 文件",
+   "title": "自閉症總會官方資源中心(CRPD 相關專欄)",
+   "subtitle": "zh-TW",
+   "url": "https://autism.org.tw/pagedetail.php?IDno=417",
+   "tags": [
+    "PI-14,PI-16"
+   ],
+   "body": "自閉症總會官方資源中心(CRPD 相關專欄)"
+  },
+  {
+   "id": "src-ngo-deaf-001",
+   "type": "原始 PDF 文件",
+   "title": "聽障人協會手語視訊服務(CRPD §9 §21 落實)",
+   "subtitle": "zh-TW;zh-Hant-TW-tsl",
+   "url": "http://www.cnad.org.tw/ap/cust_view.aspx?bid=75",
+   "tags": [
+    "PI-08"
+   ],
+   "body": "聽障人協會手語視訊服務(CRPD §9 §21 落實)"
+  },
+  {
+   "id": "src-ngo-deaf-002",
+   "type": "原始 PDF 文件",
+   "title": "聽障人協會 + 法扶 聾人視訊法律諮詢服務",
+   "subtitle": "zh-TW",
+   "url": "http://www.cnad.org.tw/ap/news_view.aspx?bid=14&sn=b39a8820-8054-485f-8969-b95b8c85e207",
+   "tags": [
+    "PI-15"
+   ],
+   "body": "聽障人協會 + 法扶 聾人視訊法律諮詢服務"
+  },
+  {
+   "id": "src-ngo-rare-001",
+   "type": "原始 PDF 文件",
+   "title": "罕病基金會:全台罕病家庭預立醫療照護諮商",
+   "subtitle": "zh-TW",
+   "url": "https://www.tfrd.org.tw/tfrd/news/content/id/3367",
+   "tags": [
+    "PI-15,PI-16"
+   ],
+   "body": "罕病基金會:全台罕病家庭預立醫療照護諮商"
+  },
+  {
+   "id": "src-ngo-rare-002",
+   "type": "原始 PDF 文件",
+   "title": "罕病基金會:罕見疾病社會立法紀念專輯",
+   "subtitle": "zh-TW",
+   "url": "https://www.tfrd.org.tw/tfrd/assets/uploads/library_b1/13/tfrd_20120319180042.pdf",
+   "tags": [
+    "PI-05"
+   ],
+   "body": "罕病基金會:罕見疾病社會立法紀念專輯"
+  },
+  {
+   "id": "src-ngo-blind-001",
+   "type": "原始 PDF 文件",
+   "title": "視聯盟之 CRPD 立場(透過殘聯框架)",
+   "subtitle": "zh-TW",
+   "url": "https://www.enable.org.tw/about/member/484",
+   "tags": [
+    "PI-08"
+   ],
+   "body": "視聯盟之 CRPD 立場(透過殘聯框架)"
+  },
+  {
+   "id": "src-ngo-spinal-001",
+   "type": "原始 PDF 文件",
+   "title": "脊損聯合會(殘聯會員)無障礙環境倡議",
+   "subtitle": "zh-TW",
+   "url": "https://www.enable.org.tw/about/member/460",
+   "tags": [
+    "PI-08"
+   ],
+   "body": "脊損聯合會(殘聯會員)無障礙環境倡議"
+  },
+  {
+   "id": "src-ngo-cp-001",
+   "type": "原始 PDF 文件",
+   "title": "腦性麻痺協會社群媒體頻道(Facebook + YouTube)",
+   "subtitle": "zh-TW",
+   "url": "https://www.facebook.com/CPAofROC/",
+   "tags": [
+    "PI-08,PI-09"
+   ],
+   "body": "腦性麻痺協會社群媒體頻道(Facebook + YouTube)"
+  },
+  {
+   "id": "src-ngo-down-001",
+   "type": "原始 PDF 文件",
+   "title": "唐氏症關愛者協會:CRPD 為核心之青年培力計畫",
+   "subtitle": "zh-TW",
+   "url": "https://www.downfamily.org.tw/about/1",
+   "tags": [
+    "PI-12"
+   ],
+   "body": "唐氏症關愛者協會:CRPD 為核心之青年培力計畫"
+  },
+  {
+   "id": "src-ngo-women-001",
+   "type": "原始 PDF 文件",
+   "title": "障礙女性平權連線交叉歧視倡議(透過殘聯)",
+   "subtitle": "zh-TW",
+   "url": "https://www.enable.org.tw/issue/item_detail/1020",
+   "tags": [
+    "PI-09"
+   ],
+   "body": "障礙女性平權連線交叉歧視倡議(透過殘聯)"
+  },
+  {
+   "id": "src-ngo-multi-001",
+   "type": "原始 PDF 文件",
+   "title": "多障家長協會家長監護權倡議(立法院公聽會出席)",
+   "subtitle": "zh-TW",
+   "url": "https://www.enable.org.tw/about/member/484",
+   "tags": [
+    "PI-15"
+   ],
+   "body": "多障家長協會家長監護權倡議(立法院公聽會出席)"
+  },
+  {
+   "id": "src-ngo-mental-001",
+   "type": "原始 PDF 文件",
+   "title": "康復之友聯盟精神障礙者社區支持倡議(透過人約盟)",
+   "subtitle": "zh-TW",
+   "url": "https://covenantswatch.org.tw/un-core-human-rights-treaties/crpd/",
+   "tags": [
+    "PI-11,PI-15"
+   ],
+   "body": "康復之友聯盟精神障礙者社區支持倡議(透過人約盟)"
+  },
+  {
+   "id": "src-ngo-autism-bf-001",
+   "type": "原始 PDF 文件",
+   "title": "自閉兒社會福利基金會:早期療育推動",
+   "subtitle": "zh-TW",
+   "url": "https://covenantswatch.org.tw/un-core-human-rights-treaties/crpd/",
+   "tags": [
+    "PI-16"
+   ],
+   "body": "自閉兒社會福利基金會:早期療育推動"
+  },
+  {
+   "id": "src-ngo-nhrc-001",
+   "type": "原始 PDF 文件",
+   "title": "國家人權委員會 CRPD 監督官方專區",
+   "subtitle": "zh-TW",
+   "url": "https://nhrc.cy.gov.tw/cp.aspx?n=8683",
+   "tags": [
+    "PI-06"
+   ],
+   "body": "國家人權委員會 CRPD 監督官方專區"
   },
   {
    "id": "actor-不足診斷批評派",

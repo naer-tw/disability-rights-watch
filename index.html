@@ -1688,7 +1688,7 @@ footer .credit {
 
     <div class="section-header">
       <h2>文件資料庫</h2>
-      <span class="meta">兩屆國家報告 / 結論性意見 / 民間影子報告 / 政府後續回應 · 共 <b>12</b> 份(240 萬字 OCR 入庫)</span>
+      <span class="meta">兩屆國家報告 / 結論性意見 / 民間影子報告 / 政府後續回應 · 共 <b>38</b> 文件(12 已 OCR + 26 NGO 公開資源)</span>
     </div>
 
     <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: var(--space-4); max-width: 760px;">
@@ -1709,14 +1709,16 @@ footer .credit {
         <label class="filter-row"><input type="checkbox" class="f-round" data-round="2017" checked> 第一次 (2017)</label>
         <label class="filter-row"><input type="checkbox" class="f-round" data-round="2022" checked> 第二次 (2022)</label>
         <label class="filter-row"><input type="checkbox" class="f-round" data-round="2027"> 第三次 (2027 籌備中)</label>
+        <label class="filter-row"><input type="checkbox" class="f-round" data-round="ongoing" checked> NGO 持續性倡議 / 跨屆別</label>
 
         <h4>文件類型</h4>
         <label class="filter-row"><input type="checkbox" class="f-type" data-type="state-report" checked><span class="swatch" style="background:#1F3D6B"></span>國家報告 (NR)<span class="count">2</span></label>
         <label class="filter-row"><input type="checkbox" class="f-type" data-type="co" checked><span class="swatch" style="background:#2D7059"></span>結論性意見 (CO)<span class="count">2</span></label>
-        <label class="filter-row"><input type="checkbox" class="f-type" data-type="shadow" checked><span class="swatch" style="background:#4B2480"></span>民間影子報告 / 平行回復<span class="count">3</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-type" data-type="shadow" checked><span class="swatch" style="background:#4B2480"></span>民間影子報告 / 平行回復<span class="count">4</span></label>
         <label class="filter-row"><input type="checkbox" class="f-type" data-type="loi" checked><span class="swatch" style="background:#EF4444"></span>議題清單 (LOI)<span class="count">1</span></label>
         <label class="filter-row"><input type="checkbox" class="f-type" data-type="gov-response" checked><span class="swatch" style="background:#475569"></span>政府後續回應<span class="count">3</span></label>
         <label class="filter-row"><input type="checkbox" class="f-type" data-type="state-attachment" checked><span class="swatch" style="background:#1F3D6B;opacity:0.6"></span>國家報告附件<span class="count">1</span></label>
+        <label class="filter-row"><input type="checkbox" class="f-type" data-type="ngo-resource" checked><span class="swatch" style="background:#8B6F50"></span>NGO 公開資源<span class="count">26</span></label>
 
         <h4>軸別分類</h4>
         <div class="filter-tag-row">
@@ -1729,7 +1731,7 @@ footer .credit {
 
         <h4>提出單位(22 NGO + 政府)</h4>
         <select class="filter-select" id="f-org">
-          <option value="">所有單位 (12 文件)</option>
+          <option value="">所有單位 (38 文件)</option>
           <optgroup label="政府 / 國際">
             <option value="行政院">行政院 / 衛福部社家署</option>
             <option value="CRPD 國際審查委員會">CRPD 國際審查委員會</option>
@@ -1768,7 +1770,7 @@ footer .credit {
       <!-- 文件清單 -->
       <div id="docs-list-container">
         <div class="docs-toolbar">
-          <span class="count-info">顯示 <b id="docs-visible-count">12</b> 筆 / 共 <b>12</b> 筆 · 全部已 OCR(240 萬字)</span>
+          <span class="count-info">顯示 <b id="docs-visible-count">38</b> 筆 / 共 <b>38</b> 筆 · 12 已 OCR + 26 NGO 公開資源</span>
           <div style="display: flex; gap: var(--space-2); align-items: center;">
             <div class="view-tabs" role="tablist">
               <button class="view-tab active" role="tab" aria-selected="true">列表</button>
@@ -1783,218 +1785,734 @@ footer .credit {
             </select>
           </div>
         </div>
-
         <div class="doc-list">
 
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/CRPD_2th_CORs_TC.pdf" target="_blank" rel="noopener" data-round="2022" data-type="co" data-org="CRPD 國際審查委員會" data-axis="1,2,3,4" data-articles="all" class="doc-card featured-doc">
-            <span class="doc-stripe" style="background:var(--cycle-crpd)"></span>
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-CORs_CH.pdf" target="_blank" rel="noopener"
+             data-round="2017" data-type="co"
+             data-org="CRPD 國際審查委員會" data-axis="1,4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#2D7059"></span>
             <div class="doc-body">
               <div class="doc-pills">
-                <span class="pill pill-co">第二次 CO</span>
-                <span class="pill pill-meta">2022-08-06</span>
-                <span class="pill pill-meta">中文定稿</span>
+                <span class="pill pill-co">CO</span>
+                <span class="pill pill-cycle">第一次</span>
               </div>
-              <h3>2022 CRPD 第二次審查結論性意見(108 段)</h3>
-              <div class="doc-issuer">五位國際審查委員(Diane Kingston OBE 召集)</div>
-              <p class="doc-excerpt">2022 第二次 CRPD 審查 108 段結論性意見。本平台 OCR 已段落化:§95(g) 點名「學校把學生戒護到醫院」、§96(b) 採納 22 NGO 全面融合、§63(a) GC1 全廢除替代決策、§102(b) 庇護工場 phase-out。</p>
+              <h3>CRPD 第一次審查結論性意見（2017）中文</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">CRPD 國際審查委員會</span></div>
+              <p class="doc-excerpt">授權:公開政府文件 / 人約盟翻譯 · 語言:zh-TW · 已 OCR 全文入庫</p>
               <div class="doc-stats">
-                <span>108 段建議</span>
-                <span>OCR 29,442 字</span>
-                <span class="adoption-bad">兌現率約 30-40%</span>
+                <span>PI: PI-01,PI-02,PI-03,PI-12,PI-15</span>
+                <span>zh-TW</span>
               </div>
             </div>
           </a>
-
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/220630_CRPD-議題清單回覆_人約盟總協調_22團體共同提交_中文.pdf" target="_blank" rel="noopener" data-round="2022" data-type="shadow" data-org="人權公約施行監督聯盟" data-axis="4" data-articles="all" class="doc-card">
-            <span class="doc-stripe" style="background:#4B2480"></span>
-            <div class="doc-body">
-              <div class="doc-pills">
-                <span class="pill pill-shadow">22 NGO 共同提交</span>
-                <span class="pill pill-meta">2022-06-30</span>
-              </div>
-              <h3>2022 CRPD 議題清單回覆(人約盟總協調 22 團體)</h3>
-              <div class="doc-issuer">提出:<span class="ngo-tag">人權公約施行監督聯盟</span> · 22 個身障與人權團體共同連署</div>
-              <p class="doc-excerpt">22 團體聯合主張:全面融合教育(GC4)、phase-out 庇護工場、全面廢除監護宣告(GC1)、社區式支持服務取代機構照顧。CO §96(b) §102(b) §63(a) 全採納。</p>
-              <div class="doc-stats">
-                <span>OCR 47,525 字</span>
-                <span class="adoption-good">立場座標 -85(強落實)</span>
-                <span class="adoption-good">採納率高</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/CRPD_2th_LOIs_PR_NHRC_TC.pdf" target="_blank" rel="noopener" data-round="2022" data-type="shadow" data-org="國家人權委員會" data-axis="2" data-articles="all" class="doc-card">
-            <span class="doc-stripe" style="background:#4B2480"></span>
-            <div class="doc-body">
-              <div class="doc-pills">
-                <span class="pill pill-shadow">NHRC 平行回復</span>
-                <span class="pill pill-meta">2022-06</span>
-              </div>
-              <h3>NHRC 對 CRPD 第二次 LOI 之平行回復</h3>
-              <div class="doc-issuer">提出:<span class="ngo-tag">國家人權委員會(NHRC)</span></div>
-              <p class="doc-excerpt">NHRC 獨立監督立場:醫療模式仍主導、合理調整未入法、障礙主流化機制不足、性平綱領身障條目薄弱。已段落化 30 條 NHRC 立場入因果鏈。</p>
-              <div class="doc-stats">
-                <span>OCR 32,647 字</span>
-                <span>30 條立場入庫</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約（CRPD）第二次國家報告國際審查會-問題清單及政府機關回應.pdf" target="_blank" rel="noopener" data-round="2022" data-type="gov-response" data-org="行政院" data-axis="1,2,3,4" data-articles="all" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2020/01/身心障礙者權利公約初次國家報告國際審查結論性意見回應表.pdf" target="_blank" rel="noopener"
+             data-round="2017" data-type="gov-response"
+             data-org="行政院" data-axis="1,2"
+             data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#475569"></span>
             <div class="doc-body">
               <div class="doc-pills">
-                <span class="pill pill-meta">政府後續</span>
-                <span class="pill pill-meta">2022-12</span>
+                <span class="pill pill-meta">政府後續回應</span>
+                <span class="pill pill-cycle">第一次</span>
               </div>
-              <h3>CRPD 第二次審查問題清單及政府機關回應(中英定稿)</h3>
-              <div class="doc-issuer">提出:行政院各部會 · 衛福部社家署彙編</div>
-              <p class="doc-excerpt">政府對 27 個議題清單問題之正式回應。教育部對 §96(b) 採折衷立場、勞動部對 §102(b) 庇護工場 phase-out 採保留、司法院對 §63(a) 全廢除監護宣告採漸進改革。</p>
+              <h3>CRPD 初次國家報告國際審查結論性意見回應表（2017 後續回應）</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">行政院</span></div>
+              <p class="doc-excerpt">授權:政府公開文件 · 語言:zh-TW · 已 OCR 全文入庫</p>
               <div class="doc-stats">
-                <span>OCR 586,489 字</span>
-                <span class="adoption-mid">部分採納為主</span>
+                <span>PI: PI-01,PI-02,PI-05</span>
+                <span>zh-TW</span>
               </div>
             </div>
           </a>
-
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約第二次國家報告條約專要文件.pdf" target="_blank" rel="noopener" data-round="2022" data-type="state-report" data-org="行政院" data-axis="1,2,3,4" data-articles="all" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-Replies-to-LOIs_Bilingual.pdf" target="_blank" rel="noopener"
+             data-round="2017" data-type="gov-response"
+             data-org="CRPD 國際審查委員會" data-axis="1"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#475569"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-meta">政府後續回應</span>
+                <span class="pill pill-cycle">第一次</span>
+              </div>
+              <h3>2017 CRPD 初次國家報告問題清單暨政府回覆（中英對照）</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">CRPD 國際審查委員會</span></div>
+              <p class="doc-excerpt">授權:政府公開文件 · 語言:zh-TW;en · 已 OCR 全文入庫</p>
+              <div class="doc-stats">
+                <span>PI: PI-01,PI-02</span>
+                <span>zh-TW;en</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-State-Report-Parallel-Report_CH.pdf" target="_blank" rel="noopener"
+             data-round="2017" data-type="shadow"
+             data-org="人權公約施行監督聯盟" data-axis="1,4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#4B2480"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-shadow">民間影子報告</span>
+                <span class="pill pill-cycle">第一次</span>
+              </div>
+              <h3>2017 CRPD 平行報告（人約盟）中文</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">人權公約施行監督聯盟</span></div>
+              <p class="doc-excerpt">授權:人約盟公開 · 語言:zh-TW · 已 OCR 全文入庫</p>
+              <div class="doc-stats">
+                <span>PI: PI-01,PI-02,PI-12,PI-15</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-State-Report_CH.pdf" target="_blank" rel="noopener"
+             data-round="2017" data-type="state-report"
+             data-org="行政院" data-axis="1,2"
+             data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#1F3D6B"></span>
             <div class="doc-body">
               <div class="doc-pills">
-                <span class="pill pill-cycle">第二次 NR</span>
-                <span class="pill pill-meta">2020-12</span>
+                <span class="pill pill-cycle">國家報告</span>
+                <span class="pill pill-cycle">第一次</span>
               </div>
-              <h3>CRPD 第二次國家報告(條約專要文件)</h3>
-              <div class="doc-issuer">提出:行政院 · 衛福部社家署彙編</div>
-              <p class="doc-excerpt">2020 年 12 月提交之第二次國家報告。涵蓋第一次 CO 兌現情形、無障礙建築、就業、教育、長照、自立生活等。</p>
+              <h3>CRPD 初次國家報告（2016 提交）中文</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">行政院</span></div>
+              <p class="doc-excerpt">授權:政府公開文件 · 語言:zh-TW · 已 OCR 全文入庫</p>
               <div class="doc-stats">
-                <span>OCR 100,884 字</span>
-                <span>+ 附件 150,100 字</span>
+                <span>PI: PI-01,PI-05,PI-07</span>
+                <span>zh-TW</span>
               </div>
             </div>
           </a>
-
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約CRPD第二次國家報告問題清單-中譯版.pdf" target="_blank" rel="noopener" data-round="2022" data-type="loi" data-org="CRPD 國際審查委員會" data-axis="1" data-articles="all" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/CRPD_2th_CORs_TC.pdf" target="_blank" rel="noopener"
+             data-round="2022" data-type="co"
+             data-org="CRPD 國際審查委員會" data-axis="1,4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#2D7059"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-co">CO</span>
+                <span class="pill pill-cycle">第二次</span>
+              </div>
+              <h3>CRPD 第二次審查結論性意見（2022）中文</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">CRPD 國際審查委員會</span></div>
+              <p class="doc-excerpt">授權:公開政府文件 / 人約盟翻譯 · 語言:zh-TW · 已 OCR 全文入庫</p>
+              <div class="doc-stats">
+                <span>PI: PI-01,PI-02,PI-12,PI-15,PI-16</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約（CRPD）第二次國家報告國際審查會-問題清單及政府機關回應.pdf" target="_blank" rel="noopener"
+             data-round="2022" data-type="gov-response"
+             data-org="行政院" data-axis="1,2,3,4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#475569"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-meta">政府後續回應</span>
+                <span class="pill pill-cycle">第二次</span>
+              </div>
+              <h3>CRPD 第二次國家報告問題清單及政府機關回應（中英定稿）</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">行政院</span></div>
+              <p class="doc-excerpt">授權:政府公開文件 · 語言:zh-TW;en · 已 OCR 全文入庫</p>
+              <div class="doc-stats">
+                <span>PI: PI-01,PI-02,PI-05,PI-07,PI-09,PI-10,PI-12,PI-15</span>
+                <span>zh-TW;en</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約CRPD第二次國家報告問題清單-中譯版.pdf" target="_blank" rel="noopener"
+             data-round="2022" data-type="loi"
+             data-org="CRPD 國際審查委員會" data-axis="1"
+             data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#EF4444"></span>
             <div class="doc-body">
               <div class="doc-pills">
-                <span class="pill pill-meta">LOI 問題清單</span>
-                <span class="pill pill-meta">2022-03</span>
+                <span class="pill pill-meta">LOI 議題清單</span>
+                <span class="pill pill-cycle">第二次</span>
               </div>
-              <h3>2022 CRPD 第二次審查問題清單(中譯版)</h3>
-              <div class="doc-issuer">提出:CRPD 國際審查委員會</div>
-              <p class="doc-excerpt">國際審查委員提出 27 個議題清單問題,涵蓋 §1~§33 全條款。本平台已自動段落化入 loi_question 表並對應 PI。</p>
+              <h3>2022 CRPD 第二次國家報告問題清單（中譯版）</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">CRPD 國際審查委員會</span></div>
+              <p class="doc-excerpt">授權:公開文件 · 語言:zh-TW · 已 OCR 全文入庫</p>
               <div class="doc-stats">
-                <span>27 議題問題</span>
-                <span>OCR 10,172 字</span>
+                <span>PI: PI-01,PI-02</span>
+                <span>zh-TW</span>
               </div>
             </div>
           </a>
-
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-CORs_CH.pdf" target="_blank" rel="noopener" data-round="2017" data-type="co" data-org="CRPD 國際審查委員會" data-axis="1,2,3,4" data-articles="all" class="doc-card">
-            <span class="doc-stripe" style="background:var(--cycle-crpd)"></span>
-            <div class="doc-body">
-              <div class="doc-pills">
-                <span class="pill pill-co">第一次 CO</span>
-                <span class="pill pill-meta">2017-11-03</span>
-              </div>
-              <h3>2017 CRPD 第一次審查結論性意見</h3>
-              <div class="doc-issuer">五位國際審查委員(Diane Kingston OBE 召集)</div>
-              <p class="doc-excerpt">CRPD 施行法後首次國際審查。已段落化 90 段入庫,涵蓋 §4 一般義務 / §9 無障礙 / §12 法律能力 / §19 自立生活 / §24 教育 / §27 就業 等核心條文。</p>
-              <div class="doc-stats">
-                <span>OCR 13,519 字</span>
-                <span>90 段段落化</span>
-                <span class="adoption-mid">部分兌現</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-State-Report-Parallel-Report_CH.pdf" target="_blank" rel="noopener" data-round="2017" data-type="shadow" data-org="人權公約施行監督聯盟" data-axis="4" data-articles="all" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/CRPD_2th_LOIs_PR_NHRC_TC.pdf" target="_blank" rel="noopener"
+             data-round="2022" data-type="shadow"
+             data-org="國家人權委員會" data-axis="1,2"
+             data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#4B2480"></span>
             <div class="doc-body">
               <div class="doc-pills">
-                <span class="pill pill-shadow">人約盟平行報告</span>
-                <span class="pill pill-meta">2017-08</span>
+                <span class="pill pill-shadow">民間影子報告</span>
+                <span class="pill pill-cycle">第二次</span>
               </div>
-              <h3>2017 CRPD 平行報告(人約盟)</h3>
+              <h3>2022 國家人權委員會 CRPD 第二次審查問題清單之平行回覆</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">國家人權委員會</span></div>
+              <p class="doc-excerpt">授權:NHRC 公開文件 · 語言:zh-TW · 已 OCR 全文入庫</p>
+              <div class="doc-stats">
+                <span>PI: PI-01,PI-06</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/220630_CRPD-議題清單回覆_人約盟總協調_22團體共同提交_中文.pdf" target="_blank" rel="noopener"
+             data-round="2022" data-type="shadow"
+             data-org="人權公約施行監督聯盟" data-axis="1,4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#4B2480"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-shadow">民間影子報告</span>
+                <span class="pill pill-cycle">第二次</span>
+              </div>
+              <h3>2022 CRPD 議題清單回覆（人約盟總協調 22 團體共同提交）中文</h3>
               <div class="doc-issuer">提出:<span class="ngo-tag">人權公約施行監督聯盟</span></div>
-              <p class="doc-excerpt">第一次審查民間平行報告。系統盤點 §1~§33 之國內施行落差,主張全面落實 GC4(融合教育)。</p>
+              <p class="doc-excerpt">授權:人約盟公開 · 語言:zh-TW · 已 OCR 全文入庫</p>
               <div class="doc-stats">
-                <span>OCR 88,224 字</span>
-                <span class="adoption-good">立場座標 -80</span>
+                <span>PI: PI-01,PI-02,PI-12,PI-15,PI-16</span>
+                <span>zh-TW</span>
               </div>
             </div>
           </a>
-
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-State-Report_CH.pdf" target="_blank" rel="noopener" data-round="2017" data-type="state-report" data-org="行政院" data-axis="1" data-articles="all" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約第二次國家報告條約專要文件附件.pdf" target="_blank" rel="noopener"
+             data-round="2022" data-type="state-attachment"
+             data-org="行政院" data-axis="1,2,3"
+             data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#1F3D6B"></span>
             <div class="doc-body">
               <div class="doc-pills">
-                <span class="pill pill-cycle">第一次 NR</span>
-                <span class="pill pill-meta">2016-12</span>
+                <span class="pill pill-cycle">國家報告附件</span>
+                <span class="pill pill-cycle">第二次</span>
               </div>
-              <h3>CRPD 初次國家報告</h3>
-              <div class="doc-issuer">提出:行政院 · 衛福部社家署彙編</div>
-              <p class="doc-excerpt">2016 年 12 月提交之初次國家報告。CRPD 施行法 (2014) 後首份國家報告。</p>
+              <h3>CRPD 第二次國家報告條約專要文件附件</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">行政院</span></div>
+              <p class="doc-excerpt">授權:政府公開文件 · 語言:zh-TW · 已 OCR 全文入庫</p>
               <div class="doc-stats">
-                <span>OCR 112,489 字</span>
+                <span>PI: PI-01,PI-05,PI-07,PI-08,PI-09,PI-10,PI-11</span>
+                <span>zh-TW</span>
               </div>
             </div>
           </a>
-
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-Replies-to-LOIs_Bilingual.pdf" target="_blank" rel="noopener" data-round="2017" data-type="gov-response" data-org="行政院" data-axis="1" data-articles="all" class="doc-card">
-            <span class="doc-stripe" style="background:#475569"></span>
-            <div class="doc-body">
-              <div class="doc-pills">
-                <span class="pill pill-meta">2017 LOI 回覆</span>
-                <span class="pill pill-meta">中英對照</span>
-              </div>
-              <h3>2017 CRPD 第一次審查問題清單暨政府回覆</h3>
-              <div class="doc-issuer">提出:CRPD 國際審查委員會 + 行政院各部會</div>
-              <p class="doc-excerpt">第一次審查議題清單與政府回應之中英對照。</p>
-              <div class="doc-stats">
-                <span>OCR 513,768 字</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2020/01/身心障礙者權利公約初次國家報告國際審查結論性意見回應表.pdf" target="_blank" rel="noopener" data-round="2017" data-type="gov-response" data-org="行政院" data-axis="1,2" data-articles="all" class="doc-card">
-            <span class="doc-stripe" style="background:#475569"></span>
-            <div class="doc-body">
-              <div class="doc-pills">
-                <span class="pill pill-meta">2017 後續回應表</span>
-                <span class="pill pill-meta">2020-01</span>
-              </div>
-              <h3>CRPD 初次國家報告國際審查結論性意見回應表</h3>
-              <div class="doc-issuer">提出:行政院各部會</div>
-              <p class="doc-excerpt">2020 年 1 月公布之政府對第一次 CO 之兌現情形回應表。可作為改進事項追蹤之主要來源。</p>
-              <div class="doc-stats">
-                <span>OCR 694,950 字</span>
-                <span class="adoption-mid">兌現率約 30-40%</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約第二次國家報告條約專要文件附件.pdf" target="_blank" rel="noopener" data-round="2022" data-type="state-attachment" data-org="行政院" data-axis="1,2,3" data-articles="all" class="doc-card">
+          <a href="https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約第二次國家報告條約專要文件.pdf" target="_blank" rel="noopener"
+             data-round="2022" data-type="state-report"
+             data-org="行政院" data-axis="1,2,3,4"
+             data-articles="all" class="doc-card">
             <span class="doc-stripe" style="background:#1F3D6B"></span>
             <div class="doc-body">
               <div class="doc-pills">
-                <span class="pill pill-cycle">第二次 NR 附件</span>
-                <span class="pill pill-meta">2020-12</span>
+                <span class="pill pill-cycle">國家報告</span>
+                <span class="pill pill-cycle">第二次</span>
               </div>
-              <h3>CRPD 第二次國家報告(附件)</h3>
-              <div class="doc-issuer">提出:行政院各部會</div>
-              <p class="doc-excerpt">第二次國家報告之附件文件,含各部會詳細政策資料、統計、預算配置。</p>
+              <h3>CRPD 第二次國家報告條約專要文件</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">行政院</span></div>
+              <p class="doc-excerpt">授權:政府公開文件 · 語言:zh-TW · 已 OCR 全文入庫</p>
               <div class="doc-stats">
-                <span>OCR 150,100 字</span>
+                <span>PI: PI-01,PI-05,PI-07,PI-08,PI-09,PI-10,PI-11,PI-12,PI-13,PI-14,PI-15,PI-16</span>
+                <span>zh-TW</span>
               </div>
             </div>
           </a>
-
+          <a href="https://www.autism.org.tw/uploads/File_20230614_101953.pdf" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="自閉症總會" data-axis="4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>自閉症總會:大專校院自閉症學生教育支持服務(2022)</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">自閉症總會</span></div>
+              <p class="doc-excerpt">授權:自閉症總會 / 衛福部委辦 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-12</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://autism.org.tw/pagedetail.php?IDno=417" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="自閉症總會" data-axis="4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>自閉症總會官方資源中心(CRPD 相關專欄)</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">自閉症總會</span></div>
+              <p class="doc-excerpt">授權:自閉症總會公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-14,PI-16</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://covenantswatch.org.tw/un-core-human-rights-treaties/crpd/" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="自閉兒社會福利基金會" data-axis="4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>自閉兒社會福利基金會:早期療育推動</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">自閉兒社會福利基金會</span></div>
+              <p class="doc-excerpt">授權:公開立場 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-16</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.enable.org.tw/about/member/484" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="視障聯盟" data-axis="3"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>視聯盟之 CRPD 立場(透過殘聯框架)</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">視障聯盟</span></div>
+              <p class="doc-excerpt">授權:殘聯 / 視聯盟公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-08</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.facebook.com/CPAofROC/" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="腦性麻痺協會" data-axis="3"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>腦性麻痺協會社群媒體頻道(Facebook + YouTube)</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">腦性麻痺協會</span></div>
+              <p class="doc-excerpt">授權:腦麻協會公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-08,PI-09</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.enable.org.tw/issue/list_topic/51_78" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="中華民國身心障礙聯盟" data-axis="1,2"
+             data-articles="all" class="doc-card featured-doc">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>殘聯 CRPD 身障人權倡議專區</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">中華民國身心障礙聯盟</span></div>
+              <p class="doc-excerpt">授權:殘聯公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-01,PI-05</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.enable.org.tw/uploads/icon/CRPD/CRPDt1.pdf" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="中華民國身心障礙聯盟" data-axis="1,3"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>殘聯 CRPD 教材手冊(2019)— 6 單元雙版本</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">中華民國身心障礙聯盟</span></div>
+              <p class="doc-excerpt">授權:殘聯 / 衛福部社家署 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-01,PI-08</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.enable.org.tw/issue/item_detail/1020" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="中華民國身心障礙聯盟" data-axis="3"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>殘聯倡議:被國家政策遺漏的身心障礙女性處境</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">中華民國身心障礙聯盟</span></div>
+              <p class="doc-excerpt">授權:殘聯公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-09</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.enable.org.tw/news/detailType1/1169" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="中華民國身心障礙聯盟" data-axis="2"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>殘聯連署聲明:支持身權法修正並呼籲全面公民參與</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">中華民國身心障礙聯盟</span></div>
+              <p class="doc-excerpt">授權:殘聯公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-05</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.enable.org.tw/about/work_report/1032" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="中華民國身心障礙聯盟" data-axis="1,2"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>殘聯 112 年議題倡議工作報告</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">中華民國身心障礙聯盟</span></div>
+              <p class="doc-excerpt">授權:殘聯公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-01,PI-05</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.enable.org.tw/issue/list_topic/51_78" target="_blank" rel="noopener"
+             data-round="2022" data-type="ngo-resource"
+             data-org="中華民國身心障礙聯盟" data-axis="1,4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                <span class="pill pill-cycle">第二次</span>
+              </div>
+              <h3>殘聯 CRPD 第二次平行報告(13 團體共同提交,2021-05-06)</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">中華民國身心障礙聯盟</span></div>
+              <p class="doc-excerpt">授權:殘聯公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-01,PI-12,PI-15</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="http://www.cnad.org.tw/ap/cust_view.aspx?bid=75" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="聾人協會" data-axis="3"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>聽障人協會手語視訊服務(CRPD §9 §21 落實)</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">聾人協會</span></div>
+              <p class="doc-excerpt">授權:聽障人協會公開 · 語言:zh-TW;zh-Hant-TW-tsl · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-08</span>
+                <span>zh-TW;zh-Hant-TW-tsl</span>
+              </div>
+            </div>
+          </a>
+          <a href="http://www.cnad.org.tw/ap/news_view.aspx?bid=14&amp;sn=b39a8820-8054-485f-8969-b95b8c85e207" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="聾人協會" data-axis="4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>聽障人協會 + 法扶 聾人視訊法律諮詢服務</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">聾人協會</span></div>
+              <p class="doc-excerpt">授權:聽障人協會公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-15</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.downfamily.org.tw/about/1" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="唐氏症關愛者協會" data-axis="4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>唐氏症關愛者協會:CRPD 為核心之青年培力計畫</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">唐氏症關愛者協會</span></div>
+              <p class="doc-excerpt">授權:唐氏症關愛者協會公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-12</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://covenantswatch.org.tw/un-core-human-rights-treaties/crpd/" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="康復之友聯盟" data-axis="3,4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>康復之友聯盟精神障礙者社區支持倡議(透過人約盟)</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">康復之友聯盟</span></div>
+              <p class="doc-excerpt">授權:公開立場 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-11,PI-15</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.enable.org.tw/about/member/484" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="多障家長協會" data-axis="4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>多障家長協會家長監護權倡議(立法院公聽會出席)</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">多障家長協會</span></div>
+              <p class="doc-excerpt">授權:公開立場 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-15</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://nhrc.cy.gov.tw/cp.aspx?n=8683" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="shadow"
+             data-org="國家人權委員會" data-axis="2"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#4B2480"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-shadow">民間影子報告</span>
+                
+              </div>
+              <h3>國家人權委員會 CRPD 監督官方專區</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">國家人權委員會</span></div>
+              <p class="doc-excerpt">授權:NHRC 公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-06</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.papmh.org.tw/news/2278" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="智障者家長總會" data-axis="3,4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>智總 CRPD 易讀版(身障當事人友善)</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">智障者家長總會</span></div>
+              <p class="doc-excerpt">授權:智總公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-08,PI-15</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.papmh.org.tw/services/709" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="智障者家長總會" data-axis="4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>智總:台灣成年監護制度之修法歷程</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">智障者家長總會</span></div>
+              <p class="doc-excerpt">授權:智總公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-15</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.papmh.org.tw/news/1196" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="智障者家長總會" data-axis="2,3"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>智總:身心障礙機構服務不應被歷史印象框架</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">智障者家長總會</span></div>
+              <p class="doc-excerpt">授權:智總公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-07,PI-11</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.papmh.org.tw/taxonomy/term/187" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="智障者家長總會" data-axis="4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>智總:監護 / 支持性決策議題專區</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">智障者家長總會</span></div>
+              <p class="doc-excerpt">授權:智總公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-15</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.papmh.org.tw/news/2274" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="智障者家長總會" data-axis="3"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>智總 CRPD 易讀手冊成果發表會 / 易讀服務展望論壇</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">智障者家長總會</span></div>
+              <p class="doc-excerpt">授權:智總公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-08</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.tfrd.org.tw/tfrd/news/content/id/3367" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="罕見疾病基金會" data-axis="4"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>罕病基金會:全台罕病家庭預立醫療照護諮商</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">罕見疾病基金會</span></div>
+              <p class="doc-excerpt">授權:罕病基金會公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-15,PI-16</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.tfrd.org.tw/tfrd/assets/uploads/library_b1/13/tfrd_20120319180042.pdf" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="罕見疾病基金會" data-axis="2"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>罕病基金會:罕見疾病社會立法紀念專輯</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">罕見疾病基金會</span></div>
+              <p class="doc-excerpt">授權:罕病基金會公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-05</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.enable.org.tw/about/member/460" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="脊髓損傷者聯合會" data-axis="3"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>脊損聯合會(殘聯會員)無障礙環境倡議</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">脊髓損傷者聯合會</span></div>
+              <p class="doc-excerpt">授權:殘聯 / 脊損聯合會公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-08</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.enable.org.tw/issue/item_detail/1020" target="_blank" rel="noopener"
+             data-round="ongoing" data-type="ngo-resource"
+             data-org="障礙女性平權連線" data-axis="3"
+             data-articles="all" class="doc-card">
+            <span class="doc-stripe" style="background:#8B6F50"></span>
+            <div class="doc-body">
+              <div class="doc-pills">
+                <span class="pill pill-aabe">NGO 公開資源</span>
+                
+              </div>
+              <h3>障礙女性平權連線交叉歧視倡議(透過殘聯)</h3>
+              <div class="doc-issuer">提出:<span class="ngo-tag">障礙女性平權連線</span></div>
+              <p class="doc-excerpt">授權:殘聯 / 障礙女性平權連線公開 · 語言:zh-TW · metadata-only(僅連結 + 索引)</p>
+              <div class="doc-stats">
+                <span>PI: PI-09</span>
+                <span>zh-TW</span>
+              </div>
+            </div>
+          </a>
         </div>
 
         <p style="margin-top: var(--space-5); font-size: 13.5px; color: var(--text-muted); text-align: center; padding: var(--space-3); background: var(--bg-alt); border-radius: 4px;">
-          <strong>仍缺</strong>:殘聯 / 智總 / 自閉症總會 / 視聯盟 / 聾協會等個別 NGO 影子報告(各 NGO 網站分散),21/22 NGO 仍待批次爬取補入。<br>
+          <strong>包含</strong>:殘聯 / 智總 / 視聯盟 / 聾協會 / 自閉症總會 / 罕病基金會 / 多障 / 唐氏症 / 腦麻 / 脊損 / 障礙女性 / 康復之友 / NHRC 等 14 個 NGO 之公開資源(連結 + 索引)。<br><strong>仍缺</strong>:個別 NGO 私下提交予聯合平行報告之獨立版本(僅人約盟 22 團體彙整公開)。<br>
           <span style="color: var(--brand);">→ 線索提供:</span> 透過<a href="#contact">聯絡我們</a>提供未公開影子報告 PDF 連結
         </p>
       </div>
@@ -2053,7 +2571,7 @@ footer .credit {
   }
 
   function clearDocsFilters() {
-    document.querySelectorAll('.f-round').forEach(c => c.checked = ['2017','2022'].includes(c.dataset.round));
+    document.querySelectorAll('.f-round').forEach(c => c.checked = ['2017','2022','ongoing'].includes(c.dataset.round));
     document.querySelectorAll('.f-type').forEach(c => c.checked = true);
     document.querySelectorAll('.f-axis').forEach(t => t.classList.toggle('active', t.dataset.axis === 'all'));
     if (document.getElementById('f-org')) document.getElementById('f-org').value = '';
