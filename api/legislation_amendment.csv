@@ -1,0 +1,16 @@
+amendment_id,law_id,amendment_date,amendment_type,affected_articles,summary_zh,driving_factor,related_co_passage_id,related_pi,source_url,archive_url,legislative_session,notes
+AMD-DISAB-1980,LAW-DISAB-RIGHTS,1980-06-02,initial,全部,《殘障福利法》制定，台灣首部身障專法。,social_event,,PI-05,,,1th,使用當時之普遍用語，醫療模式為主。
+AMD-DISAB-1997,LAW-DISAB-RIGHTS,1997-04-23,renaming,全部,更名為《身心障礙者保護法》，採社會模式概念。,international_convention,,PI-05,,,3th,配合國際身障人權發展趨勢。
+AMD-DISAB-2007,LAW-DISAB-RIGHTS,2007-07-11,major,全部,更名為《身心障礙者權益保障法》。導入 ICF 鑑定標準。,international_convention,,PI-05,,,6th,2008 起 ICF 分類取代 16 障別。
+AMD-DISAB-2021,LAW-DISAB-RIGHTS,2021-01-20,minor,部分,配合 CRPD 第一次審查 CO 之部分回應。,co_response,,PI-05,,,10th,2017 CO 後法律補強。
+AMD-SPED-1984,LAW-SPECIAL-EDU,1984-12-17,initial,全部,《特殊教育法》制定，建立特殊教育制度。,social_event,,PI-12,,,1th,建立特教學校與資優教育。
+AMD-SPED-2014,LAW-SPECIAL-EDU,2014-06-18,major,部分,與 CRPD 施行法配合修法。導入個別化教育計畫（IEP）強化規定。,international_convention,,"PI-12,PI-10",,,8th,IEP 法定化。
+AMD-SPED-2019,LAW-SPECIAL-EDU,2019-04-24,minor,部分,配合 CRPD 第一次審查 CO，強化融合教育規範。,co_response,,PI-12,,,9th,2017 CO 部分回應。
+AMD-SPED-2023,LAW-SPECIAL-EDU,2023-06-21,major,多條,大幅修法朝融合教育方向，但保留特教學校與特教班作為多元安置選項。引入通用學習設計概念。,co_response,CO-2022-edu-96,"PI-12,PI-13,PI-14",https://edu.law.moe.gov.tw/LawContent.aspx?id=GL000091,,10th,回應 2022 CO §96。採折衷立場：朝融合但不全面 phase-out 特教學校。22 團體 phase-out 主張未被採納。
+AMD-MH-1990,LAW-MENTAL-HEALTH,1990-12-07,initial,全部,《精神衛生法》制定。,social_event,,PI-15,,,1th,建立精神症狀者強制就醫制度。
+AMD-MH-2007,LAW-MENTAL-HEALTH,2007-07-04,major,全部,大幅修法，建立強制住院審查會制度。,social_event,,PI-15,,,6th,審查會制度確立。
+AMD-MH-2022,LAW-MENTAL-HEALTH,2022-12-14,full_revision,全部,2022 全文修法。但 §25（限制通訊）等規定仍受 CRPD CO 關切（§91-92）。,co_response,CO-2022-lc-63,"PI-15,PI-16",https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0020030,,10th,修法廣度大但對 §12 替代決策制度改革程度有限。
+AMD-CIVIL-2008,LAW-CIVIL-CODE,2008-05-23,major,"§14, §15-1, §15-2, §1110-1113",廢止「禁治產」改為「監護宣告」+「輔助宣告」雙軌制。,international_convention,,PI-15,,,7th,為配合 CRPD 簽署趨勢，但仍為替代決策制度。GC1 主張全面廢除。
+AMD-CR87-2022,LAW-CRIMINAL-87,2022-02-18,minor,§87,修正監護處分期間規定。,co_response,CO-2022-lc-63,PI-15,https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=C0000001,,10th,部分回應 2017/2022 CO §63(d)，但未根本改革。
+AMD-CRPD-IMPL-2014,LAW-CRPD-IMPL,2014-08-20,initial,全部,《身心障礙者權利公約施行法》制定，CRPD 內國法化。,international_convention,,PI-01,,,8th,台灣 CRPD 國內施行主軸法。
+AMD-CRPD-IMPL-2021,LAW-CRPD-IMPL,2021-01-20,minor,§7,修正第 7 條，強化國家報告與民間影子報告制度。,co_response,,"PI-01,PI-03",,,10th,配合第二次審查制度化。

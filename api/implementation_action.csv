@@ -1,0 +1,12 @@
+action_id,date,related_commitment_id,agency_id,action_type,action_text_zh,budget_actual,budget_unit,source_url,evidence_url,status,related_pi,notes
+IA-moe-2019-edu,2019-08,CM-moe-2018-edu,moe_sed,program_launch,教育部 2019 年起推動「融合教育推動計畫」，補助學校增置特教助理員、巡迴輔導員。,,TWD,https://www.edu.tw/News.aspx?n=...,,completed,"PI-12,PI-10",
+IA-moe-2023-edu,2023-08,CM-moe-2022-edu,moe_sed,legislation,教育部 2023 年完成《特殊教育法》修法，朝向融合教育方向，但保留特教學校與特教班作為多元安置選項。,,TWD,https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=H0080027,,completed,"PI-12,PI-13",
+IA-mol-2023-emp,2023-08,CM-mol-2022-emp,mol_wda,program_launch,勞動部 2023 年起擴大支持就業預算、增加職業重建師人力、改善定額進用稽核。庇護工場保留並強化轉銜輔導，未啟動 phase-out。,,TWD,https://www.mol.gov.tw/...,,in_progress,PI-09,
+IA-mohw-2023-lc,2023-08,CM-judicial-2022-lc,mohw_sf,program_launch,衛福部社家署 2023 年起擴大支持式決策試辦計畫（個案規模有限）。司法院辦理 CRPD §12 法官培訓。精神衛生法修法持續審議中。監護宣告制度未根本改革。,,TWD,https://www.sfaa.gov.tw/...,,in_progress,PI-15,
+IA-moe-2024-special-school,2024-08,CM-moe-2022-special-school,moe_sed,program_launch,教育部 2024 年起推動特教學校品質提升計畫，未啟動 phase-out。,,TWD,,,in_progress,PI-13,
+IA-moe-2024-bully,2024-08,CM-moe-2022-bully,moe_sed,training,教育部 2024 年起增加普通班教師之身障兒少融合教學培訓。校安通報身障學生分類資料未對外公開。,,TWD,,,in_progress,PI-14,
+IA-mohw-2024-medicalization,2024-08,CM-mohw-2022-medicalization,mohw,data_collection,衛福部 2024 年起增加心智障礙者司法支持服務。ADHD / 自閉症兒少診斷率時序與處方率資料未對外公開。,,TWD,,,in_progress,PI-16,
+IA-exec-2023-overall,2023-08,CM-exec-2022-overall,exec_yuan,organization_change,行政院身權小組增加 DPO 代表席次，召開頻率增加。,,TWD,,,in_progress,PI-01,
+IA-exec-2024-nap,2024-08,CM-exec-2022-nap,exec_yuan,program_launch,行政院 2024 年起研擬身障策略，尚未正式發布。,,TWD,,,planning,PI-05,
+IA-nhrc-2023,2023-08,CM-nhrc-2022,nhrc,data_collection,NHRC 2023 年起增加身障議題年度報告章節。,,TWD,,,in_progress,PI-06,
+IA-mohw-2024-caregiver,2024-08,CM-mohw-2022-caregiver,mohw,program_launch,衛福部 2024 年增加喘息服務經費，個人助理員覆蓋率仍偏低。,,TWD,,,in_progress,PI-11,

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>API / 資料 export — CRPD 監督平台</title>
+<meta name="description" content="本平台 SQLite 資料以 JSON / CSV 形式 export,供學者引用 / 第三方對接 / Excel 分析使用">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #FAFAF7; --bg-deep: #1A4D3A; --text: #1F1F1F; --text-muted: #5C5C5C; --brand: #B5371F; --aabe-gold: #8B6F50; --cycle-crpd: #2D7059; --border: #DDD8CD; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Noto Sans TC", -apple-system, sans-serif; font-size: 16px; line-height: 1.7; color: var(--text); background: var(--bg); }
+a { color: var(--bg-deep); text-decoration: underline; }
+a:hover { color: var(--brand); }
+.masthead { border-bottom: 1px solid var(--border); padding: 16px 24px; }
+.masthead-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 16px; }
+.logo { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--text); }
+.logo .icon { width: 36px; height: 36px; background: var(--bg-deep); color: #fff; display: grid; place-items: center; border-radius: 6px; }
+.logo h1 { font-family: "Noto Serif TC", serif; font-size: 17px; font-weight: 700; }
+.aabe-mark { font-family: Inter, sans-serif; font-weight: 800; font-size: 13px; background: var(--aabe-gold); color: #fff; padding: 5px 9px; border-radius: 4px; }
+main { max-width: 960px; margin: 0 auto; padding: 32px 24px; }
+.kicker { font-family: Inter, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); margin-bottom: 8px; }
+h1.title { font-family: "Noto Serif TC", serif; font-size: clamp(28px, 4vw, 36px); font-weight: 900; color: var(--bg-deep); margin-bottom: 16px; }
+.lead { font-size: 16px; color: var(--text-muted); margin-bottom: 32px; }
+table.api-table { width: 100%; border-collapse: collapse; background: #fff; }
+.api-table th { background: var(--bg-deep); color: #fff; padding: 12px; text-align: left; }
+.api-table td { padding: 12px; border-top: 1px solid var(--border); font-size: 14px; }
+.api-table code { background: var(--bg); padding: 2px 6px; border-radius: 3px; font-size: 12.5px; }
+section { margin: 32px 0; }
+section h2 { font-family: "Noto Serif TC", serif; font-size: 22px; color: var(--bg-deep); margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid var(--bg-deep); }
+.cite-box { background: var(--bg-alt); border-left: 4px solid var(--cycle-crpd); padding: 16px 20px; border-radius: 0 4px 4px 0; margin: 12px 0; }
+.cite-box pre { font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace; font-size: 13px; line-height: 1.7; white-space: pre-wrap; }
+footer { border-top: 1px solid var(--border); background: var(--bg-deep); color: rgba(255,255,255,0.7); padding: 24px; margin-top: 64px; text-align: center; font-size: 13px; }
+footer a { color: rgba(255,255,255,0.85); }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:-9999px;background:#1A4D3A;color:#fff;padding:8px 16px;border-radius:4px;text-decoration:none;z-index:1000" onfocus="this.style.left='12px';this.style.top='12px'" onblur="this.style.left='-9999px';this.style.top='-9999px'">跳至主要內容</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="../" class="logo">
+      <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+      <div><h1>身心障礙者權利監督平台</h1></div>
+    </a>
+    <span class="aabe-mark">AABE</span>
+  </div>
+</header>
+
+<main id="main">
+  <p class="kicker">API / 資料 export</p>
+  <h1 class="title">本平台資料 JSON / CSV 下載</h1>
+  <p class="lead">本平台 SQLite 資料以 JSON 與 CSV 形式 export,供學者引用、第三方應用程式對接、Excel 分析使用。
+   <strong>授權:CC BY 4.0</strong>(可自由使用,請註明來源)。</p>
+
+  <section>
+    <h2>核心資料表</h2>
+    <table class="api-table">
+      <thead><tr><th>資料表</th><th>說明</th><th>下載</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><code>vocab_issue</code></td>
+          <td>16 PI 議題定義 + 4 軸框架</td>
+          <td><a href="vocab_issue.json">JSON</a> / <a href="vocab_issue.csv">CSV</a></td>
+        </tr>
+        <tr>
+          <td><code>co_passage</code></td>
+          <td>206 段結論性意見(2017 + 2022)</td>
+          <td><a href="co_passage.json">JSON</a> / <a href="co_passage.csv">CSV</a></td>
+        </tr>
+        <tr>
+          <td><code>advocacy_position</code></td>
+          <td>84 倡議立場(24 倡議者)</td>
+          <td><a href="advocacy_position.json">JSON</a> / <a href="advocacy_position.csv">CSV</a></td>
+        </tr>
+        <tr>
+          <td><code>commitment</code></td>
+          <td>11 政府承諾</td>
+          <td><a href="commitment.json">JSON</a> / <a href="commitment.csv">CSV</a></td>
+        </tr>
+        <tr>
+          <td><code>implementation_action</code></td>
+          <td>10 實施動作</td>
+          <td><a href="implementation_action.json">JSON</a> / <a href="implementation_action.csv">CSV</a></td>
+        </tr>
+        <tr>
+          <td><code>outcome_assessment</code></td>
+          <td>18 結果評估(含 5 非預期後果旗標)</td>
+          <td><a href="outcome_assessment.json">JSON</a> / <a href="outcome_assessment.csv">CSV</a></td>
+        </tr>
+        <tr>
+          <td><code>litigation</code></td>
+          <td>8 法律訴訟案例</td>
+          <td><a href="litigation.json">JSON</a> / <a href="litigation.csv">CSV</a></td>
+        </tr>
+        <tr>
+          <td><code>legislation</code></td>
+          <td>8 部主要法律</td>
+          <td><a href="legislation.json">JSON</a> / <a href="legislation.csv">CSV</a></td>
+        </tr>
+        <tr>
+          <td><code>legislation_amendment</code></td>
+          <td>16 修法歷程</td>
+          <td><a href="legislation_amendment.json">JSON</a> / <a href="legislation_amendment.csv">CSV</a></td>
+        </tr>
+        <tr>
+          <td><code>indicator_timeseries</code></td>
+          <td>91 指標時序(14 指標 × 2014-2024)</td>
+          <td><a href="indicator_timeseries.json">JSON</a> / <a href="indicator_timeseries.csv">CSV</a></td>
+        </tr>
+        <tr>
+          <td><code>loi_question</code></td>
+          <td>27 議題清單問題</td>
+          <td><a href="loi_question.json">JSON</a> / <a href="loi_question.csv">CSV</a></td>
+        </tr>
+        <tr>
+          <td><code>source</code></td>
+          <td>128 文件來源 metadata</td>
+          <td><a href="source.json">JSON</a> / <a href="source.csv">CSV</a></td>
+        </tr>
+        <tr>
+          <td>full search index</td>
+          <td>全平台搜尋索引(545 筆)</td>
+          <td><a href="../search-index.json">JSON</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>引用方式 Citation</h2>
+
+    <h3 style="font-family:'Noto Serif TC',serif;font-size:17px;color:var(--bg-deep);margin-top:20px;margin-bottom:8px">APA 7</h3>
+    <div class="cite-box">
+      <pre>國教行動聯盟 (AABE). (2026). <em>身心障礙者權利監督平台 [Disability Rights Watch Taiwan]</em>.
+取自 https://naer-tw.github.io/disability-rights-watch/ (CC BY 4.0)</pre>
+    </div>
+
+    <h3 style="font-family:'Noto Serif TC',serif;font-size:17px;color:var(--bg-deep);margin-top:20px;margin-bottom:8px">BibTeX</h3>
+    <div class="cite-box">
+      <pre>@misc{aabe_crpd_watch_2026,
+  author       = {{國教行動聯盟}},
+  title        = {{身心障礙者權利監督平台}},
+  year         = {2026},
+  url          = {https://naer-tw.github.io/disability-rights-watch/},
+  note         = {CC BY 4.0}
+}</pre>
+    </div>
+
+    <h3 style="font-family:'Noto Serif TC',serif;font-size:17px;color:var(--bg-deep);margin-top:20px;margin-bottom:8px">引用本平台之具體議題卡 / 倡議者責任頁</h3>
+    <div class="cite-box">
+      <pre>國教行動聯盟. (2026). PI-12 §24 教育權單向解讀爭議.
+身心障礙者權利監督平台.
+https://naer-tw.github.io/disability-rights-watch/issues/PI-12-dossier.html</pre>
+    </div>
+  </section>
+
+  <section>
+    <h2>立場座標如何計算?</h2>
+    <p>每筆 <code>advocacy_position</code> 之 <code>stance_position</code> 為 <strong>-100 ~ +100</strong> 之數值,依立場光譜軸(<code>stance_axis_id</code>)分布:</p>
+    <ul style="margin-left:24px;margin-top:8px;font-size:14.5px;line-height:1.9">
+      <li><strong>-100 ~ -80</strong>:強左(如「強落實派」全面廢除特教學校)</li>
+      <li><strong>-79 ~ -30</strong>:偏左</li>
+      <li><strong>-29 ~ +29</strong>:中性 / 混合 / 折衷</li>
+      <li><strong>+30 ~ +79</strong>:偏右</li>
+      <li><strong>+80 ~ +100</strong>:強右(如「強保留派」全面保留特教學校)</li>
+    </ul>
+    <p style="margin-top:12px;font-size:14px;color:var(--text-muted)">
+      標籤(<code>stance_label</code>)為人類可讀之立場名稱(如 <code>strong_inclusion</code> / <code>multi_track_preserve</code>)。
+      座標數值由本平台基於該倡議者之公開立場文本判斷。<strong>異議申請</strong>:若您認為本平台對某立場之分類有誤,請透過 <a href="../feedback.html">回饋表</a>提出。
+    </p>
+  </section>
+
+  <section>
+    <h2>授權與規範</h2>
+    <ul style="margin-left:24px;font-size:14.5px;line-height:1.9">
+      <li><strong>授權:</strong> Creative Commons Attribution 4.0 International(CC BY 4.0)</li>
+      <li>引用時請註明 <strong>來源:身心障礙者權利監督平台 / 國教行動聯盟</strong></li>
+      <li>不得移除或竄改 <code>responsibility_attribution_notes</code> 欄位之「不公審原則」說明</li>
+      <li>商業使用需保留原始 attribution</li>
+      <li>API 資料不應用於侵犯個人隱私(本平台已遵守 governance/privacy_policy.md)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>更新頻率</h2>
+    <p>本 API 資料隨平台主資料庫每月更新。最新更新時間請查 <a href="../sitemap.xml">sitemap.xml</a> 之 lastmod。</p>
+  </section>
+</main>
+
+<footer>
+  <p>CRPD 監督平台 · 國教行動聯盟(AABE) · CC BY 4.0 · <a href="../">回首頁</a></p>
+</footer>
+
+</body>
+</html>

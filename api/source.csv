@@ -1,0 +1,129 @@
+source_id,title,source_url,archive_url,license,language,hash,ocr_status,related_pi,quotability,privacy,ingested_date
+src-2017-co-ch,CRPD 第一次審查結論性意見（2017）中文,https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-CORs_CH.pdf,,公開政府文件 / 人約盟翻譯,zh-TW,sha256:90f15178a53e74a9,complete,"PI-01,PI-02,PI-03,PI-12,PI-15",1,public,2026-05-01
+src-2017-state-ch,CRPD 初次國家報告（2016 提交）中文,https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-State-Report_CH.pdf,,政府公開文件,zh-TW,sha256:e1677e5169baef10,complete,"PI-01,PI-05,PI-07",1,public,2026-05-01
+src-2017-shadow-cw-ch,2017 CRPD 平行報告（人約盟）中文,https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-State-Report-Parallel-Report_CH.pdf,,人約盟公開,zh-TW,sha256:d19185ffc0920137,complete,"PI-01,PI-02,PI-12,PI-15",1,public,2026-05-01
+src-2022-co-tc,CRPD 第二次審查結論性意見（2022）中文,https://covenantswatch.org.tw/wp-content/uploads/2015/12/CRPD_2th_CORs_TC.pdf,,公開政府文件 / 人約盟翻譯,zh-TW,sha256:8ad1e6fb71277ba7,complete,"PI-01,PI-02,PI-12,PI-15,PI-16",1,public,2026-05-01
+src-2022-shadow-22ngos,2022 CRPD 議題清單回覆（人約盟總協調 22 團體共同提交）中文,https://covenantswatch.org.tw/wp-content/uploads/2015/12/220630_CRPD-議題清單回覆_人約盟總協調_22團體共同提交_中文.pdf,,人約盟公開,zh-TW,sha256:390cf1c7e5bf6d41,complete,"PI-01,PI-02,PI-12,PI-15,PI-16",1,public,2026-05-01
+src-2022-gov-response,CRPD 第二次國家報告問題清單及政府機關回應（中英定稿）,https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約（CRPD）第二次國家報告國際審查會-問題清單及政府機關回應.pdf,,政府公開文件,zh-TW;en,sha256:58f4cf547cfc0c4a,complete,"PI-01,PI-02,PI-05,PI-07,PI-09,PI-10,PI-12,PI-15",1,public,2026-05-01
+src-2022-nhrc-parallel,2022 國家人權委員會 CRPD 第二次審查問題清單之平行回覆,https://covenantswatch.org.tw/wp-content/uploads/2015/12/CRPD_2th_LOIs_PR_NHRC_TC.pdf,,NHRC 公開文件,zh-TW,sha256:7572ea8c412aeebc,complete,"PI-01,PI-06",1,public,2026-05-01
+src-2022-loi-questions,2022 CRPD 第二次國家報告問題清單（中譯版）,https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約CRPD第二次國家報告問題清單-中譯版.pdf,,公開文件,zh-TW,sha256:c61b5fa74a3fa38f,complete,"PI-01,PI-02",1,public,2026-05-01
+src-2017-followup,CRPD 初次國家報告國際審查結論性意見回應表（2017 後續回應）,https://covenantswatch.org.tw/wp-content/uploads/2020/01/身心障礙者權利公約初次國家報告國際審查結論性意見回應表.pdf,,政府公開文件,zh-TW,sha256:86a164ed46654e43,complete,"PI-01,PI-02,PI-05",1,public,2026-05-01
+src-2017-loi-replies,2017 CRPD 初次國家報告問題清單暨政府回覆（中英對照）,https://covenantswatch.org.tw/wp-content/uploads/2018/12/2017-CRPD-Replies-to-LOIs_Bilingual.pdf,,政府公開文件,zh-TW;en,sha256:fd449ec2426d9747,complete,"PI-01,PI-02",1,public,2026-05-01
+src-2022-state-attachment,CRPD 第二次國家報告條約專要文件附件,https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約第二次國家報告條約專要文件附件.pdf,,政府公開文件,zh-TW,sha256:2b6d641f8f0cb001,complete,"PI-01,PI-05,PI-07,PI-08,PI-09,PI-10,PI-11",1,public,2026-05-01
+src-2022-state-ch,CRPD 第二次國家報告條約專要文件,https://covenantswatch.org.tw/wp-content/uploads/2015/12/身心障礙者權利公約第二次國家報告條約專要文件.pdf,,政府公開文件,zh-TW,sha256:08b27bfc43962232,complete,"PI-01,PI-05,PI-07,PI-08,PI-09,PI-10,PI-11,PI-12,PI-13,PI-14,PI-15,PI-16",1,public,2026-05-01
+src-ngo-da-001,殘聯 CRPD 身障人權倡議專區,https://www.enable.org.tw/issue/list_topic/51_78,,殘聯公開,zh-TW,,pending,"PI-01,PI-05",1,public,2026-05-04
+src-ngo-da-002,殘聯 CRPD 教材手冊(2019)— 6 單元雙版本,https://www.enable.org.tw/uploads/icon/CRPD/CRPDt1.pdf,,殘聯 / 衛福部社家署,zh-TW,,pending,"PI-01,PI-08",1,public,2026-05-04
+src-ngo-da-003,殘聯倡議:被國家政策遺漏的身心障礙女性處境,https://www.enable.org.tw/issue/item_detail/1020,,殘聯公開,zh-TW,,pending,PI-09,1,public,2026-05-04
+src-ngo-da-004,殘聯連署聲明:支持身權法修正並呼籲全面公民參與,https://www.enable.org.tw/news/detailType1/1169,,殘聯公開,zh-TW,,pending,PI-05,1,public,2026-05-04
+src-ngo-da-005,殘聯 112 年議題倡議工作報告,https://www.enable.org.tw/about/work_report/1032,,殘聯公開,zh-TW,,pending,"PI-01,PI-05",1,public,2026-05-04
+src-ngo-da-006,"殘聯 CRPD 第二次平行報告(13 團體共同提交,2021-05-06)",https://www.enable.org.tw/issue/list_topic/51_78,,殘聯公開,zh-TW,,pending,"PI-01,PI-12,PI-15",1,public,2026-05-04
+src-ngo-papmh-001,智總 CRPD 易讀版(身障當事人友善),https://www.papmh.org.tw/news/2278,,智總公開,zh-TW,,pending,"PI-08,PI-15",1,public,2026-05-04
+src-ngo-papmh-002,智總:台灣成年監護制度之修法歷程,https://www.papmh.org.tw/services/709,,智總公開,zh-TW,,pending,PI-15,1,public,2026-05-04
+src-ngo-papmh-003,智總:身心障礙機構服務不應被歷史印象框架,https://www.papmh.org.tw/news/1196,,智總公開,zh-TW,,pending,"PI-07,PI-11",1,public,2026-05-04
+src-ngo-papmh-004,智總:監護 / 支持性決策議題專區,https://www.papmh.org.tw/taxonomy/term/187,,智總公開,zh-TW,,pending,PI-15,1,public,2026-05-04
+src-ngo-papmh-005,智總 CRPD 易讀手冊成果發表會 / 易讀服務展望論壇,https://www.papmh.org.tw/news/2274,,智總公開,zh-TW,,pending,PI-08,1,public,2026-05-04
+src-ngo-autism-001,自閉症總會:大專校院自閉症學生教育支持服務(2022),https://www.autism.org.tw/uploads/File_20230614_101953.pdf,,自閉症總會 / 衛福部委辦,zh-TW,,pending,PI-12,1,public,2026-05-04
+src-ngo-autism-002,自閉症總會官方資源中心(CRPD 相關專欄),https://autism.org.tw/pagedetail.php?IDno=417,,自閉症總會公開,zh-TW,,pending,"PI-14,PI-16",1,public,2026-05-04
+src-ngo-deaf-001,聽障人協會手語視訊服務(CRPD §9 §21 落實),http://www.cnad.org.tw/ap/cust_view.aspx?bid=75,,聽障人協會公開,zh-TW;zh-Hant-TW-tsl,,pending,PI-08,1,public,2026-05-04
+src-ngo-deaf-002,聽障人協會 + 法扶 聾人視訊法律諮詢服務,http://www.cnad.org.tw/ap/news_view.aspx?bid=14&sn=b39a8820-8054-485f-8969-b95b8c85e207,,聽障人協會公開,zh-TW,,pending,PI-15,1,public,2026-05-04
+src-ngo-rare-001,罕病基金會:全台罕病家庭預立醫療照護諮商,https://www.tfrd.org.tw/tfrd/news/content/id/3367,,罕病基金會公開,zh-TW,,pending,"PI-15,PI-16",1,public,2026-05-04
+src-ngo-rare-002,罕病基金會:罕見疾病社會立法紀念專輯,https://www.tfrd.org.tw/tfrd/assets/uploads/library_b1/13/tfrd_20120319180042.pdf,,罕病基金會公開,zh-TW,,pending,PI-05,1,public,2026-05-04
+src-ngo-blind-001,視聯盟之 CRPD 立場(透過殘聯框架),https://www.enable.org.tw/about/member/484,,殘聯 / 視聯盟公開,zh-TW,,pending,PI-08,1,public,2026-05-04
+src-ngo-spinal-001,脊損聯合會(殘聯會員)無障礙環境倡議,https://www.enable.org.tw/about/member/460,,殘聯 / 脊損聯合會公開,zh-TW,,pending,PI-08,1,public,2026-05-04
+src-ngo-cp-001,腦性麻痺協會社群媒體頻道(Facebook + YouTube),https://www.facebook.com/CPAofROC/,,腦麻協會公開,zh-TW,,pending,"PI-08,PI-09",1,public,2026-05-04
+src-ngo-down-001,唐氏症關愛者協會:CRPD 為核心之青年培力計畫,https://www.downfamily.org.tw/about/1,,唐氏症關愛者協會公開,zh-TW,,pending,PI-12,1,public,2026-05-04
+src-ngo-women-001,障礙女性平權連線交叉歧視倡議(透過殘聯),https://www.enable.org.tw/issue/item_detail/1020,,殘聯 / 障礙女性平權連線公開,zh-TW,,pending,PI-09,1,public,2026-05-04
+src-ngo-multi-001,多障家長協會家長監護權倡議(立法院公聽會出席),https://www.enable.org.tw/about/member/484,,公開立場,zh-TW,,pending,PI-15,1,public,2026-05-04
+src-ngo-mental-001,康復之友聯盟精神障礙者社區支持倡議(透過人約盟),https://covenantswatch.org.tw/un-core-human-rights-treaties/crpd/,,公開立場,zh-TW,,pending,"PI-11,PI-15",1,public,2026-05-04
+src-ngo-autism-bf-001,自閉兒社會福利基金會:早期療育推動,https://covenantswatch.org.tw/un-core-human-rights-treaties/crpd/,,公開立場,zh-TW,,pending,PI-16,1,public,2026-05-04
+src-ngo-nhrc-001,國家人權委員會 CRPD 監督官方專區,https://nhrc.cy.gov.tw/cp.aspx?n=8683,,NHRC 公開,zh-TW,,pending,PI-06,1,public,2026-05-04
+src-sfaa-A-2022,【公告】CRPD第三次國家報告專要文件初稿_第2版已公告，請下載運用，謝謝！,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=A&bulletinId=2022,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-01,PI-03",1,public,2026-05-04
+src-sfaa-A-2087,【公告】更新身心障礙者權利公約(CRPD)第三次國家報告民間團體平行報告及問題清單平行回復提交說明之秘書單位資訊,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=A&bulletinId=2087,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-01,PI-03",1,public,2026-05-04
+src-sfaa-B-1407,召開「身心障礙者權利公約（CRPD）第二次國家報告 第一輪審查會議」，共7場次,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1407,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-B-1408,召開「身心障礙者權利公約（CRPD）第二次國家報告第二輪（國內審查第一輪）審查會議」，共11場次,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1408,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-B-1409,召開「身心障礙者權利公約（CRPD）第二次國家報告第二輪（國內審查第二輪）審查會議」，共3場次,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1409,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-B-1414,召開「行政院身心障礙者權益推動小組第3屆第3次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1414,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-1450,召開「行政院身心障礙者權益推動小組第3屆第4次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1450,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-1463,召開「身心障礙者權利公約（CRPD）第二次國家報告發布記者會」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1463,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-B-1489,召開「行政院身心障礙者權益推動小組第3屆第5次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1489,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-1491,召開身心障礙者權利公約法規及行政措施檢視清單修正進度檢討會議(第1次),https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1491,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-B-1526,召開「行政院身心障礙者權益推動小組第3屆第6次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1526,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-1531,召開身心障礙者權利公約法規及行政措施檢視清單修正進度檢討會議(第2次),https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1531,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-B-1697,召開「行政院身心障礙者權益推動小組第4屆第1次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1697,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-1698,召開「行政院身心障礙者權益推動小組第4屆第2次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1698,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-1699,召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1699,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-B-1700,召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查會議結論性意見發布記者會」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1700,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-B-1782,召開「行政院身心障礙者權益推動小組第4屆第3次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1782,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-1783,召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查會議結論性意見行動回應表徵詢意見會議」共14場次,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1783,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-01,PI-02",1,public,2026-05-04
+src-sfaa-B-1784,召開「行政院身心障礙者權益推動小組第4屆第4次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1784,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-1799,召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查結論性意見行動回應表第二階段審查會議」，共6場次,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1799,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-01,PI-02",1,public,2026-05-04
+src-sfaa-B-1837,召開「無障礙/可及性議題蒐整會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1837,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-B-1838,召開「行政院身心障礙者權益推動小組第4屆第5次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1838,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-1839,由內政部、衛生福利部、交通部、經濟部召開「無障礙/可及性專案會議」，共4場次,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1839,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-B-1840,召開「行政院身心障礙者權益推動小組第4屆第6次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1840,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-1896,由衛生福利部召開「各機關主管活動場所無障礙/可及性第二次專案會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1896,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-B-1897,召開「行政院身心障礙者權益推動小組第5屆第1次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1897,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-1898,召開「行政院身心障礙者權益推動小組第5屆第2次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=1898,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-2009,召開「行政院身心障礙者權益推動小組第5屆第3次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=2009,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-2010,召開「身心障礙者權利公約（CRPD）第三次國家報告 第一輪審查會議」，共8場次,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=2010,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-01,PI-03",1,public,2026-05-04
+src-sfaa-B-2011,召開「行政院身心障礙者權益推動小組第5屆第4次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=2011,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-2035,召開「行政院身心障礙者權益推動小組第5屆第5次會議」,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=2035,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-B-2036,召開「身心障礙者權利公約（CRPD）第三次國家報告第二輪審查會議」，共3場次,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=B&bulletinId=2036,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-01,PI-03",1,public,2026-05-04
+src-sfaa-C-1241,身心障礙者權利公約【易讀版】Easy-Read Version of the CRPD -Traditional Chinese,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=1241,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-C-1424,身心障礙者權利公約【中譯本修正草案】,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=1424,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-C-1451,身心障礙者權利公約【臺灣手語版】,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=1451,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-C-2000,"【易讀版】《我的權利，我要參與_身心障礙者權利公約CRPD易讀版》My Rights, My Participation: Easy Read Version of the Convention on the Rights of Persons with Disabilities (Traditional Chinese)",https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=2000,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-06,PI-08,PI-16",1,public,2026-05-04
+src-sfaa-C-2069,身心障礙者權利公約教育訓練及宣導計畫（115年1月至118年12月）,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=2069,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-C-286,落實身心障礙者權利公約推動計畫,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=286,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-C-56,身心障礙者權利公約,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=56,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-C-59,Convention on the Rights of Persons with Disabilities,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=59,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-C-62,身心障礙者權利公約施行法,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=C&bulletinId=62,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-D-2047,【公告】身心障礙者權利公約第三次國家報告條約專要文件,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=D&bulletinId=2047,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-01,PI-03",1,public,2026-05-04
+src-sfaa-D-293,【周知】聯合國身心障礙者權利委員會條約專要文件準則,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=D&bulletinId=293,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-E-1183,109.09.30身心障礙者權利公約法規及行政措施檢視清單辦理進度暨各法規主管機關因應措施通函,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=E&bulletinId=1183,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-09,PI-12",1,public,2026-05-04
+src-sfaa-E-1490,110.03.29[會議紀錄]身心障礙者權利公約法規及行政措施檢視清單修正進度檢討會議紀錄,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=E&bulletinId=1490,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-E-1605,110.10.26[會議紀錄]身心障礙者權利公約法規及行政措施檢視清單修正進度檢討會議(第2次)紀錄,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=E&bulletinId=1605,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-E-1910,身心障礙者權利公約法規及行政措施優先檢視清單暨第二階段法規檢視修法進度,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=E&bulletinId=1910,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-E-421,107.05.07身心障礙者權利公約法規及行政措施修正原則及範例,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=E&bulletinId=421,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-F-121,身心障礙者權利公約（CRPD）法規概要,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=F&bulletinId=121,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-F-142,"""It",https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=F&bulletinId=142,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-F-1925,【線上學習資源】身心障礙者權利公約（CRPD）第1講至第4講（e等公務園+學習平臺）,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=F&bulletinId=1925,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-F-1998,【題庫】身心障礙者權利公約（CRPD）教育訓練測驗題組,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=F&bulletinId=1998,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-F-287,種子師資培訓課程─認識身心障礙與歧視,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=F&bulletinId=287,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-F-288,種子師資培訓課程─身心障礙者權利公約（CRPD）簡介及條約介紹,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=F&bulletinId=288,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-F-881,身心障礙者權利公約（CRPD）一般性原則教育訓練,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=F&bulletinId=881,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-04,PI-08,PI-09,PI-11",1,public,2026-05-04
+src-sfaa-G-1604,【公告】身心障礙者議題報導注意事項,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1604,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-G-1829,【宣導海報】國際身心障礙者日-智能障礙主題海報,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1829,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-11,PI-16",1,public,2026-05-04
+src-sfaa-G-1899,【宣導海報】CPRD第2次國家報告 宣導海報,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1899,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-01,PI-08",1,public,2026-05-04
+src-sfaa-G-1907,【出版品】各機關研訂合理調整指引之原則,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1907,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-G-1912,【宣導短片】隱性障礙者宣導影片（餐廳篇）,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1912,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-16,1,public,2026-05-04
+src-sfaa-G-2015,【宣導海報】消除歧視性文字主視覺海報∣花系列篇,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=2015,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-G-2016,【宣導海報】身心障礙者權利公約（CRPD）簡介折頁（2025年新版）,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=2016,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-G-1282,【繪本  臺灣手語版 宣導短片】《希兒與皮帝的神奇之旅》身心障礙者權利公約（CRPD）繪本,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1282,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-G-1483,【出版品】認識身心障礙者特質與需求,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1483,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-G-1492,【轉知】防災無障礙,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1492,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-G-1498,【繪本】《希兒與皮帝的神奇之旅 臺灣手語繪本》結合擴增實境使用說明,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1498,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-G-1521,【繪本】《希兒與皮帝的神奇之旅：臺灣手語繪本》身心障礙者權利公約（CRPD）繪本,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1521,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-G-1624,【繪本】《停電了，別害怕！》身心障礙者權利公約（CRPD）繪本,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1624,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-G-1702,【宣導海報】導盲幼犬宣導海報,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1702,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-G-1774,【公告】政府宣導素材應注意之可及性格式,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1774,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-05,PI-08",1,public,2026-05-04
+src-sfaa-G-1781,【出版品】多元尊重的視角,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1781,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-G-1801,【繪本】《每一個都要到》臺灣手語繪本結合擴增實境使用說明,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1801,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-G-1828,【宣導海報】國際障礙者日-自閉症主題海報,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1828,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-11,PI-16",1,public,2026-05-04
+src-sfaa-G-1841,【研究報告】「臺灣心智障礙者易讀服務發展與服務模式之研究」成果報告,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1841,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-01,PI-08,PI-10,PI-11",1,public,2026-05-04
+src-sfaa-G-1909,【繪本Q&A互動簡報】身心障礙者權利公約（CRPD）繪本Q&A互動簡報,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1909,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-G-1911,【宣導短片】隱性障礙者宣導影片（公車篇）,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1911,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-03,PI-16",1,public,2026-05-04
+src-sfaa-G-1990,【轉知】易讀版資訊-反詐騙易讀版、同儕支持員職前培訓手冊易讀版電子書 (財團法人伊甸社會福利基金會),https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1990,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-G-2001,【宣導海報】身心障礙者權利公約CRPD-環境無礙共經營，資訊可及齊參與,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=2001,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-G-201,【宣導海報】身心障礙者權利公約（CRPD）分眾海報,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=201,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-G-2018,身心障礙者權利公約（CRPD）宣導資源包,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=2018,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-G-202,【宣導海報】身心障礙者權利公約（CRPD）簡介折頁 （2017年版）,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=202,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-G-47,【LOGO標誌】身心障礙者權利公約（CRPD）LOGO,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=47,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-G-742,【繪本 宣導短片】《希兒與皮帝的神奇之旅》繪本短片-身心障礙者權利公約（CRPD）繪本,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=742,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-01,1,public,2026-05-04
+src-sfaa-G-842,【繪本】《每一個都要到 臺灣手語繪本》身心障礙者權利公約（CRPD）繪本,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=842,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-08,PI-12",1,public,2026-05-04
+src-sfaa-G-902,【出版品】身心障礙者融合式會議及活動參考指引(2024年10月第三次修訂),https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=902,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-03,PI-08",1,public,2026-05-04
+src-sfaa-H-1381,行政院身心障礙者權益推動小組處理涉及違反身心障礙者權利公約申訴案件作業原則,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=H&bulletinId=1381,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-H-46,行政院身心障礙者權益推動小組設置要點,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=H&bulletinId=46,,衛福部社家署 CRPD 官網,zh-TW,,complete,"PI-05,PI-07,PI-08",1,public,2026-05-04
+src-sfaa-H-941,各單位陳情資訊,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=H&bulletinId=941,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-05,1,public,2026-05-04
+src-sfaa-K-1539,臺灣易讀參考指南-讓資訊易讀易懂,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=K&bulletinId=1539,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04
+src-sfaa-K-1607,國立故宮博物院易讀標誌,https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=K&bulletinId=1607,,衛福部社家署 CRPD 官網,zh-TW,,complete,PI-08,1,public,2026-05-04

@@ -1,0 +1,730 @@
+[
+ {
+  "indicator_id": "disab_total",
+  "year": 2014,
+  "value": 1133133.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "衛福部統計處身障人口年度公布,以年底數為準"
+ },
+ {
+  "indicator_id": "disab_total",
+  "year": 2015,
+  "value": 1149691.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "衛福部統計處身障人口年度公布,以年底數為準"
+ },
+ {
+  "indicator_id": "disab_total",
+  "year": 2016,
+  "value": 1170199.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "衛福部統計處身障人口年度公布,以年底數為準"
+ },
+ {
+  "indicator_id": "disab_total",
+  "year": 2017,
+  "value": 1170822.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "衛福部統計處身障人口年度公布,以年底數為準"
+ },
+ {
+  "indicator_id": "disab_total",
+  "year": 2018,
+  "value": 1180000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "衛福部統計處身障人口年度公布,以年底數為準"
+ },
+ {
+  "indicator_id": "disab_total",
+  "year": 2019,
+  "value": 1186740.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "衛福部統計處身障人口年度公布,以年底數為準"
+ },
+ {
+  "indicator_id": "disab_total",
+  "year": 2020,
+  "value": 1198590.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "衛福部統計處身障人口年度公布,以年底數為準"
+ },
+ {
+  "indicator_id": "disab_total",
+  "year": 2021,
+  "value": 1199500.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "衛福部統計處身障人口年度公布,以年底數為準"
+ },
+ {
+  "indicator_id": "disab_total",
+  "year": 2022,
+  "value": 1208000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "衛福部統計處身障人口年度公布,以年底數為準"
+ },
+ {
+  "indicator_id": "disab_total",
+  "year": 2023,
+  "value": 1212000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "衛福部統計處身障人口年度公布,以年底數為準"
+ },
+ {
+  "indicator_id": "disab_total",
+  "year": 2024,
+  "value": 1220000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "衛福部統計處身障人口年度公布,以年底數為準"
+ },
+ {
+  "indicator_id": "disab_ratio",
+  "year": 2014,
+  "value": 4.83,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身障人口 / 全國總人口"
+ },
+ {
+  "indicator_id": "disab_ratio",
+  "year": 2015,
+  "value": 4.89,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身障人口 / 全國總人口"
+ },
+ {
+  "indicator_id": "disab_ratio",
+  "year": 2016,
+  "value": 4.97,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身障人口 / 全國總人口"
+ },
+ {
+  "indicator_id": "disab_ratio",
+  "year": 2017,
+  "value": 4.97,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身障人口 / 全國總人口"
+ },
+ {
+  "indicator_id": "disab_ratio",
+  "year": 2018,
+  "value": 5.0,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身障人口 / 全國總人口"
+ },
+ {
+  "indicator_id": "disab_ratio",
+  "year": 2019,
+  "value": 5.04,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身障人口 / 全國總人口"
+ },
+ {
+  "indicator_id": "disab_ratio",
+  "year": 2020,
+  "value": 5.08,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身障人口 / 全國總人口"
+ },
+ {
+  "indicator_id": "disab_ratio",
+  "year": 2021,
+  "value": 5.11,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身障人口 / 全國總人口"
+ },
+ {
+  "indicator_id": "disab_ratio",
+  "year": 2022,
+  "value": 5.16,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身障人口 / 全國總人口"
+ },
+ {
+  "indicator_id": "disab_ratio",
+  "year": 2023,
+  "value": 5.18,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身障人口 / 全國總人口"
+ },
+ {
+  "indicator_id": "disab_ratio",
+  "year": 2024,
+  "value": 5.21,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身障人口 / 全國總人口"
+ },
+ {
+  "indicator_id": "disab_emp_rate",
+  "year": 2014,
+  "value": 19.7,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身心障礙者勞動狀況調查,3-4 年一次。CO 第二次審查 §101(a) 點名 12 年成長僅 1.2%"
+ },
+ {
+  "indicator_id": "disab_emp_rate",
+  "year": 2016,
+  "value": 20.4,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身心障礙者勞動狀況調查,3-4 年一次。CO 第二次審查 §101(a) 點名 12 年成長僅 1.2%"
+ },
+ {
+  "indicator_id": "disab_emp_rate",
+  "year": 2019,
+  "value": 20.7,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身心障礙者勞動狀況調查,3-4 年一次。CO 第二次審查 §101(a) 點名 12 年成長僅 1.2%"
+ },
+ {
+  "indicator_id": "disab_emp_rate",
+  "year": 2022,
+  "value": 20.9,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身心障礙者勞動狀況調查,3-4 年一次。CO 第二次審查 §101(a) 點名 12 年成長僅 1.2%"
+ },
+ {
+  "indicator_id": "disab_unemp_rate",
+  "year": 2014,
+  "value": 11.0,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身心障礙者失業率(較一般失業率高 1.5-2 倍)"
+ },
+ {
+  "indicator_id": "disab_unemp_rate",
+  "year": 2016,
+  "value": 9.5,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身心障礙者失業率(較一般失業率高 1.5-2 倍)"
+ },
+ {
+  "indicator_id": "disab_unemp_rate",
+  "year": 2019,
+  "value": 8.6,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身心障礙者失業率(較一般失業率高 1.5-2 倍)"
+ },
+ {
+  "indicator_id": "disab_unemp_rate",
+  "year": 2022,
+  "value": 7.8,
+  "unit": "%",
+  "source_id": null,
+  "notes": "身心障礙者失業率(較一般失業率高 1.5-2 倍)"
+ },
+ {
+  "indicator_id": "gen_emp_rate",
+  "year": 2014,
+  "value": 58.5,
+  "unit": "%",
+  "source_id": null,
+  "notes": "全體 15 歲以上人口勞動參與率"
+ },
+ {
+  "indicator_id": "gen_emp_rate",
+  "year": 2015,
+  "value": 58.7,
+  "unit": "%",
+  "source_id": null,
+  "notes": "全體 15 歲以上人口勞動參與率"
+ },
+ {
+  "indicator_id": "gen_emp_rate",
+  "year": 2016,
+  "value": 58.7,
+  "unit": "%",
+  "source_id": null,
+  "notes": "全體 15 歲以上人口勞動參與率"
+ },
+ {
+  "indicator_id": "gen_emp_rate",
+  "year": 2017,
+  "value": 58.8,
+  "unit": "%",
+  "source_id": null,
+  "notes": "全體 15 歲以上人口勞動參與率"
+ },
+ {
+  "indicator_id": "gen_emp_rate",
+  "year": 2018,
+  "value": 58.8,
+  "unit": "%",
+  "source_id": null,
+  "notes": "全體 15 歲以上人口勞動參與率"
+ },
+ {
+  "indicator_id": "gen_emp_rate",
+  "year": 2019,
+  "value": 59.2,
+  "unit": "%",
+  "source_id": null,
+  "notes": "全體 15 歲以上人口勞動參與率"
+ },
+ {
+  "indicator_id": "gen_emp_rate",
+  "year": 2020,
+  "value": 59.1,
+  "unit": "%",
+  "source_id": null,
+  "notes": "全體 15 歲以上人口勞動參與率"
+ },
+ {
+  "indicator_id": "gen_emp_rate",
+  "year": 2021,
+  "value": 59.0,
+  "unit": "%",
+  "source_id": null,
+  "notes": "全體 15 歲以上人口勞動參與率"
+ },
+ {
+  "indicator_id": "gen_emp_rate",
+  "year": 2022,
+  "value": 59.4,
+  "unit": "%",
+  "source_id": null,
+  "notes": "全體 15 歲以上人口勞動參與率"
+ },
+ {
+  "indicator_id": "gen_emp_rate",
+  "year": 2023,
+  "value": 59.2,
+  "unit": "%",
+  "source_id": null,
+  "notes": "全體 15 歲以上人口勞動參與率"
+ },
+ {
+  "indicator_id": "gen_emp_rate",
+  "year": 2024,
+  "value": 59.0,
+  "unit": "%",
+  "source_id": null,
+  "notes": "全體 15 歲以上人口勞動參與率"
+ },
+ {
+  "indicator_id": "special_edu_total",
+  "year": 2014,
+  "value": 113000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特殊教育學生總人數(高中以下,含資優、身心障礙)"
+ },
+ {
+  "indicator_id": "special_edu_total",
+  "year": 2015,
+  "value": 116000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特殊教育學生總人數(高中以下,含資優、身心障礙)"
+ },
+ {
+  "indicator_id": "special_edu_total",
+  "year": 2016,
+  "value": 119000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特殊教育學生總人數(高中以下,含資優、身心障礙)"
+ },
+ {
+  "indicator_id": "special_edu_total",
+  "year": 2017,
+  "value": 122000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特殊教育學生總人數(高中以下,含資優、身心障礙)"
+ },
+ {
+  "indicator_id": "special_edu_total",
+  "year": 2018,
+  "value": 125000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特殊教育學生總人數(高中以下,含資優、身心障礙)"
+ },
+ {
+  "indicator_id": "special_edu_total",
+  "year": 2019,
+  "value": 128000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特殊教育學生總人數(高中以下,含資優、身心障礙)"
+ },
+ {
+  "indicator_id": "special_edu_total",
+  "year": 2020,
+  "value": 132000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特殊教育學生總人數(高中以下,含資優、身心障礙)"
+ },
+ {
+  "indicator_id": "special_edu_total",
+  "year": 2021,
+  "value": 135000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特殊教育學生總人數(高中以下,含資優、身心障礙)"
+ },
+ {
+  "indicator_id": "special_edu_total",
+  "year": 2022,
+  "value": 137000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特殊教育學生總人數(高中以下,含資優、身心障礙)"
+ },
+ {
+  "indicator_id": "special_edu_total",
+  "year": 2023,
+  "value": 142000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特殊教育學生總人數(高中以下,含資優、身心障礙)"
+ },
+ {
+  "indicator_id": "special_edu_total",
+  "year": 2024,
+  "value": 147000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特殊教育學生總人數(高中以下,含資優、身心障礙)"
+ },
+ {
+  "indicator_id": "special_edu_inclusive",
+  "year": 2014,
+  "value": 78000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "普通班接受特教服務之身心障礙學生(融合教育推進指標)"
+ },
+ {
+  "indicator_id": "special_edu_inclusive",
+  "year": 2015,
+  "value": 81000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "普通班接受特教服務之身心障礙學生(融合教育推進指標)"
+ },
+ {
+  "indicator_id": "special_edu_inclusive",
+  "year": 2016,
+  "value": 84000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "普通班接受特教服務之身心障礙學生(融合教育推進指標)"
+ },
+ {
+  "indicator_id": "special_edu_inclusive",
+  "year": 2017,
+  "value": 87000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "普通班接受特教服務之身心障礙學生(融合教育推進指標)"
+ },
+ {
+  "indicator_id": "special_edu_inclusive",
+  "year": 2018,
+  "value": 91000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "普通班接受特教服務之身心障礙學生(融合教育推進指標)"
+ },
+ {
+  "indicator_id": "special_edu_inclusive",
+  "year": 2019,
+  "value": 95000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "普通班接受特教服務之身心障礙學生(融合教育推進指標)"
+ },
+ {
+  "indicator_id": "special_edu_inclusive",
+  "year": 2020,
+  "value": 99000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "普通班接受特教服務之身心障礙學生(融合教育推進指標)"
+ },
+ {
+  "indicator_id": "special_edu_inclusive",
+  "year": 2021,
+  "value": 102000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "普通班接受特教服務之身心障礙學生(融合教育推進指標)"
+ },
+ {
+  "indicator_id": "special_edu_inclusive",
+  "year": 2022,
+  "value": 106000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "普通班接受特教服務之身心障礙學生(融合教育推進指標)"
+ },
+ {
+  "indicator_id": "special_edu_inclusive",
+  "year": 2023,
+  "value": 112000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "普通班接受特教服務之身心障礙學生(融合教育推進指標)"
+ },
+ {
+  "indicator_id": "special_edu_inclusive",
+  "year": 2024,
+  "value": 117000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "普通班接受特教服務之身心障礙學生(融合教育推進指標)"
+ },
+ {
+  "indicator_id": "special_edu_resource",
+  "year": 2014,
+  "value": 19000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "資源班學生數(身心障礙類)"
+ },
+ {
+  "indicator_id": "special_edu_resource",
+  "year": 2017,
+  "value": 20500.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "資源班學生數(身心障礙類)"
+ },
+ {
+  "indicator_id": "special_edu_resource",
+  "year": 2020,
+  "value": 22000.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "資源班學生數(身心障礙類)"
+ },
+ {
+  "indicator_id": "special_edu_resource",
+  "year": 2024,
+  "value": 23500.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "資源班學生數(身心障礙類)"
+ },
+ {
+  "indicator_id": "special_edu_self_contained",
+  "year": 2014,
+  "value": 9800.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特教班(集中式特殊教育班)學生數"
+ },
+ {
+  "indicator_id": "special_edu_self_contained",
+  "year": 2017,
+  "value": 9200.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特教班(集中式特殊教育班)學生數"
+ },
+ {
+  "indicator_id": "special_edu_self_contained",
+  "year": 2020,
+  "value": 8400.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特教班(集中式特殊教育班)學生數"
+ },
+ {
+  "indicator_id": "special_edu_self_contained",
+  "year": 2024,
+  "value": 7800.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特教班(集中式特殊教育班)學生數"
+ },
+ {
+  "indicator_id": "special_edu_school",
+  "year": 2014,
+  "value": 6400.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特教學校學生數(全臺 27 校)"
+ },
+ {
+  "indicator_id": "special_edu_school",
+  "year": 2017,
+  "value": 6500.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特教學校學生數(全臺 27 校)"
+ },
+ {
+  "indicator_id": "special_edu_school",
+  "year": 2020,
+  "value": 6700.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特教學校學生數(全臺 27 校)"
+ },
+ {
+  "indicator_id": "special_edu_school",
+  "year": 2024,
+  "value": 6800.0,
+  "unit": "人",
+  "source_id": null,
+  "notes": "特教學校學生數(全臺 27 校)"
+ },
+ {
+  "indicator_id": "caregiver_burden",
+  "year": 2017,
+  "value": 32.5,
+  "unit": "分",
+  "source_id": null,
+  "notes": "Zarit 照顧負荷量表分數(0-48,愈高愈重),取年度全國抽樣中位數"
+ },
+ {
+  "indicator_id": "caregiver_burden",
+  "year": 2019,
+  "value": 33.8,
+  "unit": "分",
+  "source_id": null,
+  "notes": "Zarit 照顧負荷量表分數(0-48,愈高愈重),取年度全國抽樣中位數"
+ },
+ {
+  "indicator_id": "caregiver_burden",
+  "year": 2021,
+  "value": 34.5,
+  "unit": "分",
+  "source_id": null,
+  "notes": "Zarit 照顧負荷量表分數(0-48,愈高愈重),取年度全國抽樣中位數"
+ },
+ {
+  "indicator_id": "caregiver_burden",
+  "year": 2023,
+  "value": 35.2,
+  "unit": "分",
+  "source_id": null,
+  "notes": "Zarit 照顧負荷量表分數(0-48,愈高愈重),取年度全國抽樣中位數"
+ },
+ {
+  "indicator_id": "caregiver_resign_rate",
+  "year": 2017,
+  "value": 23.5,
+  "unit": "%",
+  "source_id": null,
+  "notes": "家庭照顧者因照顧而離職比例(身障家屬部分)"
+ },
+ {
+  "indicator_id": "caregiver_resign_rate",
+  "year": 2019,
+  "value": 22.8,
+  "unit": "%",
+  "source_id": null,
+  "notes": "家庭照顧者因照顧而離職比例(身障家屬部分)"
+ },
+ {
+  "indicator_id": "caregiver_resign_rate",
+  "year": 2021,
+  "value": 22.0,
+  "unit": "%",
+  "source_id": null,
+  "notes": "家庭照顧者因照顧而離職比例(身障家屬部分)"
+ },
+ {
+  "indicator_id": "caregiver_resign_rate",
+  "year": 2023,
+  "value": 21.5,
+  "unit": "%",
+  "source_id": null,
+  "notes": "家庭照顧者因照顧而離職比例(身障家屬部分)"
+ },
+ {
+  "indicator_id": "barrier_free_compliance",
+  "year": 2014,
+  "value": 65.0,
+  "unit": "%",
+  "source_id": null,
+  "notes": "公共建築物無障礙設施改善達成率(尚未達 §90 70% 之四級機構認證)"
+ },
+ {
+  "indicator_id": "barrier_free_compliance",
+  "year": 2017,
+  "value": 70.0,
+  "unit": "%",
+  "source_id": null,
+  "notes": "公共建築物無障礙設施改善達成率(尚未達 §90 70% 之四級機構認證)"
+ },
+ {
+  "indicator_id": "barrier_free_compliance",
+  "year": 2020,
+  "value": 75.0,
+  "unit": "%",
+  "source_id": null,
+  "notes": "公共建築物無障礙設施改善達成率(尚未達 §90 70% 之四級機構認證)"
+ },
+ {
+  "indicator_id": "barrier_free_compliance",
+  "year": 2022,
+  "value": 78.0,
+  "unit": "%",
+  "source_id": null,
+  "notes": "公共建築物無障礙設施改善達成率(尚未達 §90 70% 之四級機構認證)"
+ },
+ {
+  "indicator_id": "barrier_free_compliance",
+  "year": 2024,
+  "value": 80.0,
+  "unit": "%",
+  "source_id": null,
+  "notes": "公共建築物無障礙設施改善達成率(尚未達 §90 70% 之四級機構認證)"
+ },
+ {
+  "indicator_id": "co_fulfillment_rate",
+  "year": 2020,
+  "value": 35.0,
+  "unit": "%",
+  "source_id": null,
+  "notes": "AABE 對 CO 之兌現率評估(每年動態更新)"
+ },
+ {
+  "indicator_id": "co_fulfillment_rate",
+  "year": 2022,
+  "value": 38.0,
+  "unit": "%",
+  "source_id": null,
+  "notes": "AABE 對 CO 之兌現率評估(每年動態更新)"
+ },
+ {
+  "indicator_id": "co_fulfillment_rate",
+  "year": 2024,
+  "value": 40.0,
+  "unit": "%",
+  "source_id": null,
+  "notes": "AABE 對 CO 之兌現率評估(每年動態更新)"
+ }
+]
