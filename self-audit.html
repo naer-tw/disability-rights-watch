@@ -58,6 +58,15 @@ footer a { color: rgba(255,255,255,0.85); }
 .audit-card label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
 .audit-card.warn { border-left-color: var(--brand); }
 
+
+@media (max-width: 768px) {
+  body { font-size: 15px !important; }
+  main, article, section, .container { padding-left: 16px !important; padding-right: 16px !important; }
+  table { font-size: 13px; }
+  [class*="grid"] { grid-template-columns: 1fr !important; }
+  .row, [class*="flex"] { flex-wrap: wrap !important; }
+  pre, code { white-space: pre-wrap !important; word-break: break-word; }
+}
 </style>
 <meta property="og:image" content="https://naer-tw.github.io/disability-rights-watch/og.svg">
 <meta name="twitter:image" content="https://naer-tw.github.io/disability-rights-watch/og.svg">
