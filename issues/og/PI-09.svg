@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgPI-09" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B6F50"/>
+      <stop offset="100%" stop-color="#0F3528"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgPI-09)"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#B5371F"/>
+  <rect x="0" y="622" width="1200" height="8" fill="#8B6F50"/>
+
+  <rect x="80" y="80" width="120" height="36" fill="#8B6F50"/>
+  <text x="140" y="105" text-anchor="middle" fill="#fff" font-family="Inter, sans-serif" font-size="20" font-weight="800" letter-spacing="2">AABE</text>
+  <text x="220" y="100" fill="#fff" opacity="0.85" font-family="Inter, sans-serif" font-size="13" font-weight="500">CRPD 監督平台</text>
+  <text x="220" y="115" fill="#fff" opacity="0.6" font-family="Inter, sans-serif" font-size="10">Disability Rights Watch Taiwan</text>
+
+  <g transform="translate(80, 180)">
+    <rect x="0" y="0" width="86" height="32" fill="#fff" rx="4"/>
+    <text x="43" y="22" text-anchor="middle" fill="#8B6F50" font-family="Inter, sans-serif" font-size="16" font-weight="800">PI-09</text>
+    <rect x="100" y="0" width="160" height="32" fill="rgba(255,255,255,0.18)" rx="4"/>
+    <text x="180" y="22" text-anchor="middle" fill="#fff" opacity="0.92" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="600">軸三·融合教育/就業</text>
+  </g>
+
+  <text x="80" y="290" fill="#fff" font-family="'Noto Serif TC', serif" font-size="58" font-weight="900">身障就業率 vs 一般就業率落差</text>
+
+  <rect x="80" y="320" width="80" height="4" fill="#B5371F"/>
+
+  <g transform="translate(80, 380)">
+    <text x="0" y="0" fill="#FFE9A8" font-family="Inter, sans-serif" font-size="56" font-weight="700">100</text>
+    <text x="0" y="28" fill="#fff" opacity="0.7" font-family="'Noto Sans TC', sans-serif" font-size="14">因果鏈完整度 / 100</text>
+  </g>
+
+  <g transform="translate(80, 500)">
+    <text x="0" y="0" fill="#FFE9A8" font-family="Inter, sans-serif" font-size="32" font-weight="700">9</text>
+    <text x="0" y="22" fill="#fff" opacity="0.7" font-family="'Noto Sans TC', sans-serif" font-size="11">倡議</text>
+    <text x="120" y="0" fill="#FFE9A8" font-family="Inter, sans-serif" font-size="32" font-weight="700">1</text>
+    <text x="120" y="22" fill="#fff" opacity="0.7" font-family="'Noto Sans TC', sans-serif" font-size="11">承諾</text>
+    <text x="240" y="0" fill="#FFE9A8" font-family="Inter, sans-serif" font-size="32" font-weight="700">2</text>
+    <text x="240" y="22" fill="#fff" opacity="0.7" font-family="'Noto Sans TC', sans-serif" font-size="11">結果</text>
+  </g>
+
+  <g transform="translate(960, 480)">
+    <rect x="0" y="0" width="160" height="80" fill="#B5371F" rx="6"/>
+    <text x="80" y="32" text-anchor="middle" fill="#fff" font-family="'Noto Serif TC', serif" font-size="16" font-weight="900">不公審原則</text>
+    <text x="80" y="55" text-anchor="middle" fill="#fff" opacity="0.85" font-family="'Noto Sans TC', sans-serif" font-size="10">立場全光譜呈現</text>
+    <text x="80" y="70" text-anchor="middle" fill="#fff" opacity="0.7" font-family="Inter, sans-serif" font-size="9">CC BY 4.0</text>
+  </g>
+</svg>

@@ -31,7 +31,7 @@ a:hover { color: var(--brand); }
 .logo { display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--text); }
 .logo .icon { width: 36px; height: 36px; background: var(--bg-deep); color: #fff; display: grid; place-items: center; border-radius: 6px; }
 .logo h1 { font-family: var(--serif); font-size: 17px; font-weight: 700; line-height: 1.2; }
-.logo p { font-size: 11px; color: var(--text-muted); font-family: var(--sans-en); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+.logo p { font-size:12px; color: var(--text-muted); font-family: var(--sans-en); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
 .aabe-mark { font-family: var(--sans-en); font-weight: 800; font-size: 14px; letter-spacing: 0.08em; background: var(--aabe-gold); color: #fff; padding: 5px 9px; border-radius: 4px; line-height: 1; margin-left: 16px; padding-left: 9px; border-left: 1px solid var(--border); }
 nav.crumb { background: var(--bg-alt); border-bottom: 1px solid var(--hairline); padding: 12px 24px; font-size: 13px; }
 nav.crumb-inner { max-width: var(--max-w); margin: 0 auto; }
@@ -39,7 +39,7 @@ nav.crumb a { color: var(--text-muted); }
 
 main { max-width: var(--max-w); margin: 0 auto; padding: 32px 24px; }
 .law-header { border-bottom: 2px solid var(--bg-deep); padding-bottom: 24px; margin-bottom: 32px; }
-.law-cat { display: inline-block; font-family: var(--sans-en); font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; background: var(--cycle-crpd); padding: 4px 10px; border-radius: 3px; margin-bottom: 12px; }
+.law-cat { display: inline-block; font-family: var(--sans-en); font-size:12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; background: var(--cycle-crpd); padding: 4px 10px; border-radius: 3px; margin-bottom: 12px; }
 .law-header h2 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 900; line-height: 1.15; color: var(--bg-deep); margin-bottom: 8px; }
 .law-header p.subtitle { font-size: 15px; color: var(--text-muted); }
 .law-meta { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 16px; font-size: 13px; }
@@ -69,7 +69,7 @@ ul.amendment-list li.initial::before { background: var(--text-muted); }
 table.mapping-table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--border); }
 table.mapping-table th { background: var(--bg-deep); color: #fff; padding: 12px; text-align: left; font-weight: 600; font-size: 14px; }
 table.mapping-table td { padding: 12px; border-top: 1px solid var(--hairline); font-size: 14px; vertical-align: top; }
-.align-pill { display: inline-block; font-family: var(--sans-en); font-size: 11px; font-weight: 600; letter-spacing: 0.06em; padding: 2px 8px; border-radius: 3px; }
+.align-pill { display: inline-block; font-family: var(--sans-en); font-size:12px; font-weight: 600; letter-spacing: 0.06em; padding: 2px 8px; border-radius: 3px; }
 .align-aligned { background: #2D5F3E; color: #fff; }
 .align-partially_aligned { background: #C68822; color: #fff; }
 .align-contradicts { background: var(--brand); color: #fff; }
@@ -129,7 +129,7 @@ footer a { color: rgba(255,255,255,0.85); }
 
 <section class="law-section">
   <h3>法條 ↔ CRPD 對應</h3>
-  <table class="mapping-table">
+  <div class="table-wrap" style="overflow-x:auto;-webkit-overflow-scrolling:touch"><table class="mapping-table">
     <thead><tr><th>國內法條</th><th>CRPD 條</th><th>契合度</th><th>說明</th></tr></thead>
     <tbody>
 
@@ -139,7 +139,7 @@ footer a { color: rgba(255,255,255,0.85); }
         <td style="text-align:center"><span class="align-pill align-partially_aligned">部分符合</span></td>
         <td>實務常以繳納罰鍰代替實際進用。</td>
       </tr>
-</tbody></table></section><section class="law-section"><h3>相關 PI 議題</h3><div style="display:flex;gap:8px;flex-wrap:wrap"><a href="../issues/PI-09-dossier.html" style="background:#fff;border:1px solid var(--border);padding:8px 12px;border-radius:4px;text-decoration:none;font-size:14px">→ PI-09 議題追蹤</a></div></section>
+</tbody></table></div></section><section class="law-section"><h3>相關 PI 議題</h3><div style="display:flex;gap:8px;flex-wrap:wrap"><a href="../issues/PI-09-dossier.html" style="background:#fff;border:1px solid var(--border);padding:8px 12px;border-radius:4px;text-decoration:none;font-size:14px">→ PI-09 議題追蹤</a></div></section>
 </main>
 
 <footer>
