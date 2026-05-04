@@ -1237,7 +1237,7 @@ footer .credit {
 <!-- ━━━━━━━━━━━━━ Masthead ━━━━━━━━━━━━━ -->
 <header class="masthead" role="banner">
   <div class="masthead-inner">
-    <a href="/" class="logo">
+    <a href="./" class="logo">
       <span class="icon" aria-hidden="true">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       </span>
@@ -1259,7 +1259,7 @@ footer .credit {
 
     <div class="lang-switch" aria-label="語言切換">
       <a href="#" class="active">ZH</a>
-      <a href="reports/Alternative_Report_v0.4_professional_en.html">EN</a>
+      <a href="#" onclick="alert('EN 版籌備中,目前提供中文版,可參考人約盟英文版本'); return false;">EN</a>
     </div>
   </div>
 </header>
@@ -1408,7 +1408,7 @@ footer .credit {
     影子報告產生器
     <svg class="lock-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="margin-left:auto"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
   </a>
-  <a href="drafts/" class="nav-item insider-only" data-locked="1" onclick="return checkInsider(event)">
+  <a href="#" class="nav-item insider-only" data-locked="1" onclick="if(!checkInsider(event))return false;alert('倡議工作底稿規劃中,可先看 generator.html / matrix.html');return false;">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
     倡議工作底稿
     <svg class="lock-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="margin-left:auto"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
@@ -2812,8 +2812,8 @@ footer .credit {
 
     <div>
       <h4>透明度</h4>
-      <a href="docs/CAUSAL_CHAIN_DESIGN.html">因果鏈設計理念</a>
-      <a href="docs/GAP_ANALYSIS.html">資料差距盤點</a>
+      <a href="https://github.com/naer-tw/disability-rights-watch/blob/main/../docs/CAUSAL_CHAIN_DESIGN.md" target="_blank" rel="noopener">因果鏈設計理念</a>
+      <a href="https://github.com/naer-tw/disability-rights-watch/blob/main/../docs/GAP_ANALYSIS.md" target="_blank" rel="noopener">資料差距盤點</a>
       <a href="https://covenantswatch.org.tw/un-core-human-rights-treaties/crpd/" target="_blank" rel="noopener">人約盟 CRPD 文件中心</a>
       <a href="for-disabled/">身障當事人入口</a>
     </div>

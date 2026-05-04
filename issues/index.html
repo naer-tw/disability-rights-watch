@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>16 PI 議題追蹤 — CRPD 監督平台</title>
+<meta name="description" content="16 個 PI 議題卡片總覽 · 4 軸框架 · 點擊進入各議題之因果鏈追蹤頁(時間軸 / 立場光譜 / 修法歷程 / 12 年趨勢)">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+:root { --bg: #FAFAF7; --bg-alt: #F1EFEA; --bg-deep: #1A4D3A; --text: #1F1F1F; --text-muted: #5C5C5C; --brand: #B5371F; --aabe-gold: #8B6F50; --cycle-crpd: #2D7059; --border: #DDD8CD; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Noto Sans TC", -apple-system, sans-serif; font-size: 16px; line-height: 1.6; color: var(--text); background: var(--bg); }
+.masthead { border-bottom: 1px solid var(--border); background: rgba(250,250,247,0.94); padding: 16px 24px; position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
+.masthead-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 24px; }
+.logo { display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--text); }
+.logo .icon { width: 36px; height: 36px; background: var(--bg-deep); color: #fff; display: grid; place-items: center; border-radius: 6px; }
+.logo h1 { font-family: "Noto Serif TC", serif; font-size: 17px; font-weight: 700; }
+.logo p { font-size: 11px; color: var(--text-muted); font-family: Inter, sans-serif; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; }
+.aabe-mark { font-family: Inter, sans-serif; font-weight: 800; font-size: 14px; background: var(--aabe-gold); color: #fff; padding: 5px 9px; border-radius: 4px; }
+nav.crumb { background: var(--bg-alt); border-bottom: 1px solid var(--border); padding: 12px 24px; font-size: 13px; }
+.crumb-inner { max-width: 1100px; margin: 0 auto; }
+.crumb a { color: var(--text-muted); text-decoration: none; }
+main { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+.hero { padding: 24px 0 32px; border-bottom: 2px solid var(--bg-deep); margin-bottom: 32px; }
+.kicker { font-family: Inter, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); margin-bottom: 8px; }
+.hero h2 { font-family: "Noto Serif TC", serif; font-size: clamp(28px, 4vw, 40px); font-weight: 900; color: var(--bg-deep); margin-bottom: 16px; }
+.hero p { font-size: 16px; color: var(--text-muted); }
+section.axis-block { margin: 32px 0; }
+section.axis-block h3 { font-family: "Noto Serif TC", serif; font-size: 22px; color: var(--bg-deep); margin-bottom: 6px; padding: 12px 16px; border-left: 5px solid var(--axis-color); background: var(--bg-alt); }
+section.axis-block .axis-tag { font-family: Inter, sans-serif; font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 3px; background: var(--axis-color); color: #fff; margin-right: 8px; letter-spacing: 0.08em; }
+.pi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; margin-top: 12px; }
+.pi-card { display: block; background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--axis-color); padding: 16px 20px; border-radius: 0 6px 6px 0; text-decoration: none; color: var(--text); transition: all 0.15s; }
+.pi-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(26,77,58,0.08); border-left-color: var(--brand); }
+.pi-card.red-line { border-left-color: var(--brand); }
+.pi-id { font-family: Inter, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: var(--axis-color); display: block; margin-bottom: 4px; }
+.pi-title { font-family: "Noto Serif TC", serif; font-size: 16px; font-weight: 700; line-height: 1.4; color: var(--bg-deep); margin-bottom: 8px; }
+.pi-meta { display: flex; gap: 8px; flex-wrap: wrap; font-size: 11.5px; color: var(--text-muted); font-family: Inter, sans-serif; margin-bottom: 6px; }
+.pi-meta span.alert { color: var(--brand); font-weight: 600; }
+.score-bar { height: 4px; background: var(--bg-alt); border-radius: 2px; overflow: hidden; margin-top: 8px; }
+.score-fill { height: 100%; background: var(--cycle-crpd); transition: width 0.3s; }
+.score-fill.warn { background: #C68822; }
+.score-fill.low { background: var(--brand); }
+.actions-row { display: flex; gap: 8px; margin-top: 8px; font-size: 12px; }
+.actions-row a { color: var(--cycle-crpd); text-decoration: none; padding: 2px 8px; border: 1px solid var(--border); border-radius: 3px; font-family: Inter, sans-serif; }
+.actions-row a:hover { background: var(--cycle-crpd); color: #fff; border-color: var(--cycle-crpd); }
+footer { border-top: 1px solid var(--border); background: var(--bg-deep); color: rgba(255,255,255,0.7); padding: 24px; margin-top: 64px; text-align: center; font-size: 13px; }
+footer a { color: rgba(255,255,255,0.85); }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="../" class="logo">
+      <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+      <div><h1>身心障礙者權利監督平台</h1><p>Disability Rights Watch Taiwan</p></div>
+    </a>
+    <span class="aabe-mark">AABE</span>
+    <nav style="margin-left:auto;display:flex;gap:16px;font-size:14px"><a href="../" style="color:var(--text-muted);text-decoration:none">回首頁</a><a href="../search.html" style="color:var(--text-muted);text-decoration:none">搜尋</a><a href="../actors/" style="color:var(--text-muted);text-decoration:none">倡議者</a></nav>
+  </div>
+</header>
+
+<nav class="crumb"><div class="crumb-inner"><a href="../">首頁</a> · <span>16 PI 議題追蹤</span></div></nav>
+
+<main>
+
+<div class="hero">
+  <p class="kicker">16 PI 議題地圖 · 4 軸框架</p>
+  <h2>16 個身心障礙權利議題追蹤</h2>
+  <p>以 4 軸框架(CO 兌現追蹤 / NAP / 12 年指標 / 框架爭議旗艦)分類。每張卡片含因果鏈完整度、倡議數、CO 段落數、結果評估數。點擊進入議題追蹤頁(含時間軸 / 立場光譜 / 修法歷程 / 12 年趨勢)。</p>
+</div>
+
+<section class="axis-block" style="--axis-color:#1A4D3A">
+  <h3><span class="axis-tag">軸1</span>CO 兌現追蹤</h3>
+  <div class="pi-grid">
+
+    <a href="PI-01-dossier.html" class="pi-card">
+      <span class="pi-id">PI-01</span>
+      <div class="pi-title">第一次（2017）+ 第二次（2022）審查總體對照</div>
+      <div class="pi-meta">
+        <span>倡議 2</span>
+        <span>CO 2</span>
+        <span>結果 1</span>
+        
+        <span style="margin-left:auto">完整度 100/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill " style="width:100%"></div></div>
+      <div class="actions-row">
+        <a href="PI-01-dossier.html">議題追蹤</a>
+        <a href="PI-01.html">PI 卡內文</a>
+      </div>
+    </a>
+    <a href="PI-02-dossier.html" class="pi-card">
+      <span class="pi-id">PI-02</span>
+      <div class="pi-title">12 年來重大未兌現 CO 條目盤點</div>
+      <div class="pi-meta">
+        <span>倡議 1</span>
+        <span>CO 1</span>
+        <span>結果 1</span>
+        
+        <span style="margin-left:auto">完整度 60/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill warn" style="width:60%"></div></div>
+      <div class="actions-row">
+        <a href="PI-02-dossier.html">議題追蹤</a>
+        <a href="PI-02.html">PI 卡內文</a>
+      </div>
+    </a>
+    <a href="PI-03-dossier.html" class="pi-card">
+      <span class="pi-id">PI-03</span>
+      <div class="pi-title">第三次審查（2027 預定）籌備與民間影子報告動員</div>
+      <div class="pi-meta">
+        <span>倡議 1</span>
+        <span>CO 0</span>
+        <span>結果 1</span>
+        
+        <span style="margin-left:auto">完整度 40/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill low" style="width:40%"></div></div>
+      <div class="actions-row">
+        <a href="PI-03-dossier.html">議題追蹤</a>
+        <a href="PI-03.html">PI 卡內文</a>
+      </div>
+    </a>
+    <a href="PI-04-dossier.html" class="pi-card">
+      <span class="pi-id">PI-04</span>
+      <div class="pi-title">6 國 CRPD 施行法對照 + 雙面 Steelman</div>
+      <div class="pi-meta">
+        <span>倡議 1</span>
+        <span>CO 1</span>
+        <span>結果 1</span>
+        
+        <span style="margin-left:auto">完整度 60/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill warn" style="width:60%"></div></div>
+      <div class="actions-row">
+        <a href="PI-04-dossier.html">議題追蹤</a>
+        <a href="PI-04.html">PI 卡內文</a>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="axis-block" style="--axis-color:#6B5B95">
+  <h3><span class="axis-tag">軸2</span>行動方案 / NHRC / 預算</h3>
+  <div class="pi-grid">
+
+    <a href="PI-05-dossier.html" class="pi-card">
+      <span class="pi-id">PI-05</span>
+      <div class="pi-title">身障權利行動方案 / 政策白皮書追蹤</div>
+      <div class="pi-meta">
+        <span>倡議 3</span>
+        <span>CO 1</span>
+        <span>結果 1</span>
+        
+        <span style="margin-left:auto">完整度 100/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill " style="width:100%"></div></div>
+      <div class="actions-row">
+        <a href="PI-05-dossier.html">議題追蹤</a>
+        <a href="PI-05.html">PI 卡內文</a>
+      </div>
+    </a>
+    <a href="PI-06-dossier.html" class="pi-card">
+      <span class="pi-id">PI-06</span>
+      <div class="pi-title">NHRC 對 CRPD 之監督報告</div>
+      <div class="pi-meta">
+        <span>倡議 15</span>
+        <span>CO 1</span>
+        <span>結果 1</span>
+        
+        <span style="margin-left:auto">完整度 100/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill " style="width:100%"></div></div>
+      <div class="actions-row">
+        <a href="PI-06-dossier.html">議題追蹤</a>
+        <a href="PI-06.html">PI 卡內文</a>
+      </div>
+    </a>
+    <a href="PI-07-dossier.html" class="pi-card">
+      <span class="pi-id">PI-07</span>
+      <div class="pi-title">身障預算配置（4 部會）</div>
+      <div class="pi-meta">
+        <span>倡議 4</span>
+        <span>CO 1</span>
+        <span>結果 1</span>
+        
+        <span style="margin-left:auto">完整度 60/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill warn" style="width:60%"></div></div>
+      <div class="actions-row">
+        <a href="PI-07-dossier.html">議題追蹤</a>
+        <a href="PI-07.html">PI 卡內文</a>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="axis-block" style="--axis-color:#2D7059">
+  <h3><span class="axis-tag">軸3</span>12 年指標時序</h3>
+  <div class="pi-grid">
+
+    <a href="PI-08-dossier.html" class="pi-card">
+      <span class="pi-id">PI-08</span>
+      <div class="pi-title">身障人口結構（總人數、障別、年齡）</div>
+      <div class="pi-meta">
+        <span>倡議 8</span>
+        <span>CO 5</span>
+        <span>結果 1</span>
+        
+        <span style="margin-left:auto">完整度 60/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill warn" style="width:60%"></div></div>
+      <div class="actions-row">
+        <a href="PI-08-dossier.html">議題追蹤</a>
+        <a href="PI-08.html">PI 卡內文</a>
+      </div>
+    </a>
+    <a href="PI-09-dossier.html" class="pi-card">
+      <span class="pi-id">PI-09</span>
+      <div class="pi-title">身障就業率 vs 一般就業率落差</div>
+      <div class="pi-meta">
+        <span>倡議 9</span>
+        <span>CO 12</span>
+        <span>結果 2</span>
+        <span class="alert">1 非預期</span>
+        <span style="margin-left:auto">完整度 100/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill " style="width:100%"></div></div>
+      <div class="actions-row">
+        <a href="PI-09-dossier.html">議題追蹤</a>
+        <a href="PI-09.html">PI 卡內文</a>
+      </div>
+    </a>
+    <a href="PI-10-dossier.html" class="pi-card">
+      <span class="pi-id">PI-10</span>
+      <div class="pi-title">特殊教育學生人數 / 安置型態</div>
+      <div class="pi-meta">
+        <span>倡議 2</span>
+        <span>CO 4</span>
+        <span>結果 1</span>
+        
+        <span style="margin-left:auto">完整度 80/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill " style="width:80%"></div></div>
+      <div class="actions-row">
+        <a href="PI-10-dossier.html">議題追蹤</a>
+        <a href="PI-10.html">PI 卡內文</a>
+      </div>
+    </a>
+    <a href="PI-11-dossier.html" class="pi-card">
+      <span class="pi-id">PI-11</span>
+      <div class="pi-title">身障家庭照顧者經濟與心理負荷</div>
+      <div class="pi-meta">
+        <span>倡議 7</span>
+        <span>CO 8</span>
+        <span>結果 1</span>
+        
+        <span style="margin-left:auto">完整度 100/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill " style="width:100%"></div></div>
+      <div class="actions-row">
+        <a href="PI-11-dossier.html">議題追蹤</a>
+        <a href="PI-11.html">PI 卡內文</a>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="axis-block" style="--axis-color:#B5371F">
+  <h3><span class="axis-tag">軸4</span>框架爭議旗艦(紅線)</h3>
+  <div class="pi-grid">
+
+    <a href="PI-12-dossier.html" class="pi-card red-line">
+      <span class="pi-id">PI-12 · 紅線</span>
+      <div class="pi-title">CRPD §24 教育權單向解讀爭議</div>
+      <div class="pi-meta">
+        <span>倡議 15</span>
+        <span>CO 15</span>
+        <span>結果 3</span>
+        <span class="alert">1 非預期</span>
+        <span style="margin-left:auto">完整度 100/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill " style="width:100%"></div></div>
+      <div class="actions-row">
+        <a href="PI-12-dossier.html">議題追蹤</a>
+        <a href="PI-12.html">PI 卡內文</a>
+      </div>
+    </a>
+    <a href="PI-13-dossier.html" class="pi-card red-line">
+      <span class="pi-id">PI-13 · 紅線</span>
+      <div class="pi-title">特教學校存續與家長選擇權國際比較</div>
+      <div class="pi-meta">
+        <span>倡議 13</span>
+        <span>CO 4</span>
+        <span>結果 2</span>
+        <span class="alert">1 非預期</span>
+        <span style="margin-left:auto">完整度 100/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill " style="width:100%"></div></div>
+      <div class="actions-row">
+        <a href="PI-13-dossier.html">議題追蹤</a>
+        <a href="PI-13.html">PI 卡內文</a>
+      </div>
+    </a>
+    <a href="PI-14-dossier.html" class="pi-card red-line">
+      <span class="pi-id">PI-14 · 紅線</span>
+      <div class="pi-title">身障兒少校園霸凌與融合下支持不足</div>
+      <div class="pi-meta">
+        <span>倡議 7</span>
+        <span>CO 12</span>
+        <span>結果 3</span>
+        <span class="alert">2 非預期</span>
+        <span style="margin-left:auto">完整度 100/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill " style="width:100%"></div></div>
+      <div class="actions-row">
+        <a href="PI-14-dossier.html">議題追蹤</a>
+        <a href="PI-14.html">PI 卡內文</a>
+      </div>
+    </a>
+    <a href="PI-15-dossier.html" class="pi-card red-line">
+      <span class="pi-id">PI-15 · 紅線</span>
+      <div class="pi-title">CRPD §12 法律能力與家長監護權平衡</div>
+      <div class="pi-meta">
+        <span>倡議 11</span>
+        <span>CO 17</span>
+        <span>結果 1</span>
+        
+        <span style="margin-left:auto">完整度 100/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill " style="width:100%"></div></div>
+      <div class="actions-row">
+        <a href="PI-15-dossier.html">議題追蹤</a>
+        <a href="PI-15.html">PI 卡內文</a>
+      </div>
+    </a>
+    <a href="PI-16-dossier.html" class="pi-card red-line">
+      <span class="pi-id">PI-16 · 紅線</span>
+      <div class="pi-title">身障診斷工具化與兒少醫療化爭議</div>
+      <div class="pi-meta">
+        <span>倡議 8</span>
+        <span>CO 14</span>
+        <span>結果 1</span>
+        
+        <span style="margin-left:auto">完整度 100/100</span>
+      </div>
+      <div class="score-bar"><div class="score-fill " style="width:100%"></div></div>
+      <div class="actions-row">
+        <a href="PI-16-dossier.html">議題追蹤</a>
+        <a href="PI-16.html">PI 卡內文</a>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+</main>
+
+<footer>
+  <p>CRPD 監督平台 · 國教行動聯盟(AABE) · <a href="../">回首頁</a> · <a href="../map.html">議題地圖</a> · <a href="../actors/">倡議者責任</a></p>
+</footer>
+</body>
+</html>
