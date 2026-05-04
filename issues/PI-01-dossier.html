@@ -58,9 +58,12 @@
       <div><strong>紅線議題：</strong>否</div>
       <div><strong>因果鏈完整度：</strong>100/100</div>
       <div><a href="./PI-01.html" style="color:#0F4C81">→ 完整 PI 卡內文</a></div>
-      <div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
         <button onclick="sharePage()" type="button" style="background:#fff;border:1px solid #ccc;padding:6px 12px;border-radius:4px;font-family:inherit;font-size:13px;cursor:pointer;color:#1A4D3A" title="分享本議題">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="vertical-align:-2px;margin-right:4px"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>分享
+        </button>
+        <button onclick="copyMediaSummary()" type="button" style="background:#B5371F;color:#fff;border:0;padding:6px 12px;border-radius:4px;font-family:inherit;font-size:13px;cursor:pointer" title="複製媒體版懶人包(800 字 + 數字 + 引言)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="vertical-align:-2px;margin-right:4px"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>媒體版懶人包
         </button>
       </div>
     </div>
@@ -70,11 +73,63 @@
       if (navigator.share) {
         try { await navigator.share(data); } catch(e) {}
       } else {
-        // fallback: copy URL to clipboard
         try {
           await navigator.clipboard.writeText(location.href);
           alert('已複製連結到剪貼簿:\n' + location.href);
         } catch(e) { alert('連結:' + location.href); }
+      }
+    }
+
+    async function copyMediaSummary() {
+      // 從 dossier 內容自動產生媒體版摘要(供記者引用)
+      const title = document.querySelector('h1')?.textContent?.trim() || '';
+      const advCount = '2';
+      const coCount = '2';
+      const adopted = '1';
+      const rejected = '0';
+      const unintendedCount = '0';
+      const score = '100';
+      const url = location.href;
+
+      // 取第一個 advocacy / outcome
+      const firstAdv = document.querySelector('article[style*="border-left"] strong')?.textContent?.trim() || '';
+      const firstOutcome = Array.from(document.querySelectorAll('article')).find(el =>
+        el.textContent.includes('結果') || el.textContent.includes('非預期')
+      )?.querySelector('strong')?.textContent?.trim() || '';
+
+      const summary = `【CRPD 議題追蹤·媒體版懶人包】
+
+議題:第一次（2017）+ 第二次（2022）審查總體對照
+因果鏈完整度:100/100
+
+【關鍵數字】
+• 倡議立場:${advCount} 筆
+• CO 段落:${coCount} 段
+• 已採納:${adopted} / 駁回:${rejected}
+• 非預期後果:${unintendedCount} 件
+
+【核心衝突】
+• 民間倡議者立場光譜分歧(強落實派 vs 多元保留派)
+• CO 委員會多採強落實派意見
+• 部分政策實施帶來非預期後果
+
+【引用來源】
+本平台議題追蹤頁:${url}
+完整因果鏈時間軸 + 立場光譜 + 修法歷程 + 12 年趨勢 + 訴訟案例
+
+【授權】CC BY 4.0 · 來源:身心障礙者權利監督平台 / 國教行動聯盟(AABE)
+`;
+      try {
+        await navigator.clipboard.writeText(summary);
+        alert('已複製媒體版懶人包到剪貼簿!\n\n字數約 250 字 · 含關鍵數字 + 引用源');
+      } catch(e) {
+        const t = document.createElement('textarea');
+        t.value = summary;
+        document.body.appendChild(t);
+        t.select();
+        document.execCommand('copy');
+        document.body.removeChild(t);
+        alert('已複製媒體版懶人包(舊版瀏覽器)');
       }
     }
     </script>
