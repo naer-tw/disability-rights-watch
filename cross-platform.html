@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>三公約監督平台統合儀表板 — AABE 國教盟</title>
+<meta name="description" content="台灣 CEDAW / CRC / CRPD 三公約監督平台共構,共抓取 930 筆政府文件、建立 99,676 段全文索引、1,288 個 PI 證據連結。">
+<style>
+body { font-family: "Noto Sans TC", -apple-system, sans-serif;
+       background: #FAFAF7; color: #1F1F1F; line-height: 1.6; margin: 0; }
+header { background: linear-gradient(135deg, #4B2480 0%, #B5371F 50%, #2D7059 100%);
+        color: #fff; padding: 32px 24px; text-align: center; }
+header h1 { font-family: "Noto Serif TC", serif; font-size: 28px; margin: 0 0 8px; letter-spacing: 0.04em; }
+header p { font-size: 15px; opacity: 0.95; max-width: 700px; margin: 8px auto 0; line-height: 1.7; }
+.totals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+          max-width: 800px; margin: -32px auto 32px; padding: 0 24px; }
+.total-card { background: #fff; padding: 24px; border-radius: 8px;
+              box-shadow: 0 4px 16px rgba(0,0,0,0.08); text-align: center; }
+.total-card .num { font-size: 36px; font-weight: 700; color: #4B2480;
+                   font-family: Inter, sans-serif; line-height: 1; }
+.total-card .lab { font-size: 13px; color: #5C5C5C; margin-top: 6px; }
+main { max-width: 1200px; margin: 0 auto; padding: 24px; }
+.platforms { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+.platform-card { background: #fff; border-top: 6px solid; border-radius: 8px;
+                 box-shadow: 0 2px 8px rgba(0,0,0,0.06); overflow: hidden; }
+.card-header { color: #fff; padding: 18px 20px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.card-header .icon { font-size: 22px; }
+.card-header h2 { font-family: "Noto Serif TC", serif; font-size: 22px; margin: 0; flex: 1; }
+.card-header .covenant { flex: 100%; font-size: 12px; opacity: 0.9; margin-top: 4px; }
+.card-body { padding: 16px 20px; }
+.card-body .host { font-size: 14px; color: #5C5C5C; margin: 0 0 4px; }
+.card-body .years { font-size: 12.5px; color: #8A8A8A; margin: 0 0 10px; }
+.card-body .public-link { font-size: 13px; color: #4B2480; text-decoration: none;
+                          font-weight: 600; padding: 4px 0; display: inline-block; }
+.card-body .public-link:hover { text-decoration: underline; }
+.platform-card table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.platform-card th, .platform-card td { padding: 8px 20px; text-align: left;
+                                       border-top: 1px solid #E8E3D6; }
+.platform-card th { background: #F1EFEA; color: #5C5C5C; font-size: 11.5px;
+                    text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+.platform-card td:last-child { text-align: right; font-family: Inter, sans-serif; }
+.platform-card .peak { background: #FAE0EA; padding: 10px 20px; margin: 0;
+                       font-size: 12.5px; color: #8E0E40; border-top: 2px solid #C2185B; }
+.intro { max-width: 800px; margin: 0 auto 32px; padding: 20px 24px;
+         background: #ECE0F2; border-left: 4px solid #4B2480; border-radius: 0 6px 6px 0; }
+.intro h2 { font-family: "Noto Serif TC", serif; margin: 0 0 12px; font-size: 18px; color: #4B2480; }
+.intro p { font-size: 14.5px; line-height: 1.75; margin: 0 0 8px; }
+footer { background: #0E2238; color: #fff; padding: 24px; text-align: center;
+         font-size: 12.5px; margin-top: 48px; }
+footer a { color: #fff; opacity: 0.85; }
+</style>
+</head>
+<body>
+<header>
+  <h1>三公約監督平台統合儀表板</h1>
+  <p>台灣 <strong>CEDAW</strong>(婦女)/ <strong>CRC</strong>(兒少)/ <strong>CRPD</strong>(身障)三公約 共構政府文件全文檢索系統<br>
+  Wave 100-102 完成跨平台 evidence_pipeline 共用模組</p>
+</header>
+
+<div class="totals">
+  <div class="total-card"><div class="num">930</div><div class="lab">總文件數</div></div>
+  <div class="total-card"><div class="num">99,676</div><div class="lab">總 passage 段落</div></div>
+  <div class="total-card"><div class="num">1,288</div><div class="lab">PI ↔ 證據連結</div></div>
+</div>
+
+<main>
+  <div class="intro">
+    <h2>📚 三平台共構說明</h2>
+    <p>本系統由 AABE 國教行動聯盟整合三平台,基於同一套 <code>evidence_pipeline.py</code> 共用模組
+    (Wave 100 抽出),從各公約之政府官網抓取資料,自動切段建索引、PI 自動關聯證據、
+    並注入到平台議題卡。每個平台保有自己的議題框架(PI)、立場光譜、主辦組織與政府對應單位。</p>
+    <p>共用模組包含 <strong>8 個 class</strong>:Fetcher / MarkdownExtractor / SiteCrawler /
+    DocumentImporter / PassageIngester / EvidenceLinker / FrequencyAnalyzer / EvidenceInjector,
+    平台差異化僅透過 <code>PipelineConfig</code> 傳入。</p>
+  </div>
+
+  <div class="platforms">
+    
+        <div class="platform-card" style="border-color:#4B2480">
+          <div class="card-header" style="background:#4B2480;">
+            <span class="icon">♀</span>
+            <h2>CEDAW</h2>
+            <span class="covenant">CEDAW(消除對婦女一切形式歧視公約)</span>
+          </div>
+          <div class="card-body">
+            <p class="host">主辦:台灣全國媽媽護家護兒聯盟</p>
+            <p class="years">2007 加入 / 4 次審查 / 第 5 次籌備中(2026)</p>
+            <a class="public-link" href="https://cedaw.taiwanmommies.org/" target="_blank" rel="noopener">→ CEDAW 公開站</a>
+          </div>
+          <table>
+            <tr><th>指標</th><th>數量</th></tr>
+            <tr><td>文件 documents</td><td><b>394</b></td></tr>
+            <tr><td>passage 段落</td><td>29,638</td></tr>
+            <tr><td>FTS5 全文索引</td><td>29,638</td></tr>
+            <tr><td>議題 PI</td><td>18</td></tr>
+            <tr><td>PI ↔ 證據連結</td><td>424</td></tr>
+            <tr><td>結論性意見 CO</td><td>212</td></tr>
+            <tr><td>倡議事件</td><td>85</td></tr>
+            <tr><td>倡議者 stakeholder</td><td>63</td></tr>
+          </table>
+          <p class="peak">📊 詞頻峰值:2008 年 「婦女 / 女性」每萬字 <b>178.99</b></p>
+        </div>
+        <div class="platform-card" style="border-color:#B5371F">
+          <div class="card-header" style="background:#B5371F;">
+            <span class="icon">☻</span>
+            <h2>兒少權</h2>
+            <span class="covenant">CRC(兒童權利公約)</span>
+          </div>
+          <div class="card-body">
+            <p class="host">主辦:國教行動聯盟 AABE</p>
+            <p class="years">2014 加入 / 2 次審查 / 第 3 次審查中</p>
+            <a class="public-link" href="https://child-rights-watch.taiwanmommies.org/" target="_blank" rel="noopener">→ 兒少權 公開站</a>
+          </div>
+          <table>
+            <tr><th>指標</th><th>數量</th></tr>
+            <tr><td>文件 documents</td><td><b>485</b></td></tr>
+            <tr><td>passage 段落</td><td>69,231</td></tr>
+            <tr><td>FTS5 全文索引</td><td>69,231</td></tr>
+            <tr><td>議題 PI</td><td>14</td></tr>
+            <tr><td>PI ↔ 證據連結</td><td>714</td></tr>
+            <tr><td>結論性意見 CO</td><td>170</td></tr>
+            <tr><td>倡議事件</td><td>0</td></tr>
+            <tr><td>倡議者 stakeholder</td><td>0</td></tr>
+          </table>
+          <p class="peak">📊 詞頻峰值:2019 年 「兒少權核心」每萬字 <b>2.21</b></p>
+        </div>
+        <div class="platform-card" style="border-color:#2D7059">
+          <div class="card-header" style="background:#2D7059;">
+            <span class="icon">⚙</span>
+            <h2>身權</h2>
+            <span class="covenant">CRPD(身心障礙者權利公約)</span>
+          </div>
+          <div class="card-body">
+            <p class="host">主辦:相關身障 NGO 聯盟(籌備中)</p>
+            <p class="years">2014 加入 / 2 次審查 / 第 3 次籌備中</p>
+            <a class="public-link" href="https://disability-rights-watch.taiwanmommies.org/" target="_blank" rel="noopener">→ 身權 公開站</a>
+          </div>
+          <table>
+            <tr><th>指標</th><th>數量</th></tr>
+            <tr><td>文件 documents</td><td><b>51</b></td></tr>
+            <tr><td>passage 段落</td><td>807</td></tr>
+            <tr><td>FTS5 全文索引</td><td>807</td></tr>
+            <tr><td>議題 PI</td><td>0</td></tr>
+            <tr><td>PI ↔ 證據連結</td><td>150</td></tr>
+            <tr><td>結論性意見 CO</td><td>0</td></tr>
+            <tr><td>倡議事件</td><td>0</td></tr>
+            <tr><td>倡議者 stakeholder</td><td>0</td></tr>
+          </table>
+          <p class="peak">📊 詞頻峰值:2026 年 「融合教育」每萬字 <b>127.39</b></p>
+        </div>
+  </div>
+</main>
+
+<footer>
+  <p>Generated by build_cross_platform_dashboard.py · Wave 102 · 2026-05-04</p>
+  <p>Source: <a href="https://github.com/naer-tw">naer-tw GitHub</a> · 共用模組:CEDAW 平台 scripts/evidence_pipeline.py</p>
+</footer>
+</body></html>
