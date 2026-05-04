@@ -5,7 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>6 國 CRPD 施行法對照 + 雙面 Steelman（議題追蹤）— CRPD 監督平台</title>
 <meta name="description" content="6 國 CRPD 施行法對照 + 雙面 Steelman的因果鏈時間軸：誰倡議？國際委員回應？政府承諾與實施？實際結果如何？">
-<meta name="theme-color" content="#0F4C81">
+<meta name="theme-color" content="#1A4D3A">
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="6 國 CRPD 施行法對照 + 雙面 Steelman — CRPD 監督平台">
+<meta property="og:description" content="因果鏈時間軸:誰倡議?國際委員回應?政府承諾與實施?實際結果如何?">
+<meta property="og:url" content="https://naer-tw.github.io/disability-rights-watch/issues/PI-04-dossier.html">
+<meta property="og:site_name" content="CRPD 監督平台 / 國教行動聯盟">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="6 國 CRPD 施行法對照 + 雙面 Steelman">
+<meta name="twitter:description" content="CRPD 議題因果鏈追蹤">
 <link rel="stylesheet" href="../assets/style.css">
 <style>
   .dossier-section { margin: 32px 0; }
@@ -48,6 +58,27 @@
       <div><strong>紅線議題：</strong>否</div>
       <div><strong>因果鏈完整度：</strong>60/100</div>
       <div><a href="./PI-04.html" style="color:#0F4C81">→ 完整 PI 卡內文</a></div>
+      <div>
+        <button onclick="sharePage()" type="button" style="background:#fff;border:1px solid #ccc;padding:6px 12px;border-radius:4px;font-family:inherit;font-size:13px;cursor:pointer;color:#1A4D3A" title="分享本議題">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="vertical-align:-2px;margin-right:4px"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>分享
+        </button>
+      </div>
+    </div>
+    <script>
+    async function sharePage() {
+      const data = { title: document.title, text: '6 國 CRPD 施行法對照 + 雙面 Steelman — CRPD 議題追蹤', url: location.href };
+      if (navigator.share) {
+        try { await navigator.share(data); } catch(e) {}
+      } else {
+        // fallback: copy URL to clipboard
+        try {
+          await navigator.clipboard.writeText(location.href);
+          alert('已複製連結到剪貼簿:\n' + location.href);
+        } catch(e) { alert('連結:' + location.href); }
+      }
+    }
+    </script>
+    <style scoped>.hero-meta div { display: inline-block; margin-right: 16px; }</style>
     </div>
   </div>
 </section>
