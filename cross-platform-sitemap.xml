@@ -4,6 +4,24 @@
 
   <!-- Cross-platform analysis pages (Wave 100-123) — bilingual ZH/EN -->
 
+  <!-- Monthly trend (snapshot-based) -->
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/monthly-trend.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/monthly-trend.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/monthly-trend-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/monthly-trend-en.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/monthly-trend.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/monthly-trend-en.html"/>
+  </url>
+
   <!-- Executive summary 1-pager -->
   <url>
     <loc>https://naer-tw.github.io/disability-rights-watch/executive-summary.html</loc>
