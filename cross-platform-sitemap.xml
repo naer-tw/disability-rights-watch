@@ -30,6 +30,24 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- First blog case study (Wave 143) -->
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-government-silence.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-government-silence.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-government-silence-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-government-silence-en.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-government-silence.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-government-silence-en.html"/>
+  </url>
+
   <!-- About / methodology (Wave 139) -->
   <url>
     <loc>https://naer-tw.github.io/disability-rights-watch/tri-covenant-about.html</loc>
