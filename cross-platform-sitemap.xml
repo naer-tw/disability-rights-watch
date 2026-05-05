@@ -4,6 +4,56 @@
 
   <!-- Cross-platform analysis pages (Wave 100-123) — bilingual ZH/EN -->
 
+  <!-- Intersectional structural-blind-spot PI detail pages (Wave 130-131) -->
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/issues/PI-17.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/issues/PI-17.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/issues/PI-17-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/issues/PI-18.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/issues/PI-18.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/issues/PI-18-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/issues/PI-19.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/issues/PI-19.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/issues/PI-19-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/issues/PI-17-en.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/issues/PI-17.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/issues/PI-17-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/issues/PI-18-en.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/issues/PI-18.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/issues/PI-18-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/issues/PI-19-en.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/issues/PI-19.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/issues/PI-19-en.html"/>
+  </url>
+
   <!-- Monthly trend (snapshot-based) -->
   <url>
     <loc>https://naer-tw.github.io/disability-rights-watch/monthly-trend.html</loc>
