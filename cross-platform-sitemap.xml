@@ -23,6 +23,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/issues/PI-14-en.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
   <!-- 6 Structural Findings visualization (Wave 133) -->
   <url>
