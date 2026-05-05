@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRPD 50 條公約條文反向索引 — CRPD 監督平台</title>
+<meta name="description" content="從 CRPD 條文切入,查對應議題 / CO 段落 / 倡議 / 修法(共 58 條)">
+<meta name="theme-color" content="#1A4D3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#FAFAF7;--bg-alt:#F1EFEA;--bg-deep:#1A4D3A;--text:#2A2421;--text-muted:#5A5048;
+  --brand:#B5371F;--aabe-gold:#8B6F50;--border:#DDD8CD;
+  --serif:'Noto Serif TC',Georgia,serif;--sans:'Noto Sans TC',-apple-system,sans-serif;
+}
+* { box-sizing:border-box;margin:0;padding:0 }
+body { font-family:var(--sans);font-size:15px;line-height:1.6;color:var(--text);background:var(--bg) }
+a { color:var(--bg-deep);text-decoration:none }
+a:hover { color:var(--brand) }
+.banner { background:var(--bg-deep);color:#fff;padding:10px 20px;font-size:13px;border-bottom:3px solid var(--brand) }
+.banner a { color:rgba(255,255,255,0.85) }
+header { background:var(--bg-alt);padding:36px 24px;text-align:center;border-bottom:1px solid var(--border) }
+header .kicker { font-family:Inter,sans-serif;font-size:12px;font-weight:700;color:var(--brand);letter-spacing:0.12em;text-transform:uppercase }
+header h1 { font-family:var(--serif);font-size:28px;color:var(--bg-deep);font-weight:900;margin:8px 0 }
+header p { color:var(--text-muted);font-size:14px;max-width:760px;margin:8px auto }
+main { max-width:1200px;margin:0 auto;padding:32px 24px 80px }
+.toolbar { background:#fff;padding:14px 18px;border:1px solid var(--border);border-radius:6px;margin-bottom:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center }
+.toolbar input { flex:1;min-width:200px;padding:8px 12px;border:1px solid var(--border);border-radius:4px;font-size:14px;font-family:var(--sans) }
+.cat-tabs { display:flex;gap:4px;flex-wrap:wrap }
+.cat-tabs button { padding:5px 11px;background:transparent;border:1px solid var(--border);border-radius:999px;cursor:pointer;font-size:12px;color:var(--text-muted);font-family:inherit }
+.cat-tabs button.active { background:var(--brand);color:#fff;border-color:var(--brand) }
+.article-grid { display:grid;grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));gap:14px }
+.article-card { background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand);border-radius:6px;padding:16px 18px;display:flex;flex-direction:column;gap:6px;transition:all .15s }
+.article-card:hover { transform:translateY(-1px);box-shadow:0 4px 12px rgba(26,77,58,0.08) }
+.article-card .head { display:flex;align-items:center;gap:10px;flex-wrap:wrap }
+.article-card .art-no { font-family:Inter,sans-serif;font-size:16px;font-weight:800;color:var(--brand);letter-spacing:0.04em }
+.article-card .cat { font-family:Inter,sans-serif;font-size:11px;color:#fff;padding:2px 8px;border-radius:3px;font-weight:600 }
+.article-card h3 { font-family:var(--serif);font-size:17px;color:var(--bg-deep);font-weight:700;margin-top:4px }
+.article-card .title-en { font-family:Inter,sans-serif;font-size:12px;color:var(--text-muted);font-style:italic }
+.article-card .links { display:flex;gap:5px;flex-wrap:wrap;margin-top:6px }
+.article-card .pi-pill { background:var(--bg-alt);color:var(--bg-deep);padding:3px 9px;border-radius:3px;font-family:Inter,sans-serif;font-weight:600;font-size:12px }
+.article-card .pi-pill:hover { background:var(--brand);color:#fff }
+.article-card .stats { display:flex;gap:14px;font-size:12px;color:var(--text-muted);font-family:Inter,sans-serif;border-top:1px solid var(--border);padding-top:8px;margin-top:6px }
+.article-card .stats strong { color:var(--bg-deep);font-weight:700 }
+footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;border-top:1px solid var(--border) }
+@media (max-width:768px) {
+  .article-grid { grid-template-columns:1fr }
+  header h1 { font-size:22px }
+}
+</style>
+<meta property="og:type" content="article">
+<meta property="og:title" content="CRPD 50 條公約條文反向索引 — CRPD 監督平台">
+<meta property="og:description" content="從 CRPD 條文切入,查對應議題 / CO 段落 / 倡議 / 修法">
+<meta property="og:image" content="https://naer-tw.github.io/disability-rights-watch/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:-9999px;background:#1A4D3A;color:#fff;padding:8px 16px;border-radius:4px;text-decoration:none;z-index:1000" onfocus="this.style.left='12px';this.style.top='12px'" onblur="this.style.left='-9999px';this.style.top='-9999px'">跳至主要內容</a>
+<div class="banner">
+  <a href="./index.html">← CRPD 監督平台</a>
+  <span style="float:right">58 條條文反向索引</span>
+</div>
+<header>
+  <div class="kicker">Reverse Lookup · 反向索引</div>
+  <h1>CRPD 50 條公約條文索引</h1>
+  <p>從公約條文出發 — 看每一條在台灣 12 年(2014-2026)留下了哪些倡議、CO 段落、修法、結果。可作為起草影子報告之查詢工具。</p>
+</header>
+<main id="main">
+  <div class="toolbar">
+    <input type="search" id="q" placeholder="搜尋條文編號 / 中文名稱 / 英文名稱(例:A24, 教育, education)" oninput="filter()">
+    <div class="cat-tabs" id="tabs">
+      <button class="active" data-cat="all" onclick="setCat('all')">全部</button>
+      <button data-cat="principles" onclick="setCat('principles')">一般原則</button>
+      <button data-cat="obligations" onclick="setCat('obligations')">一般義務</button>
+      <button data-cat="civil_political" onclick="setCat('civil_political')">公民政治權</button>
+      <button data-cat="social_economic" onclick="setCat('social_economic')">經濟社會權</button>
+      <button data-cat="specific_groups" onclick="setCat('specific_groups')">特定族群</button>
+      <button data-cat="implementation" onclick="setCat('implementation')">施行監督</button>
+    </div>
+  </div>
+  <div class="article-grid" id="grid">
+<article class="article-card" data-cat="obligations">
+  <div class="head">
+    <span class="art-no">GC1</span>
+    <span class="cat" style="background:#1A4D3A">一般義務</span>
+  </div>
+  <h3>第 12 條 法律之前平等承認</h3>
+  <div class="title-en">Equal recognition before the law (Article 12)</div>
+  <div class="links"><a href="./issues/PI-15-dossier.html" class="pi-pill">PI-15</a></div>
+  <div class="stats">
+    <span><strong>4</strong> CO 段落</span>
+    <span><strong>2</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="obligations">
+  <div class="head">
+    <span class="art-no">GC2</span>
+    <span class="cat" style="background:#1A4D3A">一般義務</span>
+  </div>
+  <h3>第 9 條 無障礙</h3>
+  <div class="title-en">Accessibility (Article 9)</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="obligations">
+  <div class="head">
+    <span class="art-no">GC3</span>
+    <span class="cat" style="background:#1A4D3A">一般義務</span>
+  </div>
+  <h3>身心障礙婦女與女童</h3>
+  <div class="title-en">Women and girls with disabilities</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="obligations">
+  <div class="head">
+    <span class="art-no">GC4</span>
+    <span class="cat" style="background:#1A4D3A">一般義務</span>
+  </div>
+  <h3>第 24 條 融合教育權</h3>
+  <div class="title-en">Right to inclusive education (Article 24)</div>
+  <div class="links"><a href="./issues/PI-12-dossier.html" class="pi-pill">PI-12</a><a href="./issues/PI-13-dossier.html" class="pi-pill">PI-13</a><a href="./issues/PI-14-dossier.html" class="pi-pill">PI-14</a><a href="./issues/PI-10-dossier.html" class="pi-pill">PI-10</a></div>
+  <div class="stats">
+    <span><strong>6</strong> CO 段落</span>
+    <span><strong>4</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="obligations">
+  <div class="head">
+    <span class="art-no">GC5</span>
+    <span class="cat" style="background:#1A4D3A">一般義務</span>
+  </div>
+  <h3>第 19 條 自立生活與融合社區</h3>
+  <div class="title-en">Living independently and being included in the community</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="obligations">
+  <div class="head">
+    <span class="art-no">GC6</span>
+    <span class="cat" style="background:#1A4D3A">一般義務</span>
+  </div>
+  <h3>平等與不歧視</h3>
+  <div class="title-en">Equality and non-discrimination</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="obligations">
+  <div class="head">
+    <span class="art-no">GC7</span>
+    <span class="cat" style="background:#1A4D3A">一般義務</span>
+  </div>
+  <h3>身心障礙者透過代表組織之參與</h3>
+  <div class="title-en">Participation of persons with disabilities through their representative organizations</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>1</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="obligations">
+  <div class="head">
+    <span class="art-no">GC8</span>
+    <span class="cat" style="background:#1A4D3A">一般義務</span>
+  </div>
+  <h3>工作與就業</h3>
+  <div class="title-en">Work and employment</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="principles">
+  <div class="head">
+    <span class="art-no">A1</span>
+    <span class="cat" style="background:#1A4D3A">一般原則</span>
+  </div>
+  <h3>宗旨</h3>
+  <div class="title-en">Purpose</div>
+  <div class="links"><a href="./issues/PI-01-dossier.html" class="pi-pill">PI-01</a><a href="./issues/PI-05-dossier.html" class="pi-pill">PI-05</a><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a><a href="./issues/PI-07-dossier.html" class="pi-pill">PI-07</a><a href="./issues/PI-11-dossier.html" class="pi-pill">PI-11</a><a href="./issues/PI-08-dossier.html" class="pi-pill">PI-08</a></div>
+  <div class="stats">
+    <span><strong>45</strong> CO 段落</span>
+    <span><strong>31</strong> 倡議</span>
+    <span><strong>4</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="principles">
+  <div class="head">
+    <span class="art-no">A2</span>
+    <span class="cat" style="background:#1A4D3A">一般原則</span>
+  </div>
+  <h3>定義</h3>
+  <div class="title-en">Definitions</div>
+  <div class="links"><a href="./issues/PI-01-dossier.html" class="pi-pill">PI-01</a><a href="./issues/PI-05-dossier.html" class="pi-pill">PI-05</a><a href="./issues/PI-04-dossier.html" class="pi-pill">PI-04</a><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a><a href="./issues/PI-07-dossier.html" class="pi-pill">PI-07</a><a href="./issues/PI-11-dossier.html" class="pi-pill">PI-11</a></div>
+  <div class="stats">
+    <span><strong>37</strong> CO 段落</span>
+    <span><strong>52</strong> 倡議</span>
+    <span><strong>4</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="principles">
+  <div class="head">
+    <span class="art-no">A3</span>
+    <span class="cat" style="background:#1A4D3A">一般原則</span>
+  </div>
+  <h3>一般原則</h3>
+  <div class="title-en">General principles</div>
+  <div class="links"><a href="./issues/PI-01-dossier.html" class="pi-pill">PI-01</a><a href="./issues/PI-05-dossier.html" class="pi-pill">PI-05</a><a href="./issues/PI-03-dossier.html" class="pi-pill">PI-03</a><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a><a href="./issues/PI-08-dossier.html" class="pi-pill">PI-08</a><a href="./issues/PI-12-dossier.html" class="pi-pill">PI-12</a></div>
+  <div class="stats">
+    <span><strong>5</strong> CO 段落</span>
+    <span><strong>10</strong> 倡議</span>
+    <span><strong>1</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="obligations">
+  <div class="head">
+    <span class="art-no">A4</span>
+    <span class="cat" style="background:#1A4D3A">一般義務</span>
+  </div>
+  <h3>一般義務</h3>
+  <div class="title-en">General obligations</div>
+  <div class="links"><a href="./issues/PI-01-dossier.html" class="pi-pill">PI-01</a><a href="./issues/PI-05-dossier.html" class="pi-pill">PI-05</a><a href="./issues/PI-02-dossier.html" class="pi-pill">PI-02</a></div>
+  <div class="stats">
+    <span><strong>5</strong> CO 段落</span>
+    <span><strong>4</strong> 倡議</span>
+    <span><strong>2</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="obligations">
+  <div class="head">
+    <span class="art-no">A5</span>
+    <span class="cat" style="background:#1A4D3A">一般義務</span>
+  </div>
+  <h3>平等與不歧視</h3>
+  <div class="title-en">Equality and non-discrimination</div>
+  <div class="links"><a href="./issues/PI-09-dossier.html" class="pi-pill">PI-09</a><a href="./issues/PI-12-dossier.html" class="pi-pill">PI-12</a></div>
+  <div class="stats">
+    <span><strong>9</strong> CO 段落</span>
+    <span><strong>1</strong> 倡議</span>
+    <span><strong>1</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="specific_groups">
+  <div class="head">
+    <span class="art-no">A6</span>
+    <span class="cat" style="background:#7A4A8B">特定族群</span>
+  </div>
+  <h3>身心障礙婦女</h3>
+  <div class="title-en">Women with disabilities</div>
+  <div class="links"><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a><a href="./issues/PI-09-dossier.html" class="pi-pill">PI-09</a><a href="./issues/PI-12-dossier.html" class="pi-pill">PI-12</a></div>
+  <div class="stats">
+    <span><strong>2</strong> CO 段落</span>
+    <span><strong>2</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="specific_groups">
+  <div class="head">
+    <span class="art-no">A7</span>
+    <span class="cat" style="background:#7A4A8B">特定族群</span>
+  </div>
+  <h3>身心障礙兒童</h3>
+  <div class="title-en">Children with disabilities</div>
+  <div class="links"><a href="./issues/PI-12-dossier.html" class="pi-pill">PI-12</a><a href="./issues/PI-14-dossier.html" class="pi-pill">PI-14</a><a href="./issues/PI-16-dossier.html" class="pi-pill">PI-16</a></div>
+  <div class="stats">
+    <span><strong>3</strong> CO 段落</span>
+    <span><strong>7</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="obligations">
+  <div class="head">
+    <span class="art-no">A8</span>
+    <span class="cat" style="background:#1A4D3A">一般義務</span>
+  </div>
+  <h3>意識提升</h3>
+  <div class="title-en">Awareness-raising</div>
+  <div class="links"><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a></div>
+  <div class="stats">
+    <span><strong>6</strong> CO 段落</span>
+    <span><strong>1</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="civil_political">
+  <div class="head">
+    <span class="art-no">A9</span>
+    <span class="cat" style="background:#3D5C7A">公民政治權</span>
+  </div>
+  <h3>無障礙</h3>
+  <div class="title-en">Accessibility</div>
+  <div class="links"><a href="./issues/PI-08-dossier.html" class="pi-pill">PI-08</a><a href="./issues/PI-11-dossier.html" class="pi-pill">PI-11</a></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>5</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="civil_political">
+  <div class="head">
+    <span class="art-no">A10</span>
+    <span class="cat" style="background:#3D5C7A">公民政治權</span>
+  </div>
+  <h3>生命權</h3>
+  <div class="title-en">Right to life</div>
+  <div class="links"><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a></div>
+  <div class="stats">
+    <span><strong>6</strong> CO 段落</span>
+    <span><strong>1</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="civil_political">
+  <div class="head">
+    <span class="art-no">A11</span>
+    <span class="cat" style="background:#3D5C7A">公民政治權</span>
+  </div>
+  <h3>危險情況及人道緊急情況</h3>
+  <div class="title-en">Situations of risk and humanitarian emergencies</div>
+  <div class="links"><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a></div>
+  <div class="stats">
+    <span><strong>4</strong> CO 段落</span>
+    <span><strong>1</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="civil_political">
+  <div class="head">
+    <span class="art-no">A12</span>
+    <span class="cat" style="background:#3D5C7A">公民政治權</span>
+  </div>
+  <h3>在法律之前獲得平等承認</h3>
+  <div class="title-en">Equal recognition before the law</div>
+  <div class="links"><a href="./issues/PI-15-dossier.html" class="pi-pill">PI-15</a><a href="./issues/PI-16-dossier.html" class="pi-pill">PI-16</a></div>
+  <div class="stats">
+    <span><strong>6</strong> CO 段落</span>
+    <span><strong>8</strong> 倡議</span>
+    <span><strong>3</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="civil_political">
+  <div class="head">
+    <span class="art-no">A13</span>
+    <span class="cat" style="background:#3D5C7A">公民政治權</span>
+  </div>
+  <h3>獲得司法保護</h3>
+  <div class="title-en">Access to justice</div>
+  <div class="links"><a href="./issues/PI-15-dossier.html" class="pi-pill">PI-15</a></div>
+  <div class="stats">
+    <span><strong>4</strong> CO 段落</span>
+    <span><strong>1</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="civil_political">
+  <div class="head">
+    <span class="art-no">A14</span>
+    <span class="cat" style="background:#3D5C7A">公民政治權</span>
+  </div>
+  <h3>人身自由與安全</h3>
+  <div class="title-en">Liberty and security of person</div>
+  <div class="links"><a href="./issues/PI-11-dossier.html" class="pi-pill">PI-11</a><a href="./issues/PI-15-dossier.html" class="pi-pill">PI-15</a><a href="./issues/PI-16-dossier.html" class="pi-pill">PI-16</a></div>
+  <div class="stats">
+    <span><strong>9</strong> CO 段落</span>
+    <span><strong>3</strong> 倡議</span>
+    <span><strong>2</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="civil_political">
+  <div class="head">
+    <span class="art-no">A15</span>
+    <span class="cat" style="background:#3D5C7A">公民政治權</span>
+  </div>
+  <h3>免於酷刑或殘忍、不人道、有辱人格之待遇或處罰</h3>
+  <div class="title-en">Freedom from torture</div>
+  <div class="links"><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>1</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="civil_political">
+  <div class="head">
+    <span class="art-no">A16</span>
+    <span class="cat" style="background:#3D5C7A">公民政治權</span>
+  </div>
+  <h3>免於剝削、暴力與虐待</h3>
+  <div class="title-en">Freedom from exploitation, violence and abuse</div>
+  <div class="links"><a href="./issues/PI-14-dossier.html" class="pi-pill">PI-14</a></div>
+  <div class="stats">
+    <span><strong>6</strong> CO 段落</span>
+    <span><strong>3</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="civil_political">
+  <div class="head">
+    <span class="art-no">A17</span>
+    <span class="cat" style="background:#3D5C7A">公民政治權</span>
+  </div>
+  <h3>保障人身完整性</h3>
+  <div class="title-en">Protecting the integrity of the person</div>
+  <div class="links"><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a></div>
+  <div class="stats">
+    <span><strong>2</strong> CO 段落</span>
+    <span><strong>1</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="civil_political">
+  <div class="head">
+    <span class="art-no">A18</span>
+    <span class="cat" style="background:#3D5C7A">公民政治權</span>
+  </div>
+  <h3>遷徙與國籍自由</h3>
+  <div class="title-en">Liberty of movement and nationality</div>
+  <div class="links"><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a></div>
+  <div class="stats">
+    <span><strong>2</strong> CO 段落</span>
+    <span><strong>1</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="social_economic">
+  <div class="head">
+    <span class="art-no">A19</span>
+    <span class="cat" style="background:#B5371F">經濟社會權</span>
+  </div>
+  <h3>自立生活與融合社區</h3>
+  <div class="title-en">Living independently and being included in the community</div>
+  <div class="links"><a href="./issues/PI-07-dossier.html" class="pi-pill">PI-07</a><a href="./issues/PI-11-dossier.html" class="pi-pill">PI-11</a><a href="./issues/PI-08-dossier.html" class="pi-pill">PI-08</a><a href="./issues/PI-15-dossier.html" class="pi-pill">PI-15</a></div>
+  <div class="stats">
+    <span><strong>8</strong> CO 段落</span>
+    <span><strong>7</strong> 倡議</span>
+    <span><strong>1</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="social_economic">
+  <div class="head">
+    <span class="art-no">A20</span>
+    <span class="cat" style="background:#B5371F">經濟社會權</span>
+  </div>
+  <h3>個人行動能力</h3>
+  <div class="title-en">Personal mobility</div>
+  <div class="links"><a href="./issues/PI-08-dossier.html" class="pi-pill">PI-08</a><a href="./issues/PI-11-dossier.html" class="pi-pill">PI-11</a></div>
+  <div class="stats">
+    <span><strong>4</strong> CO 段落</span>
+    <span><strong>3</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="civil_political">
+  <div class="head">
+    <span class="art-no">A21</span>
+    <span class="cat" style="background:#3D5C7A">公民政治權</span>
+  </div>
+  <h3>表意自由與意見表達及取得資訊</h3>
+  <div class="title-en">Freedom of expression and opinion, and access to information</div>
+  <div class="links"><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a><a href="./issues/PI-08-dossier.html" class="pi-pill">PI-08</a></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>2</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="civil_political">
+  <div class="head">
+    <span class="art-no">A22</span>
+    <span class="cat" style="background:#3D5C7A">公民政治權</span>
+  </div>
+  <h3>尊重隱私</h3>
+  <div class="title-en">Respect for privacy</div>
+  <div class="links"><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a></div>
+  <div class="stats">
+    <span><strong>2</strong> CO 段落</span>
+    <span><strong>1</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="civil_political">
+  <div class="head">
+    <span class="art-no">A23</span>
+    <span class="cat" style="background:#3D5C7A">公民政治權</span>
+  </div>
+  <h3>尊重家居與家庭</h3>
+  <div class="title-en">Respect for home and the family</div>
+  <div class="links"><a href="./issues/PI-11-dossier.html" class="pi-pill">PI-11</a><a href="./issues/PI-15-dossier.html" class="pi-pill">PI-15</a></div>
+  <div class="stats">
+    <span><strong>3</strong> CO 段落</span>
+    <span><strong>4</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="social_economic">
+  <div class="head">
+    <span class="art-no">A24</span>
+    <span class="cat" style="background:#B5371F">經濟社會權</span>
+  </div>
+  <h3>教育</h3>
+  <div class="title-en">Education</div>
+  <div class="links"><a href="./issues/PI-04-dossier.html" class="pi-pill">PI-04</a><a href="./issues/PI-10-dossier.html" class="pi-pill">PI-10</a><a href="./issues/PI-12-dossier.html" class="pi-pill">PI-12</a><a href="./issues/PI-13-dossier.html" class="pi-pill">PI-13</a><a href="./issues/PI-14-dossier.html" class="pi-pill">PI-14</a></div>
+  <div class="stats">
+    <span><strong>10</strong> CO 段落</span>
+    <span><strong>20</strong> 倡議</span>
+    <span><strong>1</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="social_economic">
+  <div class="head">
+    <span class="art-no">A25</span>
+    <span class="cat" style="background:#B5371F">經濟社會權</span>
+  </div>
+  <h3>健康</h3>
+  <div class="title-en">Health</div>
+  <div class="links"><a href="./issues/PI-10-dossier.html" class="pi-pill">PI-10</a><a href="./issues/PI-12-dossier.html" class="pi-pill">PI-12</a><a href="./issues/PI-11-dossier.html" class="pi-pill">PI-11</a><a href="./issues/PI-15-dossier.html" class="pi-pill">PI-15</a><a href="./issues/PI-16-dossier.html" class="pi-pill">PI-16</a></div>
+  <div class="stats">
+    <span><strong>13</strong> CO 段落</span>
+    <span><strong>9</strong> 倡議</span>
+    <span><strong>1</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="social_economic">
+  <div class="head">
+    <span class="art-no">A26</span>
+    <span class="cat" style="background:#B5371F">經濟社會權</span>
+  </div>
+  <h3>適應訓練與復健</h3>
+  <div class="title-en">Habilitation and rehabilitation</div>
+  <div class="links"><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a><a href="./issues/PI-16-dossier.html" class="pi-pill">PI-16</a></div>
+  <div class="stats">
+    <span><strong>1</strong> CO 段落</span>
+    <span><strong>2</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="social_economic">
+  <div class="head">
+    <span class="art-no">A27</span>
+    <span class="cat" style="background:#B5371F">經濟社會權</span>
+  </div>
+  <h3>工作與就業</h3>
+  <div class="title-en">Work and employment</div>
+  <div class="links"><a href="./issues/PI-09-dossier.html" class="pi-pill">PI-09</a></div>
+  <div class="stats">
+    <span><strong>4</strong> CO 段落</span>
+    <span><strong>7</strong> 倡議</span>
+    <span><strong>2</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="social_economic">
+  <div class="head">
+    <span class="art-no">A28</span>
+    <span class="cat" style="background:#B5371F">經濟社會權</span>
+  </div>
+  <h3>適足之生活水準與社會保障</h3>
+  <div class="title-en">Adequate standard of living and social protection</div>
+  <div class="links"><a href="./issues/PI-07-dossier.html" class="pi-pill">PI-07</a><a href="./issues/PI-11-dossier.html" class="pi-pill">PI-11</a></div>
+  <div class="stats">
+    <span><strong>1</strong> CO 段落</span>
+    <span><strong>3</strong> 倡議</span>
+    <span><strong>1</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="civil_political">
+  <div class="head">
+    <span class="art-no">A29</span>
+    <span class="cat" style="background:#3D5C7A">公民政治權</span>
+  </div>
+  <h3>參與政治及公共生活</h3>
+  <div class="title-en">Participation in political and public life</div>
+  <div class="links"><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>1</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="social_economic">
+  <div class="head">
+    <span class="art-no">A30</span>
+    <span class="cat" style="background:#B5371F">經濟社會權</span>
+  </div>
+  <h3>參與文化生活、康樂、休閒及體育活動</h3>
+  <div class="title-en">Participation in cultural life, recreation, leisure and sport</div>
+  <div class="links"><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a><a href="./issues/PI-12-dossier.html" class="pi-pill">PI-12</a><a href="./issues/PI-13-dossier.html" class="pi-pill">PI-13</a></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>2</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="implementation">
+  <div class="head">
+    <span class="art-no">A31</span>
+    <span class="cat" style="background:#5A5048">施行監督</span>
+  </div>
+  <h3>統計與資料蒐集</h3>
+  <div class="title-en">Statistics and data collection</div>
+  <div class="links"><a href="./issues/PI-08-dossier.html" class="pi-pill">PI-08</a></div>
+  <div class="stats">
+    <span><strong>1</strong> CO 段落</span>
+    <span><strong>2</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="implementation">
+  <div class="head">
+    <span class="art-no">A32</span>
+    <span class="cat" style="background:#5A5048">施行監督</span>
+  </div>
+  <h3>國際合作</h3>
+  <div class="title-en">International cooperation</div>
+  <div class="links"><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>1</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="implementation">
+  <div class="head">
+    <span class="art-no">A33</span>
+    <span class="cat" style="background:#5A5048">施行監督</span>
+  </div>
+  <h3>國家之執行與監督</h3>
+  <div class="title-en">National implementation and monitoring</div>
+  <div class="links"><a href="./issues/PI-05-dossier.html" class="pi-pill">PI-05</a><a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a></div>
+  <div class="stats">
+    <span><strong>4</strong> CO 段落</span>
+    <span><strong>3</strong> 倡議</span>
+    <span><strong>1</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="implementation">
+  <div class="head">
+    <span class="art-no">A34</span>
+    <span class="cat" style="background:#5A5048">施行監督</span>
+  </div>
+  <h3>身心障礙者權利委員會</h3>
+  <div class="title-en">Committee on the Rights of Persons with Disabilities</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="implementation">
+  <div class="head">
+    <span class="art-no">A35</span>
+    <span class="cat" style="background:#5A5048">施行監督</span>
+  </div>
+  <h3>締約國提交報告</h3>
+  <div class="title-en">Reports by States Parties</div>
+  <div class="links"><a href="./issues/PI-03-dossier.html" class="pi-pill">PI-03</a></div>
+  <div class="stats">
+    <span><strong>1</strong> CO 段落</span>
+    <span><strong>1</strong> 倡議</span>
+    <span><strong>1</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="implementation">
+  <div class="head">
+    <span class="art-no">A36</span>
+    <span class="cat" style="background:#5A5048">施行監督</span>
+  </div>
+  <h3>報告之審議</h3>
+  <div class="title-en">Consideration of reports</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="implementation">
+  <div class="head">
+    <span class="art-no">A37</span>
+    <span class="cat" style="background:#5A5048">施行監督</span>
+  </div>
+  <h3>締約國與委員會之合作</h3>
+  <div class="title-en">Cooperation between States Parties and the Committee</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="implementation">
+  <div class="head">
+    <span class="art-no">A38</span>
+    <span class="cat" style="background:#5A5048">施行監督</span>
+  </div>
+  <h3>委員會與其他機構之關係</h3>
+  <div class="title-en">Relationship of the Committee with other bodies</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="implementation">
+  <div class="head">
+    <span class="art-no">A39</span>
+    <span class="cat" style="background:#5A5048">施行監督</span>
+  </div>
+  <h3>委員會之報告</h3>
+  <div class="title-en">Report of the Committee</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="final">
+  <div class="head">
+    <span class="art-no">A40</span>
+    <span class="cat" style="background:#5A5048">終端條款</span>
+  </div>
+  <h3>締約國會議</h3>
+  <div class="title-en">Conference of States Parties</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="final">
+  <div class="head">
+    <span class="art-no">A41</span>
+    <span class="cat" style="background:#5A5048">終端條款</span>
+  </div>
+  <h3>保管</h3>
+  <div class="title-en">Depositary</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="final">
+  <div class="head">
+    <span class="art-no">A42</span>
+    <span class="cat" style="background:#5A5048">終端條款</span>
+  </div>
+  <h3>簽署</h3>
+  <div class="title-en">Signature</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="final">
+  <div class="head">
+    <span class="art-no">A43</span>
+    <span class="cat" style="background:#5A5048">終端條款</span>
+  </div>
+  <h3>同意接受拘束</h3>
+  <div class="title-en">Consent to be bound</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="final">
+  <div class="head">
+    <span class="art-no">A44</span>
+    <span class="cat" style="background:#5A5048">終端條款</span>
+  </div>
+  <h3>區域整合組織</h3>
+  <div class="title-en">Regional integration organizations</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="final">
+  <div class="head">
+    <span class="art-no">A45</span>
+    <span class="cat" style="background:#5A5048">終端條款</span>
+  </div>
+  <h3>生效</h3>
+  <div class="title-en">Entry into force</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="final">
+  <div class="head">
+    <span class="art-no">A46</span>
+    <span class="cat" style="background:#5A5048">終端條款</span>
+  </div>
+  <h3>保留</h3>
+  <div class="title-en">Reservations</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="final">
+  <div class="head">
+    <span class="art-no">A47</span>
+    <span class="cat" style="background:#5A5048">終端條款</span>
+  </div>
+  <h3>修正</h3>
+  <div class="title-en">Amendments</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="final">
+  <div class="head">
+    <span class="art-no">A48</span>
+    <span class="cat" style="background:#5A5048">終端條款</span>
+  </div>
+  <h3>退約</h3>
+  <div class="title-en">Denunciation</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="final">
+  <div class="head">
+    <span class="art-no">A49</span>
+    <span class="cat" style="background:#5A5048">終端條款</span>
+  </div>
+  <h3>可使用之版式</h3>
+  <div class="title-en">Accessible format</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article>
+<article class="article-card" data-cat="final">
+  <div class="head">
+    <span class="art-no">A50</span>
+    <span class="cat" style="background:#5A5048">終端條款</span>
+  </div>
+  <h3>原始文本</h3>
+  <div class="title-en">Authentic texts</div>
+  <div class="links"><span style="color:#999;font-size:12px">—</span></div>
+  <div class="stats">
+    <span><strong>0</strong> CO 段落</span>
+    <span><strong>0</strong> 倡議</span>
+    <span><strong>0</strong> 修法</span>
+  </div>
+</article></div>
+</main>
+<footer>
+  CRPD 監督平台 · 國教行動聯盟(AABE) · CC BY 4.0 ·
+  <a href="./about.html">關於</a> ·
+  <a href="./feedback.html">補充資料</a>
+</footer>
+<script>
+let curCat = 'all';
+function setCat(c) {
+  curCat = c;
+  document.querySelectorAll('.cat-tabs button').forEach(b => b.classList.toggle('active', b.dataset.cat === c));
+  filter();
+}
+function filter() {
+  const q = document.getElementById('q').value.toLowerCase().trim();
+  document.querySelectorAll('.article-card').forEach(c => {
+    const cat = c.dataset.cat;
+    const text = c.textContent.toLowerCase();
+    const matchCat = curCat === 'all' || cat === curCat;
+    const matchQ = !q || text.includes(q);
+    c.style.display = (matchCat && matchQ) ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>

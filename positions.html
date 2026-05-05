@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>24 倡議者 × 16 議題 — 立場彙整 — CRPD 監督平台</title>
+<meta name="description" content="所有倡議者在 16 個 CRPD 議題上的具體立場、採納率、覆蓋廣度,一頁總覽。">
+<meta name="theme-color" content="#1A4D3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#FAFAF7;--bg-alt:#F1EFEA;--bg-deep:#1A4D3A;--text:#2A2421;--text-muted:#5A5048;
+  --brand:#B5371F;--aabe-gold:#8B6F50;--border:#DDD8CD;
+  --serif:'Noto Serif TC',Georgia,serif;--sans:'Noto Sans TC',-apple-system,sans-serif;
+}
+* { box-sizing:border-box;margin:0;padding:0 }
+body { font-family:var(--sans);font-size:15px;line-height:1.6;color:var(--text);background:var(--bg) }
+a { color:var(--bg-deep);text-decoration:none }
+a:hover { color:var(--brand) }
+.banner { background:var(--bg-deep);color:#fff;padding:10px 20px;font-size:13px;border-bottom:3px solid var(--brand) }
+.banner a { color:rgba(255,255,255,0.85) }
+header { background:var(--bg-alt);padding:36px 24px;text-align:center;border-bottom:1px solid var(--border) }
+header .kicker { font-family:Inter,sans-serif;font-size:12px;font-weight:700;color:var(--brand);letter-spacing:0.12em;text-transform:uppercase }
+header h1 { font-family:var(--serif);font-size:28px;color:var(--bg-deep);font-weight:900;margin:8px 0 }
+header p { color:var(--text-muted);font-size:14px;max-width:760px;margin:8px auto }
+.kpi { display:flex;gap:24px;justify-content:center;margin-top:20px;flex-wrap:wrap }
+.kpi-item { text-align:center }
+.kpi-num { font-family:Inter,sans-serif;font-size:32px;font-weight:900;color:var(--brand) }
+.kpi-label { font-size:12px;color:var(--text-muted) }
+main { max-width:1200px;margin:0 auto;padding:32px 24px 80px }
+section { margin-bottom:48px }
+section h2 { font-family:var(--serif);font-size:22px;color:var(--bg-deep);font-weight:800;margin-bottom:16px;border-bottom:2px solid var(--aabe-gold);padding-bottom:8px }
+.actor-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px }
+.actor-card { background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand);border-radius:6px;padding:14px 16px;display:flex;flex-direction:column;gap:8px }
+.actor-card .head { display:flex;justify-content:space-between;align-items:flex-start;gap:8px }
+.actor-card .actor-name { font-family:var(--serif);font-size:15px;font-weight:700;color:var(--bg-deep) }
+.actor-card .type-chip { color:#fff;font-size:11px;padding:2px 8px;border-radius:3px;font-family:Inter,sans-serif;font-weight:600 }
+.actor-card .stats { display:flex;gap:14px;font-size:12px;color:var(--text-muted);font-family:Inter,sans-serif }
+.actor-card .stats strong { color:var(--bg-deep);font-weight:700 }
+.actor-card .pi-pills { display:flex;gap:4px;flex-wrap:wrap }
+.actor-card .pill { background:var(--bg-alt);color:var(--bg-deep);font-size:11px;padding:2px 7px;border-radius:3px;font-family:Inter,sans-serif;font-weight:600 }
+.actor-card .pill.more { background:transparent;color:var(--text-muted) }
+.actor-card .pill:hover:not(.more) { background:var(--brand);color:#fff }
+table.matrix { width:100%;background:#fff;border-collapse:collapse;font-size:13.5px }
+table.matrix th, table.matrix td { padding:10px 12px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top }
+table.matrix th { background:var(--bg-alt);font-family:Inter,sans-serif;font-size:12px;letter-spacing:0.05em;text-transform:uppercase;color:var(--text-muted) }
+.stance-chip { display:inline-block;background:var(--bg-alt);color:var(--bg-deep);font-size:11px;padding:2px 7px;border-radius:3px;margin:2px 3px 2px 0;font-family:Inter,sans-serif }
+footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;border-top:1px solid var(--border) }
+@media (max-width:768px) {
+  .actor-grid { grid-template-columns:1fr }
+  table.matrix { font-size:12px }
+  table.matrix th, table.matrix td { padding:6px 8px }
+}
+</style>
+<meta property="og:type" content="article">
+<meta property="og:title" content="立場彙整 · 24 倡議者 × 16 議題 — CRPD 監督平台">
+<meta property="og:image" content="https://naer-tw.github.io/disability-rights-watch/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:-9999px;background:#1A4D3A;color:#fff;padding:8px 16px;border-radius:4px;text-decoration:none;z-index:1000" onfocus="this.style.left='12px';this.style.top='12px'" onblur="this.style.left='-9999px';this.style.top='-9999px'">跳至主要內容</a>
+<div class="banner">
+  <a href="./index.html">← CRPD 監督平台</a>
+  <span style="float:right">立場彙整總覽</span>
+</div>
+<header>
+  <div class="kicker">Position Spectrum · 全光譜倡議立場</div>
+  <h1>立場彙整 · 24 倡議者 × 16 議題</h1>
+  <p>不公審原則 — 全部倡議立場(含對立面)併陳。可從倡議者起手,也可從議題起手,看誰主張什麼、誰被採納、誰未被聽見。</p>
+  <div class="kpi">
+    <div class="kpi-item"><div class="kpi-num">24</div><div class="kpi-label">倡議者</div></div>
+    <div class="kpi-item"><div class="kpi-num">84</div><div class="kpi-label">立場</div></div>
+    <div class="kpi-item"><div class="kpi-num">16</div><div class="kpi-label">議題覆蓋</div></div>
+  </div>
+</header>
+<main id="main">
+  <section>
+    <h2>從倡議者看 · 24 個團體 / 個人</h2>
+    <div class="actor-grid">
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">國家人權委員會（NHRC）</div>
+    <span class="type-chip" style="background:#5A5048">international_body</span>
+  </div>
+  <div class="stats">
+    <span><strong>31</strong> 立場</span>
+    <span>覆蓋 <strong>13</strong> 議題</span>
+    <span>採納率 <strong>100%</strong></span>
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-01-dossier.html">PI-01</a><a class="pill" href="./issues/PI-05-dossier.html">PI-05</a><a class="pill" href="./issues/PI-06-dossier.html">PI-06</a><a class="pill" href="./issues/PI-07-dossier.html">PI-07</a><a class="pill" href="./issues/PI-08-dossier.html">PI-08</a><a class="pill" href="./issues/PI-09-dossier.html">PI-09</a><a class="pill" href="./issues/PI-10-dossier.html">PI-10</a><a class="pill" href="./issues/PI-11-dossier.html">PI-11</a>
+    <span class="pill more">+5</span>
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">人權公約施行監督聯盟（22 團體）</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>8</strong> 立場</span>
+    <span>覆蓋 <strong>8</strong> 議題</span>
+    <span>採納率 <strong>100%</strong></span>
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-01-dossier.html">PI-01</a><a class="pill" href="./issues/PI-02-dossier.html">PI-02</a><a class="pill" href="./issues/PI-05-dossier.html">PI-05</a><a class="pill" href="./issues/PI-07-dossier.html">PI-07</a><a class="pill" href="./issues/PI-09-dossier.html">PI-09</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a><a class="pill" href="./issues/PI-14-dossier.html">PI-14</a><a class="pill" href="./issues/PI-15-dossier.html">PI-15</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">國教行動聯盟（AABE）</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>8</strong> 立場</span>
+    <span>覆蓋 <strong>8</strong> 議題</span>
+    
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-03-dossier.html">PI-03</a><a class="pill" href="./issues/PI-04-dossier.html">PI-04</a><a class="pill" href="./issues/PI-09-dossier.html">PI-09</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a><a class="pill" href="./issues/PI-14-dossier.html">PI-14</a><a class="pill" href="./issues/PI-15-dossier.html">PI-15</a><a class="pill" href="./issues/PI-16-dossier.html">PI-16</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">中華民國智障者家長總會（智總）</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>5</strong> 立場</span>
+    <span>覆蓋 <strong>6</strong> 議題</span>
+    <span>採納率 <strong>0%</strong></span>
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-07-dossier.html">PI-07</a><a class="pill" href="./issues/PI-09-dossier.html">PI-09</a><a class="pill" href="./issues/PI-11-dossier.html">PI-11</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a><a class="pill" href="./issues/PI-15-dossier.html">PI-15</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">中華民國多障家長協會</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>4</strong> 立場</span>
+    <span>覆蓋 <strong>4</strong> 議題</span>
+    <span>採納率 <strong>33%</strong></span>
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-11-dossier.html">PI-11</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a><a class="pill" href="./issues/PI-15-dossier.html">PI-15</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">中華民國身心障礙聯盟（殘聯）</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>4</strong> 立場</span>
+    <span>覆蓋 <strong>5</strong> 議題</span>
+    <span>採納率 <strong>100%</strong></span>
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-07-dossier.html">PI-07</a><a class="pill" href="./issues/PI-09-dossier.html">PI-09</a><a class="pill" href="./issues/PI-11-dossier.html">PI-11</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">中華民國自閉症總會</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>3</strong> 立場</span>
+    <span>覆蓋 <strong>3</strong> 議題</span>
+    <span>採納率 <strong>100%</strong></span>
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-14-dossier.html">PI-14</a><a class="pill" href="./issues/PI-16-dossier.html">PI-16</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">中華民國康復之友聯盟</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>2</strong> 立場</span>
+    <span>覆蓋 <strong>3</strong> 議題</span>
+    
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-11-dossier.html">PI-11</a><a class="pill" href="./issues/PI-15-dossier.html">PI-15</a><a class="pill" href="./issues/PI-16-dossier.html">PI-16</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">中華民國聾人協會</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>2</strong> 立場</span>
+    <span>覆蓋 <strong>3</strong> 議題</span>
+    
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-08-dossier.html">PI-08</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">中華民國腦性麻痺協會</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>2</strong> 立場</span>
+    <span>覆蓋 <strong>2</strong> 議題</span>
+    
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-08-dossier.html">PI-08</a><a class="pill" href="./issues/PI-09-dossier.html">PI-09</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">中華民國視障聯盟</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>2</strong> 立場</span>
+    <span>覆蓋 <strong>2</strong> 議題</span>
+    
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-08-dossier.html">PI-08</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">不足診斷批評派</div>
+    <span class="type-chip" style="background:#3D5C7A">academic</span>
+  </div>
+  <div class="stats">
+    <span><strong>1</strong> 立場</span>
+    <span>覆蓋 <strong>1</strong> 議題</span>
+    
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-16-dossier.html">PI-16</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">中華民國脊髓損傷者聯合會</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>1</strong> 立場</span>
+    <span>覆蓋 <strong>2</strong> 議題</span>
+    
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-08-dossier.html">PI-08</a><a class="pill" href="./issues/PI-11-dossier.html">PI-11</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">人權公約施行監督聯盟</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>1</strong> 立場</span>
+    <span>覆蓋 <strong>2</strong> 議題</span>
+    
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">人權公約施行監督聯盟（22 團體共同提交）</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>1</strong> 立場</span>
+    <span>覆蓋 <strong>2</strong> 議題</span>
+    <span>採納率 <strong>100%</strong></span>
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">台灣唐氏症關愛者協會</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>1</strong> 立場</span>
+    <span>覆蓋 <strong>2</strong> 議題</span>
+    
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">台灣障礙女性平權連線</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>1</strong> 立場</span>
+    <span>覆蓋 <strong>2</strong> 議題</span>
+    
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-09-dossier.html">PI-09</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">國內法學界（混合派）</div>
+    <span class="type-chip" style="background:#3D5C7A">academic</span>
+  </div>
+  <div class="stats">
+    <span><strong>1</strong> 立場</span>
+    <span>覆蓋 <strong>1</strong> 議題</span>
+    <span>採納率 <strong>100%</strong></span>
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-15-dossier.html">PI-15</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">國內特教學界（中間派）</div>
+    <span class="type-chip" style="background:#3D5C7A">academic</span>
+  </div>
+  <div class="stats">
+    <span><strong>1</strong> 立場</span>
+    <span>覆蓋 <strong>2</strong> 議題</span>
+    <span>採納率 <strong>100%</strong></span>
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">社團法人台灣自閉兒社會福利基金會</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>1</strong> 立場</span>
+    <span>覆蓋 <strong>1</strong> 議題</span>
+    
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-16-dossier.html">PI-16</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">神經多樣性派</div>
+    <span class="type-chip" style="background:#3D5C7A">academic</span>
+  </div>
+  <div class="stats">
+    <span><strong>1</strong> 立場</span>
+    <span>覆蓋 <strong>1</strong> 議題</span>
+    <span>採納率 <strong>100%</strong></span>
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-16-dossier.html">PI-16</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">罕見疾病基金會</div>
+    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+  </div>
+  <div class="stats">
+    <span><strong>1</strong> 立場</span>
+    <span>覆蓋 <strong>2</strong> 議題</span>
+    
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-10-dossier.html">PI-10</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">衛生福利部社會及家庭署</div>
+    <span class="type-chip" style="background:#5A5048">government_dept</span>
+  </div>
+  <div class="stats">
+    <span><strong>1</strong> 立場</span>
+    <span>覆蓋 <strong>1</strong> 議題</span>
+    
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-08-dossier.html">PI-08</a>
+    
+  </div>
+</article>
+<article class="actor-card">
+  <div class="head">
+    <div class="actor-name">醫療化批評學派（國際）</div>
+    <span class="type-chip" style="background:#3D5C7A">academic</span>
+  </div>
+  <div class="stats">
+    <span><strong>1</strong> 立場</span>
+    <span>覆蓋 <strong>1</strong> 議題</span>
+    
+  </div>
+  <div class="pi-pills">
+    <a class="pill" href="./issues/PI-16-dossier.html">PI-16</a>
+    
+  </div>
+</article></div>
+  </section>
+
+  <section>
+    <h2>從議題看 · 16 議題立場光譜</h2>
+    <div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
+    <table class="matrix">
+      <thead><tr><th>PI</th><th>議題</th><th>立場數</th><th>倡議者數</th><th>主要立場光譜</th></tr></thead>
+      <tbody>
+<tr>
+  <td><a href="./issues/PI-01-dossier.html"><strong>PI-01</strong></a></td>
+  <td>第一次（2017）+ 第二次（2022）審查總體對照</td>
+  <td style="text-align:center"><strong>2</strong></td>
+  <td style="text-align:center">2</td>
+  <td><span class="stance-chip" title="comprehensive_implementation">comprehe: 1</span><span class="stance-chip" title="nhrc_independent_review">nhrc_ind: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-02-dossier.html"><strong>PI-02</strong></a></td>
+  <td>12 年來重大未兌現 CO 條目盤點</td>
+  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center">1</td>
+  <td><span class="stance-chip" title="track_unfulfilled">track_un: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-03-dossier.html"><strong>PI-03</strong></a></td>
+  <td>第三次審查（2027 預定）籌備與民間影子報告動員</td>
+  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center">1</td>
+  <td><span class="stance-chip" title="third_review_prep">third_re: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-04-dossier.html"><strong>PI-04</strong></a></td>
+  <td>6 國 CRPD 施行法對照 + 雙面 Steelman</td>
+  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center">1</td>
+  <td><span class="stance-chip" title="international_comparison">internat: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-05-dossier.html"><strong>PI-05</strong></a></td>
+  <td>身障權利行動方案 / 政策白皮書追蹤</td>
+  <td style="text-align:center"><strong>3</strong></td>
+  <td style="text-align:center">2</td>
+  <td><span class="stance-chip" title="nhrc_independent_review">nhrc_ind: 2</span><span class="stance-chip" title="comprehensive_strategy">comprehe: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-06-dossier.html"><strong>PI-06</strong></a></td>
+  <td>NHRC 對 CRPD 之監督報告</td>
+  <td style="text-align:center"><strong>15</strong></td>
+  <td style="text-align:center">1</td>
+  <td><span class="stance-chip" title="nhrc_independent_review">nhrc_ind: 14</span><span class="stance-chip" title="independent_monitoring">independ: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-07-dossier.html"><strong>PI-07</strong></a></td>
+  <td>身障預算配置（4 部會）</td>
+  <td style="text-align:center"><strong>4</strong></td>
+  <td style="text-align:center">4</td>
+  <td><span class="stance-chip" title="preserve_residential">preserve: 1</span><span class="stance-chip" title="community_first">communit: 1</span><span class="stance-chip" title="shift_to_community">shift_to: 1</span><span class="stance-chip" title="nhrc_independent_review">nhrc_ind: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-08-dossier.html"><strong>PI-08</strong></a></td>
+  <td>身障人口結構（總人數、障別、年齡）</td>
+  <td style="text-align:center"><strong>8</strong></td>
+  <td style="text-align:center">6</td>
+  <td><span class="stance-chip" title="nhrc_independent_review">nhrc_ind: 3</span><span class="stance-chip" title="sign_language_rights">sign_lan: 1</span><span class="stance-chip" title="wheelchair_accessibility">wheelcha: 1</span><span class="stance-chip" title="physical_accessibility">physical: 1</span><span class="stance-chip" title="comprehensive_a11y">comprehe: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-09-dossier.html"><strong>PI-09</strong></a></td>
+  <td>身障就業率 vs 一般就業率落差</td>
+  <td style="text-align:center"><strong>9</strong></td>
+  <td style="text-align:center">7</td>
+  <td><span class="stance-chip" title="support_employment_first">support_: 2</span><span class="stance-chip" title="nhrc_independent_review">nhrc_ind: 2</span><span class="stance-chip" title="shelter_workshop_preserve">shelter_: 1</span><span class="stance-chip" title="supported_employment">supporte: 1</span><span class="stance-chip" title="phase_out_shelter">phase_ou: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-10-dossier.html"><strong>PI-10</strong></a></td>
+  <td>特殊教育學生人數 / 安置型態</td>
+  <td style="text-align:center"><strong>2</strong></td>
+  <td style="text-align:center">2</td>
+  <td><span class="stance-chip" title="nhrc_independent_review">nhrc_ind: 1</span><span class="stance-chip" title="rare_disease_individualization">rare_dis: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-11-dossier.html"><strong>PI-11</strong></a></td>
+  <td>身障家庭照顧者經濟與心理負荷</td>
+  <td style="text-align:center"><strong>7</strong></td>
+  <td style="text-align:center">6</td>
+  <td><span class="stance-chip" title="nhrc_independent_review">nhrc_ind: 2</span><span class="stance-chip" title="family_support_first">family_s: 1</span><span class="stance-chip" title="community_mental_health">communit: 1</span><span class="stance-chip" title="preserve_residential">preserve: 1</span><span class="stance-chip" title="wheelchair_accessibility">wheelcha: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-12-dossier.html"><strong>PI-12</strong></a></td>
+  <td>CRPD §24 教育權單向解讀爭議</td>
+  <td style="text-align:center"><strong>15</strong></td>
+  <td style="text-align:center">14</td>
+  <td><span class="stance-chip" title="multi_track_preserve">multi_tr: 2</span><span class="stance-chip" title="strong_inclusion">strong_i: 2</span><span class="stance-chip" title="nhrc_independent_review">nhrc_ind: 2</span><span class="stance-chip" title="deaf_school_preserve">deaf_sch: 1</span><span class="stance-chip" title="inclusion_needs_training">inclusio: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-13-dossier.html"><strong>PI-13</strong></a></td>
+  <td>特教學校存續與家長選擇權國際比較</td>
+  <td style="text-align:center"><strong>13</strong></td>
+  <td style="text-align:center">11</td>
+  <td><span class="stance-chip" title="multi_track_preserve">multi_tr: 2</span><span class="stance-chip" title="strong_inclusion">strong_i: 2</span><span class="stance-chip" title="preserve_special_schools">preserve: 1</span><span class="stance-chip" title="deaf_school_preserve">deaf_sch: 1</span><span class="stance-chip" title="support_inclusion">support_: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-14-dossier.html"><strong>PI-14</strong></a></td>
+  <td>身障兒少校園霸凌與融合下支持不足</td>
+  <td style="text-align:center"><strong>7</strong></td>
+  <td style="text-align:center">4</td>
+  <td><span class="stance-chip" title="nhrc_independent_review">nhrc_ind: 3</span><span class="stance-chip" title="support_with_training">support_: 1</span><span class="stance-chip" title="inclusion_needs_training">inclusio: 1</span><span class="stance-chip" title="school_response_critical">school_r: 1</span><span class="stance-chip" title="balanced_safety">balanced: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-15-dossier.html"><strong>PI-15</strong></a></td>
+  <td>CRPD §12 法律能力與家長監護權平衡</td>
+  <td style="text-align:center"><strong>11</strong></td>
+  <td style="text-align:center">7</td>
+  <td><span class="stance-chip" title="nhrc_independent_review">nhrc_ind: 3</span><span class="stance-chip" title="preserve_guardianship">preserve: 2</span><span class="stance-chip" title="preserve_parental_role">preserve: 1</span><span class="stance-chip" title="community_mental_health">communit: 1</span><span class="stance-chip" title="anti_compulsory_treatment">anti_com: 1</span></td>
+</tr>
+<tr>
+  <td><a href="./issues/PI-16-dossier.html"><strong>PI-16</strong></a></td>
+  <td>身障診斷工具化與兒少醫療化爭議</td>
+  <td style="text-align:center"><strong>8</strong></td>
+  <td style="text-align:center">8</td>
+  <td><span class="stance-chip" title="underdiagnosis_critic">underdia: 1</span><span class="stance-chip" title="anti_compulsory_treatment">anti_com: 1</span><span class="stance-chip" title="neurodiversity_with_support">neurodiv: 1</span><span class="stance-chip" title="nhrc_independent_review">nhrc_ind: 1</span><span class="stance-chip" title="balanced_diagnosis">balanced: 1</span></td>
+</tr></tbody>
+    </table>
+    </div>
+  </section>
+</main>
+<footer>
+  CRPD 監督平台 · 國教行動聯盟(AABE) · CC BY 4.0 ·
+  <a href="./about.html">關於</a> ·
+  <a href="./methodology.html">方法論</a> ·
+  <a href="./feedback.html">補充資料</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>關鍵發現 — CRPD 監督平台</title>
+<meta name="description" content="從 16 議題追蹤中萃取的關鍵發現:非預期後果 / 未兌現承諾 / 已採納倡議 / 指標惡化。">
+<meta name="theme-color" content="#1A4D3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#FAFAF7;--bg-alt:#F1EFEA;--bg-deep:#1A4D3A;--text:#2A2421;--text-muted:#5A5048;--brand:#B5371F;--gold:#8B6F50;--success:#2D5F3E;--warning:#A03032;--border:#DDD8CD;--serif:'Noto Serif TC',serif;--sans:'Noto Sans TC',sans-serif }
+* { box-sizing:border-box;margin:0;padding:0 }
+body { font-family:var(--sans);font-size:15px;line-height:1.6;color:var(--text);background:var(--bg) }
+a { color:var(--bg-deep);text-decoration:none }
+a:hover { color:var(--brand) }
+.banner { background:var(--bg-deep);color:#fff;padding:10px 20px;font-size:13px;border-bottom:3px solid var(--brand) }
+.banner a { color:rgba(255,255,255,0.85) }
+header { background:var(--bg-alt);padding:36px 24px;text-align:center;border-bottom:1px solid var(--border) }
+header .kicker { font-family:Inter,sans-serif;font-size:12px;font-weight:700;color:var(--brand);letter-spacing:0.12em;text-transform:uppercase }
+header h1 { font-family:var(--serif);font-size:28px;color:var(--bg-deep);font-weight:900;margin:8px 0 }
+header p { color:var(--text-muted);font-size:14px;max-width:760px;margin:8px auto }
+main { max-width:1100px;margin:0 auto;padding:32px 24px 80px }
+section { margin-bottom:48px }
+section h2 { font-family:var(--serif);font-size:22px;color:var(--bg-deep);font-weight:800;margin-bottom:8px;border-bottom:2px solid var(--gold);padding-bottom:6px }
+section .subtitle { font-size:13px;color:var(--text-muted);margin-bottom:16px;font-style:italic }
+.findings { display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:14px }
+.finding { background:#fff;border:1px solid var(--border);border-radius:6px;padding:16px 18px;display:flex;flex-direction:column;gap:8px }
+.finding-warn { border-left:4px solid var(--warning) }
+.finding-broken { border-left:4px solid var(--brand) }
+.finding-good { border-left:4px solid var(--success) }
+.finding .head { display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:12px }
+.badge { font-family:Inter,sans-serif;font-size:11px;font-weight:700;padding:2px 8px;border-radius:3px;color:#fff;letter-spacing:0.04em }
+.badge.warn { background:var(--warning) }
+.badge.broken { background:var(--brand) }
+.badge.good { background:var(--success) }
+.pi-pill { background:var(--bg-alt);color:var(--bg-deep);font-family:Inter,sans-serif;font-weight:600;padding:2px 7px;border-radius:3px }
+.pi-pill:hover { background:var(--brand);color:#fff }
+.date { color:var(--text-muted);font-family:Inter,sans-serif;font-size:11px }
+.finding h3 { font-family:var(--serif);font-size:15px;color:var(--bg-deep);font-weight:700 }
+.finding p { font-size:13px }
+.finding p.desc { color:var(--text);background:var(--bg-alt);padding:8px 10px;border-radius:4px }
+.finding p.resp { color:var(--warning);font-style:italic }
+.finding p.affected { color:var(--text-muted);font-size:12px }
+.empty { color:var(--text-muted);font-style:italic;padding:16px }
+table.metrics { width:100%;background:#fff;border-collapse:collapse;font-size:13.5px }
+table.metrics th, table.metrics td { padding:10px 12px;border-bottom:1px solid var(--border);text-align:left }
+table.metrics th { background:var(--bg-alt);font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;color:var(--text-muted) }
+footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;border-top:1px solid var(--border) }
+@media (max-width:768px) {
+  .findings { grid-template-columns:1fr }
+  table.metrics { font-size:12px }
+}
+</style>
+<meta property="og:type" content="article">
+<meta property="og:title" content="平台關鍵發現 — CRPD 監督平台">
+<meta property="og:description" content="非預期後果 / 未兌現承諾 / 已採納倡議 / 指標惡化(不公審原則 — 全光譜呈現)">
+<meta property="og:image" content="https://naer-tw.github.io/disability-rights-watch/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:-9999px;background:#1A4D3A;color:#fff;padding:8px 16px;border-radius:4px;text-decoration:none;z-index:1000" onfocus="this.style.left='12px';this.style.top='12px'" onblur="this.style.left='-9999px';this.style.top='-9999px'">跳至主要內容</a>
+<div class="banner"><a href="./index.html">← CRPD 監督平台</a><span style="float:right">關鍵發現</span></div>
+<header>
+  <div class="kicker">Findings · 平台發現</div>
+  <h1>平台關鍵發現</h1>
+  <p>從 16 議題追蹤中萃取 — 不只談「成功」,也誠實面對「非預期後果」與「未兌現承諾」(不公審原則)。</p>
+</header>
+<main id="main">
+  <section>
+    <h2>一、非預期後果 / 混合結果</h2>
+    <p class="subtitle">「即使倡議成功被採納,實際結果未必全然正面」— 不公審原則的核心提醒</p>
+    <div class="findings">
+<article class="finding finding-warn">
+  <div class="head">
+    <span class="badge warn">非預期後果 / 混合結果</span>
+    <a href="./issues/PI-12-dossier.html" class="pi-pill">PI-12</a>
+    <span class="date">2024-12</span>
+  </div>
+  <h3>重度多重障礙學生家長反映：融合班加速推進但專業支持品質參差，部分學生在普通班遭遇社交挫折與支持不足。</h3>
+  <p class="desc"><strong>非預期後果:</strong>融合教育推進速度大於普通班專業支持建置速度，部分重度多重障礙學生家長反映實際支持品質下降。</p>
+  <p class="resp"><strong>責任歸屬說明:</strong>本平台不單一歸罪：(a) 強落實派倡議方向之意圖正當，(b) 政府實施品質配套不足為主因，(c) 普通班師資專業培訓滯後。應強化品質而非廢除融合方向。</p>
+  <p class="affected"><strong>受影響族群:</strong>重度智能障礙、多重障礙、需高度結構化環境之學生</p>
+</article>
+<article class="finding finding-warn">
+  <div class="head">
+    <span class="badge warn">非預期後果 / 混合結果</span>
+    <a href="./issues/PI-09-dossier.html" class="pi-pill">PI-09</a>
+    <span class="date">2024-12</span>
+  </div>
+  <h3>若依 §102(b) 全面淘汰庇護工場，部分重度智能障礙當事人將失去現有穩定就業環境，配套支持就業若不足，可能導致實質剝奪工作機會。</h3>
+  <p class="desc"><strong>非預期後果:</strong>強落實派淘汰建議若無充分支持就業配套，可能導致重度障礙者就業權實質倒退。</p>
+  <p class="resp"><strong>責任歸屬說明:</strong>本平台不質疑強落實派初衷之正當性。但呈現政策實施需配套之事實。智總主張之保留立場有其實質根據。</p>
+  <p class="affected"><strong>受影響族群:</strong>重度智能障礙者、心理社會障礙者中之高支持需求群</p>
+</article>
+<article class="finding finding-warn">
+  <div class="head">
+    <span class="badge warn">非預期後果 / 混合結果</span>
+    <a href="./issues/PI-14-dossier.html" class="pi-pill">PI-14</a>
+    <span class="date">2024-12</span>
+  </div>
+  <h3>校園身障兒少霸凌通報率公開資料不足。家長反映普通班專業支持仍嚴重不足。</h3>
+  <p class="desc"><strong>非預期後果:</strong>融合教育推進速度大於普通班專業支持建置速度，部分身障兒少於普通班遭遇社交困難與專業支持不足。</p>
+  <p class="resp"><strong>責任歸屬說明:</strong>本平台不單一歸罪。強落實派融合主張之意圖正當，但實施配套不足為主因。教師培訓速度滯後。家長申訴機制不暢。</p>
+  <p class="affected"><strong>受影響族群:</strong>融合班身障兒少（特別是自閉症光譜、ADHD、學習障礙）</p>
+</article>
+<article class="finding finding-warn">
+  <div class="head">
+    <span class="badge warn">非預期後果 / 混合結果</span>
+    <a href="./issues/PI-06-dossier.html" class="pi-pill">PI-06</a>
+    <span class="date">2024-12</span>
+  </div>
+  <h3>NHRC 對 CRPD 監督機制建立中，獨立性與深度仍待強化。</h3>
+  
+  <p class="resp"><strong>責任歸屬說明:</strong>NHRC 巴黎原則 B 級評等，獨立性仍須加強。</p>
+  <p class="affected"><strong>受影響族群:</strong>全體身心障礙者</p>
+</article>
+<article class="finding finding-warn">
+  <div class="head">
+    <span class="badge warn">非預期後果 / 混合結果</span>
+    <a href="./issues/PI-09-dossier.html" class="pi-pill">PI-09</a>
+    <span class="date">2024-12</span>
+  </div>
+  <h3>身心障礙者勞動參與率仍維持在 20% 左右，與一般勞動參與率（59%）差距未顯著縮小。</h3>
+  
+  <p class="resp"><strong>責任歸屬說明:</strong>勞動參與率改善遲緩主因：結構性歧視 + 雇主合理調整意願不足 + 定額進用罰繳代替實際進用。本平台不單一歸罪政府，亦提及社會結構變因。</p>
+  <p class="affected"><strong>受影響族群:</strong>全體身心障礙勞動力</p>
+</article>
+<article class="finding finding-warn">
+  <div class="head">
+    <span class="badge warn">非預期後果 / 混合結果</span>
+    <a href="./issues/PI-15-dossier.html" class="pi-pill">PI-15</a>
+    <span class="date">2024-12</span>
+  </div>
+  <h3>支持式決策試辦規模仍小（試辦個案數 &lt; 100），未達制度化規模。監護宣告改革進度遲緩。</h3>
+  
+  <p class="resp"><strong>責任歸屬說明:</strong>改革遲緩主因：制度配套需求高（法律 + 人力 + 預算）。本平台支持加速制度化，同時關切過渡期之保護真空風險。</p>
+  <p class="affected"><strong>受影響族群:</strong>心智障礙者、失智長者</p>
+</article>
+<article class="finding finding-warn">
+  <div class="head">
+    <span class="badge warn">非預期後果 / 混合結果</span>
+    <a href="./issues/PI-01-dossier.html" class="pi-pill">PI-01</a>
+    <span class="date">2024-12</span>
+  </div>
+  <h3>CRPD 整體實施進度緩慢，部分條文（§9 §12 §19）改革遲緩。</h3>
+  
+  <p class="resp"><strong>責任歸屬說明:</strong>改革遲緩主因：制度配套需時 + 跨部會協調困難 + 預算限制。本平台支持加速改革。</p>
+  <p class="affected"><strong>受影響族群:</strong>全體身心障礙者</p>
+</article>
+<article class="finding finding-warn">
+  <div class="head">
+    <span class="badge warn">非預期後果 / 混合結果</span>
+    <a href="./issues/PI-02-dossier.html" class="pi-pill">PI-02</a>
+    <span class="date">2024-12</span>
+  </div>
+  <h3>至 2024 年盤點 2017 CO 兌現率約 30-40%，多數重大改革條目仍 pending 或 abandoned。</h3>
+  
+  <p class="resp"><strong>責任歸屬說明:</strong>兌現遲緩主因：制度改革需法律修訂 + 預算編列 + 跨部會協調。</p>
+  <p class="affected"><strong>受影響族群:</strong>全體身心障礙者</p>
+</article>
+<article class="finding finding-warn">
+  <div class="head">
+    <span class="badge warn">非預期後果 / 混合結果</span>
+    <a href="./issues/PI-07-dossier.html" class="pi-pill">PI-07</a>
+    <span class="date">2024-12</span>
+  </div>
+  <h3>身障預算配置仍以機構式照顧為主，社區式支持服務經費比例提升緩慢。</h3>
+  
+  <p class="resp"><strong>責任歸屬說明:</strong>去機構化單向推動需配套家庭照顧支持，本平台關注家屬負荷。</p>
+  <p class="affected"><strong>受影響族群:</strong>重度身障者及其家庭</p>
+</article>
+<article class="finding finding-warn">
+  <div class="head">
+    <span class="badge warn">非預期後果 / 混合結果</span>
+    <a href="./issues/PI-11-dossier.html" class="pi-pill">PI-11</a>
+    <span class="date">2024-12</span>
+  </div>
+  <h3>家庭照顧者經濟負荷與心理壓力指數仍高。個人助理員制度覆蓋率 &lt; 5%。</h3>
+  
+  <p class="resp"><strong>責任歸屬說明:</strong>去機構化政策推進與家庭支持服務建置有時間落差。</p>
+  <p class="affected"><strong>受影響族群:</strong>身障家庭照顧者</p>
+</article></div>
+  </section>
+  <section>
+    <h2>二、未兌現 / 逾期承諾</h2>
+    <p class="subtitle">政府公開承諾但未在期限內達成的項目</p>
+    <div class="findings"><p class="empty">尚無未兌現承諾案例</p></div>
+  </section>
+  <section>
+    <h2>三、已被國際委員會採納的倡議(成功案例)</h2>
+    <p class="subtitle">CO 段落中明確採納民間訴求的案例</p>
+    <div class="findings">
+<article class="finding finding-good">
+  <div class="head">
+    <span class="badge good">已採納</span>
+    <a href="./issues/PI-12-dossier.html" class="pi-pill">PI-12</a>
+    <span class="date">採納次數 2</span>
+  </div>
+  <h3>人權公約施行監督聯盟（22 團體共同提交）</h3>
+  <p class="desc">（2022 議題清單回覆）人約盟協調 22 個身障與人權團體共同提交，主張：政府融合教育推進緩慢、特教仍以隔離為主、應全面落實 GC4。</p>
+</article>
+<article class="finding finding-good">
+  <div class="head">
+    <span class="badge good">已採納</span>
+    <a href="./issues/PI-15-dossier.html" class="pi-pill">PI-15</a>
+    <span class="date">採納次數 1</span>
+  </div>
+  <h3>國內法學界（混合派）</h3>
+  <p class="desc">（學界混合派）參考愛爾蘭 Assisted Decision-Making (Capacity) Act 2015、英國 Mental Capacity Act 2005 + DOLS：預設支持式決策，例外保留替代決策（嚴格程序、限制適用、定期審查）。</p>
+</article>
+<article class="finding finding-good">
+  <div class="head">
+    <span class="badge good">已採納</span>
+    <a href="./issues/PI-12-dossier.html" class="pi-pill">PI-12</a>
+    <span class="date">採納次數 1</span>
+  </div>
+  <h3>國內特教學界（中間派）</h3>
+  <p class="desc">（學界中間派立場）主張：融合為主流方向，但須先確保普通班品質充足。過渡期間保留多元安置選項。重點在 IEP 落實與通用學習設計，而非學校類別。</p>
+</article>
+<article class="finding finding-good">
+  <div class="head">
+    <span class="badge good">已採納</span>
+    <a href="./issues/PI-14-dossier.html" class="pi-pill">PI-14</a>
+    <span class="date">採納次數 1</span>
+  </div>
+  <h3>中華民國自閉症總會</h3>
+  <p class="desc">（公開立場）自閉症總會主張：融合教育是方向，但學校教師對自閉症兒少之了解與專業支持嚴重不足。應大幅強化教師專業培訓與校內結構化支持。</p>
+</article>
+<article class="finding finding-good">
+  <div class="head">
+    <span class="badge good">已採納</span>
+    <a href="./issues/PI-07-dossier.html" class="pi-pill">PI-07</a>
+    <span class="date">採納次數 1</span>
+  </div>
+  <h3>人權公約施行監督聯盟（22 團體）</h3>
+  <p class="desc">（2022）22 團體主張：身障預算應從機構式照顧轉向社區式支持服務。</p>
+</article>
+<article class="finding finding-good">
+  <div class="head">
+    <span class="badge good">已採納</span>
+    <a href="./issues/PI-14-dossier.html" class="pi-pill">PI-14</a>
+    <span class="date">採納次數 1</span>
+  </div>
+  <h3>人權公約施行監督聯盟（22 團體）</h3>
+  <p class="desc">（2022）22 團體關切：學校對身心障礙兒童常採取訓斥、強制離班、聯繫警消等措施，違反 §16（免於暴力）與 §7（兒童最佳利益）。應建立反歧視與合理調整制度。</p>
+</article></div>
+  </section>
+  
+</main>
+<footer>
+  CRPD 監督平台 · 國教行動聯盟(AABE) · CC BY 4.0 ·
+  <a href="./about.html">關於</a> ·
+  <a href="./methodology.html">方法論</a> ·
+  <a href="./feedback.html">補充資料</a>
+</footer>
+</body></html>

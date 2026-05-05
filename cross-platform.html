@@ -84,9 +84,22 @@ main { max-width: 1200px; margin: 0 auto; padding: 24px; }
 footer { background: #0E2238; color: #fff; padding: 24px; text-align: center;
          font-size: 12.5px; margin-top: 48px; }
 footer a { color: #fff; opacity: 0.85; }
+
+@media (max-width: 768px) {
+  body { font-size: 15px !important; }
+  main, article, section, .container { padding-left: 16px !important; padding-right: 16px !important; }
+  table { font-size: 13px; }
+  [class*="grid"] { grid-template-columns: 1fr !important; }
+  .row, [class*="flex"] { flex-wrap: wrap !important; }
+  pre, code { white-space: pre-wrap !important; word-break: break-word; }
+}
 </style>
+<meta property="og:image" content="https://naer-tw.github.io/disability-rights-watch/og.svg">
+<meta name="twitter:image" content="https://naer-tw.github.io/disability-rights-watch/og.svg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
+<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:-9999px;background:#1A4D3A;color:#fff;padding:8px 16px;border-radius:4px;text-decoration:none;z-index:1000" onfocus="this.style.left='12px';this.style.top='12px'" onblur="this.style.left='-9999px';this.style.top='-9999px'">跳至主要內容</a>
 <header>
   <h1>三公約監督平台統合儀表板</h1>
   <p>台灣 <strong>CEDAW</strong>(婦女)/ <strong>CRC</strong>(兒少)/ <strong>CRPD</strong>(身障)三公約 共構政府文件全文檢索系統<br>
@@ -124,7 +137,7 @@ footer a { color: #fff; opacity: 0.85; }
             <p class="years">2007 加入 / 4 次審查 / 第 5 次籌備中(2026)</p>
             <a class="public-link" href="https://cedaw.taiwanmommies.org/" target="_blank" rel="noopener">→ CEDAW 公開站</a>
           </div>
-          <table>
+          <div class="table-wrap" style="overflow-x:auto;-webkit-overflow-scrolling:touch"><table>
             <tr><th>指標</th><th>數量</th></tr>
             <tr><td>文件 documents</td><td><b>394</b></td></tr>
             <tr><td>passage 段落</td><td>29,638</td></tr>
@@ -134,7 +147,7 @@ footer a { color: #fff; opacity: 0.85; }
             <tr><td>結論性意見 CO</td><td>212</td></tr>
             <tr><td>倡議事件</td><td>85</td></tr>
             <tr><td>倡議者 stakeholder</td><td>63</td></tr>
-          </table>
+          </table></div>
           <p class="peak">📊 詞頻峰值:2008 年 「婦女 / 女性」每萬字 <b>178.99</b></p>
         </div>
         <div class="platform-card" style="border-color:#B5371F">
@@ -148,7 +161,7 @@ footer a { color: #fff; opacity: 0.85; }
             <p class="years">2014 加入 / 2 次審查 / 第 3 次審查中</p>
             <a class="public-link" href="https://child-rights-watch.taiwanmommies.org/" target="_blank" rel="noopener">→ 兒少權 公開站</a>
           </div>
-          <table>
+          <div class="table-wrap" style="overflow-x:auto;-webkit-overflow-scrolling:touch"><table>
             <tr><th>指標</th><th>數量</th></tr>
             <tr><td>文件 documents</td><td><b>485</b></td></tr>
             <tr><td>passage 段落</td><td>69,597</td></tr>
@@ -158,7 +171,7 @@ footer a { color: #fff; opacity: 0.85; }
             <tr><td>結論性意見 CO</td><td>170</td></tr>
             <tr><td>倡議事件</td><td>33</td></tr>
             <tr><td>倡議者 stakeholder</td><td>56</td></tr>
-          </table>
+          </table></div>
           <p class="peak">📊 詞頻峰值:2025 年 「兒少權核心」每萬字 <b>2.25</b></p>
         </div>
         <div class="platform-card" style="border-color:#2D7059">
@@ -172,7 +185,7 @@ footer a { color: #fff; opacity: 0.85; }
             <p class="years">2014 加入 / 2 次審查 / 第 3 次籌備中</p>
             <a class="public-link" href="https://disability-rights-watch.taiwanmommies.org/" target="_blank" rel="noopener">→ 身權 公開站</a>
           </div>
-          <table>
+          <div class="table-wrap" style="overflow-x:auto;-webkit-overflow-scrolling:touch"><table>
             <tr><th>指標</th><th>數量</th></tr>
             <tr><td>文件 documents</td><td><b>1,344</b></td></tr>
             <tr><td>passage 段落</td><td>3,493</td></tr>
@@ -182,7 +195,7 @@ footer a { color: #fff; opacity: 0.85; }
             <tr><td>結論性意見 CO</td><td>0</td></tr>
             <tr><td>倡議事件</td><td>0</td></tr>
             <tr><td>倡議者 stakeholder</td><td>0</td></tr>
-          </table>
+          </table></div>
           <p class="peak">📊 詞頻峰值:2007 年 「CRPD 核心」每萬字 <b>126.58</b></p>
         </div>
   </div>

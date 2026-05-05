@@ -37,9 +37,22 @@ main { max-width: 1100px; margin: 0 auto 64px; padding: 0 24px; }
 .scale-grid .stat .l { font-size: 11.5px; color: #5C5C5C; margin-top: 6px; letter-spacing: 0.04em; }
 footer { background: #0E2238; color: #fff; padding: 22px; text-align: center; font-size: 12.5px; margin-top: 48px; }
 footer a { color: #fff; opacity: 0.85; }
+
+@media (max-width: 768px) {
+  body { font-size: 15px !important; }
+  main, article, section, .container { padding-left: 16px !important; padding-right: 16px !important; }
+  table { font-size: 13px; }
+  [class*="grid"] { grid-template-columns: 1fr !important; }
+  .row, [class*="flex"] { flex-wrap: wrap !important; }
+  pre, code { white-space: pre-wrap !important; word-break: break-word; }
+}
 </style>
+<meta property="og:image" content="https://naer-tw.github.io/disability-rights-watch/og.svg">
+<meta name="twitter:image" content="https://naer-tw.github.io/disability-rights-watch/og.svg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
+<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:-9999px;background:#1A4D3A;color:#fff;padding:8px 16px;border-radius:4px;text-decoration:none;z-index:1000" onfocus="this.style.left='12px';this.style.top='12px'" onblur="this.style.left='-9999px';this.style.top='-9999px'">跳至主要內容</a>
 <header>
 <h1>🧭 Tri-Covenant Watch — User Tour</h1>
 <p>Pick your role to get a 30-second guided tour of Taiwan's CEDAW × CRC × CRPD civic monitoring platform</p>
@@ -115,7 +128,7 @@ Unique value: <em>cross-covenant comparison</em> — surfacing intersectional ga
     <ul>
       <li><a href="api/cross_platform_search.json">📦 API: cross-platform search index (JSON)</a><span class="why">1,658 entries — direct download</span></li>
       <li><a href="https://github.com/naer-tw/evidence-pipeline">🔬 evidence_pipeline.py open-source</a><span class="why">Run yourself, adapt to your covenant</span></li>
-      <li><a href="api/sogiesc_frequency.json">📊 Frequency time-series (JSON)</a><span class="why">2007-2026 government document keyword frequency</span></li>
+      <li><a href="api/crpd_frequency.json">📊 Frequency time-series (JSON)</a><span class="why">2007-2026 government document keyword frequency</span></li>
       <li><a href="crpd-coverage-diagnosis.html">🔬 CRPD coverage diagnosis</a><span class="why">18 issues × 5-tier methodology</span></li>
     </ul>
   </div>
