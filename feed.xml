@@ -1,381 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>CRPD 監督平台 — 國教行動聯盟</title>
-    <link>https://naer-tw.github.io/disability-rights-watch/</link>
-    <atom:link href="https://naer-tw.github.io/disability-rights-watch/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>身心障礙者權利公約在台施行 12 年(2014-2026)監督平台:議題追蹤 / 衛福部公告 / 倡議者責任 / 不公審原則</description>
-    <language>zh-tw</language>
-    <copyright>CC BY 4.0 · 國教行動聯盟 AABE</copyright>
-    <lastBuildDate>Tue, 05 May 2026 12:29:59 +0800</lastBuildDate>
-    <generator>CRPD 監督平台 build_rss.py</generator>
+    <title>Tri-Covenant Watch (Taiwan) · 三公約共構平台</title>
+    <link>https://cedaw.taiwanmommies.org/</link>
+    <atom:link href="https://cedaw.taiwanmommies.org/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Cross-covenant civil-society monitoring of Taiwan government discourse on CEDAW, CRC, and CRPD. Updates include monthly snapshots, structural findings, case studies, and methodology releases. CC BY 4.0.</description>
+    <language>zh-TW</language>
+    <copyright>CC BY 4.0</copyright>
+    <managingEditor>weall888@gmail.com (Tri-Covenant Editorial)</managingEditor>
+    <lastBuildDate>Tue, 05 May 2026 16:34:14 +0000</lastBuildDate>
+    <generator>build_rss_feed.py · Wave 144</generator>
+    <docs>https://cyber.harvard.edu/rss/rss.html</docs>
     <item>
-      <title>[衛福部公告] 身心障礙者權利公約（CRPD）法規概要</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-F/F-121.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-F/F-121.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
+      <title>第一篇對外案例文「當『合理調整』在 3,493 段政府文件中只出現 7 次」 / &quot;Reasonable Accommodation&quot; Appears 7 Times in 3,493 CRPD Documents</title>
+      <link>https://cedaw.taiwanmommies.org/blog/2026-05-06-government-silence.html</link>
+      <guid isPermaLink="true">https://cedaw.taiwanmommies.org/blog/2026-05-06-government-silence.html</guid>
+      <pubDate>Wed, 06 May 2026 12:00:00 +0000</pubDate>
+      <category>case_study</category>
+      <description>Tri-Covenant Watch 首份對外案例文發布。三個 NGO 三年來爬下 102,728 段政府文件,交叉比對發現 6 個結構性盲點:身障女性 0 段、家暴 1 段、合理調整 7 段。中英文同步,適合媒體轉載與 UN 委員會引用。
+
+[EN] First Tri-Covenant Watch case study. After 3 years of cross-referencing 102,728 government-document segments, 6 structural blind spots emerged: disabled women 0, DV in CRPD 1, reasonable accommodation paradox 7 vs 173 vs 100.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/blog/2026-05-06-government-silence.html
+English: https://cedaw.taiwanmommies.org/blog/2026-05-06-government-silence-en.html</description>
     </item>
     <item>
-      <title>[衛福部公告] 身心障礙者權利公約（CRPD）宣導資源包</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-G/G-2018.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-G/G-2018.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
+      <title>Wave 140 對外複製指南 DEVELOPER_GUIDE.md / Developer / Replication Guide (Wave 140)</title>
+      <link>https://cedaw.taiwanmommies.org/tri-covenant-about.html</link>
+      <guid isPermaLink="true">https://cedaw.taiwanmommies.org/tri-covenant-about.html</guid>
+      <pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
+      <category>documentation</category>
+      <description>235 行 step-by-step 對外複製指南。其他 NGO 可用此架構複製到任何 UN 公約監督。涵蓋 schema 設計、bootstrap 流程、replication checklist。
+
+[EN] 235-line replication guide for other NGOs. Architecture, schema, 7-step bootstrap, replication checklist.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/tri-covenant-about.html
+English: https://cedaw.taiwanmommies.org/tri-covenant-about-en.html</description>
     </item>
     <item>
-      <title>[衛福部公告] 身心障礙者權利公約（CRPD）一般性原則教育訓練</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-F/F-881.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-F/F-881.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
+      <title>Wave 139 對外 about / methodology 頁 / Tri-Covenant About / Methodology page (Wave 139)</title>
+      <link>https://cedaw.taiwanmommies.org/tri-covenant-about.html</link>
+      <guid isPermaLink="true">https://cedaw.taiwanmommies.org/tri-covenant-about.html</guid>
+      <pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
+      <category>documentation</category>
+      <description>完整對外文件:三平台主辦 NGO 介紹、4 階段方法論、PI 5 維評分公式、開放資料政策、引用建議格式、CC BY 4.0。
+
+[EN] Full outward-facing about page: NGO hosting, 4-step methodology, PI 5-dim scoring, open data policy, citation, CC BY 4.0.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/tri-covenant-about.html
+English: https://cedaw.taiwanmommies.org/tri-covenant-about-en.html</description>
     </item>
     <item>
-      <title>[衛福部公告] 身心障礙者權利公約法規及行政措施優先檢視清單暨第二階段法規檢視修法進度</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-E/E-1910.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-E/E-1910.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
+      <title>Wave 133 「6 結構性發現」視覺化儀表板 / 6 Structural Findings Visualization Dashboard (Wave 133)</title>
+      <link>https://cedaw.taiwanmommies.org/structural-findings.html</link>
+      <guid isPermaLink="true">https://cedaw.taiwanmommies.org/structural-findings.html</guid>
+      <pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
+      <category>analysis</category>
+      <description>一頁總覽 6 個跨公約結構性發現,每張卡含 3 平台 bar chart、嚴重度分級、對應 PI chip、國際 GR/CO 引用。列印友善。
+
+[EN] One-page dashboard of 6 cross-covenant structural findings. Each card has 3-platform bar chart, severity grade, mapped PI chips, GR/CO citations. Print-friendly.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/structural-findings.html
+English: https://cedaw.taiwanmommies.org/structural-findings-en.html</description>
     </item>
     <item>
-      <title>[衛福部公告] 身心障礙者權利公約施行法</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-C/C-62.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-C/C-62.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
+      <title>Wave 127 結構性盲點 PI 加入(PI-17/18/19) / Structural-blind-spot PIs added (PI-17/18/19) — Wave 127</title>
+      <link>https://cedaw.taiwanmommies.org/issues/PI-17.html</link>
+      <guid isPermaLink="true">https://cedaw.taiwanmommies.org/issues/PI-17.html</guid>
+      <pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
+      <category>analysis</category>
+      <description>CRPD 平台補三個跨公約交織盲點 PI:身障女性受暴(PI-17)、身障 LGBTQI+(PI-18)、身障原住民(PI-19)。三者皆 0 政府文件命中,但這正是「結構性失語」的量化證據。
+
+[EN] Three intersectional blind-spot PIs added to CRPD: disabled women DV (PI-17), disabled LGBTQI+ (PI-18), disabled indigenous (PI-19). All score 0 segments — this is itself the quantified evidence of structural silence.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/issues/PI-17.html
+English: https://cedaw.taiwanmommies.org/issues/PI-17-en.html</description>
     </item>
     <item>
-      <title>[衛福部公告] 身心障礙者權利公約教育訓練及宣導計畫（115年1月至118年12月）</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-C/C-2069.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-C/C-2069.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
+      <title>Wave 124 執行摘要 1 頁紙(中英雙語) / Executive Summary 1-pager (Wave 124, bilingual)</title>
+      <link>https://cedaw.taiwanmommies.org/executive-summary.html</link>
+      <guid isPermaLink="true">https://cedaw.taiwanmommies.org/executive-summary.html</guid>
+      <pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
+      <category>documentation</category>
+      <description>適合給立委 / 媒體 / UN 審查者快速簡報。三平台覆蓋 + 6 結構性發現 + 32 PI 分布 + 4 項 UN 訴求,A4 一頁列印。
+
+[EN] Concise brief for legislators / media / UN reviewers. 3-platform coverage + 6 structural findings + PI distribution + 4 UN asks, A4 single-page printable.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/executive-summary.html
+English: https://cedaw.taiwanmommies.org/executive-summary-en.html</description>
     </item>
     <item>
-      <title>[衛福部公告] 身心障礙者權利公約【臺灣手語版】</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-C/C-1451.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-C/C-1451.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
+      <title>Wave 125 月度快照基建 + 趨勢頁 / Monthly snapshot infrastructure + trend page (Wave 125)</title>
+      <link>https://cedaw.taiwanmommies.org/monthly-trend.html</link>
+      <guid isPermaLink="true">https://cedaw.taiwanmommies.org/monthly-trend.html</guid>
+      <pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
+      <category>infrastructure</category>
+      <description>建立 monthly_snapshots.json append-only 一月一筆架構,每月初自動更新。對外展示「平台是活的」。baseline 2026-05:102,728 段。
+
+[EN] Append-only monthly snapshot infrastructure, auto-refreshing on the 1st. Demonstrates the platform is alive. Baseline 2026-05: 102,728 segments.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/monthly-trend.html
+English: https://cedaw.taiwanmommies.org/monthly-trend-en.html</description>
     </item>
     <item>
-      <title>[衛福部公告] 身心障礙者權利公約【易讀版】Easy-Read Version of the CRPD -Traditional Chinese</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-C/C-1241.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-C/C-1241.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 身心障礙者權利公約【中譯本修正草案】</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-C/C-1424.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-C/C-1424.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 身心障礙者權利公約</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-C/C-56.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-C/C-56.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 行政院身心障礙者權益推動小組設置要點</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-H/H-46.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-H/H-46.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 行政院身心障礙者權益推動小組處理涉及違反身心障礙者權利公約申訴案件作業原則</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-H/H-1381.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-H/H-1381.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 落實身心障礙者權利公約推動計畫</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-C/C-286.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-C/C-286.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 臺灣易讀參考指南-讓資訊易讀易懂</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-K/K-1539.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-K/K-1539.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 種子師資培訓課程─身心障礙者權利公約（CRPD）簡介及條約介紹</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-F/F-288.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-F/F-288.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 種子師資培訓課程─認識身心障礙與歧視</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-F/F-287.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-F/F-287.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 由衛生福利部召開「各機關主管活動場所無障礙/可及性第二次專案會議」</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1896.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1896.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 由內政部、衛生福利部、交通部、經濟部召開「無障礙/可及性專案會議」，共4場次</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1839.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1839.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 國立故宮博物院易讀標誌</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-K/K-1607.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-K/K-1607.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 各單位陳情資訊</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-H/H-941.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-H/H-941.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 召開身心障礙者權利公約法規及行政措施檢視清單修正進度檢討會議(第2次)</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1531.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1531.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 召開身心障礙者權利公約法規及行政措施檢視清單修正進度檢討會議(第1次)</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1491.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1491.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 召開「身心障礙者權利公約（CRPD）第二次國家報告第二輪（國內審查第二輪）審查會議」，共3場次</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1409.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1409.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 召開「身心障礙者權利公約（CRPD）第二次國家報告第二輪（國內審查第一輪）審查會議」，共11場次</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1408.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1408.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 召開「身心障礙者權利公約（CRPD）第二次國家報告發布記者會」</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1463.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1463.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查結論性意見行動回應表第二階段審查會議」，共6場次</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1799.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1799.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查會議結論性意見行動回應表徵詢意見會議」共14場次</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1783.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1783.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查會議結論性意見發布記者會」</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1700.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1700.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 召開「身心障礙者權利公約（CRPD）第二次國家報告國際審查會議」</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1699.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1699.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[衛福部公告] 召開「身心障礙者權利公約（CRPD）第二次國家報告 第一輪審查會議」，共7場次</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1407.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/sfaa/c-B/B-1407.html</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0800</pubDate>
-      <category>衛福部公告</category>
-      <description>衛福部 CRPD 官網最新公告(平台鏡像)</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-01 第一次（2017）+ 第二次（2022）審查總體對照</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-01-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-01-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-01 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-02 12 年來重大未兌現 CO 條目盤點</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-02-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-02-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-02 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-03 第三次審查（2027 預定）籌備與民間影子報告動員</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-03-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-03-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-03 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-04 6 國 CRPD 施行法對照 + 雙面 Steelman</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-04-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-04-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-04 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-05 身障權利行動方案 / 政策白皮書追蹤</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-05-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-05-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-05 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-06 NHRC 對 CRPD 之監督報告</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-06-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-06-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-06 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-07 身障預算配置（4 部會）</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-07-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-07-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-07 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-08 身障人口結構（總人數、障別、年齡）</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-08-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-08-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-08 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-09 身障就業率 vs 一般就業率落差</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-09-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-09-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-09 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-10 特殊教育學生人數 / 安置型態</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-10-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-10-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-10 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-11 身障家庭照顧者經濟與心理負荷</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-11-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-11-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-11 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-12 CRPD §24 教育權單向解讀爭議</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-12-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-12-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-12 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-13 特教學校存續與家長選擇權國際比較</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-13-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-13-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-13 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-14 身障兒少校園霸凌與融合下支持不足</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-14-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-14-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-14 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-15 CRPD §12 法律能力與家長監護權平衡</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-15-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-15-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-15 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
-    </item>
-    <item>
-      <title>[議題追蹤] PI-16 身障診斷工具化與兒少醫療化爭議</title>
-      <link>https://naer-tw.github.io/disability-rights-watch/issues/PI-16-dossier.html</link>
-      <guid isPermaLink="true">https://naer-tw.github.io/disability-rights-watch/issues/PI-16-dossier.html</guid>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0800</pubDate>
-      <category>PI 議題</category>
-      <description>PI-16 因果鏈追蹤:倡議 → 採納 → 承諾 → 實施 → 結果</description>
+      <title>Wave 116-122 UN reviewer 雙語包(10 EN 頁齊備) / UN reviewer EN pack complete (10 EN pages, Wave 116-122)</title>
+      <link>https://cedaw.taiwanmommies.org/cross-platform-en.html</link>
+      <guid isPermaLink="true">https://cedaw.taiwanmommies.org/cross-platform-en.html</guid>
+      <pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
+      <category>milestone</category>
+      <description>Tri-Covenant Dashboard、Tour、Executive Summary、PI Scorecard、Intersectional、Coverage Diagnosis、Keywords、Frequency、Search、D-grade Research TODO 全部英文版。
+
+[EN] Tri-Covenant Dashboard, Tour, Executive Summary, PI Scorecard, Intersectional, Coverage Diagnosis, Keywords, Frequency, Search, D-grade Research TODO — all in English.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/cross-platform-en.html
+English: https://cedaw.taiwanmommies.org/cross-platform-en.html</description>
     </item>
   </channel>
 </rss>
