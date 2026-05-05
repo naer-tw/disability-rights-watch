@@ -4,6 +4,24 @@
 
   <!-- Cross-platform analysis pages (Wave 100-123) — bilingual ZH/EN -->
 
+  <!-- Executive summary 1-pager -->
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/executive-summary.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/executive-summary.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/executive-summary-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/executive-summary-en.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/executive-summary.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/executive-summary-en.html"/>
+  </url>
+
   <!-- Tour (entry point) -->
   <url>
     <loc>https://naer-tw.github.io/disability-rights-watch/cross-platform-tour.html</loc>
