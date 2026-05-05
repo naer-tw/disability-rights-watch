@@ -4,6 +4,24 @@
 
   <!-- Cross-platform analysis pages (Wave 100-123) — bilingual ZH/EN -->
 
+  <!-- 6 Structural Findings visualization (Wave 133) -->
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/structural-findings.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/structural-findings.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/structural-findings-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/structural-findings-en.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/structural-findings.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/structural-findings-en.html"/>
+  </url>
+
   <!-- Intersectional structural-blind-spot PI detail pages (Wave 130-131) -->
   <url>
     <loc>https://naer-tw.github.io/disability-rights-watch/issues/PI-17.html</loc>
