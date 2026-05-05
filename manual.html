@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>使用手冊 — CRPD 監督平台</title>
+<meta name="description" content="40+ 模塊功能 + 7 種使用情境 — 第一次來 / 記者 / 立委 / NGO / 研究者都能找到入口。">
+<meta name="theme-color" content="#1A4D3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#FAFAF7;--bg-alt:#F1EFEA;--bg-deep:#1A4D3A;--text:#2A2421;--text-muted:#5A5048;
+  --brand:#B5371F;--gold:#8B6F50;--border:#DDD8CD;--code-bg:#F5F2E8;
+  --serif:'Noto Serif TC',Georgia,serif;--sans:'Noto Sans TC',-apple-system,sans-serif;
+}
+* { box-sizing:border-box;margin:0;padding:0 }
+body { font-family:var(--sans);font-size:15.5px;line-height:1.75;color:var(--text);background:var(--bg) }
+a { color:var(--bg-deep);text-decoration:none;border-bottom:1px dotted var(--gold) }
+a:hover { color:var(--brand);border-bottom-color:var(--brand) }
+code { background:var(--code-bg);font-family:'SF Mono',Menlo,monospace;font-size:13px;padding:1px 6px;border-radius:3px;color:var(--brand) }
+pre { background:var(--bg-alt);border-radius:6px;padding:14px 16px;overflow-x:auto;margin:14px 0 }
+pre code { background:transparent;color:var(--text);font-size:13px;padding:0 }
+.banner { background:var(--bg-deep);color:#fff;padding:10px 20px;font-size:13px;border-bottom:3px solid var(--brand) }
+.banner a { color:rgba(255,255,255,0.9);border-bottom:none }
+.banner a:hover { color:#fff }
+header.page { background:var(--bg-alt);padding:36px 24px;text-align:center;border-bottom:1px solid var(--border) }
+header.page .kicker { font-family:Inter,sans-serif;font-size:12px;font-weight:700;color:var(--brand);letter-spacing:0.12em;text-transform:uppercase }
+header.page h1 { font-family:var(--serif);font-size:32px;color:var(--bg-deep);font-weight:900;margin:8px 0 }
+header.page p { color:var(--text-muted);font-size:14px;max-width:760px;margin:8px auto }
+.layout { max-width:1240px;margin:0 auto;padding:32px 24px 80px;display:grid;grid-template-columns:240px 1fr;gap:36px }
+.toc-side { position:sticky;top:24px;align-self:start;font-size:13px;max-height:calc(100vh - 48px);overflow-y:auto;padding-right:12px }
+.toc-side h4 { font-family:var(--serif);font-size:14px;color:var(--brand);margin-bottom:8px;border-bottom:2px solid var(--gold);padding-bottom:4px }
+.toc-side ul { list-style:none;padding:0 }
+.toc-side li { padding:3px 0 }
+.toc-side a { color:var(--bg-deep);font-size:12.5px;border-bottom:none }
+.toc-side a:hover { color:var(--brand) }
+.toc-side .toc-l3 { padding-left:14px;font-size:12px;color:var(--text-muted) }
+article.manual { font-size:15.5px }
+article.manual h1 { font-family:var(--serif);font-size:30px;color:var(--bg-deep);margin:32px 0 14px;font-weight:900;border-bottom:3px double var(--gold);padding-bottom:8px }
+article.manual h2 { font-family:var(--serif);font-size:23px;color:var(--bg-deep);margin:32px 0 12px;font-weight:800;border-bottom:2px solid var(--brand);padding-bottom:6px }
+article.manual h3 { font-family:var(--serif);font-size:18px;color:var(--bg-deep);margin:24px 0 8px;font-weight:700 }
+article.manual h4 { font-family:var(--serif);font-size:16px;color:var(--brand);margin:16px 0 6px;font-weight:700 }
+article.manual p { margin:8px 0 }
+article.manual ul, article.manual ol { margin:8px 0 8px 24px }
+article.manual li { margin:4px 0 }
+article.manual hr { border:0;border-top:1px solid var(--border);margin:32px 0 }
+article.manual blockquote { background:var(--bg-alt);padding:14px 18px;border-left:4px solid var(--brand);margin:16px 0;border-radius:0 4px 4px 0 }
+article.manual blockquote p { margin:4px 0;font-size:14px;color:var(--text-muted) }
+article.manual table { width:100%;border-collapse:collapse;margin:14px 0;background:#fff;font-size:14px }
+article.manual table th { background:var(--bg-alt);font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:0.05em;color:var(--text-muted);padding:10px 12px;text-align:left;border-bottom:2px solid var(--brand) }
+article.manual table td { padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top }
+article.manual strong { color:var(--bg-deep);font-weight:700 }
+article.manual em { color:var(--brand);font-style:normal;font-weight:600 }
+footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;border-top:1px solid var(--border) }
+@media (max-width:900px) {
+  .layout { grid-template-columns:1fr;gap:0 }
+  .toc-side { display:none }
+  article.manual h1 { font-size:24px }
+  article.manual h2 { font-size:19px }
+  article.manual h3 { font-size:16px }
+}
+@media print {
+  .toc-side, .banner, header.page, footer { display:none }
+  .layout { grid-template-columns:1fr;padding:0 }
+  article.manual h1, article.manual h2 { page-break-after:avoid }
+}
+</style>
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用手冊 — CRPD 監督平台">
+<meta property="og:description" content="40+ 模塊功能 + 7 種使用情境">
+<meta property="og:image" content="https://naer-tw.github.io/disability-rights-watch/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:-9999px;background:#1A4D3A;color:#fff;padding:8px 16px;border-radius:4px;text-decoration:none;z-index:1000" onfocus="this.style.left='12px';this.style.top='12px'" onblur="this.style.left='-9999px';this.style.top='-9999px'">跳至主要內容</a>
+<div class="banner">
+  <a href="./index.html">← CRPD 監督平台</a>
+  <span style="float:right">使用手冊</span>
+</div>
+<header class="page">
+  <div class="kicker">User Manual · 使用手冊</div>
+  <h1>怎麼用這個平台</h1>
+  <p>40+ 模塊功能 × 7 種使用情境 — 第一次來 / 記者 / 立委 / NGO / 研究者 / 身障者 / 政府人員都能找到入口。</p>
+  <p style="margin-top:12px;font-size:13px"><a href="./docs/USER_MANUAL.md" download>↓ 下載 Markdown 版(可印 / 可改 / 可分享)</a></p>
+</header>
+<div class="layout">
+  <nav class="toc-side" aria-label="目錄"><h4>目錄</h4><ul><li class="toc-l2"><a href="#30-秒導讀-依-你是誰-找入口">30 秒導讀:依「你是誰」找入口</a></li><li class="toc-l2"><a href="#一-入口頁-每個人都該認識的-4-頁">一、入口頁(每個人都該認識的 4 頁)</a></li><li class="toc-l3"><a href="#1--首頁-index-html">1. 首頁(index.html)</a></li><li class="toc-l3"><a href="#2--關於本平台-about-html">2. 關於本平台(about.html)</a></li><li class="toc-l3"><a href="#3--方法論-methodology-html">3. 方法論(methodology.html)</a></li><li class="toc-l3"><a href="#4--意見回饋-feedback-html">4. 意見回饋(feedback.html)</a></li><li class="toc-l2"><a href="#二-16-議題追蹤-平台核心---每張議題卡">二、16 議題追蹤(平台核心 — 每張議題卡)</a></li><li class="toc-l3"><a href="#5--議題追蹤頁-issues-pi-xx-dossier-html">5. 議題追蹤頁(issues/PI-XX-dossier.html)</a></li><li class="toc-l3"><a href="#6--議題列表-issues-index-html">6. 議題列表(issues/index.html)</a></li><li class="toc-l3"><a href="#7--媒體懶人包-issues-media-kit-pi-xx-txt">7. 媒體懶人包(issues/media-kit/PI-XX.txt)</a></li><li class="toc-l3"><a href="#8--議題-og-縮圖-issues-og-pi-xx-svg">8. 議題 OG 縮圖(issues/og/PI-XX.svg)</a></li><li class="toc-l2"><a href="#三-深度分析模塊-8-個進階工具">三、深度分析模塊(8 個進階工具)</a></li><li class="toc-l3"><a href="#9--因果鏈總覽-chain-html">9. 因果鏈總覽(chain.html)</a></li><li class="toc-l3"><a href="#10--立場彙整-positions-html">10. 立場彙整(positions.html)</a></li><li class="toc-l3"><a href="#11--關鍵發現-findings-html">11. 關鍵發現(findings.html)</a></li><li class="toc-l3"><a href="#12--crpd-50-條反向索引-crpd-articles-html">12. CRPD 50 條反向索引(crpd-articles.html)</a></li><li class="toc-l3"><a href="#13--官方文件入口-crpd-official-html">13. 官方文件入口(crpd-official.html)</a></li><li class="toc-l3"><a href="#14--影子報告---政府報告-external-reports-html">14. 影子報告 / 政府報告(external-reports.html)</a></li><li class="toc-l3"><a href="#15--nhrc-儀表板-nhrc-dashboard-html">15. NHRC 儀表板(nhrc-dashboard.html)</a></li><li class="toc-l3"><a href="#16--倡議者責任-actors">16. 倡議者責任(actors/)</a></li><li class="toc-l2"><a href="#四-法規---報告---行動方案">四、法規 / 報告 / 行動方案</a></li><li class="toc-l3"><a href="#17--法規索引-laws">17. 法規索引(laws/)</a></li><li class="toc-l3"><a href="#18--6-角色版報告-reports-v0-1---html">18. 6 角色版報告(reports/v0.1-*.html)</a></li><li class="toc-l3"><a href="#19--nap-政府行動方案-nap-html">19. NAP 政府行動方案(nap.html)</a></li><li class="toc-l2"><a href="#五-官方文件鏡像">五、官方文件鏡像</a></li><li class="toc-l3"><a href="#20--衛福部-crpd-官網鏡像-sfaa">20. 衛福部 CRPD 官網鏡像(sfaa/)</a></li><li class="toc-l2"><a href="#六-特殊版本-無障礙">六、特殊版本(無障礙)</a></li><li class="toc-l3"><a href="#21--易讀版-for-disabled-easy-read-html">21. 易讀版(for-disabled/easy-read.html)</a></li><li class="toc-l3"><a href="#22--身障者入口-for-disabled-index-html">22. 身障者入口(for-disabled/index.html)</a></li><li class="toc-l2"><a href="#七-分析工具-進階使用">七、分析工具(進階使用)</a></li><li class="toc-l3"><a href="#23--全平台搜尋-search-html">23. 全平台搜尋(search.html)</a></li><li class="toc-l3"><a href="#24--議題地圖-map-html">24. 議題地圖(map.html)</a></li><li class="toc-l3"><a href="#25--雙議題對照-compare-html">25. 雙議題對照(compare.html)</a></li><li class="toc-l3"><a href="#26--未被聽見的立場-unheard-html">26. 未被聽見的立場(unheard.html)</a></li><li class="toc-l3"><a href="#27--議題---軸別矩陣-matrix-html">27. 議題 × 軸別矩陣(matrix.html)</a></li><li class="toc-l3"><a href="#28--因果鏈軌跡-trace">28. 因果鏈軌跡(trace/)</a></li><li class="toc-l3"><a href="#29--平台自我審計-self-audit-html">29. 平台自我審計(self-audit.html)</a></li><li class="toc-l3"><a href="#30--證據積分卡-pi-evidence-scorecard-html">30. 證據積分卡(pi-evidence-scorecard.html)</a></li><li class="toc-l2"><a href="#八-開放資料---api-技術人員---研究者">八、開放資料 / API(技術人員 + 研究者)</a></li><li class="toc-l3"><a href="#31--api-12-表-api">31. API 12 表(api/)</a></li><li class="toc-l3"><a href="#32--即時-kpi-api-kpi-json">32. 即時 KPI(api/kpi.json)</a></li><li class="toc-l3"><a href="#33--rss-訂閱-feed-xml">33. RSS 訂閱(feed.xml)</a></li><li class="toc-l3"><a href="#34--全平台搜尋索引-search-index-json">34. 全平台搜尋索引(search-index.json)</a></li><li class="toc-l3"><a href="#35--網站地圖-sitemap-html---sitemap-xml">35. 網站地圖(sitemap.html / sitemap.xml)</a></li><li class="toc-l2"><a href="#九-pwa-安裝-把平台變成手機-app">九、PWA 安裝(把平台變成手機 App)</a></li><li class="toc-l3"><a href="#36--安裝到手機---桌面">36. 安裝到手機 / 桌面</a></li><li class="toc-l2"><a href="#十-給-ai---搜尋引擎-機器友善">十、給 AI / 搜尋引擎(機器友善)</a></li><li class="toc-l3"><a href="#37--llm-引用指引-llms-txt">37. LLM 引用指引(llms.txt)</a></li><li class="toc-l3"><a href="#38--robots-txt">38. robots.txt</a></li><li class="toc-l2"><a href="#十一-找不到時---幫忙頁">十一、找不到時 — 幫忙頁</a></li><li class="toc-l3"><a href="#39--404-頁-404-html">39. 404 頁(404.html)</a></li><li class="toc-l3"><a href="#情境-1--我朋友的小孩剛被診斷自閉症-我想了解他的權利">情境 1:「我朋友的小孩剛被診斷自閉症,我想了解他的權利」</a></li><li class="toc-l3"><a href="#情境-2--我是地方記者-要寫-新版身權法明天上路">情境 2:「我是地方記者,要寫『新版身權法明天上路』」</a></li><li class="toc-l3"><a href="#情境-3--我是立委助理-老闆要在質詢點名衛福部-nap-進度">情境 3:「我是立委助理,老闆要在質詢點名衛福部 NAP 進度」</a></li><li class="toc-l3"><a href="#情境-4--我是-ngo-幹事-要起草第三次影子報告-2027">情境 4:「我是 NGO 幹事,要起草第三次影子報告(2027)」</a></li><li class="toc-l3"><a href="#情境-5--我是研究生-寫論文需要-台灣-crpd-12-年完整度量化">情境 5:「我是研究生,寫論文需要『台灣 CRPD 12 年完整度量化』」</a></li><li class="toc-l3"><a href="#情境-6--我是政府人員-要交代下半年該做什麼">情境 6:「我是政府人員,要交代下半年該做什麼」</a></li><li class="toc-l3"><a href="#情境-7--我是學生做社會課作業-題目是-crpd">情境 7:「我是學生做社會課作業,題目是 CRPD」</a></li></ul></nav>
+  <main id="main"><article class="manual"><h1 id="crpd-監督平台-使用手冊">CRPD 監督平台 使用手冊</h1>
+
+<blockquote>
+<p>給第一次來的人 — 用簡單的話告訴你「想做什麼,要看哪一頁」。</p>
+<p>平台網址:https://naer-tw.github.io/disability-rights-watch/</p>
+<p>如果你只有 30 秒,就看這份手冊的第一段「我第一次來,該看哪裡?」。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="30-秒導讀-依-你是誰-找入口">30 秒導讀:依「你是誰」找入口</h2>
+
+<div class="table-wrap" style="overflow-x:auto"><table><thead><tr><th>你是 …</th><th>先看這裡</th></tr></thead><tbody><tr><td>一般人 / 第一次來</td><td>首頁 → 易讀版 → 16 議題地圖</td></tr><tr><td>身心障礙者本人</td><td>易讀版 → 身障者入口 → 你關心的議題</td></tr><tr><td>記者</td><td>關鍵發現 → 媒體懶人包 → 該議題 dossier</td></tr><tr><td>立委 / 助理</td><td>立法委員版報告 → NAP → 該議題 dossier</td></tr><tr><td>NGO 起草影子報告</td><td>影子報告索引 → CRPD 50 條反向索引 → 立場彙整</td></tr><tr><td>研究者</td><td>API / 開放資料 → 因果鏈總覽 → 全文搜尋</td></tr><tr><td>政府人員</td><td>官方文件入口 → NAP → 衛福部官網鏡像</td></tr></tbody></table></div>
+
+<hr>
+
+<h2 id="一-入口頁-每個人都該認識的-4-頁">一、入口頁(每個人都該認識的 4 頁)</h2>
+
+<h3 id="1--首頁-index-html">1. 首頁(index.html)</h3>
+<p><strong>做什麼用:</strong> 30 秒搞懂這個平台是什麼、看 6 種人怎麼用平台。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>第一次來,想知道平台有什麼。</li>
+<li>想分享給朋友看 — 直接傳首頁網址。</li>
+<li>從其他地方來,要找入口。</li>
+</ul>
+
+<p><strong>怎麼用:</strong> 進首頁,先看「我是 ___」六格(身障者 / 家屬 / 記者 / 立委 / 研究者 / 政府)。挑一格,直接跳到對應頁。</p>
+
+<hr>
+
+<h3 id="2--關於本平台-about-html">2. 關於本平台(about.html)</h3>
+<p><strong>做什麼用:</strong> 告訴你這個平台是誰做的、為什麼做。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>想知道資料能不能信。</li>
+<li>想引用平台,要寫「來源」。</li>
+<li>學校老師問「這誰做的?」。</li>
+</ul>
+
+<p><strong>怎麼用:</strong> 看完知道:國教行動聯盟(AABE)做的,CC BY 4.0 授權,可以自由引用,要註明來源。</p>
+
+<hr>
+
+<h3 id="3--方法論-methodology-html">3. 方法論(methodology.html)</h3>
+<p><strong>做什麼用:</strong> 解釋平台「怎麼挑議題、怎麼評分、怎麼處理對立面」。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>看到一個結論覺得「這真的嗎?」 → 看方法論。</li>
+<li>寫論文要附「資料來源說明」 → 引用方法論。</li>
+<li>想學怎麼做這種平台 → 方法論是 SOP。</li>
+</ul>
+
+<p><strong>重點概念:</strong> 「不公審原則」 — 不偏袒任何一方,把對立立場都呈現,讓讀者自己判斷。</p>
+
+<hr>
+
+<h3 id="4--意見回饋-feedback-html">4. 意見回饋(feedback.html)</h3>
+<p><strong>做什麼用:</strong> 你發現資料錯了 / 缺了 / 有要補的,在這裡提交。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>你的團體有提過影子報告,但平台沒收。</li>
+<li>你看到日期/名字打錯。</li>
+<li>你想加一筆訴訟案例。</li>
+<li>你想當倡議者讓平台收錄你的立場。</li>
+</ul>
+
+<p><strong>怎麼用:</strong> 填表單即可。我們會審後加入 — 不會偽造,寧缺勿濫。</p>
+
+<hr>
+
+<h2 id="二-16-議題追蹤-平台核心---每張議題卡">二、16 議題追蹤(平台核心 — 每張議題卡)</h2>
+
+<h3 id="5--議題追蹤頁-issues-pi-xx-dossier-html">5. 議題追蹤頁(issues/PI-XX-dossier.html)</h3>
+<p><strong>做什麼用:</strong> 一張卡,看完一個議題從「誰倡議 → 國際委員回應 → 政府承諾 → 實施結果」整條因果鏈。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>朋友問你「教育權現在怎樣?」 → 直接傳 PI-10 dossier 給他。</li>
+<li>寫文章要找一個議題的歷史 → 看 dossier 的時間軸。</li>
+<li>開會要佐證 → dossier 上就有「政府某年承諾 X,但結果是 Y」。</li>
+</ul>
+
+<p><strong>頁面有什麼:</strong></p>
+<ul>
+<li>11 個區段:時間軸 / 立場光譜 / 倡議 / 政府承諾 / 結果評估 / 訴訟 / 修法 / 法條 / 指標 / 引用 / 相關議題</li>
+<li>「資料覆蓋透明度徽章」 — 直接看到哪個階段資料還缺</li>
+<li>「↓ 下載 .txt」按鈕 — 拿走媒體懶人包</li>
+<li>因果鏈完整度評分(0-100)</li>
+</ul>
+
+<p><strong>16 個 PI 議題:</strong></p>
+<ul>
+<li><strong>軸 1 識別/反歧視:</strong> PI-01, PI-02, PI-03, PI-04, PI-06</li>
+<li><strong>軸 2 去機構化/服務:</strong> PI-05, PI-07, PI-08, PI-13</li>
+<li><strong>軸 3 融合教育/就業:</strong> PI-10, PI-11, PI-15</li>
+<li><strong>軸 4 司法/政治參與:</strong> PI-09, PI-12, PI-14, PI-16</li>
+</ul>
+
+<hr>
+
+<h3 id="6--議題列表-issues-index-html">6. 議題列表(issues/index.html)</h3>
+<p><strong>做什麼用:</strong> 一頁看到全部 16 議題,找你要的。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>不確定哪個議題編號是哪一個 → 先看列表。</li>
+<li>想看哪個議題完整度高 → 列表有評分。</li>
+</ul>
+
+<hr>
+
+<h3 id="7--媒體懶人包-issues-media-kit-pi-xx-txt">7. 媒體懶人包(issues/media-kit/PI-XX.txt)</h3>
+<p><strong>做什麼用:</strong> 純文字版的議題重點 — 可以直接 copy 進新聞稿。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>你是記者,30 分鐘內要寫一條稿 → 下載 .txt 直接用。</li>
+<li>你要演講,要 30 秒講完一個議題 → 看「30 秒導讀」段。</li>
+<li>你要做懶人包圖卡 → 抓「關鍵數字」段就好。</li>
+</ul>
+
+<p><strong>包含內容:</strong></p>
+<ul>
+<li>30 秒導讀</li>
+<li>5 個關鍵數字</li>
+<li>倡議立場光譜</li>
+<li>主要倡議者語錄</li>
+<li>政府承諾 vs 結果</li>
+<li>引用方式(APA 格式)</li>
+</ul>
+
+<hr>
+
+<h3 id="8--議題-og-縮圖-issues-og-pi-xx-svg">8. 議題 OG 縮圖(issues/og/PI-XX.svg)</h3>
+<p><strong>做什麼用:</strong> 你把議題追蹤頁分享到 LINE/Facebook/Twitter 時,自動長這張圖。</p>
+
+<p><strong>什麼時候用:</strong> 不用主動用 — 你分享連結時自動顯示。</p>
+
+<hr>
+
+<h2 id="三-深度分析模塊-8-個進階工具">三、深度分析模塊(8 個進階工具)</h2>
+
+<h3 id="9--因果鏈總覽-chain-html">9. 因果鏈總覽(chain.html)</h3>
+<p><strong>做什麼用:</strong> 一頁表格看完 16 議題 × 5 階段資料覆蓋。哪個議題哪個階段最薄弱,一目了然。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>你是 NGO 主管,要決定明年聚焦哪些議題 → 看哪些階段缺資料。</li>
+<li>你要寫研究計畫,要說「台灣 CRPD 哪個面向最弱」 → 直接用這頁。</li>
+<li>你要做募款簡報,要證明「平台用心做」 → 這頁是最好的成果展示。</li>
+</ul>
+
+<hr>
+
+<h3 id="10--立場彙整-positions-html">10. 立場彙整(positions.html)</h3>
+<p><strong>做什麼用:</strong> 24 個倡議者 × 16 議題的立場矩陣 — 誰主張什麼、誰被採納。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>你想知道「殘聯在 PI-10 教育權主張什麼?」 → 找殘聯卡 → 點 PI-10。</li>
+<li>你要寫聯名連署,要找「在 PI-08 融合教育有立場的團體」 → 點 PI-08 行 → 看誰有立場。</li>
+<li>你要研究「哪個團體最常被國際委員會採納?」 → 看採納率排序。</li>
+</ul>
+
+<hr>
+
+<h3 id="11--關鍵發現-findings-html">11. 關鍵發現(findings.html)</h3>
+<p><strong>做什麼用:</strong> 從 16 議題萃取出「有故事性」的發現 — 特別是「非預期後果」。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>寫倡議文章要找「有衝擊力」的證據 → 這頁四類發現直接挑。</li>
+<li>想跟朋友解釋「為什麼這個平台講『不公審』很重要」 → 看「非預期後果」段。</li>
+<li>寫年度報告要列「平台這一年發現了什麼」 → 直接 copy 結構。</li>
+</ul>
+
+<p><strong>四類發現:</strong></p>
+<ul>
+<li>非預期後果(倡議成功但結果沒全好)</li>
+<li>未兌現承諾(政府逾期 / 部分達成)</li>
+<li>已被採納的倡議(成功案例)</li>
+<li>關鍵指標惡化(數據佐證)</li>
+</ul>
+
+<hr>
+
+<h3 id="12--crpd-50-條反向索引-crpd-articles-html">12. CRPD 50 條反向索引(crpd-articles.html)</h3>
+<p><strong>做什麼用:</strong> 從「公約條文」切入 — 每一條對應到哪些議題、CO 段落、修法。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>起草影子報告時,要寫「§24 教育權」段 → 看 §24 對應哪些議題。</li>
+<li>國際委員問「你們 §27 工作權做得如何?」→ 看 §27 反向索引。</li>
+<li>法律系學生研究 → 從條文起手最方便。</li>
+</ul>
+
+<p><strong>怎麼用:</strong> 點類別篩(原則/義務/公民政治權/經社權/特定族群/施行監督),或搜尋條號(A24)、中文(教育)、英文(education)。</p>
+
+<hr>
+
+<h3 id="13--官方文件入口-crpd-official-html">13. 官方文件入口(crpd-official.html)</h3>
+<p><strong>做什麼用:</strong> 6 區段彙整所有官方原始文件連結。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>你要找 CRPD 公約原文 → 一頁找到。</li>
+<li>你要找台灣國家報告 / 結論性意見 → 一頁找到。</li>
+<li>你要找 NAP 行動方案、施行法規 → 一頁找到。</li>
+</ul>
+
+<p><strong>6 區段:</strong></p>
+<ul>
+<li>聯合國 CRPD 公約原文(英 / 中譯 / 易讀 / 手語)</li>
+<li>結論性意見(2017 + 2022 + 2027 籌備)</li>
+<li>台灣國家報告</li>
+<li>議題清單(LOI)</li>
+<li>施行法規</li>
+<li>衛福部官網鏡像</li>
+</ul>
+
+<hr>
+
+<h3 id="14--影子報告---政府報告-external-reports-html">14. 影子報告 / 政府報告(external-reports.html)</h3>
+<p><strong>做什麼用:</strong> 歷年所有提交報告的索引 — 22 份影子報告 + 3 份政府報告。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>起草第三次審查影子報告(2027)→ 先看前兩次有什麼。</li>
+<li>想找「殘聯 2017 影子報告寫了什麼」 → 點殘聯卡看連結。</li>
+<li>寫論文要 cite 影子報告 → 一頁找全。</li>
+</ul>
+
+<hr>
+
+<h3 id="15--nhrc-儀表板-nhrc-dashboard-html">15. NHRC 儀表板(nhrc-dashboard.html)</h3>
+<p><strong>做什麼用:</strong> 國家人權委員會(2020 成立的獨立人權機構)在 CRPD 上講過什麼、被採納多少。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>寫文章要 cite 「官方獨立機構」立場 → NHRC 是首選。</li>
+<li>比較「政府 vs NHRC vs 民間」三方差異 → 從這裡起。</li>
+<li>想知道「NHRC 在哪些議題最積極」 → 看立場數量排序。</li>
+</ul>
+
+<hr>
+
+<h3 id="16--倡議者責任-actors">16. 倡議者責任(actors/)</h3>
+<p><strong>做什麼用:</strong> 24 個倡議者各一頁,看每個團體在每議題的立場 + 採納紀錄。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>想跟某個團體合作 → 先看他們在哪些議題有立場。</li>
+<li>監督某倡議者「主張和結果有沒有對齊」 → 看採納率 + 結果。</li>
+<li>找「跟我議題有關」的盟友 → 找該議題覆蓋的倡議者。</li>
+</ul>
+
+<hr>
+
+<h2 id="四-法規---報告---行動方案">四、法規 / 報告 / 行動方案</h2>
+
+<h3 id="17--法規索引-laws">17. 法規索引(laws/)</h3>
+<p><strong>做什麼用:</strong> 8 部相關法律一頁一頁列出 — 內容、修法歷程、對應公約條文。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>想知道「身權法」現在版本在哪 → 點該法看。</li>
+<li>寫修法建議 → 看現行條文 + 過去修法理由。</li>
+<li>法律系上課 / 法律扶助個案 → 直接連結引用。</li>
+</ul>
+
+<p><strong>主要法規:</strong> 身權法 / CRPD 施行法 / 特殊教育法 / 心理衛生法 等。</p>
+
+<hr>
+
+<h3 id="18--6-角色版報告-reports-v0-1---html">18. 6 角色版報告(reports/v0.1-*.html)</h3>
+<p><strong>做什麼用:</strong> 把 16 議題重點翻譯成「給某種人看」的版本。</p>
+
+<p><strong>6 個角色版:</strong></p>
+<ul>
+<li><code>v0.1-pwd.html</code> — 身障者本人版</li>
+<li><code>v0.1-media.html</code> — 媒體記者版</li>
+<li><code>v0.1-legislative.html</code> — 立法委員版</li>
+<li><code>v0.1-professional.html</code> — 專業人員版(社工/治療師)</li>
+<li><code>v0.1-social.html</code> — 社運者版</li>
+<li><code>v0.1-general.html</code> — 一般大眾版</li>
+</ul>
+
+<p><strong>什麼時候用:</strong> 把對應角色版傳給對的人。立委不需要看記者版,反過來也是。</p>
+
+<hr>
+
+<h3 id="19--nap-政府行動方案-nap-html">19. NAP 政府行動方案(nap.html)</h3>
+<p><strong>做什麼用:</strong> 政府跨部會 NAP 行動方案 vs CO 116 段落對照表。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>質詢時要點名「政府承諾 X 項目進度多少」 → 從 NAP 起。</li>
+<li>監督政府要找「哪些 CO 沒對應到 NAP」 → 對照表直接看。</li>
+<li>政府人員自查「我們 NAP 是否覆蓋全部 CO」 → 同上。</li>
+</ul>
+
+<hr>
+
+<h2 id="五-官方文件鏡像">五、官方文件鏡像</h2>
+
+<h3 id="20--衛福部-crpd-官網鏡像-sfaa">20. 衛福部 CRPD 官網鏡像(sfaa/)</h3>
+<p><strong>做什麼用:</strong> 把衛福部 CRPD 官網的 90 篇公告 + 173 PDF 全部鏡像下來,變成可搜尋。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>衛福部官網被改、找不到舊資料 → 來鏡像找。</li>
+<li>政府文件全文搜尋 → 走平台搜尋(已索引)。</li>
+<li>大量下載做研究 → 用 sfaa/ 起點。</li>
+</ul>
+
+<p><strong>為什麼要鏡像:</strong> 政府網站常常改,公告會消失。鏡像保證 12 年資料還在。</p>
+
+<hr>
+
+<h2 id="六-特殊版本-無障礙">六、特殊版本(無障礙)</h2>
+
+<h3 id="21--易讀版-for-disabled-easy-read-html">21. 易讀版(for-disabled/easy-read.html)</h3>
+<p><strong>做什麼用:</strong> 用最簡單的字、最短的句子,告訴你這個平台在做什麼。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>你是身心障礙者本人,網頁太難讀 → 看易讀版。</li>
+<li>你要跟認知障礙朋友 / 心智障礙者解釋平台 → 給他易讀版。</li>
+<li>你做衛教,要找 CRPD §21 易讀範本 → 這頁就是。</li>
+</ul>
+
+<p><strong>設計重點:</strong></p>
+<ul>
+<li>字級 22-36px(比一般網頁大很多)</li>
+<li>一句話只說一件事</li>
+<li>用簡單的字</li>
+<li>緊急電話用大字 + 可一鍵撥打(1957 / 110 / 113)</li>
+</ul>
+
+<hr>
+
+<h3 id="22--身障者入口-for-disabled-index-html">22. 身障者入口(for-disabled/index.html)</h3>
+<p><strong>做什麼用:</strong> 給身障者本人的議題分流入口。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>自己是身障者,想找跟自己有關的議題。</li>
+<li>家屬陪伴身障朋友看平台 → 從這個入口比較簡單。</li>
+</ul>
+
+<hr>
+
+<h2 id="七-分析工具-進階使用">七、分析工具(進階使用)</h2>
+
+<h3 id="23--全平台搜尋-search-html">23. 全平台搜尋(search.html)</h3>
+<p><strong>做什麼用:</strong> 一個搜尋框,找全平台 545 筆資料。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>找某個關鍵字「校園霸凌」「易讀版」 → 直接搜。</li>
+<li>找某個年份「2021」 → 看那年有什麼 CO / 修法 / 報告。</li>
+<li>找某個團體名字 → 看他在哪些地方出現。</li>
+</ul>
+
+<p><strong>有 13 種類型:</strong> PI 議題、倡議者、CO 段落、立法、訴訟、衛福部公告、報告 等。</p>
+
+<hr>
+
+<h3 id="24--議題地圖-map-html">24. 議題地圖(map.html)</h3>
+<p><strong>做什麼用:</strong> 16 議題視覺化地圖 — 看「誰跟誰相關」。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>找「跟 PI-08 融合教育有關的其他議題」 → 看地圖連線。</li>
+<li>做簡報要一張「全議題圖」 → 用這頁截圖。</li>
+</ul>
+
+<hr>
+
+<h3 id="25--雙議題對照-compare-html">25. 雙議題對照(compare.html)</h3>
+<p><strong>做什麼用:</strong> 同時看兩個議題並排比較。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>想知道「教育權 vs 工作權,哪個進度比較好」 → 並排比較。</li>
+<li>寫論文要對照「2017 vs 2022 兩次審查 CO 變化」。</li>
+</ul>
+
+<hr>
+
+<h3 id="26--未被聽見的立場-unheard-html">26. 未被聽見的立場(unheard.html)</h3>
+<p><strong>做什麼用:</strong> 列出「有人提過、但被國際委員會忽略 / 拒絕」的立場 13 條。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>想知道「平台真的不公審嗎?」 → 看這頁就知道也呈現對立面。</li>
+<li>寫文章要凸顯「主流敘事沒提到的事」 → 從這頁找素材。</li>
+<li>起草第三次影子報告,想重提舊訴求 → 這頁是清單。</li>
+</ul>
+
+<p><strong>為什麼重要:</strong> 平台不只報「成功故事」,也誠實標出「沒被聽見的聲音」 — 這是不公審原則的最強體現。</p>
+
+<hr>
+
+<h3 id="27--議題---軸別矩陣-matrix-html">27. 議題 × 軸別矩陣(matrix.html)</h3>
+<p><strong>做什麼用:</strong> 16 議題 × 4 軸別 + 多種維度的交叉矩陣(內部分析用)。</p>
+
+<p><strong>什麼時候用:</strong> 內部規劃 / 學術研究 / 平台策展。一般使用者不需要。</p>
+
+<hr>
+
+<h3 id="28--因果鏈軌跡-trace">28. 因果鏈軌跡(trace/)</h3>
+<p><strong>做什麼用:</strong> 從「結果」反向追溯「誰倡議造成」的工具。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>政策後遺症 — 想知道「為什麼會變成這樣?是誰當年主張的?」 → 從結果反追。</li>
+<li>寫批判文章要追責任 → 但要小心「不公審」原則。</li>
+</ul>
+
+<hr>
+
+<h3 id="29--平台自我審計-self-audit-html">29. 平台自我審計(self-audit.html)</h3>
+<p><strong>做什麼用:</strong> 平台對自己的弱點誠實揭露。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>你懷疑「這平台有沒有偏見」 → 看自我審計就知道。</li>
+<li>學者引用要附「資料限制說明」 → 直接 cite 這頁。</li>
+</ul>
+
+<hr>
+
+<h3 id="30--證據積分卡-pi-evidence-scorecard-html">30. 證據積分卡(pi-evidence-scorecard.html)</h3>
+<p><strong>做什麼用:</strong> 每個議題的「證據力」評分卡。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>想知道「PI-XX 的論點有多扎實」 → 看評分。</li>
+<li>學術發表要標「證據等級」 → 用這頁評等。</li>
+</ul>
+
+<hr>
+
+<h2 id="八-開放資料---api-技術人員---研究者">八、開放資料 / API(技術人員 + 研究者)</h2>
+
+<h3 id="31--api-12-表-api">31. API 12 表(api/)</h3>
+<p><strong>做什麼用:</strong> 全平台資料以 JSON + CSV 開放下載,授權 CC BY 4.0。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>研究者要批量分析 → 下載 CSV 進 Excel / R / Python。</li>
+<li>AI 訓練 → 下載 JSON 餵模型(允許,但請註明來源)。</li>
+<li>開發者要做 mashup → 用 API。</li>
+</ul>
+
+<p><strong>12 表包括:</strong> PI 議題 / 倡議 / CO 段落 / 承諾 / 結果 / 訴訟 / 修法 / 法律 / 等。</p>
+
+<hr>
+
+<h3 id="32--即時-kpi-api-kpi-json">32. 即時 KPI(api/kpi.json)</h3>
+<p><strong>做什麼用:</strong> 平台所有數字「現在」是多少 — 動態從資料庫算。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>你的網站要嵌「CRPD 平台目前 X 議題 Y 立場」即時數字 → 用這個 API。</li>
+<li>寫月報要對「最新數字」 → 抓 API。</li>
+</ul>
+
+<hr>
+
+<h3 id="33--rss-訂閱-feed-xml">33. RSS 訂閱(feed.xml)</h3>
+<p><strong>做什麼用:</strong> 訂閱平台,新的議題追蹤更新 / 衛福部公告自動推到你的 RSS reader。</p>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>你是記者,想第一時間知道更新 → 訂閱。</li>
+<li>你是 NGO 工作者,要監控政府公告 → 訂閱。</li>
+<li>你用 Feedly / NetNewsWire / Reeder → 加上這個 feed.xml。</li>
+</ul>
+
+<p><strong>加在哪:</strong> 在 RSS reader 中加新訂閱,網址是 <code>https://naer-tw.github.io/disability-rights-watch/feed.xml</code>。</p>
+
+<hr>
+
+<h3 id="34--全平台搜尋索引-search-index-json">34. 全平台搜尋索引(search-index.json)</h3>
+<p><strong>做什麼用:</strong> 給開發者用的 — 平台所有可搜尋內容的 JSON 索引。</p>
+
+<p><strong>什麼時候用:</strong> 做客製化搜尋 / 整合到別的網站。</p>
+
+<hr>
+
+<h3 id="35--網站地圖-sitemap-html---sitemap-xml">35. 網站地圖(sitemap.html / sitemap.xml)</h3>
+<p><strong>做什麼用:</strong></p>
+<ul>
+<li><code>sitemap.html</code> — 給人看的目錄(10 區段 200+ 頁)</li>
+<li><code>sitemap.xml</code> — 給搜尋引擎讀的</li>
+</ul>
+
+<p><strong>什麼時候用:</strong></p>
+<ul>
+<li>在平台找頁面找不到 → 看 sitemap.html。</li>
+<li>自己的網站要連回來 → 看 sitemap 找 deep link。</li>
+</ul>
+
+<hr>
+
+<h2 id="九-pwa-安裝-把平台變成手機-app">九、PWA 安裝(把平台變成手機 App)</h2>
+
+<h3 id="36--安裝到手機---桌面">36. 安裝到手機 / 桌面</h3>
+<p><strong>做什麼用:</strong> 把平台「加到主畫面」,變成像 App 一樣 — 還支援離線讀。</p>
+
+<p><strong>怎麼用:</strong></p>
+<ul>
+<li>iPhone Safari:分享 → 加入主畫面</li>
+<li>Android Chrome:選單 → 安裝應用程式</li>
+<li>Mac/Windows Chrome:網址列右側「下載 / 安裝」圖示</li>
+</ul>
+
+<p><strong>好處:</strong></p>
+<ul>
+<li>離線可以讀已快取的議題</li>
+<li>點擊主畫面圖示直接開</li>
+<li>速度比每次重開瀏覽器快</li>
+</ul>
+
+<hr>
+
+<h2 id="十-給-ai---搜尋引擎-機器友善">十、給 AI / 搜尋引擎(機器友善)</h2>
+
+<h3 id="37--llm-引用指引-llms-txt">37. LLM 引用指引(llms.txt)</h3>
+<p><strong>做什麼用:</strong> 告訴 AI(ChatGPT / Claude / Perplexity / Gemini):本平台允許訓練 / 引用,但請註明來源。</p>
+
+<p><strong>對你有什麼用:</strong> 你問 AI「台灣 CRPD 怎樣」,AI 答出來時會引用本平台 — 這是因為這個檔案。</p>
+
+<hr>
+
+<h3 id="38--robots-txt">38. robots.txt</h3>
+<p><strong>做什麼用:</strong> 告訴搜尋引擎哪些頁面公開、哪些不要爬。</p>
+
+<p><strong>對你的影響:</strong> 公開內容會被 Google / Bing 收錄。內部工具頁(matrix / generator)不收。</p>
+
+<hr>
+
+<h2 id="十一-找不到時---幫忙頁">十一、找不到時 — 幫忙頁</h2>
+
+<h3 id="39--404-頁-404-html">39. 404 頁(404.html)</h3>
+<p><strong>做什麼用:</strong> 點到死連結時跳這頁,給 6 個捷徑 + 搜尋框。</p>
+
+<p><strong>什麼時候會看到:</strong> 連結 typo / 連結過期 / 你輸入錯網址。</p>
+
+<hr>
+
+<h1 id="附錄-常見使用情境總覽">附錄:常見使用情境總覽</h1>
+
+<h3 id="情境-1--我朋友的小孩剛被診斷自閉症-我想了解他的權利">情境 1:「我朋友的小孩剛被診斷自閉症,我想了解他的權利」</h3>
+<ul>
+<li>易讀版(for-disabled/easy-read.html) — 先看大方向</li>
+<li>PI-10 dossier — 教育權因果鏈</li>
+<li>PI-13 dossier — 醫療化爭議</li>
+<li>法規索引 → 特殊教育法 + 身權法</li>
+</ul>
+
+<hr>
+
+<h3 id="情境-2--我是地方記者-要寫-新版身權法明天上路">情境 2:「我是地方記者,要寫『新版身權法明天上路』」</h3>
+<ul>
+<li>法規索引 → 身權法 → 修法歷程段</li>
+<li>關鍵發現 → 已採納倡議</li>
+<li>媒體懶人包 → 對應 PI 的 .txt 直接 copy</li>
+<li>立場彙整 → 看哪些團體有意見可採訪</li>
+</ul>
+
+<hr>
+
+<h3 id="情境-3--我是立委助理-老闆要在質詢點名衛福部-nap-進度">情境 3:「我是立委助理,老闆要在質詢點名衛福部 NAP 進度」</h3>
+<ul>
+<li>NAP 對照(nap.html) — 看 116 CO 哪些有對應、哪些沒</li>
+<li>找關鍵發現 → 未兌現承諾段</li>
+<li>對應 PI dossier → 看政府承諾 vs 結果</li>
+<li>立法委員版報告(reports/v0.1-legislative.html)</li>
+</ul>
+
+<hr>
+
+<h3 id="情境-4--我是-ngo-幹事-要起草第三次影子報告-2027">情境 4:「我是 NGO 幹事,要起草第三次影子報告(2027)」</h3>
+<ul>
+<li>PI-03 dossier — 第三次審查籌備頁</li>
+<li>影子報告索引 — 看前兩次怎麼寫</li>
+<li>CRPD 50 條反向索引 — 從條文起手</li>
+<li>立場彙整 — 找盟友</li>
+<li>未被聽見的立場 — 找重提的訴求</li>
+<li>證據積分卡 — 看哪些議題證據力強可主打</li>
+</ul>
+
+<hr>
+
+<h3 id="情境-5--我是研究生-寫論文需要-台灣-crpd-12-年完整度量化">情境 5:「我是研究生,寫論文需要『台灣 CRPD 12 年完整度量化』」</h3>
+<ul>
+<li>API 下載 12 表 CSV</li>
+<li>因果鏈總覽 — 一頁所有評分</li>
+<li>方法論 — 引用評分標準</li>
+<li>平台自我審計 — 寫「資料限制」</li>
+<li>引用方式:每個 dossier 底部有 APA 格式</li>
+</ul>
+
+<hr>
+
+<h3 id="情境-6--我是政府人員-要交代下半年該做什麼">情境 6:「我是政府人員,要交代下半年該做什麼」</h3>
+<ul>
+<li>NAP 對照 — 看哪些承諾還沒到期 vs 已逾期</li>
+<li>關鍵發現 → 未兌現承諾 — 紅色警告先處理</li>
+<li>對應 PI dossier → 看 NGO 還在主張什麼</li>
+<li>衛福部官網鏡像 — 確認自家公告對齊</li>
+</ul>
+
+<hr>
+
+<h3 id="情境-7--我是學生做社會課作業-題目是-crpd">情境 7:「我是學生做社會課作業,題目是 CRPD」</h3>
+<ul>
+<li>易讀版 → 30 秒搞懂</li>
+<li>關於本平台 → 寫作業要寫來源</li>
+<li>16 議題地圖 → 挑你關心的議題</li>
+<li>該 PI dossier → 抄不超過 50 字、引用即可</li>
+</ul>
+
+<hr>
+
+<h1 id="平台聯絡---引用方式">平台聯絡 / 引用方式</h1>
+
+<p><strong>主辦單位:</strong> 國教行動聯盟(AABE / National Alliance of Action for Basic Education)</p>
+<p><strong>授權:</strong> CC BY 4.0(可商用、可改作、可訓練 AI,<strong>請註明來源</strong>)</p>
+<p><strong>回饋管道:</strong> <a href="./feedback.html">feedback.html</a></p>
+
+<p><strong>APA 引用範例:</strong></p>
+<blockquote>
+<p>國教行動聯盟(2026)。CRPD 監督平台。https://naer-tw.github.io/disability-rights-watch/</p>
+</blockquote>
+
+<p><strong>BibTeX 範例:</strong></p>
+<pre><code class="lang-">
+@misc{aabe_crpd_2026,
+  author = {{國教行動聯盟}},
+  title  = {{CRPD 監督平台 — 身心障礙者權利公約在台施行 12 年監督}},
+  year   = {2026},
+  note   = {CC BY 4.0},
+  url    = {https://naer-tw.github.io/disability-rights-watch/}
+}
+</code></pre>
+
+<hr>
+
+<blockquote>
+<p>這份手冊本身也以 CC BY 4.0 釋出 — 自由轉貼、印發、改寫,只請註明出處。</p>
+</blockquote></article></main>
+</div>
+<footer>
+  CRPD 監督平台 · 國教行動聯盟(AABE) · CC BY 4.0 ·
+  <a href="./about.html">關於</a> ·
+  <a href="./methodology.html">方法論</a> ·
+  <a href="./feedback.html">補充資料</a>
+</footer>
+</body>
+</html>
