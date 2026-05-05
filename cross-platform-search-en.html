@@ -101,15 +101,23 @@ function doSearch() {
   if (out.length === 0) {
     html = '<div class="empty">No matches — try a different keyword or activate more platform filters.</div>';
   } else {
-    html = out.slice(0, 200).map(r => `
+    html = out.slice(0, 200).map(r => {
+      // Wave 145: cross-field highlight
+      const titleEn = r.title_en && r.title_en !== r.title ? highlight(r.title_en, q) : '';
+      const idChip = r.id ? `<span style="font-family:Inter,monospace;background:#F1EFEA;padding:1px 6px;border-radius:3px;font-size:11px;">${highlight(r.id, q)}</span>` : '';
+      const typeChip = r.type ? `<span style="color:#5C5C5C">${highlight(r.type, q)}</span>` : '';
+      const meta = [typeChip, idChip].filter(Boolean).join(' · ');
+      return `
       <div class="result">
         <div class="result-platform" style="background:${r.platform_color}">${r.platform_short}</div>
         <div class="result-body">
-          <div class="result-type">${r.type || ''}${r.id ? ' · ' + r.id : ''}</div>
+          <div class="result-type">${meta}</div>
           <div class="result-title"><a href="${r.url}" target="_blank" rel="noopener">${highlight(r.title, q)}</a></div>
+          ${titleEn ? `<div style="font-size:12px;color:#5C2A7E;margin:2px 0;font-style:italic;">${titleEn}</div>` : ''}
           ${r.snippet ? `<div class="result-snippet">${highlight(r.snippet, q)}</div>` : ''}
         </div>
-      </div>`).join('');
+      </div>`;
+    }).join('');
     if (out.length > 200) html += `<div class="empty">Showing first 200 — narrow your search to see remaining ${out.length - 200}.</div>`;
   }
   document.getElementById('results').innerHTML = html;

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-Hant">
+  <title type="text">Tri-Covenant Watch (Taiwan) · 三公約共構平台</title>
+  <subtitle type="text">Cross-covenant civil-society monitoring of Taiwan government discourse on CEDAW, CRC, and CRPD.</subtitle>
+  <link rel="self" type="application/atom+xml" href="https://cedaw.taiwanmommies.org/atom.xml" />
+  <link rel="alternate" type="text/html" href="https://cedaw.taiwanmommies.org/" />
+  <link rel="alternate" type="application/rss+xml" href="https://cedaw.taiwanmommies.org/feed.xml" />
+  <id>https://cedaw.taiwanmommies.org/atom.xml</id>
+  <updated>2026-05-05T17:02:43Z</updated>
+  <rights>CC BY 4.0</rights>
+  <author>
+    <name>Tri-Covenant Editorial</name>
+    <email>weall888@gmail.com</email>
+    <uri>https://cedaw.taiwanmommies.org/</uri>
+  </author>
+  <generator uri="https://cedaw.taiwanmommies.org/" version="Wave 145">build_rss_feed.py</generator>
+  <entry>
+    <title type="text">第一篇對外案例文「當『合理調整』在 3,493 段政府文件中只出現 7 次」 / &quot;Reasonable Accommodation&quot; Appears 7 Times in 3,493 CRPD Documents</title>
+    <link rel="alternate" type="text/html" hreflang="zh-Hant" href="https://cedaw.taiwanmommies.org/blog/2026-05-06-government-silence.html" />
+    <link rel="alternate" type="text/html" hreflang="en" href="https://cedaw.taiwanmommies.org/blog/2026-05-06-government-silence-en.html" />
+    <id>https://cedaw.taiwanmommies.org/blog/2026-05-06-government-silence.html</id>
+    <updated>2026-05-06T12:00:00Z</updated>
+    <published>2026-05-06T12:00:00Z</published>
+    <category term="case_study" />
+    <summary type="text">Tri-Covenant Watch 首份對外案例文發布。三個 NGO 三年來爬下 102,728 段政府文件,交叉比對發現 6 個結構性盲點:身障女性 0 段、家暴 1 段、合理調整 7 段。中英文同步,適合媒體轉載與 UN 委員會引用。
+
+[EN] First Tri-Covenant Watch case study. After 3 years of cross-referencing 102,728 government-document segments, 6 structural blind spots emerged: disabled women 0, DV in CRPD 1, reasonable accommodation paradox 7 vs 173 vs 100.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/blog/2026-05-06-government-silence.html
+English: https://cedaw.taiwanmommies.org/blog/2026-05-06-government-silence-en.html</summary>
+  </entry>
+  <entry>
+    <title type="text">Wave 140 對外複製指南 DEVELOPER_GUIDE.md / Developer / Replication Guide (Wave 140)</title>
+    <link rel="alternate" type="text/html" hreflang="zh-Hant" href="https://cedaw.taiwanmommies.org/tri-covenant-about.html" />
+    <link rel="alternate" type="text/html" hreflang="en" href="https://cedaw.taiwanmommies.org/tri-covenant-about-en.html" />
+    <id>https://cedaw.taiwanmommies.org/tri-covenant-about.html</id>
+    <updated>2026-05-05T12:00:00Z</updated>
+    <published>2026-05-05T12:00:00Z</published>
+    <category term="documentation" />
+    <summary type="text">235 行 step-by-step 對外複製指南。其他 NGO 可用此架構複製到任何 UN 公約監督。涵蓋 schema 設計、bootstrap 流程、replication checklist。
+
+[EN] 235-line replication guide for other NGOs. Architecture, schema, 7-step bootstrap, replication checklist.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/tri-covenant-about.html
+English: https://cedaw.taiwanmommies.org/tri-covenant-about-en.html</summary>
+  </entry>
+  <entry>
+    <title type="text">Wave 139 對外 about / methodology 頁 / Tri-Covenant About / Methodology page (Wave 139)</title>
+    <link rel="alternate" type="text/html" hreflang="zh-Hant" href="https://cedaw.taiwanmommies.org/tri-covenant-about.html" />
+    <link rel="alternate" type="text/html" hreflang="en" href="https://cedaw.taiwanmommies.org/tri-covenant-about-en.html" />
+    <id>https://cedaw.taiwanmommies.org/tri-covenant-about.html</id>
+    <updated>2026-05-05T12:00:00Z</updated>
+    <published>2026-05-05T12:00:00Z</published>
+    <category term="documentation" />
+    <summary type="text">完整對外文件:三平台主辦 NGO 介紹、4 階段方法論、PI 5 維評分公式、開放資料政策、引用建議格式、CC BY 4.0。
+
+[EN] Full outward-facing about page: NGO hosting, 4-step methodology, PI 5-dim scoring, open data policy, citation, CC BY 4.0.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/tri-covenant-about.html
+English: https://cedaw.taiwanmommies.org/tri-covenant-about-en.html</summary>
+  </entry>
+  <entry>
+    <title type="text">Wave 133 「6 結構性發現」視覺化儀表板 / 6 Structural Findings Visualization Dashboard (Wave 133)</title>
+    <link rel="alternate" type="text/html" hreflang="zh-Hant" href="https://cedaw.taiwanmommies.org/structural-findings.html" />
+    <link rel="alternate" type="text/html" hreflang="en" href="https://cedaw.taiwanmommies.org/structural-findings-en.html" />
+    <id>https://cedaw.taiwanmommies.org/structural-findings.html</id>
+    <updated>2026-05-05T12:00:00Z</updated>
+    <published>2026-05-05T12:00:00Z</published>
+    <category term="analysis" />
+    <summary type="text">一頁總覽 6 個跨公約結構性發現,每張卡含 3 平台 bar chart、嚴重度分級、對應 PI chip、國際 GR/CO 引用。列印友善。
+
+[EN] One-page dashboard of 6 cross-covenant structural findings. Each card has 3-platform bar chart, severity grade, mapped PI chips, GR/CO citations. Print-friendly.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/structural-findings.html
+English: https://cedaw.taiwanmommies.org/structural-findings-en.html</summary>
+  </entry>
+  <entry>
+    <title type="text">Wave 127 結構性盲點 PI 加入(PI-17/18/19) / Structural-blind-spot PIs added (PI-17/18/19) — Wave 127</title>
+    <link rel="alternate" type="text/html" hreflang="zh-Hant" href="https://cedaw.taiwanmommies.org/issues/PI-17.html" />
+    <link rel="alternate" type="text/html" hreflang="en" href="https://cedaw.taiwanmommies.org/issues/PI-17-en.html" />
+    <id>https://cedaw.taiwanmommies.org/issues/PI-17.html</id>
+    <updated>2026-05-05T12:00:00Z</updated>
+    <published>2026-05-05T12:00:00Z</published>
+    <category term="analysis" />
+    <summary type="text">CRPD 平台補三個跨公約交織盲點 PI:身障女性受暴(PI-17)、身障 LGBTQI+(PI-18)、身障原住民(PI-19)。三者皆 0 政府文件命中,但這正是「結構性失語」的量化證據。
+
+[EN] Three intersectional blind-spot PIs added to CRPD: disabled women DV (PI-17), disabled LGBTQI+ (PI-18), disabled indigenous (PI-19). All score 0 segments — this is itself the quantified evidence of structural silence.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/issues/PI-17.html
+English: https://cedaw.taiwanmommies.org/issues/PI-17-en.html</summary>
+  </entry>
+  <entry>
+    <title type="text">Wave 124 執行摘要 1 頁紙(中英雙語) / Executive Summary 1-pager (Wave 124, bilingual)</title>
+    <link rel="alternate" type="text/html" hreflang="zh-Hant" href="https://cedaw.taiwanmommies.org/executive-summary.html" />
+    <link rel="alternate" type="text/html" hreflang="en" href="https://cedaw.taiwanmommies.org/executive-summary-en.html" />
+    <id>https://cedaw.taiwanmommies.org/executive-summary.html</id>
+    <updated>2026-05-05T12:00:00Z</updated>
+    <published>2026-05-05T12:00:00Z</published>
+    <category term="documentation" />
+    <summary type="text">適合給立委 / 媒體 / UN 審查者快速簡報。三平台覆蓋 + 6 結構性發現 + 32 PI 分布 + 4 項 UN 訴求,A4 一頁列印。
+
+[EN] Concise brief for legislators / media / UN reviewers. 3-platform coverage + 6 structural findings + PI distribution + 4 UN asks, A4 single-page printable.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/executive-summary.html
+English: https://cedaw.taiwanmommies.org/executive-summary-en.html</summary>
+  </entry>
+  <entry>
+    <title type="text">Wave 125 月度快照基建 + 趨勢頁 / Monthly snapshot infrastructure + trend page (Wave 125)</title>
+    <link rel="alternate" type="text/html" hreflang="zh-Hant" href="https://cedaw.taiwanmommies.org/monthly-trend.html" />
+    <link rel="alternate" type="text/html" hreflang="en" href="https://cedaw.taiwanmommies.org/monthly-trend-en.html" />
+    <id>https://cedaw.taiwanmommies.org/monthly-trend.html</id>
+    <updated>2026-05-05T12:00:00Z</updated>
+    <published>2026-05-05T12:00:00Z</published>
+    <category term="infrastructure" />
+    <summary type="text">建立 monthly_snapshots.json append-only 一月一筆架構,每月初自動更新。對外展示「平台是活的」。baseline 2026-05:102,728 段。
+
+[EN] Append-only monthly snapshot infrastructure, auto-refreshing on the 1st. Demonstrates the platform is alive. Baseline 2026-05: 102,728 segments.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/monthly-trend.html
+English: https://cedaw.taiwanmommies.org/monthly-trend-en.html</summary>
+  </entry>
+  <entry>
+    <title type="text">Wave 116-122 UN reviewer 雙語包(10 EN 頁齊備) / UN reviewer EN pack complete (10 EN pages, Wave 116-122)</title>
+    <link rel="alternate" type="text/html" hreflang="zh-Hant" href="https://cedaw.taiwanmommies.org/cross-platform-en.html" />
+    <link rel="alternate" type="text/html" hreflang="en" href="https://cedaw.taiwanmommies.org/cross-platform-en.html" />
+    <id>https://cedaw.taiwanmommies.org/cross-platform-en.html</id>
+    <updated>2026-05-05T12:00:00Z</updated>
+    <published>2026-05-05T12:00:00Z</published>
+    <category term="milestone" />
+    <summary type="text">Tri-Covenant Dashboard、Tour、Executive Summary、PI Scorecard、Intersectional、Coverage Diagnosis、Keywords、Frequency、Search、D-grade Research TODO 全部英文版。
+
+[EN] Tri-Covenant Dashboard, Tour, Executive Summary, PI Scorecard, Intersectional, Coverage Diagnosis, Keywords, Frequency, Search, D-grade Research TODO — all in English.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/cross-platform-en.html
+English: https://cedaw.taiwanmommies.org/cross-platform-en.html</summary>
+  </entry>
+</feed>
