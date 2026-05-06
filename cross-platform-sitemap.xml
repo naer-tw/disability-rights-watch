@@ -30,6 +30,24 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- Monthly action tracker — 6 structural findings indicators (Wave 152) -->
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/monthly-tracker.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/monthly-tracker.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/monthly-tracker-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/monthly-tracker-en.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/monthly-tracker.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/monthly-tracker-en.html"/>
+  </url>
+
   <!-- Blog index integrating all 6 case studies (Wave 151) -->
   <url>
     <loc>https://naer-tw.github.io/disability-rights-watch/blog/</loc>
