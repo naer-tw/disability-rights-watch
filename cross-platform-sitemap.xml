@@ -30,6 +30,24 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- Fifth case study — SOGIESC concentration (Wave 149) -->
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-sogiesc-cedaw-concentration.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-sogiesc-cedaw-concentration.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-sogiesc-cedaw-concentration-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-sogiesc-cedaw-concentration-en.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-sogiesc-cedaw-concentration.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-sogiesc-cedaw-concentration-en.html"/>
+  </url>
+
   <!-- Fourth case study — Disabled Women DV (Wave 148) -->
   <url>
     <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-disabled-women-violence.html</loc>
