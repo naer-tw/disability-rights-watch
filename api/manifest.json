@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-05-04T10:26:24.985423+00:00",
+  "files": [
+    {
+      "file": "issues.json",
+      "rows": 18,
+      "size_bytes": 32315
+    },
+    {
+      "file": "stakeholders.json",
+      "rows": 63,
+      "size_bytes": 19873
+    },
+    {
+      "file": "events.json",
+      "rows": 85,
+      "size_bytes": 48516
+    },
+    {
+      "file": "laws.json",
+      "rows": 12,
+      "size_bytes": 3895
+    },
+    {
+      "file": "co.json",
+      "rows": 212,
+      "size_bytes": 190061
+    },
+    {
+      "file": "documents.json",
+      "rows": 394,
+      "size_bytes": 170094
+    },
+    {
+      "file": "dashboard.json",
+      "rows": 1,
+      "size_bytes": 535
+    }
+  ]
+}
