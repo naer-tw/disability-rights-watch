@@ -137,6 +137,10 @@ footer a { color: #fff; opacity: 0.9; }
 
 <p>我們先承認 88,然後降到 50,目標 0。政府呢?</p>
 
+<div class="callout" style="background:#FFF8E1;border-left-color:#C68822;margin-top:30px;">
+<strong>📌 Wave 169 後記(2026-05-06):</strong>本文上線後重跑 link_audit,發現之前只盯 dead_anchor,忽略了 <code class="code">broken_target</code>(連到不存在的檔案)。CRC 平台 14 個 timeline 頁面引用 <code class="code">../../data/sources/*.md</code> 和 <code class="code">../../data/advocacy_actions/*.md</code>,但這些檔案在母 repo 而非部署的 <code class="code">_public/</code> sub-repo。<strong>broken_target 從 3,624 降到 67(98% 修復)</strong>。三步修法:(1) 把 <code class="code">data/sources/*.md</code> + <code class="code">data/advocacy_actions/*.md</code> 鏡像到 <code class="code">_public/</code>(380 KB,42 檔)(2) 修 <code class="code">render_timeline.py</code> 的相對路徑邏輯 (3) 對不存在的 source 改顯示「📄 原始檔(待補)」灰字而非 <code class="code">&lt;a&gt;</code>。三平台總 issues:3,713 → <strong>156</strong>(96% 修復)。同樣的標準對自己,先承認再修復。
+</div>
+
 <p style="font-size:13px;color:#5C5C5C;margin-top:32px;border-top:1px dashed #DDD8CD;padding-top:18px;">
 本文以 CC BY 4.0 授權釋出,自由轉載 / 改編,需註明出處。引用建議格式:<br>
 三公約共構平台。(2026-05-06)。〈監督政府的平台,如何監督自己?〉。網址:cedaw.taiwanmommies.org/blog/2026-05-06-platform-self-audit.html

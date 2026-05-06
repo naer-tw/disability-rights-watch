@@ -137,6 +137,10 @@ This indicator is inverted (lower is better), reads from link_audit.json automat
 
 <p>We admitted 88, then drove it to 50, target 0. And the government?</p>
 
+<div class="callout" style="background:#FFF8E1;border-left-color:#C68822;margin-top:30px;">
+<strong>📌 Wave 169 postscript (2026-05-06):</strong> After this piece went live we re-ran link_audit and noticed we'd been watching only <code class="code">dead_anchor</code> while ignoring <code class="code">broken_target</code> (links to files that don't exist). CRC's 14 timeline pages cited <code class="code">../../data/sources/*.md</code> and <code class="code">../../data/advocacy_actions/*.md</code> — but those files lived in the parent repo, not the deployed <code class="code">_public/</code> sub-repo. <strong>broken_target fell from 3,624 to 67 (98% repair).</strong> Three fixes: (1) mirror <code class="code">data/sources/*.md</code> + <code class="code">data/advocacy_actions/*.md</code> into <code class="code">_public/</code> (380 KB, 42 files); (2) fix the relative-path logic in <code class="code">render_timeline.py</code>; (3) for non-existent sources show grey "📄 source pending" text instead of an <code class="code">&lt;a&gt;</code>. Three-platform totals: 3,713 → <strong>156</strong> (96% repair). Same standard applied to ourselves: admit, then repair.
+</div>
+
 <p style="font-size:13px;color:#5C5C5C;margin-top:32px;border-top:1px dashed #DDD8CD;padding-top:18px;">
 Released under CC BY 4.0. Free to reproduce / adapt with attribution. Suggested citation:<br>
 Tri-Covenant Watch. (2026-05-06). "How Does a Platform That Audits Government Audit Itself?" cedaw.taiwanmommies.org/blog/2026-05-06-platform-self-audit-en.html
