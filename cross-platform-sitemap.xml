@@ -30,6 +30,24 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- Blog index integrating all 6 case studies (Wave 151) -->
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/blog/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/blog/index-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/blog/index-en.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/blog/index-en.html"/>
+  </url>
+
   <!-- Sixth (final) case study — LGBTQI+ children low across all covenants (Wave 150) -->
   <url>
     <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-lgbtqi-children-low-everywhere.html</loc>
