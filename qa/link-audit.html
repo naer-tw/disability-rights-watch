@@ -33,14 +33,16 @@ footer { background: #0E2238; color: #fff; padding: 18px; text-align: center; fo
 
 <div class="intro">
 本頁追蹤跨平台 link-audit 結果 — 連結是否仍正確、有沒有死 anchor、是否還有過時域名。
-首次 audit:<strong>3,775</strong> issues across 3 platforms(1 snapshot).
-歷史 issue 多為 CEDAW canonical-domain absolute path,在 GitHub Pages sub-path 部署下顯為「broken」。
-真正關注:每月 dead_anchor 與新引入 broken target 是否上升。
+首次 audit:<strong>3,751</strong> issues across 3 platforms(1 snapshot).
+<br><br>
+<strong>📐 注意 — 大部分 issue 為已知結構性問題,不一定可修</strong>:CRC 平台多數 broken_target 指向 <code>../../data/...md</code>(parent repo 的 markdown 來源,deployed sub-repo 中不存在,但 markdown 連結是設計用於本地檢視)。Wave 163 已將 <code>${...}</code> JS template 與 <code>/foo</code> platform-root 兩類 false positives 過濾出來。
+<br><br>
+<strong>真正可作為 KPI</strong>:<code>dead_anchor</code> 數字(代表錨點失靈)與新增 <code>broken_target</code> 數字增量(代表新引入的 broken link)。
 </div>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:18px 0;">
   <div style="background:#fff;padding:18px 22px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.06);text-align:center;border-top:4px solid #C2185B;">
-    <div class="summary-num">3,666</div>
+    <div class="summary-num">3,624</div>
     <div class="summary-lbl">broken_target</div>
   </div>
   <div style="background:#fff;padding:18px 22px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.06);text-align:center;border-top:4px solid #E65100;">
@@ -51,8 +53,12 @@ footer { background: #0E2238; color: #fff; padding: 18px; text-align: center; fo
     <div class="summary-num" style="color:#C68822">21</div>
     <div class="summary-lbl">stale_subdomain</div>
   </div>
+  <div style="background:#fff;padding:18px 22px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.06);text-align:center;border-top:4px solid #5C2A7E;">
+    <div class="summary-num" style="color:#5C2A7E">18</div>
+    <div class="summary-lbl">platform_root</div>
+  </div>
   <div style="background:#fff;padding:18px 22px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.06);text-align:center;border-top:4px solid #1F1F1F;">
-    <div class="summary-num" style="color:#1F1F1F">3,775</div>
+    <div class="summary-num" style="color:#1F1F1F">3,751</div>
     <div class="summary-lbl">total · 2026-05-06</div>
   </div>
 </div>
@@ -62,16 +68,16 @@ footer { background: #0E2238; color: #fff; padding: 18px; text-align: center; fo
 <line x1="60" y1="208.0" x2="700" y2="208.0" stroke="#E8E3D6" stroke-dasharray="2,2"/>
 <text x="52" y="211.0" text-anchor="end" font-size="10" fill="#5C5C5C">0</text>
 <line x1="60" y1="163.0" x2="700" y2="163.0" stroke="#E8E3D6" stroke-dasharray="2,2"/>
-<text x="52" y="166.0" text-anchor="end" font-size="10" fill="#5C5C5C">943</text>
+<text x="52" y="166.0" text-anchor="end" font-size="10" fill="#5C5C5C">937</text>
 <line x1="60" y1="118.0" x2="700" y2="118.0" stroke="#E8E3D6" stroke-dasharray="2,2"/>
-<text x="52" y="121.0" text-anchor="end" font-size="10" fill="#5C5C5C">1,887</text>
+<text x="52" y="121.0" text-anchor="end" font-size="10" fill="#5C5C5C">1,875</text>
 <line x1="60" y1="73.0" x2="700" y2="73.0" stroke="#E8E3D6" stroke-dasharray="2,2"/>
-<text x="52" y="76.0" text-anchor="end" font-size="10" fill="#5C5C5C">2,831</text>
+<text x="52" y="76.0" text-anchor="end" font-size="10" fill="#5C5C5C">2,813</text>
 <line x1="60" y1="28.0" x2="700" y2="28.0" stroke="#E8E3D6" stroke-dasharray="2,2"/>
-<text x="52" y="31.0" text-anchor="end" font-size="10" fill="#5C5C5C">3,775</text>
+<text x="52" y="31.0" text-anchor="end" font-size="10" fill="#5C5C5C">3,751</text>
 <text x="380.0" y="228" text-anchor="middle" font-size="10" fill="#5C5C5C">2026-05-06</text>
 <circle cx="380.0" cy="28.0" r="4" fill="#C2185B"/>
-<text x="380.0" y="18.0" text-anchor="middle" font-size="11" fill="#C2185B" font-weight="700">3,775</text>
+<text x="380.0" y="18.0" text-anchor="middle" font-size="11" fill="#C2185B" font-weight="700">3,751</text>
 </svg></div>
 
 <h2 style="font-family:'Noto Serif TC',Georgia,serif;font-size:20px;color:#1F1F1F;border-bottom:2px solid #4B2480;padding-bottom:6px;margin:26px 0 12px;">By platform · Latest snapshot</h2>
@@ -81,26 +87,30 @@ footer { background: #0E2238; color: #fff; padding: 18px; text-align: center; fo
 <th style="text-align:right;background:rgba(194,24,91,0.85);">broken_target</th>
 <th style="text-align:right;background:rgba(230,81,0,0.85);">dead_anchor</th>
 <th style="text-align:right;background:rgba(198,136,34,0.85);">stale_subdomain</th>
+<th style="text-align:right;background:rgba(92,42,126,0.85);">platform_root</th>
 <th style="text-align:right;background:#1F4F3D;">total</th>
 </tr></thead>
 <tbody><tr>
 <td style="padding:10px 14px;font-weight:700;color:#1F1F1F;">CEDAW</td>
-<td style="padding:10px 14px;text-align:right;color:#C2185B;font-family:Inter,monospace;font-weight:700;">28</td>
+<td style="padding:10px 14px;text-align:right;color:#C2185B;font-family:Inter,monospace;font-weight:700;">22</td>
 <td style="padding:10px 14px;text-align:right;color:#E65100;font-family:Inter,monospace;font-weight:700;">40</td>
 <td style="padding:10px 14px;text-align:right;color:#C68822;font-family:Inter,monospace;font-weight:700;">7</td>
-<td style="padding:10px 14px;text-align:right;color:#1F1F1F;font-family:Inter,monospace;font-weight:700;font-size:15px;">75</td>
+<td style="padding:10px 14px;text-align:right;color:#5C2A7E;font-family:Inter,monospace;font-weight:700;">1</td>
+<td style="padding:10px 14px;text-align:right;color:#1F1F1F;font-family:Inter,monospace;font-weight:700;font-size:15px;">70</td>
 </tr><tr>
 <td style="padding:10px 14px;font-weight:700;color:#1F1F1F;">CRC</td>
-<td style="padding:10px 14px;text-align:right;color:#C2185B;font-family:Inter,monospace;font-weight:700;">3621</td>
+<td style="padding:10px 14px;text-align:right;color:#C2185B;font-family:Inter,monospace;font-weight:700;">3599</td>
 <td style="padding:10px 14px;text-align:right;color:#E65100;font-family:Inter,monospace;font-weight:700;">44</td>
 <td style="padding:10px 14px;text-align:right;color:#C68822;font-family:Inter,monospace;font-weight:700;">7</td>
-<td style="padding:10px 14px;text-align:right;color:#1F1F1F;font-family:Inter,monospace;font-weight:700;font-size:15px;">3672</td>
+<td style="padding:10px 14px;text-align:right;color:#5C2A7E;font-family:Inter,monospace;font-weight:700;">6</td>
+<td style="padding:10px 14px;text-align:right;color:#1F1F1F;font-family:Inter,monospace;font-weight:700;font-size:15px;">3656</td>
 </tr><tr>
 <td style="padding:10px 14px;font-weight:700;color:#1F1F1F;">CRPD</td>
-<td style="padding:10px 14px;text-align:right;color:#C2185B;font-family:Inter,monospace;font-weight:700;">17</td>
+<td style="padding:10px 14px;text-align:right;color:#C2185B;font-family:Inter,monospace;font-weight:700;">3</td>
 <td style="padding:10px 14px;text-align:right;color:#E65100;font-family:Inter,monospace;font-weight:700;">4</td>
 <td style="padding:10px 14px;text-align:right;color:#C68822;font-family:Inter,monospace;font-weight:700;">7</td>
-<td style="padding:10px 14px;text-align:right;color:#1F1F1F;font-family:Inter,monospace;font-weight:700;font-size:15px;">28</td>
+<td style="padding:10px 14px;text-align:right;color:#5C2A7E;font-family:Inter,monospace;font-weight:700;">11</td>
+<td style="padding:10px 14px;text-align:right;color:#1F1F1F;font-family:Inter,monospace;font-weight:700;font-size:15px;">25</td>
 </tr></tbody>
 </table>
 
@@ -108,14 +118,15 @@ footer { background: #0E2238; color: #fff; padding: 18px; text-align: center; fo
 <strong>📐 Category meanings:</strong><br>
 <span class="pill" style="background:rgba(194,24,91,0.15);color:#8E0E40;">broken_target</span> 連結指向不存在的檔案(可能因相對路徑、絕對路徑、或被刪除頁面)<br>
 <span class="pill" style="background:rgba(230,81,0,0.15);color:#8E2A18;">dead_anchor</span> #xxx 指到的 id 不存在於目標檔案中<br>
-<span class="pill" style="background:rgba(198,136,34,0.18);color:#8E5A0E;">stale_subdomain</span> 用了 *.taiwanmommies.org 子網域(應改 naer-tw.github.io)
+<span class="pill" style="background:rgba(198,136,34,0.18);color:#8E5A0E;">stale_subdomain</span> 用了 *.taiwanmommies.org 子網域(應改 naer-tw.github.io)<br>
+<span class="pill" style="background:rgba(92,42,126,0.15);color:#5C2A7E;">platform_root</span> /foo 絕對路徑 — canonical domain 部署能用,GH Pages sub-path 部署會 404(advisory only)
 </div>
 
 <div style="margin-top:18px;">
 <h3 style="font-family:Georgia,serif;font-size:16px;color:#4B2480;margin:0 0 6px;">CEDAW — top 10 files with issues</h3>
 <table style="width:100%;background:#fff;border-radius:6px;border-collapse:collapse;box-shadow:0 1px 3px rgba(0,0,0,0.05);">
 <thead><tr><th style="padding:8px 12px;background:#F1EFEA;text-align:left;font-size:13px;">File</th><th style="padding:8px 12px;background:#F1EFEA;text-align:right;font-size:13px;width:80px;">Issues</th></tr></thead>
-<tbody><tr><td style="padding:6px 12px;font-size:13px;">index.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">4</td></tr><tr><td style="padding:6px 12px;font-size:13px;">templates/_layout_pi.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-22.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-02.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-03.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-15.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-23.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-04.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-08.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-24.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr></tbody></table>
+<tbody><tr><td style="padding:6px 12px;font-size:13px;">index.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">3</td></tr><tr><td style="padding:6px 12px;font-size:13px;">templates/_layout_pi.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-22.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-02.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-03.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-15.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-23.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-04.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-08.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-24.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr></tbody></table>
 </div><div style="margin-top:18px;">
 <h3 style="font-family:Georgia,serif;font-size:16px;color:#4B2480;margin:0 0 6px;">CRC — top 10 files with issues</h3>
 <table style="width:100%;background:#fff;border-radius:6px;border-collapse:collapse;box-shadow:0 1px 3px rgba(0,0,0,0.05);">
@@ -125,7 +136,7 @@ footer { background: #0E2238; color: #fff; padding: 18px; text-align: center; fo
 <h3 style="font-family:Georgia,serif;font-size:16px;color:#4B2480;margin:0 0 6px;">CRPD — top 10 files with issues</h3>
 <table style="width:100%;background:#fff;border-radius:6px;border-collapse:collapse;box-shadow:0 1px 3px rgba(0,0,0,0.05);">
 <thead><tr><th style="padding:8px 12px;background:#F1EFEA;text-align:left;font-size:13px;">File</th><th style="padding:8px 12px;background:#F1EFEA;text-align:right;font-size:13px;width:80px;">Issues</th></tr></thead>
-<tbody><tr><td style="padding:6px 12px;font-size:13px;">404.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">9</td></tr><tr><td style="padding:6px 12px;font-size:13px;">index.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">6</td></tr><tr><td style="padding:6px 12px;font-size:13px;">cross-platform-tour.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">3</td></tr><tr><td style="padding:6px 12px;font-size:13px;">cross-platform-tour-en.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">cross-platform-search-en.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">1</td></tr><tr><td style="padding:6px 12px;font-size:13px;">cross-platform-en.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">1</td></tr><tr><td style="padding:6px 12px;font-size:13px;">advocacy-brief-template-en.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">1</td></tr><tr><td style="padding:6px 12px;font-size:13px;">cross-platform.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">1</td></tr><tr><td style="padding:6px 12px;font-size:13px;">search.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">1</td></tr><tr><td style="padding:6px 12px;font-size:13px;">advocacy-brief-template.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">1</td></tr></tbody></table>
+<tbody><tr><td style="padding:6px 12px;font-size:13px;">404.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">9</td></tr><tr><td style="padding:6px 12px;font-size:13px;">index.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">6</td></tr><tr><td style="padding:6px 12px;font-size:13px;">cross-platform-tour.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">3</td></tr><tr><td style="padding:6px 12px;font-size:13px;">cross-platform-tour-en.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">2</td></tr><tr><td style="padding:6px 12px;font-size:13px;">cross-platform-en.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">1</td></tr><tr><td style="padding:6px 12px;font-size:13px;">advocacy-brief-template-en.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">1</td></tr><tr><td style="padding:6px 12px;font-size:13px;">cross-platform.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">1</td></tr><tr><td style="padding:6px 12px;font-size:13px;">advocacy-brief-template.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">1</td></tr><tr><td style="padding:6px 12px;font-size:13px;">issues/PI-18.html</td><td style="padding:6px 12px;text-align:right;font-family:Inter,monospace;font-size:13px;color:#C2185B;font-weight:700;">1</td></tr></tbody></table>
 </div>
 
 <p style="font-size:12px;color:#5C5C5C;margin-top:24px;">
