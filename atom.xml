@@ -6,7 +6,7 @@
   <link rel="alternate" type="text/html" href="https://cedaw.taiwanmommies.org/" />
   <link rel="alternate" type="application/rss+xml" href="https://cedaw.taiwanmommies.org/feed.xml" />
   <id>https://cedaw.taiwanmommies.org/atom.xml</id>
-  <updated>2026-05-06T13:43:50Z</updated>
+  <updated>2026-05-06T14:14:20Z</updated>
   <rights>CC BY 4.0</rights>
   <author>
     <name>Tri-Covenant Editorial</name>
@@ -14,6 +14,21 @@
     <uri>https://cedaw.taiwanmommies.org/</uri>
   </author>
   <generator uri="https://cedaw.taiwanmommies.org/" version="Wave 145">build_rss_feed.py</generator>
+  <entry>
+    <title type="text">國際對照表 — 17 個國際 benchmark vs 台灣政府文件 / International Benchmarks — 17 Global Reference Points vs Taiwan Government Documents</title>
+    <link rel="alternate" type="text/html" hreflang="zh-Hant" href="https://cedaw.taiwanmommies.org/international-benchmarks.html" />
+    <link rel="alternate" type="text/html" hreflang="en" href="https://cedaw.taiwanmommies.org/international-benchmarks-en.html" />
+    <id>https://cedaw.taiwanmommies.org/international-benchmarks.html</id>
+    <updated>2026-05-06T12:00:00Z</updated>
+    <published>2026-05-06T12:00:00Z</published>
+    <category term="reference_table" />
+    <summary type="text">合併 7 篇案例文中所有 EU FRA 34% / UN Women 2-4× / 澳洲 NDIS / 加拿大 PALS / 紐西蘭 Whaikaha / CRPD GC-3 / CEDAW GR-39 / CRC GC-22 對照數字成一張可排序、可篩選、可全文搜尋的表。17 列 = 17 個可被引用的對照點,每列附國際源 + 台灣對應數字 + gap + PI 連結 + 原始檔 URL。UN reviewer / 學者 / 記者一目瞭然台灣與國際標準的差距。
+
+[EN] Consolidates every international benchmark cited across our 7 case studies into one sortable / filterable / searchable table — EU FRA 34% / UN Women 2-4× / Australia NDIS / Canada PALS / NZ Whaikaha / CRPD GC-3 / CEDAW GR-39 / CRC GC-22. 17 rows; each pairs an international reference with Taiwan&apos;s actual government-document count, the gap, the mapped PI, and a raw-source URL.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/international-benchmarks.html
+English: https://cedaw.taiwanmommies.org/international-benchmarks-en.html</summary>
+  </entry>
   <entry>
     <title type="text">媒體素材包 — 7 段可直接引用的政策論述段落 / Press Kit — 7 Ready-to-Cite Paragraphs for Journalists</title>
     <link rel="alternate" type="text/html" hreflang="zh-Hant" href="https://cedaw.taiwanmommies.org/press-kit.html" />

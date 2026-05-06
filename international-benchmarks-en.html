@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>International Benchmarks — Tri-Covenant Watch</title>
+<meta name="description" content="Sortable table consolidating every OECD / EU / UN / national-government benchmark cited across our 7 case studies. Each row pairs the international reference with Taiwan's actual government-document count and the gap. For UN reviewers, journalists, and academics.">
+<meta property="og:title" content="International Benchmarks — Tri-Covenant Watch">
+<style>
+body { font-family: Georgia, "Inter", -apple-system, sans-serif; background: #FAFAF7; color: #1F1F1F; line-height: 1.6; margin: 0; }
+header { background: linear-gradient(135deg, #1F4F3D 0%, #4B2480 100%); color: #fff; padding: 30px 24px; text-align: center; }
+header .label { letter-spacing: 0.18em; text-transform: uppercase; font-size: 11px; opacity: 0.85; }
+header h1 { font-family: Georgia, serif; font-size: 26px; line-height: 1.35; max-width: 820px; margin: 10px auto 6px; }
+header p.subtitle { font-size: 14px; opacity: 0.95; max-width: 720px; margin: 8px auto 0; }
+nav { background: #fff; padding: 11px 24px; border-bottom: 1px solid #E8E3D6; }
+nav a { color: #4B2480; text-decoration: none; font-size: 13.5px; font-weight: 600; margin-right: 16px; }
+nav a.zh { float: right; background: #4B2480; color: #fff; padding: 4px 10px; border-radius: 4px; }
+main { max-width: 1080px; margin: 24px auto; padding: 0 24px; }
+.intro { background: #E0EAE3; border-left: 4px solid #1F4F3D; padding: 16px 22px; border-radius: 0 6px 6px 0; margin-bottom: 22px; font-size: 13.5px; line-height: 1.85; }
+.controls { display: flex; gap: 8px; flex-wrap: wrap; margin: 14px 0; padding: 12px 16px; background: #fff; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.controls input[type="search"] { padding: 7px 12px; border: 1px solid #DDD8CD; border-radius: 4px; font-size: 13.5px; flex: 1; min-width: 180px; }
+.controls button { padding: 6px 12px; border: 1px solid #DDD8CD; background: #FAFAF7; border-radius: 14px; cursor: pointer; font-size: 12.5px; color: #5C5C5C; }
+.controls button.active { background: #4B2480; color: #fff; border-color: #4B2480; }
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); margin-top: 6px; overflow: hidden; }
+th { background: #0E2238; color: #fff; padding: 10px 12px; font-size: 12.5px; text-align: left; cursor: pointer; user-select: none; }
+th:hover { background: #1F2F48; }
+th.sort-asc::after { content: ' ▲'; opacity: 0.7; }
+th.sort-desc::after { content: ' ▼'; opacity: 0.7; }
+td { border-top: 1px solid #E8E3D6; padding: 10px 12px; font-size: 13px; vertical-align: top; }
+td.flag { font-size: 18px; text-align: center; width: 36px; }
+td.bench { font-family: Georgia, serif; font-weight: 700; color: #1F4F3D; white-space: nowrap; }
+td.tw { font-family: Georgia, serif; font-weight: 700; color: #C2185B; white-space: nowrap; }
+td.tw.zero { background: rgba(194,24,91,0.08); }
+td.gap { font-family: Georgia, serif; font-weight: 700; color: #8E2A18; }
+td.pi a { color: #4B2480; text-decoration: none; font-weight: 700; font-size: 12.5px; }
+td.src a { color: #5C5C5C; font-size: 11.5px; text-decoration: underline; }
+.legend { font-size: 11.5px; color: #5C5C5C; margin: 16px 0 10px; line-height: 1.7; padding: 10px 14px; background: #fff; border-radius: 6px; }
+.legend strong { color: #1F1F1F; }
+footer { background: #0E2238; color: #fff; padding: 22px; text-align: center; font-size: 12px; margin-top: 40px; }
+footer a { color: #fff; opacity: 0.9; }
+</style>
+</head>
+<body>
+<header>
+  <div class="label">International Benchmarks · CC BY 4.0</div>
+  <h1>All international benchmarks cited across 7 case studies — one sortable / filterable table</h1>
+  <p class="subtitle">17 rows · each = one international benchmark + Taiwan's actual government-document count + the gap + linked PI · Built for UN reviewers, academics, and journalists.</p>
+</header>
+<nav>
+  <a href="tri-covenant-about-en.html">About</a>
+  <a href="executive-summary-en.html">📋 Executive Summary</a>
+  <a href="press-kit-en.html">📰 Press Kit</a>
+  <a href="structural-findings-en.html">🔬 6 Findings</a>
+  <a href="blog/index-en.html">📰 7 Case Studies</a>
+  <a href="international-benchmarks.html" class="zh">中文版</a>
+</nav>
+
+<main>
+
+<div class="intro">
+This table consolidates every international benchmark cited across our 7 case studies — EU FRA 34%, UN Women 2-4×, Australia NDIS, Canada PALS, NZ Whaikaha, CRC GC-22, CEDAW GR-39, etc. — into one sortable / filterable matrix. <strong>Each row is a citable comparison point</strong>: international source on the left (gov / international body / academic), the Taiwan equivalent count from our government-document index in the middle, and the gap on the right.<br><br>
+<strong>How to use</strong>: click column headers to sort · search box filters by any term · click PI links for full issue dossiers · click "Source" links for raw evidence.
+</div>
+
+<div class="controls">
+  <input type="search" id="q" placeholder="Search (e.g.: disability / EU / SOGIESC / GR-39 / OECD ...)">
+  <button onclick="filterBy('all')" class="filter-btn active" data-filter="all">All (17)</button>
+  <button onclick="filterBy('disability')" class="filter-btn" data-filter="disability">Disability</button>
+  <button onclick="filterBy('women')" class="filter-btn" data-filter="women">Women</button>
+  <button onclick="filterBy('children')" class="filter-btn" data-filter="children">Children</button>
+  <button onclick="filterBy('intersectional')" class="filter-btn" data-filter="intersectional">Intersectional</button>
+</div>
+
+<table id="bench-table">
+<thead>
+<tr>
+<th onclick="sortBy(0)" data-col="0">🌍</th>
+<th onclick="sortBy(1)" data-col="1">Topic</th>
+<th onclick="sortBy(2)" data-col="2">International benchmark</th>
+<th onclick="sortBy(3)" data-col="3">Value</th>
+<th onclick="sortBy(4)" data-col="4">Source (year)</th>
+<th onclick="sortBy(5)" data-col="5">Taiwan gov docs</th>
+<th onclick="sortBy(6)" data-col="6">Gap</th>
+<th onclick="sortBy(7)" data-col="7">PI</th>
+</tr>
+</thead>
+<tbody>
+
+<tr data-cat="disability women intersectional">
+  <td class="flag">🇪🇺</td>
+  <td>Disabled women's violence (12-month)</td>
+  <td>EU 28-country survey: physical / sexual violence rate</td>
+  <td class="bench">34%</td>
+  <td class="src">EU FRA (2014)<br><a href="https://fra.europa.eu/en/publication/2014/violence-against-women-eu-wide-survey-main-results-report" target="_blank" rel="noopener">source</a></td>
+  <td class="tw zero">0 segs (CRPD)</td>
+  <td class="gap">~∞</td>
+  <td class="pi"><a href="issues/PI-17-en.html">PI-17</a></td>
+</tr>
+
+<tr data-cat="disability women intersectional">
+  <td class="flag">🇺🇳</td>
+  <td>Disabled women's violence risk multiplier</td>
+  <td>UN Women estimate vs general female</td>
+  <td class="bench">2-4×</td>
+  <td class="src">UN Women + UNFPA (2018)<br><a href="https://www.unwomen.org/en/digital-library" target="_blank" rel="noopener">source</a></td>
+  <td class="tw zero">0 segs</td>
+  <td class="gap">~∞</td>
+  <td class="pi"><a href="issues/PI-17-en.html">PI-17</a></td>
+</tr>
+
+<tr data-cat="disability women intersectional">
+  <td class="flag">🇦🇺</td>
+  <td>Disabled women's violence multiplier</td>
+  <td>Australia ABS Personal Safety Survey</td>
+  <td class="bench">2×</td>
+  <td class="src">ABS (2017)<br><a href="https://www.abs.gov.au/" target="_blank" rel="noopener">source</a></td>
+  <td class="tw zero">0 segs</td>
+  <td class="gap">~∞</td>
+  <td class="pi"><a href="issues/PI-17-en.html">PI-17</a></td>
+</tr>
+
+<tr data-cat="women">
+  <td class="flag">🇺🇳</td>
+  <td>Disabled women dedicated chapter</td>
+  <td>CRPD GC-3 §32-37 dedicates chapter to disabled women's violence</td>
+  <td class="bench">required</td>
+  <td class="src">CRPD GC-3 (2016)<br><a href="https://tbinternet.ohchr.org/" target="_blank" rel="noopener">source</a></td>
+  <td class="tw">no chapter</td>
+  <td class="gap">missing</td>
+  <td class="pi"><a href="issues/PI-17-en.html">PI-17</a></td>
+</tr>
+
+<tr data-cat="women">
+  <td class="flag">🇺🇳</td>
+  <td>Violence-against-women General Recommendation</td>
+  <td>CEDAW GR-19 / GR-35 on gender-based violence</td>
+  <td class="bench">required</td>
+  <td class="src">CEDAW (1992 / 2017)<br><a href="https://tbinternet.ohchr.org/" target="_blank" rel="noopener">source</a></td>
+  <td class="tw">CEDAW 459 segs</td>
+  <td class="gap">no disability cross</td>
+  <td class="pi"><a href="issues/PI-17-en.html">PI-17</a></td>
+</tr>
+
+<tr data-cat="disability">
+  <td class="flag">🇺🇳</td>
+  <td>Reasonable accommodation</td>
+  <td>CRPD §2 + GC-2 flagship concept</td>
+  <td class="bench">CRPD flagship</td>
+  <td class="src">CRPD §2 (2006)<br><a href="https://www.un.org/disabilities/" target="_blank" rel="noopener">source</a></td>
+  <td class="tw zero">7 segs (0.2%)</td>
+  <td class="gap">100× less than CEDAW</td>
+  <td class="pi"><a href="issues/PI-12-en.html">PI-12</a></td>
+</tr>
+
+<tr data-cat="disability women">
+  <td class="flag">🌐</td>
+  <td>Reasonable accommodation — cross-covenant</td>
+  <td>CEDAW gov docs / CRC gov docs / CRPD gov docs</td>
+  <td class="bench">100 / 173 / 7</td>
+  <td class="src">This platform (2026)<br><a href="cross-platform-frequency-en.html">source</a></td>
+  <td class="tw">CRPD 7 (lowest)</td>
+  <td class="gap">15-25×</td>
+  <td class="pi"><a href="issues/PI-12-en.html">PI-12</a></td>
+</tr>
+
+<tr data-cat="disability intersectional">
+  <td class="flag">🇦🇺</td>
+  <td>Indigenous disability prevalence multiplier</td>
+  <td>Australia NDIS: Aboriginal & Torres Strait Islander vs general</td>
+  <td class="bench">1.4×</td>
+  <td class="src">NDIS (2023)<br><a href="https://www.ndis.gov.au/" target="_blank" rel="noopener">source</a></td>
+  <td class="tw zero">0 segs (CRPD)</td>
+  <td class="gap">~∞</td>
+  <td class="pi"><a href="issues/PI-19-en.html">PI-19</a></td>
+</tr>
+
+<tr data-cat="disability intersectional">
+  <td class="flag">🇨🇦</td>
+  <td>Indigenous disability prevalence multiplier</td>
+  <td>Canada PALS — Indigenous identity disability rate</td>
+  <td class="bench">2×</td>
+  <td class="src">Statistics Canada (2017)<br><a href="https://www.statcan.gc.ca/" target="_blank" rel="noopener">source</a></td>
+  <td class="tw zero">0 segs</td>
+  <td class="gap">~∞</td>
+  <td class="pi"><a href="issues/PI-19-en.html">PI-19</a></td>
+</tr>
+
+<tr data-cat="disability intersectional">
+  <td class="flag">🇳🇿</td>
+  <td>Dedicated disabled-indigenous ministry</td>
+  <td>Whaikaha — Ministry of Disabled People with explicit Māori representation</td>
+  <td class="bench">est. 2022</td>
+  <td class="src">NZ Whaikaha (2022)<br><a href="https://www.whaikaha.govt.nz/" target="_blank" rel="noopener">source</a></td>
+  <td class="tw">none</td>
+  <td class="gap">no framework</td>
+  <td class="pi"><a href="issues/PI-19-en.html">PI-19</a></td>
+</tr>
+
+<tr data-cat="women intersectional">
+  <td class="flag">🇺🇳</td>
+  <td>Indigenous women × disabled women cross</td>
+  <td>CEDAW GR-39 §54-58 three-way disaggregation requirement</td>
+  <td class="bench">required</td>
+  <td class="src">CEDAW GR-39 (2022)<br><a href="https://tbinternet.ohchr.org/" target="_blank" rel="noopener">source</a></td>
+  <td class="tw zero">not implemented</td>
+  <td class="gap">no statistic</td>
+  <td class="pi"><a href="issues/PI-15-en.html">PI-15</a></td>
+</tr>
+
+<tr data-cat="women children intersectional">
+  <td class="flag">🇺🇳</td>
+  <td>SOGIESC cross-covenant discourse</td>
+  <td>CEDAW / CRC / CRPD gov docs SOGIESC discourse share</td>
+  <td class="bench">75% / 19% / 0%</td>
+  <td class="src">This platform (2026)<br><a href="cross-platform-keywords-en.html">source</a></td>
+  <td class="tw zero">CRPD 0 segs</td>
+  <td class="gap">100× concentration</td>
+  <td class="pi"><a href="issues/PI-18-en.html">PI-18</a></td>
+</tr>
+
+<tr data-cat="children">
+  <td class="flag">🇺🇳</td>
+  <td>LGBTQI+ children General Comment</td>
+  <td>CRC GC-22 §32-34 LGBTQI+ child-protection requirement</td>
+  <td class="bench">required</td>
+  <td class="src">CRC GC-22 (2017)<br><a href="https://tbinternet.ohchr.org/" target="_blank" rel="noopener">source</a></td>
+  <td class="tw zero">CRC 1 seg</td>
+  <td class="gap">unmet</td>
+  <td class="pi"><a href="https://naer-tw.github.io/child-rights-watch/issues/PI-14-en.html" target="_blank" rel="noopener">CRC PI-14</a></td>
+</tr>
+
+<tr data-cat="children intersectional">
+  <td class="flag">🌐</td>
+  <td>LGBTQI+ children cross-covenant</td>
+  <td>CEDAW + CRC + CRPD strict-intersection segments</td>
+  <td class="bench">should ≥ 30</td>
+  <td class="src">CRC GC-22 estimate<br><a href="blog/2026-05-06-lgbtqi-children-low-everywhere-en.html">source</a></td>
+  <td class="tw zero">3 segs (2/1/0)</td>
+  <td class="gap">10×</td>
+  <td class="pi"><a href="https://naer-tw.github.io/child-rights-watch/issues/PI-14-en.html" target="_blank" rel="noopener">CRC PI-14</a></td>
+</tr>
+
+<tr data-cat="women">
+  <td class="flag">🇺🇳</td>
+  <td>Women × disabled × violence three-way stat</td>
+  <td>CEDAW GR-39 §54 disability disaggregation</td>
+  <td class="bench">required</td>
+  <td class="src">CEDAW GR-39 (2022)<br><a href="https://tbinternet.ohchr.org/" target="_blank" rel="noopener">source</a></td>
+  <td class="tw zero">113 system has no disability flag</td>
+  <td class="gap">missing field</td>
+  <td class="pi"><a href="issues/PI-17-en.html">PI-17</a></td>
+</tr>
+
+<tr data-cat="disability">
+  <td class="flag">🌐</td>
+  <td>3-platform crawled segments</td>
+  <td>Cross-platform government-document full-text segment count</td>
+  <td class="bench">Our platform: 102,728</td>
+  <td class="src">This platform (2026-05)<br><a href="executive-summary-en.html">source</a></td>
+  <td class="tw">CRPD only 3,493 (3.4%)</td>
+  <td class="gap">CRPD = 1/20 women, 1/30 children</td>
+  <td class="pi"><a href="cross-platform-en.html">overview</a></td>
+</tr>
+
+<tr data-cat="all">
+  <td class="flag">🌍</td>
+  <td>Platform health (self-audit)</td>
+  <td>Wave 167 public commitment: dead_anchor 0 by 2027-Q1</td>
+  <td class="bench">target 0</td>
+  <td class="src">Tri-Covenant Watch Wave 171<br><a href="qa/link-audit.html">source</a></td>
+  <td class="tw">2026-05-06: 0 reached</td>
+  <td class="gap">9 months early</td>
+  <td class="pi"><a href="blog/2026-05-06-platform-self-audit-en.html">📰 W167-171</a></td>
+</tr>
+
+</tbody>
+</table>
+
+<div class="legend">
+<strong>📐 Column key:</strong>
+<strong>🌍 Flag</strong> data source country / international body ·
+<strong>Topic</strong> mapped to a PI (Policy Issue) ·
+<strong>International benchmark</strong> the specific reference value ·
+<strong>Value</strong> concrete number (% / multiplier / segments) ·
+<strong>Source (year)</strong> originating institution and year ·
+<strong>Taiwan gov docs</strong> our crawler's actual count (<span style="color:#C2185B;font-weight:700">red = 0 segments</span>) ·
+<strong>Gap</strong> shorthand for the discrepancy ·
+<strong>PI</strong> mapped Policy Issue dossier.
+</div>
+
+<p style="font-size:13px;color:#5C5C5C;margin-top:24px;border-top:1px dashed #DDD8CD;padding-top:18px;">
+Released under CC BY 4.0 — free to reproduce / adapt with attribution. Suggested citation: Tri-Covenant Watch. (2026-05-06). "International Benchmarks." cedaw.taiwanmommies.org/international-benchmarks-en.html
+</p>
+
+</main>
+
+<script>
+function filterBy(cat) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.filter === cat));
+  document.querySelectorAll('#bench-table tbody tr').forEach(tr => {
+    if (cat === 'all') {
+      tr.style.display = '';
+    } else {
+      const cats = (tr.dataset.cat || '').split(' ');
+      tr.style.display = cats.includes(cat) ? '' : 'none';
+    }
+  });
+}
+document.getElementById('q').addEventListener('input', (e) => {
+  const q = e.target.value.toLowerCase().trim();
+  document.querySelectorAll('#bench-table tbody tr').forEach(tr => {
+    const text = tr.textContent.toLowerCase();
+    tr.style.display = !q || text.includes(q) ? '' : 'none';
+  });
+});
+let sortState = { col: -1, dir: 1 };
+function sortBy(col) {
+  const tbody = document.querySelector('#bench-table tbody');
+  const rows = Array.from(tbody.children);
+  if (sortState.col === col) sortState.dir *= -1;
+  else { sortState.col = col; sortState.dir = 1; }
+  rows.sort((a, b) => {
+    const av = a.children[col].textContent.trim();
+    const bv = b.children[col].textContent.trim();
+    const an = parseFloat(av.replace(/[,%×segs]/g, ''));
+    const bn = parseFloat(bv.replace(/[,%×segs]/g, ''));
+    if (!isNaN(an) && !isNaN(bn)) return sortState.dir * (an - bn);
+    return sortState.dir * av.localeCompare(bv);
+  });
+  rows.forEach(r => tbody.appendChild(r));
+  document.querySelectorAll('th').forEach((th, i) => {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (i === col) th.classList.add(sortState.dir === 1 ? 'sort-asc' : 'sort-desc');
+  });
+}
+</script>
+
+<footer>
+Tri-Covenant Watch · CC BY 4.0 · International Benchmarks · Wave 174 (2026-05-06)<br>
+<a href="https://naer-tw.github.io/cedaw-watch/">CEDAW</a> · <a href="https://naer-tw.github.io/child-rights-watch/">CRC</a> · <a href="https://naer-tw.github.io/disability-rights-watch/">CRPD</a> · <a href="feed.xml">📡 RSS</a>
+</footer>
+</body>
+</html>
