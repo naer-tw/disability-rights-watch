@@ -141,6 +141,10 @@ footer a { color: #fff; opacity: 0.9; }
 <strong>📌 Wave 169 後記(2026-05-06):</strong>本文上線後重跑 link_audit,發現之前只盯 dead_anchor,忽略了 <code class="code">broken_target</code>(連到不存在的檔案)。CRC 平台 14 個 timeline 頁面引用 <code class="code">../../data/sources/*.md</code> 和 <code class="code">../../data/advocacy_actions/*.md</code>,但這些檔案在母 repo 而非部署的 <code class="code">_public/</code> sub-repo。<strong>broken_target 從 3,624 降到 67(98% 修復)</strong>。三步修法:(1) 把 <code class="code">data/sources/*.md</code> + <code class="code">data/advocacy_actions/*.md</code> 鏡像到 <code class="code">_public/</code>(380 KB,42 檔)(2) 修 <code class="code">render_timeline.py</code> 的相對路徑邏輯 (3) 對不存在的 source 改顯示「📄 原始檔(待補)」灰字而非 <code class="code">&lt;a&gt;</code>。三平台總 issues:3,713 → <strong>156</strong>(96% 修復)。同樣的標準對自己,先承認再修復。
 </div>
 
+<div class="callout" style="background:#E0EAE3;border-left-color:#2D7059;margin-top:14px;">
+<strong>📌 Wave 170-171 後記(2026-05-06,提前 9 個月):</strong>持續同樣的紀律,Wave 170 把 stale_subdomain(21)和 platform_root_absolute(18)清零;Wave 171 給 <code class="code">crc-articles.html</code> 與 <code class="code">chain.html</code> 各加 14 個 PI-XX 隱形錨點 + 一個小型 hash router(JS),把 dead_anchor 也降到 <strong>0</strong>。<strong>第 7 項指標原訂 2027-Q1 達標,實際 2026-05-06 達成 — 提前 9 個月</strong>。三平台總 issues 156 → <strong>10</strong>(94% 修復,僅剩 broken_target 10 個小範圍佔位)。意義:當量化標準對外公開、被讀者監督,自我約束的速度就會加快。「先承認 88,然後降到 50」是文初的承諾,Wave 171 把它兌現到 <strong>0</strong>。政府呢?
+</div>
+
 <p style="font-size:13px;color:#5C5C5C;margin-top:32px;border-top:1px dashed #DDD8CD;padding-top:18px;">
 本文以 CC BY 4.0 授權釋出,自由轉載 / 改編,需註明出處。引用建議格式:<br>
 三公約共構平台。(2026-05-06)。〈監督政府的平台,如何監督自己?〉。網址:cedaw.taiwanmommies.org/blog/2026-05-06-platform-self-audit.html
