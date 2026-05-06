@@ -38,6 +38,14 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- QA · Link Audit Dashboard (Wave 162) -->
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/qa/link-audit.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Monthly action tracker — 6 structural findings indicators (Wave 152) -->
   <url>
     <loc>https://naer-tw.github.io/disability-rights-watch/monthly-tracker.html</loc>
