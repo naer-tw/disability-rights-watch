@@ -152,7 +152,13 @@ footer a { color: #fff; opacity: 0.9; }
 <div class="callout" style="background:#ECE0F2;border-left-color:#4B2480;margin-top:14px;">
 <strong>📌 Wave 177-179 後記:第二條自審 KPI 收斂(WCAG 2.1 AA · 94% files clean)。</strong>link 健康歸零後,把同一套量化邏輯延伸到 web accessibility — 因為一個身障權益監督平台,本身的 a11y 不該只是勉強通過。<br><br>
 <strong>W177</strong> baseline:921 個 HTML 中只有 20 個全綠(2.2%),共 27,084 個 findings。<strong>W178</strong> 修 218 C7(<code class="code">&lt;html&gt;</code> 缺 <code class="code">lang</code>)+ 31 C6(缺 skip-link)→ 兩個結構性類別歸零。<strong>W179 兩階段</strong>:第一階段重寫 C1 audit 邏輯 — 之前是 element-agnostic 比對(每個 <code class="code">color:#fff</code> 都跟 body 背景配對,白字按鈕被誤判),改為 scope-aware(同一 CSS rule 或 inline-style 內才配對)→ <strong>26,866 → 157(99.4% 是稽核工具的 false positive)</strong>。第二階段做真實調色 — 把 8 種低對比 badge 背景色(<code class="code">#C68822</code> / <code class="code">#E65100</code> / <code class="code">#2FA598</code> 等)替換為 WCAG-AA-safe 變體(<code class="code">#8E5A0E</code> / <code class="code">#B5371F</code> / <code class="code">#1F6F66</code> 等),覆蓋 217 檔的 inline + <code class="code">&lt;style&gt;</code> blocks → <strong>157 → 55</strong>。<br><br>
-<strong>結算</strong>:三平台 869/924 全綠(94%)/ C1 色彩對比 0 / 剩 55 全是 C2 base font < 16px(待 W180 處理)。<strong>不僅自我量化,連量化工具本身的可信度也經歷外部檢驗</strong> — Wave 179 的最大發現是承認 W177-178 的「26,866 個違反」其實是工具設計問題,而非真實 a11y 失敗。誠實的數字比好看的數字更有意義。
+<strong>W180</strong>:批次把 body font-size < 16px 全部 bump 到 16px(kids/* 18px),涵蓋 295 檔 → C2 也歸零。<strong>三平台 924/924 全綠(100%)。WCAG 2.1 AA 自審 KPI 在 4 個 wave 內從 27,084 收斂到 0。</strong><br><br>
+<strong>結算 · 兩條自審 KPI 並列收斂</strong>:
+<ul style="margin:6px 0 0 18px;font-size:14px;line-height:1.85;">
+<li><a href="../qa/link-audit.html">link_audit</a>:W162-W176 / 14 wave / 3,751 → 0</li>
+<li><a href="../qa/wcag.html">WCAG 2.1 AA</a>:W177-W180 / 4 wave / 27,084 → 0</li>
+</ul>
+<strong>不僅自我量化,連量化工具本身的可信度也經歷外部檢驗</strong> — Wave 179 的最大發現是承認 W177-178 的「26,866 個違反」其實 99.4% 是工具設計問題,而非真實 a11y 失敗。誠實的數字比好看的數字更有意義。<strong>同樣的問句,從失能轉為已落實</strong>:政府的監督平台量化政府文件失語(0 段)、自身連結健康(0 issue)、自身可及性健康(0 finding)。政府呢?
 </div>
 
 <p style="font-size:13px;color:#5C5C5C;margin-top:32px;border-top:1px dashed #DDD8CD;padding-top:18px;">

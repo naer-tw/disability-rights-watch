@@ -74,7 +74,7 @@ a:hover { color: var(--brand); }
 .result-card .r-type.t-act { background: var(--aabe-gold); }
 .result-card h4 { font-family: var(--serif); font-size: 17px; font-weight: 700; line-height: 1.4; color: var(--bg-deep); margin-bottom: 4px; }
 .result-card .r-subtitle { font-size: 12.5px; color: var(--text-muted); margin-bottom: 8px; font-family: var(--sans-en); }
-.result-card .r-body { font-size: 14px; color: var(--text); line-height: 1.6; }
+.result-card .r-body { font-size: 16px; color: var(--text); line-height: 1.6; }
 .result-card mark { background: var(--brand-soft); color: var(--brand-dark); padding: 0 2px; border-radius: 2px; }
 
 .empty-state { text-align: center; padding: 64px 24px; color: var(--text-muted); }
@@ -85,7 +85,7 @@ footer { border-top: 1px solid var(--border); background: var(--bg-deep); color:
 footer a { color: rgba(255,255,255,0.85); }
 
 @media (max-width: 768px) {
-  body { font-size: 15px !important; }
+  body { font-size: 16px !important; }
   main, article, section, .container { padding-left: 16px !important; padding-right: 16px !important; }
   table { font-size: 13px; }
   [class*="grid"] { grid-template-columns: 1fr !important; }
@@ -262,7 +262,7 @@ function doSearch() {
   }).join('');
 
   if (filtered.length > 100) {
-    list.innerHTML += '<p style="text-align:center;color:var(--text-muted);padding:16px;font-size:13px">顯示前 100 筆 · 共 ' + filtered.length + ' 筆 · 請輸入更精確關鍵字</p>';
+    list.innerHTML += '<p style="text-align:center;color:var(--text-muted);padding:16px;font-size:16px">顯示前 100 筆 · 共 ' + filtered.length + ' 筆 · 請輸入更精確關鍵字</p>';
   }
 }
 </script>
