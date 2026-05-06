@@ -30,6 +30,24 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- Sixth (final) case study — LGBTQI+ children low across all covenants (Wave 150) -->
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-lgbtqi-children-low-everywhere.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-lgbtqi-children-low-everywhere.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-lgbtqi-children-low-everywhere-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-lgbtqi-children-low-everywhere-en.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-lgbtqi-children-low-everywhere.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-lgbtqi-children-low-everywhere-en.html"/>
+  </url>
+
   <!-- Fifth case study — SOGIESC concentration (Wave 149) -->
   <url>
     <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-sogiesc-cedaw-concentration.html</loc>
