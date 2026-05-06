@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tri-Covenant Watch — Release Notes (Wave 100-152)</title>
-<meta name="description" content="Citation-ready public release notes for Tri-Covenant Watch (Taiwan). Quick links, top-line numbers, what shipped Wave 100-152, suggested citation, hosting NGOs, replication path.">
-<meta property="og:title" content="Tri-Covenant Watch — Release Notes (Wave 100-152)">
+<title>Tri-Covenant Watch — Release Notes (Wave 100-167)</title>
+<meta name="description" content="Citation-ready public release notes for Tri-Covenant Watch (Taiwan). Quick links, top-line numbers, what shipped Wave 100-167, suggested citation, hosting NGOs, replication path.">
+<meta property="og:title" content="Tri-Covenant Watch — Release Notes (Wave 100-167)">
 <meta property="og:type" content="article">
 <style>
 body { font-family: "Inter", "Noto Sans TC", -apple-system, sans-serif; background: #FAFAF7; color: #1F1F1F; line-height: 1.7; margin: 0; }
@@ -37,7 +37,7 @@ footer a { color: #fff; opacity: 0.9; }
 <body>
 <header>
   <div class="label">Public Release Notes · Tri-Covenant Watch</div>
-  <h1>What shipped: Wave 100-152</h1>
+  <h1>What shipped: Wave 100-167</h1>
   <p>Citation-ready external reference for NGOs, journalists, academics, UN treaty body reviewers, and replicating organizations.</p>
 </header>
 <nav>
@@ -49,7 +49,7 @@ footer a { color: #fff; opacity: 0.9; }
   <a href="monthly-tracker-en.html">📅 Monthly Tracker</a>
 </nav>
 <main>
-<h1 style="font-family:Georgia,serif;font-size:26px;color:#2D7059;margin:24px 0 12px;border-bottom:2px solid #2D7059;padding-bottom:6px;">Tri-Covenant Watch — Public Release Notes (Wave 100-152)</h1>
+<h1 style="font-family:Georgia,serif;font-size:26px;color:#2D7059;margin:24px 0 12px;border-bottom:2px solid #2D7059;padding-bottom:6px;">Tri-Covenant Watch — Public Release Notes (Wave 100-167)</h1>
 
 <blockquote style="background:#FAE0EA;border-left:4px solid #C2185B;padding:12px 16px;margin:10px 0;font-size:13.5px;color:#1F1F1F;">
 <p style="margin:4px 0;"><strong>2026-05-06 · CC BY 4.0 · Citation-ready external reference</strong></p>
@@ -83,10 +83,23 @@ footer a { color: #fff; opacity: 0.9; }
 <ul style="font-size:14px;line-height:1.8;padding-left:22px;margin:8px 0;">
 <li><strong>102,728</strong> government-document segments cross-indexed (CEDAW 29,638 / CRC 69,597 / CRPD 3,493)</li>
 <li><strong>51 Policy Issues</strong> scored across three covenants (18 CEDAW + 14 CRC + 19 CRPD)</li>
-<li><strong>6 cross-covenant structural findings</strong> identified, with 6 dedicated case-study briefs</li>
-<li><strong>60 deployed pages</strong> indexed in sitemap (bilingual ZH + EN)</li>
+<li><strong>6 cross-covenant structural findings</strong> identified, with 6 dedicated case-study briefs + 1 methodology coda = 7 case studies (ZH + EN)</li>
+<li><strong>62 deployed pages</strong> indexed in sitemap (bilingual ZH + EN)</li>
 <li><strong>3 NGOs</strong> co-producing analytics under shared evidence pipeline</li>
+<li><strong>7-indicator monthly tracker</strong> (6 structural findings + 1 platform-health: dead_anchor 50 → target 0 by 2027-Q1)</li>
+<li><strong>link_audit tool</strong> drove dead_anchor 88 → 50 (43% repair rate); the platform now applies the same quantitative scrutiny to itself</li>
 <li><strong>CC BY 4.0</strong> open license (content) + MIT (code)</li>
+</ul>
+
+<h2 style="font-family:Georgia,serif;font-size:20px;color:#1F1F1F;margin:22px 0 10px;border-left:4px solid #2D7059;padding-left:12px;">Wave 153-167 since v1.0 — what's new</h2>
+
+<ul style="font-size:14px;line-height:1.8;padding-left:22px;margin:8px 0;">
+<li><strong>Wave 153-156:</strong> Monthly automation orchestrator (<code>run_monthly_pipeline.sh</code>) — 5-step pipeline (snapshot → trend → 12 analytical pages → cross-platform sync → link audit) runs on the 1st of each month.</li>
+<li><strong>Wave 157-160:</strong> Open-sourced <code>evidence_pipeline.py</code> as a standalone repo at <a href="https://github.com/naer-tw/evidence-pipeline">github.com/naer-tw/evidence-pipeline</a> (MIT). DEVELOPER_GUIDE.md walks NGOs through replicating the architecture; example_link_audit.py demonstrates the same self-audit pattern.</li>
+<li><strong>Wave 161-164:</strong> Built <code>link_audit.py</code> (150 lines) — full-tree HTML scan classifying broken links into 4 categories (broken_target / dead_anchor / stale_subdomain / platform_root_absolute). JSON history snapshots feed an auto-rendering QA dashboard.</li>
+<li><strong>Wave 165:</strong> Three structural fixes drove dead_anchor 88 → 50: CRPD 102-page #main-skip-link backfill (-102), CEDAW deployment-template removal (-2), homepage axis3/axis4/co/outcome invisible anchor markers (-38).</li>
+<li><strong>Wave 166:</strong> dead_anchor promoted to the <strong>7th indicator on the monthly tracker</strong> (Platform Health, baseline 50 → target 0 by 2027-Q1). The dashboard now self-regulates: any commit introducing a new broken anchor surfaces "platform health declining" automatically.</li>
+<li><strong>Wave 167:</strong> Seventh case study (methodology coda) — <a href="blog/2026-05-06-platform-self-audit-en.html">"How Does a Platform That Audits Government Audit Itself?"</a> — pairs the six structural-findings case studies with a parallel demonstration of self-quantification. RSS/Atom feeds at 14 entries.</li>
 </ul>
 
 <h2 style="font-family:Georgia,serif;font-size:20px;color:#1F1F1F;margin:22px 0 10px;border-left:4px solid #2D7059;padding-left:12px;">What this platform produces</h2>
