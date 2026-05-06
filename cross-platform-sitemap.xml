@@ -30,6 +30,24 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- Third case study — Disabled Indigenous (Wave 147) -->
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-disabled-indigenous.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-disabled-indigenous.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-disabled-indigenous-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-disabled-indigenous-en.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-disabled-indigenous.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-disabled-indigenous-en.html"/>
+  </url>
+
   <!-- Second case study — Reasonable Accommodation Paradox (Wave 146) -->
   <url>
     <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-reasonable-accommodation-paradox.html</loc>
