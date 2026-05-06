@@ -6,7 +6,7 @@
   <link rel="alternate" type="text/html" href="https://cedaw.taiwanmommies.org/" />
   <link rel="alternate" type="application/rss+xml" href="https://cedaw.taiwanmommies.org/feed.xml" />
   <id>https://cedaw.taiwanmommies.org/atom.xml</id>
-  <updated>2026-05-06T00:36:51Z</updated>
+  <updated>2026-05-06T01:07:31Z</updated>
   <rights>CC BY 4.0</rights>
   <author>
     <name>Tri-Covenant Editorial</name>
@@ -14,6 +14,21 @@
     <uri>https://cedaw.taiwanmommies.org/</uri>
   </author>
   <generator uri="https://cedaw.taiwanmommies.org/" version="Wave 145">build_rss_feed.py</generator>
+  <entry>
+    <title type="text">身障女性受暴:歐盟 34%、聯合國 2-4 倍,台灣政府文件中 0 段 — 第四案例文 / Violence Against Disabled Women: EU 34%, UN 2-4×, Taiwan Gov Docs 0 — Fourth Case Study</title>
+    <link rel="alternate" type="text/html" hreflang="zh-Hant" href="https://cedaw.taiwanmommies.org/blog/2026-05-06-disabled-women-violence.html" />
+    <link rel="alternate" type="text/html" hreflang="en" href="https://cedaw.taiwanmommies.org/blog/2026-05-06-disabled-women-violence-en.html" />
+    <id>https://cedaw.taiwanmommies.org/blog/2026-05-06-disabled-women-violence.html</id>
+    <updated>2026-05-06T12:00:00Z</updated>
+    <published>2026-05-06T12:00:00Z</published>
+    <category term="case_study" />
+    <summary type="text">深入剖析跨公約共構平台第一 + 第二項結構性發現:身障女性 0 段、家暴 1 段。國際對照:🇪🇺 FRA 34% / 🇺🇳 UN Women 2-4× / 🇦🇺 2×。台灣推估規模 17 萬人次,但政府身障論述零段。CRPD §6+§16 + CEDAW GR-19/35 + GR-39 共識下的論述空缺。對應 PI-17。
+
+[EN] Deep-dive into the 1st + 2nd structural findings: disabled women 0, DV 1. International benchmarks: 🇪🇺 EU FRA 34% / 🇺🇳 UN 2-4× / 🇦🇺 2×. Estimated 170,000 cases in Taiwan, zero segments in disability discourse. CRPD §6+§16 + CEDAW GR-19/35 + GR-39 obligations all unmet. Mapped to PI-17.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/blog/2026-05-06-disabled-women-violence.html
+English: https://cedaw.taiwanmommies.org/blog/2026-05-06-disabled-women-violence-en.html</summary>
+  </entry>
   <entry>
     <title type="text">身障原住民:三公約共同遺忘的人群 — 第三案例文 / Disabled Indigenous: The Population All Three Covenants Forget — Third Case Study</title>
     <link rel="alternate" type="text/html" hreflang="zh-Hant" href="https://cedaw.taiwanmommies.org/blog/2026-05-06-disabled-indigenous.html" />

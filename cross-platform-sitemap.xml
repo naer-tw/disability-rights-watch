@@ -30,6 +30,24 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- Fourth case study — Disabled Women DV (Wave 148) -->
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-disabled-women-violence.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-disabled-women-violence.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-disabled-women-violence-en.html"/>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-disabled-women-violence-en.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-disabled-women-violence.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-disabled-women-violence-en.html"/>
+  </url>
+
   <!-- Third case study — Disabled Indigenous (Wave 147) -->
   <url>
     <loc>https://naer-tw.github.io/disability-rights-watch/blog/2026-05-06-disabled-indigenous.html</loc>
