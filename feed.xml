@@ -8,9 +8,22 @@
     <language>zh-TW</language>
     <copyright>CC BY 4.0</copyright>
     <managingEditor>weall888@gmail.com (Tri-Covenant Editorial)</managingEditor>
-    <lastBuildDate>Wed, 06 May 2026 02:15:03 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 10:32:15 +0000</lastBuildDate>
     <generator>build_rss_feed.py · Wave 144</generator>
     <docs>https://cyber.harvard.edu/rss/rss.html</docs>
+    <item>
+      <title>監督政府的平台,如何監督自己?— 第七(方法論補完)案例文 / How Does a Platform That Audits Government Audit Itself? — Seventh (Methodology Coda) Case Study</title>
+      <link>https://cedaw.taiwanmommies.org/blog/2026-05-06-platform-self-audit.html</link>
+      <guid isPermaLink="true">https://cedaw.taiwanmommies.org/blog/2026-05-06-platform-self-audit.html</guid>
+      <pubDate>Wed, 06 May 2026 12:00:00 +0000</pubDate>
+      <category>case_study</category>
+      <description>六篇結構性發現案例文之後的方法論補完。三共約監督平台量化政府沉默,也量化自己沉默。link_audit 工具讓 dead_anchor 從 88 降至 50(43% 修復率),三項關鍵修復:CRPD 102 頁 #main 缺失補回 / CEDAW 模板移除 / 首頁 4 個隱形錨點。第七項指標(平台健康度)正式進入月度追蹤,目標 2027-Q1 歸零。結構性批判,須以結構性自律為前提。
+
+[EN] Methodology coda following the six structural-findings case studies. Tri-Covenant Watch quantifies government silence — and now quantifies its own. The link_audit tool drove dead_anchor from 88 to 50 (43% repair rate) via three key fixes: CRPD 102-page #main backfill / CEDAW template removal / 4 invisible homepage anchors. A 7th indicator (Platform Health) joins the monthly tracker with target zero by 2027-Q1. Structural critique requires structural self-discipline.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/blog/2026-05-06-platform-self-audit.html
+English: https://cedaw.taiwanmommies.org/blog/2026-05-06-platform-self-audit-en.html</description>
+    </item>
     <item>
       <title>LGBTQI+ 兒少:三公約都低,沒有人主張 — 第六(完結)案例文 / LGBTQI+ Children: Low Across All Covenants, No One Claims Them — Sixth (Final) Case Study</title>
       <link>https://cedaw.taiwanmommies.org/blog/2026-05-06-lgbtqi-children-low-everywhere.html</link>

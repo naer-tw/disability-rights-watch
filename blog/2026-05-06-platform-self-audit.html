@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>監督政府的平台,如何監督自己?— 三公約共構平台</title>
+<meta name="description" content="若一個平台量化政府失語,它必須能量化自己的品質。三公約共構平台的 link_audit 工具如何把 dead_anchor 從 88 降到 50,以及為何結構批評需要結構自律。">
+<meta property="og:title" content="監督政府的平台,如何監督自己?">
+<meta property="og:type" content="article">
+<style>
+body { font-family: "Noto Serif TC", -apple-system, sans-serif; background: #FAFAF7; color: #1F1F1F; line-height: 1.85; margin: 0; }
+header { background: linear-gradient(135deg, #2D7059 0%, #4B2480 100%); color: #fff; padding: 36px 24px; text-align: center; }
+header .label { letter-spacing: 0.18em; text-transform: uppercase; font-size: 11px; opacity: 0.85; }
+header h1 { font-family: "Noto Serif TC", serif; font-size: 28px; line-height: 1.35; max-width: 820px; margin: 12px auto 6px; }
+header .subtitle { font-size: 14.5px; opacity: 0.95; max-width: 720px; margin: 8px auto 0; }
+header .meta { font-size: 12px; opacity: 0.85; margin-top: 12px; }
+nav { background: #fff; padding: 11px 24px; border-bottom: 1px solid #E8E3D6; }
+nav a { color: #4B2480; text-decoration: none; font-size: 13.5px; font-weight: 600; margin-right: 16px; }
+nav a.en { float: right; background: #4B2480; color: #fff; padding: 4px 10px; border-radius: 4px; }
+article { max-width: 760px; margin: 32px auto; padding: 0 24px; }
+article p { font-size: 15.5px; }
+article p.lede { font-size: 17.5px; line-height: 1.7; color: #2D2D2D; margin: 0 0 22px; font-weight: 500; }
+article h2 { font-family: "Noto Serif TC", serif; font-size: 22px; color: #1F1F1F; border-bottom: 2px solid #2D7059; padding-bottom: 6px; margin: 36px 0 14px; }
+article h3 { font-family: "Noto Serif TC", serif; font-size: 17px; color: #1F4F3D; margin: 22px 0 8px; }
+.huge-stat { background: #fff; border: 2px solid #2D7059; padding: 20px 24px; border-radius: 8px; text-align: center; margin: 20px 0; }
+.huge-stat .num { font-family: "Noto Serif TC", serif; font-size: 48px; font-weight: 700; color: #2D7059; line-height: 1; }
+.huge-stat .lbl { font-size: 13px; color: #5C5C5C; margin-top: 6px; }
+.fix-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 18px 0; }
+.fix-card { background: #fff; padding: 14px 18px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); border-left: 4px solid #2D7059; }
+.fix-card h3 { margin: 0 0 4px; font-size: 15px; color: #1F4F3D; border: 0; }
+.fix-card .delta { font-family: "Noto Serif TC", serif; font-size: 22px; font-weight: 700; color: #2D7059; margin: 4px 0; }
+.fix-card .desc { font-size: 12.5px; color: #5C5C5C; line-height: 1.65; }
+.callout { background: #E0EAE3; border-left: 4px solid #2D7059; padding: 16px 22px; border-radius: 0 6px 6px 0; margin: 18px 0; font-size: 14px; line-height: 1.75; }
+.code { background: #F1EFEA; padding: 1px 6px; border-radius: 3px; font-size: 13px; font-family: Inter, monospace; }
+footer { background: #0E2238; color: #fff; padding: 24px; text-align: center; font-size: 12px; margin-top: 48px; }
+footer a { color: #fff; opacity: 0.9; }
+</style>
+</head>
+<body>
+<header>
+  <div class="label">第七案例文 · 方法論補完篇 · 三公約共構平台</div>
+  <h1>監督政府的平台,如何監督自己?</h1>
+  <p class="subtitle">三公約共構平台量化政府失語的同時,也用同一套工具量化自身的失語。link_audit 從 88 個 dead_anchor 降到 50,是結構批評需要結構自律的具體例證。</p>
+  <div class="meta">2026-05-06 · 三公約共構平台編輯室 · CC BY 4.0</div>
+</header>
+<nav>
+  <a href="../tri-covenant-about.html">關於</a>
+  <a href="../structural-findings.html">🔬 6 結構性發現</a>
+  <a href="../monthly-tracker.html">📅 月度追蹤</a>
+  <a href="../qa/link-audit.html">🩺 QA · Link Audit</a>
+  <a href="2026-05-06-lgbtqi-children-low-everywhere.html">◂ 第六案例文</a>
+  <a href="2026-05-06-platform-self-audit-en.html" class="en">🌐 English</a>
+</nav>
+
+<article>
+
+<p class="lede">前 6 篇案例文揭露 6 個跨公約結構性發現:政府文件中身障女性受暴 0 段、合理調整 7 段、身障原住民全 0。但本平台若只批評政府不檢視自己,就只是另一份「沒人主張」的論述。所以我們對自己跑同一套量化工具,把連結品質當成第 7 個指標。Wave 162 baseline:88 個 dead_anchor。Wave 165 後:50。</p>
+
+<div class="huge-stat">
+  <div class="num">88 → 50</div>
+  <div class="lbl">三平台 dead_anchor 從 baseline 降到 Wave 165 final(43% 修復率)</div>
+</div>
+
+<h2>為何要做平台自審?</h2>
+
+<p>跨公約共構平台的核心倡議是:<strong>政府的沉默可被量化</strong>。但這個主張只有在我們自己的工具不沉默時才成立。如果三平台首頁有 88 個失靈的內部連結,我們指責政府文件邏輯斷裂的姿勢就站不住腳。</p>
+
+<div class="callout">
+<strong>結構批評需要結構自律。</strong><br>
+我們對政府要求 disability-disaggregated 統計、跨公約 List of Issues 互相引用、CRC GC-22 §32-34 條文落實 — 這些都要求政府在<strong>論述精度</strong>上達標。如果我們自己的論述精度(broken links、dead anchors、stale subdomains)沒有同樣標準,批評就缺乏正當性。
+</div>
+
+<h2>怎麼做的?</h2>
+
+<p>Wave 160-166 期間,我們建構了一個 150 行的 Python 腳本(<a href="https://github.com/naer-tw/evidence-pipeline/blob/main/examples">link_audit.py</a>)做整個 <code class="code">_public/</code> 的全文掃描:</p>
+
+<ul>
+  <li>解析所有 <code class="code">href</code> 屬性,找相對連結與內部連結</li>
+  <li>解析所有 <code class="code">id</code> 屬性,建構 file → ids 對照</li>
+  <li>對每個連結:目標檔存在嗎?#anchor 真的存在於目標檔?</li>
+  <li>分四類:<strong>broken_target</strong>(連結指不存在檔)/ <strong>dead_anchor</strong>(#xxx 指不存在的 id)/ <strong>stale_subdomain</strong>(過時域名)/ <strong>platform_root_absolute</strong>(/foo 絕對路徑只在 canonical 部署可用)</li>
+</ul>
+
+<p>結果輸出 JSON history(每月一筆 snapshot),自動 render 成 <a href="../qa/link-audit.html">QA · Link Audit Dashboard</a>。每月 1 號跑 <code class="code">run_monthly_pipeline.sh</code> 第 [5/5] 步自動更新。</p>
+
+<h2>Baseline → 50 的三個關鍵 fix</h2>
+
+<div class="fix-grid">
+  <div class="fix-card">
+    <h3>CRPD 102 頁加 id="main"</h3>
+    <div class="delta">-102</div>
+    <p class="desc">102 個 CRPD 子頁面有 <code class="code">href="#main"</code> 無障礙 skip-link,但 <code class="code">&lt;main&gt;</code> 元素未加 <code class="code">id="main"</code>。鍵盤使用者按 Tab 跳到 skip 後焦點落空。<br>
+    <strong>Fix:</strong> sed 把 <code class="code">&lt;main&gt;</code> → <code class="code">&lt;main id="main"&gt;</code></p>
+  </div>
+
+  <div class="fix-card">
+    <h3>移除 CEDAW templates/_layout_pi.html</h3>
+    <div class="delta">-2</div>
+    <p class="desc">build template 不該被部署(GH Pages 會 skip <code class="code">_</code> 前綴檔反正 404)。template 內含 dead anchor 但實際不對外。<br>
+    <strong>Fix:</strong> <code class="code">git rm</code> 之</p>
+  </div>
+
+  <div class="fix-card">
+    <h3>CEDAW index.html 加 4 個 invisible anchor</h3>
+    <div class="delta">-38</div>
+    <p class="desc">19 個 PI 詳細頁 footer 連 <code class="code">../index.html#axis3</code> 與 <code class="code">#axis4</code>,但 index.html 沒有對應 id。<br>
+    <strong>Fix:</strong> 加 <code class="code">&lt;a id="axis3" style="position:absolute;left:-9999px;"&gt;</code> 等 4 個 invisible 元素</p>
+  </div>
+</div>
+
+<p>三個 fix 合計從 88 降到 50。剩下的 50 主要是 CRC 平台 <code class="code">crc-articles.html#PI-XX</code>(crc-articles 用 JS 動態載入 PI 資料,沒有 static id),屬結構性議題,需要 JS 路由器才能修。</p>
+
+<h2>從工具到 KPI:第 7 個 indicator 加入月度追蹤</h2>
+
+<p>Wave 166 把 dead_anchor 從一個內部 audit 升格為 <strong>monthly-tracker 的第 7 個指標</strong>:</p>
+
+<div class="callout">
+<a href="../monthly-tracker.html">📅 月度行動追蹤</a>原有 6 個指標(6 結構性發現)。Wave 166 加第 7 個:<br>
+<strong>🩺 平台健康 · dead_anchor:baseline 50 → target 0(2027-Q1)</strong><br><br>
+這個指標 inverted(lower 越好),從 link_audit.json 自動讀。任何新引入 broken anchor 的 commit 會立即在 dashboard 顯示「平台健康下滑」 — 形成自我規範。
+</div>
+
+<h2>三層意義</h2>
+
+<h3>1. 信譽信號</h3>
+<p>NGO 監督 NGO,UN reviewer 評估 NGO 的證據可信度。一個量化政府文件失語但自身連結 50% broken 的平台,信譽折半。把自審當<strong>第 7 個指標公開上線</strong>,等於告訴讀者:「我們的數字也接受同樣標準的檢驗」。</p>
+
+<h3>2. 工程紀律</h3>
+<p>每月一次的 audit 確保未來新加頁面 / 新 wave 不引入 regression。link_audit.py 整合進 <code class="code">run_monthly_pipeline.sh</code> 第 [5/5] 步,跟 6 結構性發現 indicator 一起更新。</p>
+
+<h3>3. 範例給其他 NGO</h3>
+<p><a href="https://github.com/naer-tw/evidence-pipeline/blob/main/DEVELOPER_GUIDE.md">DEVELOPER_GUIDE.md</a> 引導其他想複製本架構的 NGO,也應一併套用 link_audit。從 day 1 就把自審當 first-class citizen,而非事後補。</p>
+
+<h2>結語:沉默是雙向的</h2>
+
+<p>政府的沉默是 0 段政府文件,我們的沉默是 88 個失靈連結。<strong>兩者都可被量化、可被追蹤、可被問責。</strong>差別只在誰先承認。</p>
+
+<p>我們先承認 88,然後降到 50,目標 0。政府呢?</p>
+
+<p style="font-size:13px;color:#5C5C5C;margin-top:32px;border-top:1px dashed #DDD8CD;padding-top:18px;">
+本文以 CC BY 4.0 授權釋出,自由轉載 / 改編,需註明出處。引用建議格式:<br>
+三公約共構平台。(2026-05-06)。〈監督政府的平台,如何監督自己?〉。網址:cedaw.taiwanmommies.org/blog/2026-05-06-platform-self-audit.html
+</p>
+
+</article>
+
+<footer>
+三公約共構平台 · CC BY 4.0 · 第七(方法論補完)案例文 · Wave 167<br>
+<a href="https://naer-tw.github.io/cedaw-watch/">CEDAW</a> · <a href="https://naer-tw.github.io/child-rights-watch/">CRC</a> · <a href="https://naer-tw.github.io/disability-rights-watch/">CRPD</a> · <a href="../feed.xml">📡 RSS</a> · <a href="../atom.xml">Atom</a>
+</footer>
+</body>
+</html>
