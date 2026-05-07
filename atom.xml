@@ -6,7 +6,7 @@
   <link rel="alternate" type="text/html" href="https://cedaw.taiwanmommies.org/" />
   <link rel="alternate" type="application/rss+xml" href="https://cedaw.taiwanmommies.org/feed.xml" />
   <id>https://cedaw.taiwanmommies.org/atom.xml</id>
-  <updated>2026-05-06T14:14:20Z</updated>
+  <updated>2026-05-07T01:22:24Z</updated>
   <rights>CC BY 4.0</rights>
   <author>
     <name>Tri-Covenant Editorial</name>
@@ -14,6 +14,21 @@
     <uri>https://cedaw.taiwanmommies.org/</uri>
   </author>
   <generator uri="https://cedaw.taiwanmommies.org/" version="Wave 145">build_rss_feed.py</generator>
+  <entry>
+    <title type="text">跨公約聯合影子報告(範本)— UN 提交組裝指南 / Joint Cross-Covenant Shadow Report (Template) — UN Submission Assembly Guide</title>
+    <link rel="alternate" type="text/html" hreflang="zh-Hant" href="https://cedaw.taiwanmommies.org/tri-covenant-shadow-report.html" />
+    <link rel="alternate" type="text/html" hreflang="en" href="https://cedaw.taiwanmommies.org/tri-covenant-shadow-report-en.html" />
+    <id>https://cedaw.taiwanmommies.org/tri-covenant-shadow-report.html</id>
+    <updated>2026-05-07T12:00:00Z</updated>
+    <published>2026-05-07T12:00:00Z</published>
+    <category term="template" />
+    <summary type="text">示範如何把三公約共構平台的 6 結構性發現 + 17 國際 benchmark + 7 案例文,組裝為一份 UN treaty body 聯合提交。6 個 finding 章節各附事實 / 結構性意涵 / 對政府訴求 / 對應 UN GR-GC + PI 連結。6 個 annex 連結機讀資料下載。CC BY 4.0,各 NGO 可下載 HTML 改填具體審查週期作為自家提交起點。
+
+[EN] A worked example showing how to assemble Tri-Covenant Watch&apos;s 6 structural findings + 17 international benchmarks + 7 case studies into one joint UN treaty-body submission. Each of 6 finding sections has facts / structural meaning / asks to government / mapped UN GR-GC + PI link. 6 annexes link machine-readable data downloads. CC BY 4.0 — NGOs can download HTML, fill in their review cycle, and use as a starting point.
+
+中文 / Chinese: https://cedaw.taiwanmommies.org/tri-covenant-shadow-report.html
+English: https://cedaw.taiwanmommies.org/tri-covenant-shadow-report-en.html</summary>
+  </entry>
   <entry>
     <title type="text">國際對照表 — 17 個國際 benchmark vs 台灣政府文件 / International Benchmarks — 17 Global Reference Points vs Taiwan Government Documents</title>
     <link rel="alternate" type="text/html" hreflang="zh-Hant" href="https://cedaw.taiwanmommies.org/international-benchmarks.html" />
