@@ -30,6 +30,15 @@ code { background: #F1EFEA; padding: 1px 6px; border-radius: 3px; font-size: 12.
 .cite-box { background: #FFF8E1; border-left: 4px solid #C68822; padding: 14px 18px; border-radius: 0 6px 6px 0; font-size: 13px; }
 .cite-box code { background: #fff; }
 footer { background: #0E2238; color: #fff; padding: 20px; text-align: center; font-size: 12px; margin-top: 48px; }
+
+@media (max-width: 768px) {
+  body { font-size: 15px !important; }
+  main, article, section, .container { padding-left: 16px !important; padding-right: 16px !important; }
+  table { font-size: 13px; }
+  [class*="grid"] { grid-template-columns: 1fr !important; }
+  .row, [class*="flex"] { flex-wrap: wrap !important; }
+  pre, code { white-space: pre-wrap !important; word-break: break-word; }
+}
 </style>
 </head>
 <body>

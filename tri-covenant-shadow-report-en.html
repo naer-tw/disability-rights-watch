@@ -9,7 +9,7 @@
 <style>
 body { font-family: Georgia, "Inter", -apple-system, sans-serif; background: #FAFAF7; color: #1F1F1F; line-height: 1.75; margin: 0; font-size: 16px; }
 header { background: linear-gradient(135deg, #4B2480 0%, #B5371F 50%, #2D7059 100%); color: #fff; padding: 36px 24px; text-align: center; }
-header .label { letter-spacing: 0.2em; text-transform: uppercase; font-size: 11px; opacity: 0.85; }
+header .label { letter-spacing: 0.2em; text-transform: uppercase; font-size:12px; opacity: 0.85; }
 header h1 { font-family: Georgia, serif; font-size: 28px; line-height: 1.4; max-width: 760px; margin: 14px auto 8px; }
 header .subtitle { font-size: 14.5px; opacity: 0.95; max-width: 720px; margin: 8px auto 0; line-height: 1.7; }
 header .meta { font-size: 12px; opacity: 0.85; margin-top: 14px; letter-spacing: 0.04em; }
@@ -39,6 +39,15 @@ ol.recs li { margin: 6px 0; }
 .annex strong { color: #4B2480; }
 footer { background: #0E2238; color: #fff; padding: 24px; text-align: center; font-size: 12px; margin-top: 40px; }
 footer a { color: #fff; opacity: 0.9; }
+
+@media (max-width: 768px) {
+  body { font-size: 15px !important; }
+  main, article, section, .container { padding-left: 16px !important; padding-right: 16px !important; }
+  table { font-size: 13px; }
+  [class*="grid"] { grid-template-columns: 1fr !important; }
+  .row, [class*="flex"] { flex-wrap: wrap !important; }
+  pre, code { white-space: pre-wrap !important; word-break: break-word; }
+}
 </style>
 </head>
 <body>
@@ -79,7 +88,7 @@ footer a { color: #fff; opacity: 0.9; }
 <h2>🌟 Executive Summary</h2>
 <p>This report draws on 102,728 government-document segments indexed across three years by three civil-society NGOs. We identify 6 cross-covenant (CEDAW × CRC × CRPD) structural findings, read on <strong>two axes</strong>. <strong>Axis A — substantive-rights shortfall</strong> (Findings 1/2/3/5): low counts are real gaps; government should do more. <strong>Axis B — government over-expansion watch</strong> (Findings 4/6): where Taiwan government interpretation exceeds the covenant-text scope and the (declining) international CO trend; here a low count is not a gap. GR/GC references below are interpretive guidance, not binding obligations.</p>
 
-<table>
+<div class="table-wrap" style="overflow-x:auto;-webkit-overflow-scrolling:touch"><table>
 <thead><tr><th>#</th><th>Structural finding</th><th>CEDAW</th><th>CRC</th><th>CRPD</th><th>UN reference</th></tr></thead>
 <tbody>
 <tr><td>1</td><td>Disabled women's violence — cross-covenant silence</td><td>459</td><td>515</td><td class="zero">0</td><td>CRPD GC-3 §32-37 / CEDAW GR-19/35</td></tr>
@@ -89,7 +98,7 @@ footer a { color: #fff; opacity: 0.9; }
 <tr><td>5</td><td>Disabled indigenous forgotten across all 3 covenants</td><td class="zero">0</td><td class="zero">1</td><td class="zero">0</td><td>CEDAW GR-39 §54-58 (interpretive)</td></tr>
 <tr><td>6 <span style="font-size:10px;color:#5C2A7E;">Axis B</span></td><td>LGBTQI+ children — prudent restraint amid social division</td><td class="zero">2</td><td class="zero">1</td><td class="zero">0</td><td>GC-22 (interpretive, non-binding)</td></tr>
 </tbody>
-</table>
+</table></div>
 
 <p style="font-size:13.5px;color:#5C5C5C;margin-top:8px;">Full sources: <a href="executive-summary-en.html">Executive Summary 1-pager</a> · <a href="structural-findings-en.html">6 Findings dashboard</a> · <a href="international-benchmarks-en.html">International Benchmarks (17-row sortable)</a></p>
 </section>

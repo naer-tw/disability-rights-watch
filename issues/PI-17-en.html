@@ -5,7 +5,7 @@
 <style>
 body { font-family: "Inter", -apple-system, sans-serif; background: #FAFAF7; color: #1F1F1F; line-height: 1.65; margin: 0; }
 header { background: linear-gradient(135deg, #2D7059, #1F4F3D); color: #fff; padding: 24px 28px; }
-header .label { letter-spacing: 0.18em; text-transform: uppercase; font-size: 11px; opacity: 0.85; }
+header .label { letter-spacing: 0.18em; text-transform: uppercase; font-size:12px; opacity: 0.85; }
 header h1 { font-family: Georgia, serif; font-size: 24px; margin: 6px 0 4px; }
 header .meta { font-size: 13px; opacity: 0.92; margin-top: 4px; }
 nav { background: #fff; padding: 11px 28px; border-bottom: 1px solid #E8E3D6; font-size: 13px; }
@@ -18,6 +18,15 @@ main { max-width: 880px; margin: 24px auto; padding: 0 28px; }
 .frontmatter dd { display: inline; margin: 0; }
 .frontmatter dd::after { content: ''; display: block; }
 footer { background: #0E2238; color: #fff; padding: 18px; text-align: center; font-size: 12px; margin-top: 40px; }
+
+@media (max-width: 768px) {
+  body { font-size: 15px !important; }
+  main, article, section, .container { padding-left: 16px !important; padding-right: 16px !important; }
+  table { font-size: 13px; }
+  [class*="grid"] { grid-template-columns: 1fr !important; }
+  .row, [class*="flex"] { flex-wrap: wrap !important; }
+  pre, code { white-space: pre-wrap !important; word-break: break-word; }
+}
 </style></head><body>
 <header>
   <div class="label">CRPD Disability Rights · Cross-Covenant Intersectional PI</div>
@@ -57,13 +66,13 @@ footer { background: #0E2238; color: #fff; padding: 18px; text-align: center; fo
 
 <p style="font-size:14px;line-height:1.75;margin:8px 0;color:#1F1F1F;">Cross-covenant comparison shows this issue is a <strong>complete structural blind spot</strong> in Taiwan's government documents:</p>
 
-<table style="width:100%;border-collapse:collapse;margin:10px 0;">
+<div class="table-wrap" style="overflow-x:auto;-webkit-overflow-scrolling:touch"><table style="width:100%;border-collapse:collapse;margin:10px 0;">
 <tr><th style="background:#F1EFEA;padding:8px 10px;text-align:left;border:1px solid #DDD8CD;font-size:13px;">Platform keyword match</th><th style="background:#F1EFEA;padding:8px 10px;text-align:left;border:1px solid #DDD8CD;font-size:13px;">Segment count</th></tr>
 <tr><td style="padding:8px 10px;border:1px solid #DDD8CD;font-size:13px;">CEDAW gov't documents — "Domestic violence"</td><td style="padding:8px 10px;border:1px solid #DDD8CD;font-size:13px;">459 segments</td></tr>
 <tr><td style="padding:8px 10px;border:1px solid #DDD8CD;font-size:13px;">CRC gov't documents — "Domestic violence"</td><td style="padding:8px 10px;border:1px solid #DDD8CD;font-size:13px;">515 segments</td></tr>
 <tr><td style="padding:8px 10px;border:1px solid #DDD8CD;font-size:13px;"><strong>CRPD gov't documents — "Domestic violence"</strong></td><td style="padding:8px 10px;border:1px solid #DDD8CD;font-size:13px;"><strong>1 segment</strong></td></tr>
 <tr><td style="padding:8px 10px;border:1px solid #DDD8CD;font-size:13px;"><strong>CRPD gov't documents — "Disabled women × Violence" co-occurrence</strong></td><td style="padding:8px 10px;border:1px solid #DDD8CD;font-size:13px;"><strong>0 segments</strong></td></tr>
-</table>
+</table></div>
 
 <p style="font-size:14px;line-height:1.75;margin:8px 0;color:#1F1F1F;">→ Government CRPD discourse barely mentions disabled women's intersectional violence,</p>
 <p style="font-size:14px;line-height:1.75;margin:8px 0;color:#1F1F1F;">even though general DV discourse is rich elsewhere — disability framework never picks it up.</p>

@@ -10,6 +10,15 @@ h1 { color: #1A4D3A; font-family: 'Noto Serif TC', serif; }
 .kit { display: block; padding: 16px; margin: 8px 0; background: #fff; border-left: 4px solid #B5371F; text-decoration: none; color: inherit; }
 .kit:hover { background: #F5F2E8; }
 .kit-id { font-family: monospace; color: #B5371F; font-weight: 700; }
+
+@media (max-width: 768px) {
+  body { font-size: 15px !important; }
+  main, article, section, .container { padding-left: 16px !important; padding-right: 16px !important; }
+  table { font-size: 13px; }
+  [class*="grid"] { grid-template-columns: 1fr !important; }
+  .row, [class*="flex"] { flex-wrap: wrap !important; }
+  pre, code { white-space: pre-wrap !important; word-break: break-word; }
+}
 </style>
 </head>
 <body>

@@ -9,7 +9,7 @@
 <style>
 body { font-family: "Noto Serif TC", Georgia, "Inter", -apple-system, sans-serif; background: #FAFAF7; color: #1F1F1F; line-height: 1.75; margin: 0; font-size: 16px; }
 header { background: linear-gradient(135deg, #4B2480 0%, #B5371F 50%, #2D7059 100%); color: #fff; padding: 36px 24px; text-align: center; }
-header .label { letter-spacing: 0.2em; text-transform: uppercase; font-size: 11px; opacity: 0.85; }
+header .label { letter-spacing: 0.2em; text-transform: uppercase; font-size:12px; opacity: 0.85; }
 header h1 { font-family: "Noto Serif TC", Georgia, serif; font-size: 28px; line-height: 1.4; max-width: 760px; margin: 14px auto 8px; }
 header .subtitle { font-size: 14.5px; opacity: 0.95; max-width: 720px; margin: 8px auto 0; line-height: 1.7; }
 header .meta { font-size: 12px; opacity: 0.85; margin-top: 14px; letter-spacing: 0.04em; }
@@ -39,6 +39,15 @@ ol.recs li { margin: 6px 0; }
 .annex strong { color: #4B2480; }
 footer { background: #0E2238; color: #fff; padding: 24px; text-align: center; font-size: 12px; margin-top: 40px; }
 footer a { color: #fff; opacity: 0.9; }
+
+@media (max-width: 768px) {
+  body { font-size: 15px !important; }
+  main, article, section, .container { padding-left: 16px !important; padding-right: 16px !important; }
+  table { font-size: 13px; }
+  [class*="grid"] { grid-template-columns: 1fr !important; }
+  .row, [class*="flex"] { flex-wrap: wrap !important; }
+  pre, code { white-space: pre-wrap !important; word-break: break-word; }
+}
 </style>
 </head>
 <body>
@@ -79,7 +88,7 @@ footer a { color: #fff; opacity: 0.9; }
 <h2>🌟 執行摘要 · Executive Summary</h2>
 <p>本報告以三個民間 NGO 三年累積的 102,728 段政府文件全文索引為基礎,辨識出 6 項跨公約 (CEDAW × CRC × CRPD) 結構性發現,以<strong>雙軸</strong>判讀。<strong>A 軸 — 實質權益落實不足</strong>(發現 1/2/3/5):低數字是真實缺口,政府應做更多。<strong>B 軸 — 政府詮釋擴張警訊</strong>(發現 4/6):台灣政府詮釋超出公約本文範圍與(逐次下降的)國際 CO 趨勢之處;此軸低數字非缺口。下列 GR / GC 為解釋性指引(interpretive guidance),非具拘束力義務。</p>
 
-<table>
+<div class="table-wrap" style="overflow-x:auto;-webkit-overflow-scrolling:touch"><table>
 <thead><tr><th>#</th><th>結構性發現</th><th>CEDAW</th><th>CRC</th><th>CRPD</th><th>UN 對應</th></tr></thead>
 <tbody>
 <tr><td>1</td><td>身障女性受暴 — 跨公約失語</td><td>459</td><td>515</td><td class="zero">0</td><td>CRPD GC-3 §32-37 / CEDAW GR-19/35</td></tr>
@@ -89,7 +98,7 @@ footer a { color: #fff; opacity: 0.9; }
 <tr><td>5</td><td>身障原住民跨公約遺忘</td><td class="zero">0</td><td class="zero">1</td><td class="zero">0</td><td>CEDAW GR-39 §54-58(interpretive)</td></tr>
 <tr><td>6 <span style="font-size:10px;color:#5C2A7E;">B軸</span></td><td>LGBTQI+ 兒少 — 社會分歧下審慎保留</td><td class="zero">2</td><td class="zero">1</td><td class="zero">0</td><td>GC-22(interpretive 非 binding)</td></tr>
 </tbody>
-</table>
+</table></div>
 
 <p style="font-size:13.5px;color:#5C5C5C;margin-top:8px;">完整資料源:<a href="executive-summary.html">執行摘要 1 頁紙</a> · <a href="structural-findings.html">6 結構性發現視覺化</a> · <a href="international-benchmarks.html">國際對照表(17 列可排序)</a></p>
 </section>

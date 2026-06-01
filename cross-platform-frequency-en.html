@@ -15,6 +15,15 @@ main { max-width: 1100px; margin: 24px auto; padding: 0 24px; }
 .intro { background: #ECE0F2; padding: 18px 22px; border-left: 4px solid #4B2480; border-radius: 0 6px 6px 0; margin-bottom: 24px; }
 .intro h2 { font-family: Georgia, serif; margin: 0 0 8px; font-size: 18px; color: #4B2480; }
 footer { background: #0E2238; color: #fff; padding: 20px; text-align: center; font-size: 12px; margin-top: 40px; }
+
+@media (max-width: 768px) {
+  body { font-size: 15px !important; }
+  main, article, section, .container { padding-left: 16px !important; padding-right: 16px !important; }
+  table { font-size: 13px; }
+  [class*="grid"] { grid-template-columns: 1fr !important; }
+  .row, [class*="flex"] { flex-wrap: wrap !important; }
+  pre, code { white-space: pre-wrap !important; word-break: break-word; }
+}
 </style></head><body>
 <header>
 <h1>📈 Tri-Covenant Government-Document Frequency Time Series</h1>
