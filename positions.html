@@ -33,8 +33,15 @@ section { margin-bottom:48px }
 section h2 { font-family:var(--serif);font-size:22px;color:var(--bg-deep);font-weight:800;margin-bottom:16px;border-bottom:2px solid var(--aabe-gold);padding-bottom:8px }
 .actor-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px }
 .actor-card { background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand);border-radius:6px;padding:14px 16px;display:flex;flex-direction:column;gap:8px }
+.actor-card.host { border:2px solid var(--aabe-gold);border-left:5px solid var(--aabe-gold);background:linear-gradient(180deg,#FBF8F0 0%,#fff 40%);order:-1;grid-column:1/-1 }
 .actor-card .head { display:flex;justify-content:space-between;align-items:flex-start;gap:8px }
 .actor-card .actor-name { font-family:var(--serif);font-size:15px;font-weight:700;color:var(--bg-deep) }
+.actor-card .actor-name a { color:var(--bg-deep);border-bottom:1px dotted var(--aabe-gold) }
+.actor-card .actor-name a:hover { color:var(--brand) }
+.actor-card.host .actor-name { font-size:17px }
+.actor-card .chips { display:flex;gap:5px;align-items:center;flex-shrink:0 }
+.actor-card .host-chip { background:var(--aabe-gold);color:#fff;font-size:11px;padding:2px 8px;border-radius:3px;font-family:var(--sans);font-weight:700;letter-spacing:0.03em }
+.actor-card .host-stance { font-size:12.5px;color:var(--text-muted);background:var(--bg-alt);border-radius:4px;padding:6px 9px;line-height:1.5 }
 .actor-card .type-chip { color:#fff;font-size:11px;padding:2px 8px;border-radius:3px;font-family:Inter,sans-serif;font-weight:600 }
 .actor-card .stats { display:flex;gap:14px;font-size:12px;color:var(--text-muted);font-family:Inter,sans-serif }
 .actor-card .stats strong { color:var(--bg-deep);font-weight:700 }
@@ -80,14 +87,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
     <div class="actor-grid">
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">國家人權委員會（NHRC）</div>
-    <span class="type-chip" style="background:#5A5048">international_body</span>
+    <div class="actor-name"><a href="./actors/國家人權委員會_nhrc.html">國家人權委員會（NHRC）</a></div>
+    <span class="chips"><span class="type-chip" style="background:#5A5048">international_body</span></span>
   </div>
   <div class="stats">
     <span><strong>31</strong> 立場</span>
     <span>覆蓋 <strong>13</strong> 議題</span>
     <span>採納率 <strong>100%</strong></span>
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-01-dossier.html">PI-01</a><a class="pill" href="./issues/PI-05-dossier.html">PI-05</a><a class="pill" href="./issues/PI-06-dossier.html">PI-06</a><a class="pill" href="./issues/PI-07-dossier.html">PI-07</a><a class="pill" href="./issues/PI-08-dossier.html">PI-08</a><a class="pill" href="./issues/PI-09-dossier.html">PI-09</a><a class="pill" href="./issues/PI-10-dossier.html">PI-10</a><a class="pill" href="./issues/PI-11-dossier.html">PI-11</a>
     <span class="pill more">+5</span>
@@ -95,29 +103,31 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">人權公約施行監督聯盟（22 團體）</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/人權公約施行監督聯盟_22_團體.html">人權公約施行監督聯盟（22 團體）</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>8</strong> 立場</span>
     <span>覆蓋 <strong>8</strong> 議題</span>
     <span>採納率 <strong>100%</strong></span>
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-01-dossier.html">PI-01</a><a class="pill" href="./issues/PI-02-dossier.html">PI-02</a><a class="pill" href="./issues/PI-05-dossier.html">PI-05</a><a class="pill" href="./issues/PI-07-dossier.html">PI-07</a><a class="pill" href="./issues/PI-09-dossier.html">PI-09</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a><a class="pill" href="./issues/PI-14-dossier.html">PI-14</a><a class="pill" href="./issues/PI-15-dossier.html">PI-15</a>
     
   </div>
 </article>
-<article class="actor-card">
+<article class="actor-card host">
   <div class="head">
-    <div class="actor-name">國教行動聯盟（AABE）</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/國教行動聯盟_aabe.html">國教行動聯盟（AABE）</a></div>
+    <span class="chips"><span class="host-chip" title="本平台主辦團體">主辦團體</span><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>8</strong> 立場</span>
     <span>覆蓋 <strong>8</strong> 議題</span>
-    
+    <span title="主辦團體不對自身立場自評國際採納率,以維持不公審對稱">主辦團體·未自評採納</span>
   </div>
+  <div class="host-stance">立場光譜：品質融合＋家長選擇權・混合派(保留＋品質軸)　<a href="./unheard.html" style="color:var(--brand);font-weight:600">並陳對立面 →</a></div>
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-03-dossier.html">PI-03</a><a class="pill" href="./issues/PI-04-dossier.html">PI-04</a><a class="pill" href="./issues/PI-09-dossier.html">PI-09</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a><a class="pill" href="./issues/PI-14-dossier.html">PI-14</a><a class="pill" href="./issues/PI-15-dossier.html">PI-15</a><a class="pill" href="./issues/PI-16-dossier.html">PI-16</a>
     
@@ -125,14 +135,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">中華民國智障者家長總會（智總）</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/中華民國智障者家長總會_智總.html">中華民國智障者家長總會（智總）</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>5</strong> 立場</span>
     <span>覆蓋 <strong>6</strong> 議題</span>
     <span>採納率 <strong>0%</strong></span>
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-07-dossier.html">PI-07</a><a class="pill" href="./issues/PI-09-dossier.html">PI-09</a><a class="pill" href="./issues/PI-11-dossier.html">PI-11</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a><a class="pill" href="./issues/PI-15-dossier.html">PI-15</a>
     
@@ -140,14 +151,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">中華民國多障家長協會</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/中華民國多障家長協會.html">中華民國多障家長協會</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>4</strong> 立場</span>
     <span>覆蓋 <strong>4</strong> 議題</span>
     <span>採納率 <strong>33%</strong></span>
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-11-dossier.html">PI-11</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a><a class="pill" href="./issues/PI-15-dossier.html">PI-15</a>
     
@@ -155,14 +167,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">中華民國身心障礙聯盟（殘聯）</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/中華民國身心障礙聯盟_殘聯.html">中華民國身心障礙聯盟（殘聯）</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>4</strong> 立場</span>
     <span>覆蓋 <strong>5</strong> 議題</span>
     <span>採納率 <strong>100%</strong></span>
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-07-dossier.html">PI-07</a><a class="pill" href="./issues/PI-09-dossier.html">PI-09</a><a class="pill" href="./issues/PI-11-dossier.html">PI-11</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a>
     
@@ -170,14 +183,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">中華民國自閉症總會</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/中華民國自閉症總會.html">中華民國自閉症總會</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>3</strong> 立場</span>
     <span>覆蓋 <strong>3</strong> 議題</span>
     <span>採納率 <strong>100%</strong></span>
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-14-dossier.html">PI-14</a><a class="pill" href="./issues/PI-16-dossier.html">PI-16</a>
     
@@ -185,14 +199,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">中華民國康復之友聯盟</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/中華民國康復之友聯盟.html">中華民國康復之友聯盟</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>2</strong> 立場</span>
     <span>覆蓋 <strong>3</strong> 議題</span>
     
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-11-dossier.html">PI-11</a><a class="pill" href="./issues/PI-15-dossier.html">PI-15</a><a class="pill" href="./issues/PI-16-dossier.html">PI-16</a>
     
@@ -200,14 +215,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">中華民國聾人協會</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/中華民國聾人協會.html">中華民國聾人協會</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>2</strong> 立場</span>
     <span>覆蓋 <strong>3</strong> 議題</span>
     
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-08-dossier.html">PI-08</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a>
     
@@ -215,14 +231,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">中華民國腦性麻痺協會</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/中華民國腦性麻痺協會.html">中華民國腦性麻痺協會</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>2</strong> 立場</span>
     <span>覆蓋 <strong>2</strong> 議題</span>
     
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-08-dossier.html">PI-08</a><a class="pill" href="./issues/PI-09-dossier.html">PI-09</a>
     
@@ -230,14 +247,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">中華民國視障聯盟</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/中華民國視障聯盟.html">中華民國視障聯盟</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>2</strong> 立場</span>
     <span>覆蓋 <strong>2</strong> 議題</span>
     
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-08-dossier.html">PI-08</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a>
     
@@ -245,14 +263,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">不足診斷批評派</div>
-    <span class="type-chip" style="background:#3D5C7A">academic</span>
+    <div class="actor-name"><a href="./actors/不足診斷批評派.html">不足診斷批評派</a></div>
+    <span class="chips"><span class="type-chip" style="background:#3D5C7A">academic</span></span>
   </div>
   <div class="stats">
     <span><strong>1</strong> 立場</span>
     <span>覆蓋 <strong>1</strong> 議題</span>
     
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-16-dossier.html">PI-16</a>
     
@@ -260,14 +279,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">中華民國脊髓損傷者聯合會</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/中華民國脊髓損傷者聯合會.html">中華民國脊髓損傷者聯合會</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>1</strong> 立場</span>
     <span>覆蓋 <strong>2</strong> 議題</span>
     
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-08-dossier.html">PI-08</a><a class="pill" href="./issues/PI-11-dossier.html">PI-11</a>
     
@@ -275,14 +295,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">人權公約施行監督聯盟</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/人權公約施行監督聯盟.html">人權公約施行監督聯盟</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>1</strong> 立場</span>
     <span>覆蓋 <strong>2</strong> 議題</span>
     
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a>
     
@@ -290,14 +311,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">人權公約施行監督聯盟（22 團體共同提交）</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/人權公約施行監督聯盟_22_團體共同提交.html">人權公約施行監督聯盟（22 團體共同提交）</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>1</strong> 立場</span>
     <span>覆蓋 <strong>2</strong> 議題</span>
     <span>採納率 <strong>100%</strong></span>
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a>
     
@@ -305,14 +327,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">台灣唐氏症關愛者協會</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/台灣唐氏症關愛者協會.html">台灣唐氏症關愛者協會</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>1</strong> 立場</span>
     <span>覆蓋 <strong>2</strong> 議題</span>
     
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a>
     
@@ -320,14 +343,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">台灣障礙女性平權連線</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/台灣障礙女性平權連線.html">台灣障礙女性平權連線</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>1</strong> 立場</span>
     <span>覆蓋 <strong>2</strong> 議題</span>
     
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-09-dossier.html">PI-09</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a>
     
@@ -335,14 +359,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">國內法學界（混合派）</div>
-    <span class="type-chip" style="background:#3D5C7A">academic</span>
+    <div class="actor-name"><a href="./actors/國內法學界_混合派.html">國內法學界（混合派）</a></div>
+    <span class="chips"><span class="type-chip" style="background:#3D5C7A">academic</span></span>
   </div>
   <div class="stats">
     <span><strong>1</strong> 立場</span>
     <span>覆蓋 <strong>1</strong> 議題</span>
     <span>採納率 <strong>100%</strong></span>
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-15-dossier.html">PI-15</a>
     
@@ -350,14 +375,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">國內特教學界（中間派）</div>
-    <span class="type-chip" style="background:#3D5C7A">academic</span>
+    <div class="actor-name"><a href="./actors/國內特教學界_中間派.html">國內特教學界（中間派）</a></div>
+    <span class="chips"><span class="type-chip" style="background:#3D5C7A">academic</span></span>
   </div>
   <div class="stats">
     <span><strong>1</strong> 立場</span>
     <span>覆蓋 <strong>2</strong> 議題</span>
     <span>採納率 <strong>100%</strong></span>
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-12-dossier.html">PI-12</a><a class="pill" href="./issues/PI-13-dossier.html">PI-13</a>
     
@@ -365,14 +391,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">社團法人台灣自閉兒社會福利基金會</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/社團法人台灣自閉兒社會福利基金會.html">社團法人台灣自閉兒社會福利基金會</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>1</strong> 立場</span>
     <span>覆蓋 <strong>1</strong> 議題</span>
     
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-16-dossier.html">PI-16</a>
     
@@ -380,14 +407,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">神經多樣性派</div>
-    <span class="type-chip" style="background:#3D5C7A">academic</span>
+    <div class="actor-name"><a href="./actors/神經多樣性派.html">神經多樣性派</a></div>
+    <span class="chips"><span class="type-chip" style="background:#3D5C7A">academic</span></span>
   </div>
   <div class="stats">
     <span><strong>1</strong> 立場</span>
     <span>覆蓋 <strong>1</strong> 議題</span>
     <span>採納率 <strong>100%</strong></span>
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-16-dossier.html">PI-16</a>
     
@@ -395,14 +423,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">罕見疾病基金會</div>
-    <span class="type-chip" style="background:#1A4D3A">ngo</span>
+    <div class="actor-name"><a href="./actors/罕見疾病基金會.html">罕見疾病基金會</a></div>
+    <span class="chips"><span class="type-chip" style="background:#1A4D3A">ngo</span></span>
   </div>
   <div class="stats">
     <span><strong>1</strong> 立場</span>
     <span>覆蓋 <strong>2</strong> 議題</span>
     
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-10-dossier.html">PI-10</a><a class="pill" href="./issues/PI-12-dossier.html">PI-12</a>
     
@@ -410,14 +439,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">衛生福利部社會及家庭署</div>
-    <span class="type-chip" style="background:#5A5048">government_dept</span>
+    <div class="actor-name"><a href="./actors/衛生福利部社會及家庭署.html">衛生福利部社會及家庭署</a></div>
+    <span class="chips"><span class="type-chip" style="background:#5A5048">government_dept</span></span>
   </div>
   <div class="stats">
     <span><strong>1</strong> 立場</span>
     <span>覆蓋 <strong>1</strong> 議題</span>
     
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-08-dossier.html">PI-08</a>
     
@@ -425,14 +455,15 @@ footer { text-align:center;padding:24px;color:var(--text-muted);font-size:12px;b
 </article>
 <article class="actor-card">
   <div class="head">
-    <div class="actor-name">醫療化批評學派（國際）</div>
-    <span class="type-chip" style="background:#3D5C7A">academic</span>
+    <div class="actor-name"><a href="./actors/醫療化批評學派_國際.html">醫療化批評學派（國際）</a></div>
+    <span class="chips"><span class="type-chip" style="background:#3D5C7A">academic</span></span>
   </div>
   <div class="stats">
     <span><strong>1</strong> 立場</span>
     <span>覆蓋 <strong>1</strong> 議題</span>
     
   </div>
+  
   <div class="pi-pills">
     <a class="pill" href="./issues/PI-16-dossier.html">PI-16</a>
     
