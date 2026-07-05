@@ -545,7 +545,7 @@
 
 # 平台聯絡 / 引用方式
 
-**主辦單位:** 國教行動聯盟(AABE / National Alliance of Action for Basic Education)
+**主辦單位:** 國教行動聯盟(AABE / Action Alliance on Basic Education)
 **授權:** CC BY 4.0(可商用、可改作、可訓練 AI,**請註明來源**)
 **回饋管道:** [feedback.html](./feedback.html)
 
