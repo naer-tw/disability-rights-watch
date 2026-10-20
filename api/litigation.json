@@ -54,24 +54,6 @@
   "notes": "台灣首批以 CRPD 為依據之合理調整訴訟"
  },
  {
-  "case_id": "LIT-004",
-  "case_name_zh": "無障礙建築改善義務行政訴訟",
-  "case_name_en": null,
-  "court": "最高行政法院",
-  "case_no": "109 年判字第 X 號",
-  "judgment_date": "2020-06",
-  "case_type": "administrative",
-  "parties": "身障權益團體 vs 建築主管機關",
-  "relief_sought": "請求公共建築物改善為無障礙之行政命令",
-  "judgment_summary_zh": "殘障權益團體訴請主管機關依《建築法》§77 + CRPD §9 強制要求公共建築物改善。判決支持機關有改善義務。",
-  "outcome": "plaintiff_won",
-  "related_pi": "PI-08",
-  "related_articles": "A9",
-  "related_co_passage_id": null,
-  "source_url": "https://judgment.judicial.gov.tw/",
-  "notes": "建立公共建築物無障礙改善行政義務之判決先例"
- },
- {
   "case_id": "LIT-005",
   "case_name_zh": "聽障駕照申請歧視訴訟",
   "case_name_en": null,
